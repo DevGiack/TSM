@@ -1,68 +1,90 @@
+@charset "UTF-8";
+
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600&display=swap");
+
+:root{
+  --bg-primary: #0D0D0D;
+  --bg-secondary: #D9BA5F;
+  --bg-dark: #333333;
+  --bg-medium-light: #595959;
+  --bg-light: #999999;
+  --bg-warning: #F2B138;
+  --bg-danger: #D6511F;
+  --bg-success: #44A637;
+  --bg-info: #1CD2D9;
+  --primary: #0D0D0D;
+  --secondary: #D9BA5F;
+  --dark: #333333;
+  --medium-light: #595959;
+  --light: #999999;
+  --warning: #F2B138;
+  --danger: #D6511F;
+  --success: #44A637;
+  --info: #1CD2D9;
+  --font-sans-serif: "Nunito Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  --font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  --body-font-family: var(--bs-font-sans-serif);
+  --body-font-size: 1rem;
+  --body-font-weight: 400;
+  --body-line-height: 1.5;
+  --body-color: #595959;
+}
+
+
 /************************/
-/*      COULEURS        */
+/*      FONTS        */
 /************************/
-
-.primary {
-  background-color: #0D0D0D;
+h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  line-height: 1.2;
+  color: #0D0D0D,
 }
 
-.text-primary {
-  color: #0D0D0D;   
+h1{
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-style: bold;
+  font-size: 3em;
 }
 
-.secondary {
-  background-color: #D9BA5F;
+h2{
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-style: italic, bold;
+  font-size: 2.55em;
 }
 
-.text-secondary {
-  color: #D9BA5F;
+h3{
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 45px;
 }
 
-.dark{
-  background-color: #333333;
+h4{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 40;
 }
 
-.text-dark{
-  color: #333333;
+h5{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
 }
 
-.medium-light{
-  background-color: #595959;
+h6{
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-.text-medium-light{
-  color: #595959;
+p{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1em;
 }
 
-.light{
-  background-color: #999999;
+lead{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.125em;
 }
 
-.text-light{
-  color: #999999;
+blockquote{
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: italic;
+  font-size: 0.875em;
 }
-
-.warning{
-  background-color: #F2B138;
-}
-
-.warning{
-  background-color: #F2B138;
-}
-
-.text-warning{
-  background-color: #F2B138;
-}
-
-.danger{
-  background-color: #D6511F;
-}
-
-.success{
-  background-color: #44A637;
-}
-
-.info{
-  background-color: #1CD2D9;
-}
-
