@@ -1,0 +1,2 @@
+module UserAdressesHelper
+end
