@@ -1,0 +1,11 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  Cart_ID: 1
+  User_ID: 1
+  User_adress_ID: 1
+
+two:
+  Cart_ID: 1
+  User_ID: 1
+  User_adress_ID: 1

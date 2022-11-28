@@ -10,9 +10,67 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_11_28_141326) do
+ActiveRecord::Schema[7.0].define(version: 2022_11_28_151735) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "carts", force: :cascade do |t|
+    t.integer "ID_product"
+    t.integer "Quantity"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "discounts", force: :cascade do |t|
+    t.string "Name"
+    t.integer "Discount_percent"
+    t.boolean "Active"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "orders", force: :cascade do |t|
+    t.integer "Cart_ID"
+    t.integer "User_ID"
+    t.integer "User_adress_ID"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "payments", force: :cascade do |t|
+    t.integer "User_ID"
+    t.string "Payment_type"
+    t.boolean "Status"
+    t.float "Amount"
+    t.integer "Order_ID"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "product_categories", force: :cascade do |t|
+    t.string "Name"
+    t.integer "Product_ID"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "products", force: :cascade do |t|
+    t.string "Name"
+    t.text "Description"
+    t.integer "Category_ID"
+    t.integer "Price_ID"
+    t.string "Unity"
+    t.integer "Discount_ID"
+    t.integer "Stock_ID"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "stocks", force: :cascade do |t|
+    t.integer "Quantity_gr"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "users", force: :cascade do |t|
     t.string "email", default: "", null: false
