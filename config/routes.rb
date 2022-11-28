@@ -1,4 +1,11 @@
 Rails.application.routes.draw do
+  resources :payments
+  resources :orders
+  resources :carts
+  resources :stocks
+  resources :discounts
+  resources :product_categories
+  resources :products
   get 'home/index'
   get 'static_pages/index'
   devise_for :users

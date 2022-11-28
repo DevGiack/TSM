@@ -1,0 +1,32 @@
+<%= form_with(model: discount) do |form| %>
+  <% if discount.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(discount.errors.count, "error") %> prohibited this discount from being saved:</h2>
+
+      <ul>
+        <% discount.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :Name, style: "display: block" %>
+    <%= form.text_field :Name %>
+  </div>
+
+  <div>
+    <%= form.label :Discount_percent, style: "display: block" %>
+    <%= form.number_field :Discount_percent %>
+  </div>
+
+  <div>
+    <%= form.label :Active, style: "display: block" %>
+    <%= form.check_box :Active %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>
