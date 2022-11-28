@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :admin_types
+  resources :user_adresses
   resources :payments
   resources :orders
   resources :carts
