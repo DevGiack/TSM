@@ -1,0 +1,10 @@
+<div>
+<p>Testtest<%= @users.count  %></p>
+
+<% @users.each do |user|%>
+    <h3>Utilisateur numéro <%=user.id%><h3>
+    <p><%=user.first_name%></p>
+    <p><%=user.email%></p>
+    <%=link_to 'Plus de détails', admin_user_path(user.id)%>
+<%end%> 
+</div>
