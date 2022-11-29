@@ -100,6 +100,7 @@ GEM
       railties (>= 4.1.0)
       responders
       warden (~> 1.2.3)
+    dotenv (2.8.1)
     erubi (1.11.0)
     faker (3.0.0)
       i18n (>= 1.8.11, < 2)
@@ -117,10 +118,6 @@ GEM
       actionview (>= 5.0.0)
       activesupport (>= 5.0.0)
     json (2.6.2)
-    launchy (2.5.0)
-      addressable (~> 2.7)
-    letter_opener (1.8.1)
-      launchy (>= 2.2, < 3)
     loofah (2.19.0)
       crass (~> 1.0.2)
       nokogiri (>= 1.5.9)
@@ -257,10 +254,10 @@ DEPENDENCIES
   capybara
   debug
   devise
+  dotenv
   faker
   importmap-rails
   jbuilder
-  letter_opener
   pg (~> 1.1)
   puma (~> 5.0)
   rails (~> 7.0.4)
