@@ -2,6 +2,8 @@
 
 <h1>Payments</h1>
 
+<%= button_to "Lacher sa tûne", checkout_create_path(total: 10), data: { turbo: false }, class: "btn btn-secondary", remote: true %> <br />
+
 <div id="payments">
   <% @payments.each do |payment| %>
     <%= render payment %>
