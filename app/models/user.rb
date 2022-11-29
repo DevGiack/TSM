@@ -6,7 +6,9 @@ class User < ApplicationRecord
   has_one :cart
   has_one :admin_type
   devise :database_authenticatable, :registerable,
-         :recoverable, :rememberable, :validatable
+         :recoverable, :rememberable, :validatable, :confirmable
+
+
 end
 
 
