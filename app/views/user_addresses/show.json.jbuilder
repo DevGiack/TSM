@@ -1,1 +1,1 @@
-json.partial! "user_adresses/user_adress", user_adress: @user_adress
+json.partial! "user_addresses/user_address", user_address: @user_address

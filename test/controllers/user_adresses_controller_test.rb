@@ -1,48 +1,48 @@
 require "test_helper"
 
-class UserAdressesControllerTest < ActionDispatch::IntegrationTest
+class UserAddressesControllerTest < ActionDispatch::IntegrationTest
   setup do
-    @user_adress = user_adresses(:one)
+    @user_address = user_addresses(:one)
   end
 
   test "should get index" do
-    get user_adresses_url
+    get user_addresses_url
     assert_response :success
   end
 
   test "should get new" do
-    get new_user_adress_url
+    get new_user_address_url
     assert_response :success
   end
 
-  test "should create user_adress" do
-    assert_difference("UserAdress.count") do
-      post user_adresses_url, params: { user_adress: {  } }
+  test "should create user_address" do
+    assert_difference("UserAddress.count") do
+      post user_addresses_url, params: { user_address: {  } }
     end
 
-    assert_redirected_to user_adress_url(UserAdress.last)
+    assert_redirected_to user_address_url(UserAddress.last)
   end
 
-  test "should show user_adress" do
-    get user_adress_url(@user_adress)
+  test "should show user_address" do
+    get user_address_url(@user_address)
     assert_response :success
   end
 
   test "should get edit" do
-    get edit_user_adress_url(@user_adress)
+    get edit_user_address_url(@user_address)
     assert_response :success
   end
 
-  test "should update user_adress" do
-    patch user_adress_url(@user_adress), params: { user_adress: {  } }
-    assert_redirected_to user_adress_url(@user_adress)
+  test "should update user_address" do
+    patch user_address_url(@user_address), params: { user_address: {  } }
+    assert_redirected_to user_address_url(@user_address)
   end
 
-  test "should destroy user_adress" do
-    assert_difference("UserAdress.count", -1) do
-      delete user_adress_url(@user_adress)
+  test "should destroy user_address" do
+    assert_difference("UserAddress.count", -1) do
+      delete user_address_url(@user_address)
     end
 
-    assert_redirected_to user_adresses_url
+    assert_redirected_to user_addresses_url
   end
 end
