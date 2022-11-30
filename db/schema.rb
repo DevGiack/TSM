@@ -22,7 +22,7 @@ ActiveRecord::Schema[7.0].define(version: 2022_11_28_170639) do
   end
 
   create_table "carts", force: :cascade do |t|
-    t.integer "Quantity"
+    t.integer "quantity"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.bigint "product_id"
@@ -30,9 +30,9 @@ ActiveRecord::Schema[7.0].define(version: 2022_11_28_170639) do
   end
 
   create_table "discounts", force: :cascade do |t|
-    t.string "Name"
-    t.integer "Discount_percent"
-    t.boolean "Active"
+    t.string "name"
+    t.integer "discount_percent"
+    t.boolean "active"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.bigint "product_id"
@@ -44,16 +44,14 @@ ActiveRecord::Schema[7.0].define(version: 2022_11_28_170639) do
     t.datetime "updated_at", null: false
     t.bigint "cart_id"
     t.bigint "user_id"
-    t.bigint "user_adress_id"
     t.index ["cart_id"], name: "index_orders_on_cart_id"
-    t.index ["user_adress_id"], name: "index_orders_on_user_adress_id"
     t.index ["user_id"], name: "index_orders_on_user_id"
   end
 
   create_table "payments", force: :cascade do |t|
-    t.string "Payment_type"
-    t.boolean "Status"
-    t.float "Amount"
+    t.string "payment_type"
+    t.boolean "status"
+    t.float "amount"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.bigint "user_id"
@@ -63,24 +61,24 @@ ActiveRecord::Schema[7.0].define(version: 2022_11_28_170639) do
   end
 
   create_table "product_categories", force: :cascade do |t|
-    t.string "Name"
+    t.string "name"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
   create_table "products", force: :cascade do |t|
-    t.string "Name"
-    t.text "Description"
-    t.string "Unity"
+    t.string "name"
+    t.text "description"
+    t.string "unity"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.float "Price"
+    t.float "price"
     t.bigint "product_category_id"
     t.index ["product_category_id"], name: "index_products_on_product_category_id"
   end
 
   create_table "stocks", force: :cascade do |t|
-    t.integer "Quantity_gr"
+    t.integer "quantity_gr"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.bigint "product_id"
@@ -88,7 +86,13 @@ ActiveRecord::Schema[7.0].define(version: 2022_11_28_170639) do
   end
 
   create_table "user_adresses", force: :cascade do |t|
-    t.integer "test"
+    t.integer "address_number"
+    t.string "address_street"
+    t.string "address_city"
+    t.integer "address_zip"
+    t.string "address_state"
+    t.string "address_country"
+    t.string "address_type"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.bigint "user_id"
@@ -115,7 +119,6 @@ ActiveRecord::Schema[7.0].define(version: 2022_11_28_170639) do
   add_foreign_key "carts", "products"
   add_foreign_key "discounts", "products"
   add_foreign_key "orders", "carts"
-  add_foreign_key "orders", "user_adresses"
   add_foreign_key "orders", "users"
   add_foreign_key "payments", "orders"
   add_foreign_key "payments", "users"
