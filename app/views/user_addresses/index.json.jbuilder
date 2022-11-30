@@ -1,1 +1,1 @@
-json.array! @user_adresses, partial: "user_adresses/user_adress", as: :user_adress
+json.array! @user_addresses, partial: "user_addresses/user_address", as: :user_address

@@ -16,7 +16,7 @@ class OrdersTest < ApplicationSystemTestCase
 
     fill_in "Cart id", with: @order.Cart_ID
     fill_in "User id", with: @order.User_ID
-    fill_in "User adress id", with: @order.User_adress_ID
+    fill_in "User address id", with: @order.User_address_ID
     click_on "Create Order"
 
     assert_text "Order was successfully created"
@@ -29,7 +29,7 @@ class OrdersTest < ApplicationSystemTestCase
 
     fill_in "Cart id", with: @order.Cart_ID
     fill_in "User id", with: @order.User_ID
-    fill_in "User adress id", with: @order.User_adress_ID
+    fill_in "User address id", with: @order.User_address_ID
     click_on "Update Order"
 
     assert_text "Order was successfully updated"

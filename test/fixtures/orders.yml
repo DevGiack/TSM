@@ -3,9 +3,9 @@
 one:
   Cart_ID: 1
   User_ID: 1
-  User_adress_ID: 1
+  User_address_ID: 1
 
 two:
   Cart_ID: 1
   User_ID: 1
-  User_adress_ID: 1
+  User_address_ID: 1

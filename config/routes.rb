@@ -8,7 +8,7 @@ Rails.application.routes.draw do
   end
 
   resources :admin_types
-  resources :user_adresses
+  resources :user_addresses
   resources :payments
   resources :orders
   resources :carts

@@ -85,7 +85,7 @@ ActiveRecord::Schema[7.0].define(version: 2022_11_28_170639) do
     t.index ["product_id"], name: "index_stocks_on_product_id"
   end
 
-  create_table "user_adresses", force: :cascade do |t|
+  create_table "user_addresses", force: :cascade do |t|
     t.integer "address_number"
     t.string "address_street"
     t.string "address_city"
@@ -96,7 +96,7 @@ ActiveRecord::Schema[7.0].define(version: 2022_11_28_170639) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.bigint "user_id"
-    t.index ["user_id"], name: "index_user_adresses_on_user_id"
+    t.index ["user_id"], name: "index_user_addresses_on_user_id"
   end
 
   create_table "users", force: :cascade do |t|
@@ -128,5 +128,5 @@ ActiveRecord::Schema[7.0].define(version: 2022_11_28_170639) do
   add_foreign_key "payments", "users"
   add_foreign_key "products", "product_categories"
   add_foreign_key "stocks", "products"
-  add_foreign_key "user_adresses", "users"
+  add_foreign_key "user_addresses", "users"
 end
