@@ -7,13 +7,13 @@ Rails.application.routes.draw do
     get 'cancel', to: 'checkout#cancel', as: 'checkout_cancel'
   end
 
+  #Admin
   namespace :admin do
-    root 'admin#index'
+    root "admin#index"
     resources :user
   end
 
-  resources :admin
-  resources :admin_types
+  
   resources :user_adresses
   resources :payments
   resources :orders
