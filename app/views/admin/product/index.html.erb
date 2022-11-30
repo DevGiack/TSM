@@ -3,7 +3,7 @@
 <p> index de product du pannel admin</p>
 
 <% @products.each do |product|%>
-    <p>Utilisateur numéro <%=product.id%><p>
+    <p>Produit numéro <%=product.id%><p>
     <p><%=product.name%></p>
     <%=link_to 'Plus de détails', admin_product_path(product.id)%>
 <%end%> 
