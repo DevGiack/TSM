@@ -3,3 +3,13 @@ require_relative "application"
 
 # Initialize the Rails application.
 Rails.application.initialize!
+
+ActionMailer::Base.smtp_settings = {
+    :user_name => 'devgiack@protonmail.com',
+    :password => 'LKP0pyqtGxOrJ2F1',
+    :domain => 'localhost',
+    :address => 'smtp-relay.sendinblue.com',
+    :port => 587,
+    :authentication => :plain,
+    :enable_starttls_auto => true
+  }

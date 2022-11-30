@@ -13,6 +13,7 @@ Rails.application.configure do
 
   # Show full error reports.
   config.consider_all_requests_local = true
+  config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
 
   # Enable server timing
   config.server_timing = true
@@ -69,6 +70,6 @@ Rails.application.configure do
   # config.action_cable.disable_request_forgery_protection = true
 
   #Devise configuration
-  config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
+  
   #n production, :host should be set to the actual host of your application.
 end

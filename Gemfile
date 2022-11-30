@@ -53,15 +53,16 @@ gem "better_errors"
 gem "table_print"
 gem "rubocop"
 gem "faker"
+gem "dotenv"
 
 #Users 
 gem "devise"
 
-#Local Mailer
-gem "letter_opener"
-
 #Payement 
 gem "stripe"
+
+#API
+gem "dotenv-rails"
 
 
 group :development, :test do
