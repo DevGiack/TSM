@@ -5,8 +5,8 @@ require_relative "application"
 Rails.application.initialize!
 
 ActionMailer::Base.smtp_settings = {
-    :user_name => 'devgiack@protonmail.com',
-    :password => 'LKP0pyqtGxOrJ2F1',
+    :user_name => 'the-cat-shop@outlook.com',
+    :password => ENV['SENDINBLUE'],
     :domain => 'localhost',
     :address => 'smtp-relay.sendinblue.com',
     :port => 587,
