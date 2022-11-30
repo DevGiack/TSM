@@ -3,14 +3,151 @@
   <head>
     <title>CatShop</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <%= csrf_meta_tags %>
+    <link rel="stylesheet" href="application.css">
     <%= csp_meta_tag %>
 
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <%= javascript_importmap_tags %>
+
+    <script src="https://kit.fontawesome.com/3b6e0b8eb1.js" crossorigin="anonymous"></script>
   </head>
 
   <body>
-    <%= yield %>
+    <div class="container">
+      <div class="header">
+        <div class="logo">
+          Logo
+        </div>
+        <div class="accueil">
+          Accueil
+        </div>
+        <div class="produits">
+          produits
+        </div>
+        <div class="recettes">
+          recettes
+        </div>
+        <div class="panier">
+          panier
+        </div>
+        <div class="connexion">
+          connexion
+        </div>
+        <div class="icone_rechercher">
+          <i class="fa-light fa-magnifying-glass"></i>
+        </div>
+        <div class="icone_panier">
+          <i class="fa-light fa-cart-shopping"></i>
+        </div>
+        <div class="icone_profil">
+          <i class="fa-light fa-circle-user"></i>
+        </div>
+      </div>
+    </div>
+
+    <div class="banner" style="background-image: url(kitty3_1280.jpg);">
+      <div class="banner_title">
+        <h1>Vente de truffes fraîches</h1>
+      </div>
+      <div class="banner_text">
+        <div class="text_area"></div>
+      </div>
+      <div class="btn-produits">
+        <button class="button btn-light" role="button">Nos produits</button>
+      </div>
+      <div class="btn-propos">
+        <button class="button btn-outline-light" role="button">A propos</button>
+      </div>
+    </div>
+
+    <div class="footer">
+      <div class="footer_head">
+        <div class="footer_accueil">
+          Acceuil
+        </div>
+        <div class="footer_produits">
+          Produits
+        </div>
+        <div class="footer_recettes">
+          Recettes
+        </div>
+        <div class="footer_panier">
+          Panier
+        </div>
+        <div class="footer_contact">
+          Contact
+        </div>
+      </div>
+      <div class="footer_body">
+        <div class="fbody_description">
+          <div class="fdescription_title">
+            <div class="dtitle">
+              <h4>Truffe</h4>
+            </div>
+          </div>
+          <div class="description_text">
+            <p>Site de vente de truffes fraîches melanosporum aux professionnels et particuliers</p>
+          </div>
+        </div>
+        <div class="fbody_links">
+          <div class="links_truffe">
+            <div class="ltruffe_title">
+              <h4>Truffe</h4>
+            </div>
+            <div class="ltruffe_1">
+              lien truffe 1
+            </div>
+            <div class="ltruffe_2">
+              lien truffe 2
+            </div>
+          </div>
+          <div class="links_pages">
+            <div class="lpage_title">
+              <h4>Pages</h4>
+            </div>
+            <div class="lpage_1">
+              lien page 1
+            </div>
+            <div class="lpage_2">
+              lien page 2
+            </div>
+          </div>
+          <div class="links_support">
+            <div class="lsupport_title">
+              <h4>Support</h4>
+            </div>
+            <div class="lsupport_1">
+              lien support 1
+            </div>
+            <div class="lsupport_2">
+              lien support 2
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer_end">
+        <div class="fcredit">
+          <div class="credits">
+            <p><i class="fa-light fa-circle-c"></i>2003 - Truffe - all rights reserved</p>
+          </div>
+        </div>
+        <div class="fsocial_media">
+          <div class="s_media">
+            <div class="instagram" href="#">
+              <i class="fa-brands fa-instagram"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
   </body>
 </html>
+
+
+
+
+
+
+
