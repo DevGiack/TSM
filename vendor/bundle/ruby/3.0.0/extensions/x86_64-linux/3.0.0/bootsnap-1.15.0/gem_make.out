@@ -1,0 +1,15 @@
+current directory: /home/anon/Bureau/THP/W10/D1/stripe/The_cat_shop/vendor/bundle/ruby/3.0.0/gems/bootsnap-1.15.0/ext/bootsnap
+/usr/share/rvm/rubies/ruby-3.0.0/bin/ruby -I /usr/share/rvm/rubies/ruby-3.0.0/lib/ruby/3.0.0 -r ./siteconf20221129-8729-qgy5bp.rb extconf.rb
+creating Makefile
+
+current directory: /home/anon/Bureau/THP/W10/D1/stripe/The_cat_shop/vendor/bundle/ruby/3.0.0/gems/bootsnap-1.15.0/ext/bootsnap
+make "DESTDIR=" clean
+
+current directory: /home/anon/Bureau/THP/W10/D1/stripe/The_cat_shop/vendor/bundle/ruby/3.0.0/gems/bootsnap-1.15.0/ext/bootsnap
+make "DESTDIR="
+compiling bootsnap.c
+linking shared-object bootsnap/bootsnap.so
+
+current directory: /home/anon/Bureau/THP/W10/D1/stripe/The_cat_shop/vendor/bundle/ruby/3.0.0/gems/bootsnap-1.15.0/ext/bootsnap
+make "DESTDIR=" install
+/usr/bin/install -m 0755 bootsnap.so ./.gem.20221129-8729-1mxwy1/bootsnap
