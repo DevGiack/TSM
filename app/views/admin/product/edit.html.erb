@@ -1,0 +1,11 @@
+<%= form_tag url_for(action: 'update'), method: "put" do %>
+     <%= label_tag 'Name' %>
+     <%= text_field_tag 'name', @products.name %>
+     <br /> <br />
+
+     <%= label_tag 'Description' %>
+     <%= text_area_tag 'description', @products.description %>
+     <br /> <br />
+
+     <%= submit_tag "Edit product" %>
+<% end %>

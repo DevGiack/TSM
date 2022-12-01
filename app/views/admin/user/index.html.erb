@@ -1,0 +1,10 @@
+<div>
+
+<% @users.each do |user|%>
+    <p>Utilisateur numéro <%=user.id%><p>
+    <p><%=user.first_name%></p>
+    <p><%=user.email%></p>
+    <%=link_to 'Plus de détails', admin_user_path(user.id)%>
+<%end%> 
+
+</div>
