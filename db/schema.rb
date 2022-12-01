@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_11_28_170639) do
+ActiveRecord::Schema[7.0].define(version: 2022_12_01_135059) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -22,7 +22,7 @@ ActiveRecord::Schema[7.0].define(version: 2022_11_28_170639) do
   end
 
   create_table "carts", force: :cascade do |t|
-    t.integer "quantity"
+    t.integer "Quantity"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.bigint "product_id"
@@ -30,9 +30,9 @@ ActiveRecord::Schema[7.0].define(version: 2022_11_28_170639) do
   end
 
   create_table "discounts", force: :cascade do |t|
-    t.string "name"
-    t.integer "discount_percent"
-    t.boolean "active"
+    t.string "Name"
+    t.integer "Discount_percent"
+    t.boolean "Active"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.bigint "product_id"
@@ -44,14 +44,16 @@ ActiveRecord::Schema[7.0].define(version: 2022_11_28_170639) do
     t.datetime "updated_at", null: false
     t.bigint "cart_id"
     t.bigint "user_id"
+    t.bigint "user_adress_id"
     t.index ["cart_id"], name: "index_orders_on_cart_id"
+    t.index ["user_adress_id"], name: "index_orders_on_user_adress_id"
     t.index ["user_id"], name: "index_orders_on_user_id"
   end
 
   create_table "payments", force: :cascade do |t|
-    t.string "payment_type"
-    t.boolean "status"
-    t.float "amount"
+    t.string "Payment_type"
+    t.boolean "Status"
+    t.float "Amount"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.bigint "user_id"
@@ -61,42 +63,36 @@ ActiveRecord::Schema[7.0].define(version: 2022_11_28_170639) do
   end
 
   create_table "product_categories", force: :cascade do |t|
-    t.string "name"
+    t.string "Name"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
   create_table "products", force: :cascade do |t|
-    t.string "name"
-    t.text "description"
-    t.string "unity"
+    t.string "Name"
+    t.text "Description"
+    t.string "Unity"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.float "price"
+    t.float "Price"
     t.bigint "product_category_id"
     t.index ["product_category_id"], name: "index_products_on_product_category_id"
   end
 
   create_table "stocks", force: :cascade do |t|
-    t.integer "quantity_gr"
+    t.integer "Quantity_gr"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.bigint "product_id"
     t.index ["product_id"], name: "index_stocks_on_product_id"
   end
 
-  create_table "user_addresses", force: :cascade do |t|
-    t.integer "address_number"
-    t.string "address_street"
-    t.string "address_city"
-    t.integer "address_zip"
-    t.string "address_state"
-    t.string "address_country"
-    t.string "address_type"
+  create_table "user_adresses", force: :cascade do |t|
+    t.integer "test"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.bigint "user_id"
-    t.index ["user_id"], name: "index_user_addresses_on_user_id"
+    t.index ["user_id"], name: "index_user_adresses_on_user_id"
   end
 
   create_table "users", force: :cascade do |t|
@@ -105,16 +101,13 @@ ActiveRecord::Schema[7.0].define(version: 2022_11_28_170639) do
     t.string "reset_password_token"
     t.datetime "reset_password_sent_at"
     t.datetime "remember_created_at"
-    t.string "confirmation_token"
-    t.datetime "confirmed_at"
-    t.datetime "confirmation_sent_at"
-    t.string "unconfirmed_email"
     t.string "first_name"
     t.string "last_name"
     t.string "phone"
     t.datetime "last_login", precision: nil
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "remember_digest"
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
@@ -123,10 +116,11 @@ ActiveRecord::Schema[7.0].define(version: 2022_11_28_170639) do
   add_foreign_key "carts", "products"
   add_foreign_key "discounts", "products"
   add_foreign_key "orders", "carts"
+  add_foreign_key "orders", "user_adresses"
   add_foreign_key "orders", "users"
   add_foreign_key "payments", "orders"
   add_foreign_key "payments", "users"
   add_foreign_key "products", "product_categories"
   add_foreign_key "stocks", "products"
-  add_foreign_key "user_addresses", "users"
+  add_foreign_key "user_adresses", "users"
 end

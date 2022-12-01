@@ -14,3 +14,17 @@
  *= require card
  *= require button
  */
+
+ .cookies-modal {
+    
+    left: 0.5rem;
+    bottom: 0.5rem;
+    z-index: 2;
+    background: #5f5f5f;
+    word-break: break-word;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    min-width: 50%;
+    max-width: 24rem;
+
+ }

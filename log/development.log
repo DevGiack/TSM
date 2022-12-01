@@ -5965,3 +5965,1119 @@ Processing by HomeController#index as TURBO_STREAM
 Completed 200 OK in 11ms (Views: 10.4ms | ActiveRecord: 0.0ms | Allocations: 3924)
 
 
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_try_advisory_lock(4525132559246056695)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.6ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(4525132559246056695)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+Started GET "/" for 127.0.0.1 at 2022-12-01 11:41:20 +0100
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 459)
+  Rendered layout layouts/application.html.erb (Duration: 351.4ms | Allocations: 132210)
+Completed 200 OK in 359ms (Views: 354.8ms | ActiveRecord: 0.0ms | Allocations: 138887)
+
+
+Started GET "/application.css" for 127.0.0.1 at 2022-12-01 11:41:20 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/application.css"):
+  
+Started GET "/kitty3_1280.jpg" for 127.0.0.1 at 2022-12-01 11:41:20 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/kitty3_1280.jpg"):
+  
+Started GET "/cookies" for 127.0.0.1 at 2022-12-01 11:42:41 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/cookies"):
+  
+Started GET "/rails/info/routes" for 127.0.0.1 at 2022-12-01 11:42:58 +0100
+Processing by Rails::InfoController#routes as HTML
+  Rendering layout vendor/bundle/ruby/3.0.0/gems/railties-7.0.4/lib/rails/templates/layouts/application.html.erb
+  Rendering vendor/bundle/ruby/3.0.0/gems/railties-7.0.4/lib/rails/templates/rails/info/routes.html.erb within layouts/application
+  Rendered collection of vendor/bundle/ruby/3.0.0/gems/actionpack-7.0.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb [126 times] (Duration: 15.3ms | Allocations: 18747)
+  Rendered vendor/bundle/ruby/3.0.0/gems/actionpack-7.0.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (Duration: 0.8ms | Allocations: 992)
+  Rendered vendor/bundle/ruby/3.0.0/gems/railties-7.0.4/lib/rails/templates/rails/info/routes.html.erb within layouts/application (Duration: 20.7ms | Allocations: 29996)
+  Rendered layout vendor/bundle/ruby/3.0.0/gems/railties-7.0.4/lib/rails/templates/layouts/application.html.erb (Duration: 21.3ms | Allocations: 30317)
+Completed 200 OK in 23ms (Views: 22.2ms | ActiveRecord: 0.0ms | Allocations: 31388)
+
+
+Started GET "/rails/info/routes" for 127.0.0.1 at 2022-12-01 11:43:41 +0100
+Processing by Rails::InfoController#routes as HTML
+  Rendering layout vendor/bundle/ruby/3.0.0/gems/railties-7.0.4/lib/rails/templates/layouts/application.html.erb
+  Rendering vendor/bundle/ruby/3.0.0/gems/railties-7.0.4/lib/rails/templates/rails/info/routes.html.erb within layouts/application
+  Rendered collection of vendor/bundle/ruby/3.0.0/gems/actionpack-7.0.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb [126 times] (Duration: 12.8ms | Allocations: 18746)
+  Rendered vendor/bundle/ruby/3.0.0/gems/actionpack-7.0.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (Duration: 0.9ms | Allocations: 992)
+  Rendered vendor/bundle/ruby/3.0.0/gems/railties-7.0.4/lib/rails/templates/rails/info/routes.html.erb within layouts/application (Duration: 18.7ms | Allocations: 30000)
+  Rendered layout vendor/bundle/ruby/3.0.0/gems/railties-7.0.4/lib/rails/templates/layouts/application.html.erb (Duration: 19.1ms | Allocations: 30320)
+Completed 200 OK in 21ms (Views: 20.1ms | ActiveRecord: 0.0ms | Allocations: 31345)
+
+
+Started GET "/" for 127.0.0.1 at 2022-12-01 11:44:42 +0100
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 100)
+  Rendered layout layouts/application.html.erb (Duration: 8.1ms | Allocations: 15487)
+Completed 200 OK in 10ms (Views: 9.1ms | ActiveRecord: 0.0ms | Allocations: 16491)
+
+
+Started GET "/application.css" for 127.0.0.1 at 2022-12-01 11:44:42 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/application.css"):
+  
+Started GET "/kitty3_1280.jpg" for 127.0.0.1 at 2022-12-01 11:44:42 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/kitty3_1280.jpg"):
+  
+Started GET "/" for 127.0.0.1 at 2022-12-01 11:47:45 +0100
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 101)
+  Rendered layout layouts/application.html.erb (Duration: 3.3ms | Allocations: 3521)
+Completed 200 OK in 5ms (Views: 4.5ms | ActiveRecord: 0.0ms | Allocations: 4565)
+
+
+Started GET "/application.css" for 127.0.0.1 at 2022-12-01 11:47:45 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/application.css"):
+  
+Started GET "/cookies" for 127.0.0.1 at 2022-12-01 11:47:45 +0100
+Processing by CookiesController#index as HTML
+  Rendering cookies/index.html.erb
+  Rendered cookies/index.html.erb (Duration: 0.4ms | Allocations: 191)
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.0ms | Allocations: 1089)
+
+
+Started GET "/kitty3_1280.jpg" for 127.0.0.1 at 2022-12-01 11:47:45 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/kitty3_1280.jpg"):
+  
+Started GET "/" for 127.0.0.1 at 2022-12-01 11:52:52 +0100
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 101)
+  Rendered layout layouts/application.html.erb (Duration: 5.7ms | Allocations: 8333)
+Completed 200 OK in 7ms (Views: 6.8ms | Allocations: 9370)
+
+
+Started GET "/application.css" for 127.0.0.1 at 2022-12-01 11:52:52 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/application.css"):
+  
+Started GET "/cookies" for 127.0.0.1 at 2022-12-01 11:52:52 +0100
+Processing by CookiesController#index as HTML
+  Rendering cookies/index.html.erb
+  Rendered cookies/index.html.erb (Duration: 0.4ms | Allocations: 193)
+Completed 200 OK in 2ms (Views: 1.2ms | Allocations: 953)
+
+
+Started GET "/kitty3_1280.jpg" for 127.0.0.1 at 2022-12-01 11:52:52 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/kitty3_1280.jpg"):
+  
+Started GET "/" for 127.0.0.1 at 2022-12-01 11:54:23 +0100
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 101)
+  Rendered layout layouts/application.html.erb (Duration: 2.4ms | Allocations: 3479)
+Completed 200 OK in 4ms (Views: 3.2ms | Allocations: 4516)
+
+
+Started GET "/application.css" for 127.0.0.1 at 2022-12-01 11:54:23 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/application.css"):
+  
+Started GET "/kitty3_1280.jpg" for 127.0.0.1 at 2022-12-01 11:54:23 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/kitty3_1280.jpg"):
+  
+Started GET "/cookies" for 127.0.0.1 at 2022-12-01 11:54:23 +0100
+Processing by CookiesController#index as HTML
+  Rendering cookies/index.html.erb
+  Rendered cookies/index.html.erb (Duration: 0.3ms | Allocations: 192)
+Completed 200 OK in 2ms (Views: 1.1ms | Allocations: 954)
+
+
+Started GET "/" for 127.0.0.1 at 2022-12-01 11:54:36 +0100
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 355)
+  Rendered layout layouts/application.html.erb (Duration: 98.3ms | Allocations: 60887)
+Completed 200 OK in 104ms (Views: 100.0ms | ActiveRecord: 0.0ms | Allocations: 66406)
+
+
+Started GET "/application.css" for 127.0.0.1 at 2022-12-01 11:54:36 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/application.css"):
+  
+Started GET "/cookies" for 127.0.0.1 at 2022-12-01 11:54:36 +0100
+Processing by CookiesController#index as HTML
+  Rendering cookies/index.html.erb
+  Rendered cookies/index.html.erb (Duration: 0.9ms | Allocations: 562)
+Completed 200 OK in 2ms (Views: 2.1ms | ActiveRecord: 0.0ms | Allocations: 1505)
+
+
+Started GET "/kitty3_1280.jpg" for 127.0.0.1 at 2022-12-01 11:54:36 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/kitty3_1280.jpg"):
+  
+Started GET "/" for 127.0.0.1 at 2022-12-01 11:54:45 +0100
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 4.9ms | Allocations: 7546)
+Completed 200 OK in 5ms (Views: 5.2ms | ActiveRecord: 0.0ms | Allocations: 7862)
+
+
+Started GET "/application.css" for 127.0.0.1 at 2022-12-01 11:54:45 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/application.css"):
+  
+Started GET "/kitty3_1280.jpg" for 127.0.0.1 at 2022-12-01 11:54:45 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/kitty3_1280.jpg"):
+  
+Started GET "/cookies" for 127.0.0.1 at 2022-12-01 11:54:45 +0100
+Processing by CookiesController#index as HTML
+  Rendering cookies/index.html.erb
+  Rendered cookies/index.html.erb (Duration: 0.1ms | Allocations: 52)
+Completed 200 OK in 1ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 332)
+
+
+Started GET "/" for 127.0.0.1 at 2022-12-01 11:56:38 +0100
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 4.9ms | Allocations: 7216)
+Completed 200 OK in 5ms (Views: 5.2ms | ActiveRecord: 0.0ms | Allocations: 7527)
+
+
+Started GET "/application.css" for 127.0.0.1 at 2022-12-01 11:56:38 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/application.css"):
+  
+Started GET "/kitty3_1280.jpg" for 127.0.0.1 at 2022-12-01 11:56:38 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/kitty3_1280.jpg"):
+  
+Started GET "/cookies" for 127.0.0.1 at 2022-12-01 11:56:38 +0100
+Processing by CookiesController#index as HTML
+  Rendering cookies/index.html.erb
+  Rendered cookies/index.html.erb (Duration: 0.1ms | Allocations: 52)
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 330)
+
+
+Started GET "/" for 127.0.0.1 at 2022-12-01 11:58:13 +0100
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 4.5ms | Allocations: 6591)
+Completed 200 OK in 5ms (Views: 4.9ms | ActiveRecord: 0.0ms | Allocations: 6902)
+
+
+Started GET "/application.css" for 127.0.0.1 at 2022-12-01 11:58:13 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/application.css"):
+  
+Started GET "/kitty3_1280.jpg" for 127.0.0.1 at 2022-12-01 11:58:13 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/kitty3_1280.jpg"):
+  
+Started GET "/cookies" for 127.0.0.1 at 2022-12-01 11:58:13 +0100
+Processing by CookiesController#index as HTML
+  Rendering cookies/index.html.erb
+  Rendered cookies/index.html.erb (Duration: 0.1ms | Allocations: 52)
+Completed 200 OK in 1ms (Views: 0.5ms | ActiveRecord: 0.0ms | Allocations: 331)
+
+
+Started GET "/" for 127.0.0.1 at 2022-12-01 12:00:11 +0100
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 101)
+  Rendered layout layouts/application.html.erb (Duration: 3.1ms | Allocations: 3518)
+Completed 200 OK in 4ms (Views: 4.0ms | ActiveRecord: 0.0ms | Allocations: 4556)
+
+
+Started GET "/application.css" for 127.0.0.1 at 2022-12-01 12:00:11 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/application.css"):
+  
+Started GET "/kitty3_1280.jpg" for 127.0.0.1 at 2022-12-01 12:00:11 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/kitty3_1280.jpg"):
+  
+Started GET "/cookies" for 127.0.0.1 at 2022-12-01 12:00:11 +0100
+Processing by CookiesController#index as HTML
+  Rendering cookies/index.html.erb
+  Rendered cookies/index.html.erb (Duration: 0.5ms | Allocations: 416)
+Completed 200 OK in 1ms (Views: 1.1ms | ActiveRecord: 0.0ms | Allocations: 1180)
+
+
+Started GET "/cookies?cookies_accepted=true" for 127.0.0.1 at 2022-12-01 12:00:13 +0100
+Processing by CookiesController#index as HTML
+  Parameters: {"cookies_accepted"=>"true"}
+  Rendering cookies/index.html.erb
+  Rendered cookies/index.html.erb (Duration: 0.2ms | Allocations: 165)
+Completed 200 OK in 1ms (Views: 0.5ms | ActiveRecord: 0.0ms | Allocations: 448)
+
+
+Started GET "/cookies?cookies_accepted=false" for 127.0.0.1 at 2022-12-01 12:00:14 +0100
+Processing by CookiesController#index as HTML
+  Parameters: {"cookies_accepted"=>"false"}
+  Rendering cookies/index.html.erb
+  Rendered cookies/index.html.erb (Duration: 0.2ms | Allocations: 164)
+Completed 200 OK in 1ms (Views: 0.5ms | ActiveRecord: 0.0ms | Allocations: 442)
+
+
+Started GET "/cookies?cookies_accepted=true" for 127.0.0.1 at 2022-12-01 12:00:15 +0100
+Processing by CookiesController#index as HTML
+  Parameters: {"cookies_accepted"=>"true"}
+  Rendering cookies/index.html.erb
+  Rendered cookies/index.html.erb (Duration: 0.2ms | Allocations: 164)
+Completed 200 OK in 1ms (Views: 0.5ms | ActiveRecord: 0.0ms | Allocations: 442)
+
+
+Started GET "/cookies?cookies_accepted=true" for 127.0.0.1 at 2022-12-01 12:00:43 +0100
+Processing by CookiesController#index as HTML
+  Parameters: {"cookies_accepted"=>"true"}
+  Rendering layout layouts/application.html.erb
+  Rendering cookies/index.html.erb within layouts/application
+  Rendered cookies/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 164)
+  Rendered layout layouts/application.html.erb (Duration: 1.8ms | Allocations: 3017)
+Completed 200 OK in 2ms (Views: 2.1ms | Allocations: 3390)
+
+
+Started GET "/application.css" for 127.0.0.1 at 2022-12-01 12:00:43 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/application.css"):
+  
+Started GET "/kitty3_1280.jpg" for 127.0.0.1 at 2022-12-01 12:00:43 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/kitty3_1280.jpg"):
+  
+Started GET "/cookies" for 127.0.0.1 at 2022-12-01 12:00:43 +0100
+Processing by CookiesController#index as HTML
+  Rendering cookies/index.html.erb
+  Rendered cookies/index.html.erb (Duration: 0.2ms | Allocations: 164)
+Completed 200 OK in 1ms (Views: 0.5ms | Allocations: 440)
+
+
+Started GET "/cookies?cookies_accepted=true" for 127.0.0.1 at 2022-12-01 12:03:10 +0100
+Processing by CookiesController#index as HTML
+  Parameters: {"cookies_accepted"=>"true"}
+  Rendering layout layouts/application.html.erb
+  Rendering cookies/index.html.erb within layouts/application
+  Rendered cookies/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 363)
+  Rendered layout layouts/application.html.erb (Duration: 7.4ms | Allocations: 15875)
+Completed 200 OK in 9ms (Views: 8.2ms | Allocations: 17046)
+
+
+Started GET "/application.css" for 127.0.0.1 at 2022-12-01 12:03:10 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/application.css"):
+  
+Started GET "/cookies" for 127.0.0.1 at 2022-12-01 12:03:10 +0100
+Processing by CookiesController#index as HTML
+  Rendering cookies/index.html.erb
+  Rendered cookies/index.html.erb (Duration: 0.2ms | Allocations: 164)
+Completed 200 OK in 1ms (Views: 0.6ms | Allocations: 615)
+
+
+Started GET "/kitty3_1280.jpg" for 127.0.0.1 at 2022-12-01 12:03:10 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/kitty3_1280.jpg"):
+  
+Started GET "/cookies?cookies_accepted=true" for 127.0.0.1 at 2022-12-01 12:03:11 +0100
+Processing by CookiesController#index as HTML
+  Parameters: {"cookies_accepted"=>"true"}
+  Rendering cookies/index.html.erb
+  Rendered cookies/index.html.erb (Duration: 0.2ms | Allocations: 164)
+Completed 200 OK in 4ms (Views: 0.5ms | Allocations: 604)
+
+
+Started GET "/cookies?cookies_accepted=false" for 127.0.0.1 at 2022-12-01 12:03:12 +0100
+Processing by CookiesController#index as HTML
+  Parameters: {"cookies_accepted"=>"false"}
+  Rendering cookies/index.html.erb
+  Rendered cookies/index.html.erb (Duration: 0.2ms | Allocations: 164)
+Completed 200 OK in 1ms (Views: 0.4ms | Allocations: 610)
+
+
+Started GET "/cookies?cookies_accepted=true" for 127.0.0.1 at 2022-12-01 12:03:13 +0100
+Processing by CookiesController#index as HTML
+  Parameters: {"cookies_accepted"=>"true"}
+  Rendering layout layouts/application.html.erb
+  Rendering cookies/index.html.erb within layouts/application
+  Rendered cookies/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 164)
+  Rendered layout layouts/application.html.erb (Duration: 2.7ms | Allocations: 2945)
+Completed 200 OK in 4ms (Views: 3.2ms | Allocations: 3418)
+
+
+Started GET "/application.css" for 127.0.0.1 at 2022-12-01 12:03:13 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/application.css"):
+  
+Started GET "/kitty3_1280.jpg" for 127.0.0.1 at 2022-12-01 12:03:13 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/kitty3_1280.jpg"):
+  
+Started GET "/cookies" for 127.0.0.1 at 2022-12-01 12:03:13 +0100
+Processing by CookiesController#index as HTML
+  Rendering cookies/index.html.erb
+  Rendered cookies/index.html.erb (Duration: 0.2ms | Allocations: 164)
+Completed 200 OK in 1ms (Views: 0.5ms | Allocations: 603)
+
+
+Started GET "/cookies?cookies_accepted=false" for 127.0.0.1 at 2022-12-01 12:03:15 +0100
+Processing by CookiesController#index as HTML
+  Parameters: {"cookies_accepted"=>"false"}
+  Rendering cookies/index.html.erb
+  Rendered cookies/index.html.erb (Duration: 0.2ms | Allocations: 164)
+Completed 200 OK in 1ms (Views: 0.5ms | Allocations: 599)
+
+
+Started GET "/cookies?cookies_accepted=false" for 127.0.0.1 at 2022-12-01 12:03:16 +0100
+Processing by CookiesController#index as HTML
+  Parameters: {"cookies_accepted"=>"false"}
+  Rendering cookies/index.html.erb
+  Rendered cookies/index.html.erb (Duration: 0.2ms | Allocations: 164)
+Completed 200 OK in 1ms (Views: 0.6ms | Allocations: 602)
+
+
+Started GET "/cookies?cookies_accepted=false" for 127.0.0.1 at 2022-12-01 12:03:16 +0100
+Processing by CookiesController#index as HTML
+  Parameters: {"cookies_accepted"=>"false"}
+  Rendering cookies/index.html.erb
+  Rendered cookies/index.html.erb (Duration: 0.2ms | Allocations: 164)
+Completed 200 OK in 1ms (Views: 0.4ms | Allocations: 620)
+
+
+Started GET "/cookies?cookies_accepted=false" for 127.0.0.1 at 2022-12-01 12:03:16 +0100
+Processing by CookiesController#index as HTML
+  Parameters: {"cookies_accepted"=>"false"}
+  Rendering cookies/index.html.erb
+  Rendered cookies/index.html.erb (Duration: 0.2ms | Allocations: 164)
+Completed 200 OK in 1ms (Views: 0.4ms | Allocations: 606)
+
+
+Started GET "/cookies?cookies_accepted=false" for 127.0.0.1 at 2022-12-01 12:03:16 +0100
+Processing by CookiesController#index as HTML
+  Parameters: {"cookies_accepted"=>"false"}
+  Rendering cookies/index.html.erb
+  Rendered cookies/index.html.erb (Duration: 0.2ms | Allocations: 164)
+Completed 200 OK in 1ms (Views: 0.6ms | Allocations: 606)
+
+
+Started GET "/cookies?cookies_accepted=true" for 127.0.0.1 at 2022-12-01 12:03:22 +0100
+Processing by CookiesController#index as HTML
+  Parameters: {"cookies_accepted"=>"true"}
+  Rendering layout layouts/application.html.erb
+  Rendering cookies/index.html.erb within layouts/application
+  Rendered cookies/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 164)
+  Rendered layout layouts/application.html.erb (Duration: 2.0ms | Allocations: 2945)
+Completed 200 OK in 3ms (Views: 2.3ms | Allocations: 3418)
+
+
+Started GET "/application.css" for 127.0.0.1 at 2022-12-01 12:03:22 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/application.css"):
+  
+Started GET "/kitty3_1280.jpg" for 127.0.0.1 at 2022-12-01 12:03:22 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/kitty3_1280.jpg"):
+  
+Started GET "/cookies" for 127.0.0.1 at 2022-12-01 12:03:22 +0100
+Processing by CookiesController#index as HTML
+  Rendering cookies/index.html.erb
+  Rendered cookies/index.html.erb (Duration: 0.6ms | Allocations: 164)
+Completed 200 OK in 2ms (Views: 1.2ms | Allocations: 621)
+
+
+Started GET "/cookies?cookies_accepted=true" for 127.0.0.1 at 2022-12-01 12:03:54 +0100
+Processing by CookiesController#index as HTML
+  Parameters: {"cookies_accepted"=>"true"}
+  Rendering layout layouts/application.html.erb
+  Rendering cookies/index.html.erb within layouts/application
+  Rendered cookies/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 164)
+  Rendered layout layouts/application.html.erb (Duration: 2.0ms | Allocations: 2945)
+Completed 200 OK in 3ms (Views: 2.3ms | Allocations: 3407)
+
+
+Started GET "/application.css" for 127.0.0.1 at 2022-12-01 12:03:54 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/application.css"):
+  
+Started GET "/kitty3_1280.jpg" for 127.0.0.1 at 2022-12-01 12:03:54 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/kitty3_1280.jpg"):
+  
+Started GET "/cookies" for 127.0.0.1 at 2022-12-01 12:03:54 +0100
+Processing by CookiesController#index as HTML
+  Rendering cookies/index.html.erb
+  Rendered cookies/index.html.erb (Duration: 0.3ms | Allocations: 164)
+Completed 200 OK in 1ms (Views: 0.7ms | Allocations: 617)
+
+
+Started GET "/cookies?cookies_accepted=false" for 127.0.0.1 at 2022-12-01 12:03:55 +0100
+Processing by CookiesController#index as HTML
+  Parameters: {"cookies_accepted"=>"false"}
+  Rendering cookies/index.html.erb
+  Rendered cookies/index.html.erb (Duration: 0.2ms | Allocations: 164)
+Completed 200 OK in 1ms (Views: 0.4ms | Allocations: 599)
+
+
+Started GET "/cookies?cookies_accepted=true" for 127.0.0.1 at 2022-12-01 12:03:56 +0100
+Processing by CookiesController#index as HTML
+  Parameters: {"cookies_accepted"=>"true"}
+  Rendering layout layouts/application.html.erb
+  Rendering cookies/index.html.erb within layouts/application
+  Rendered cookies/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 164)
+  Rendered layout layouts/application.html.erb (Duration: 2.3ms | Allocations: 2945)
+Completed 200 OK in 3ms (Views: 2.7ms | Allocations: 3420)
+
+
+Started GET "/application.css" for 127.0.0.1 at 2022-12-01 12:03:57 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/application.css"):
+  
+Started GET "/kitty3_1280.jpg" for 127.0.0.1 at 2022-12-01 12:03:57 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/kitty3_1280.jpg"):
+  
+Started GET "/cookies" for 127.0.0.1 at 2022-12-01 12:03:57 +0100
+Processing by CookiesController#index as HTML
+  Rendering cookies/index.html.erb
+  Rendered cookies/index.html.erb (Duration: 0.2ms | Allocations: 164)
+Completed 200 OK in 1ms (Views: 0.4ms | Allocations: 611)
+
+
+Started GET "/cookies?cookies_accepted=true" for 127.0.0.1 at 2022-12-01 12:04:49 +0100
+Processing by CookiesController#index as HTML
+  Parameters: {"cookies_accepted"=>"true"}
+  Rendering layout layouts/application.html.erb
+  Rendering cookies/index.html.erb within layouts/application
+  Rendered cookies/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 193)
+  Rendered layout layouts/application.html.erb (Duration: 7.2ms | Allocations: 15185)
+Completed 200 OK in 9ms (Views: 8.2ms | Allocations: 16122)
+
+
+Started GET "/application.css" for 127.0.0.1 at 2022-12-01 12:04:49 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/application.css"):
+  
+Started GET "/kitty3_1280.jpg" for 127.0.0.1 at 2022-12-01 12:04:49 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/kitty3_1280.jpg"):
+  
+Started GET "/cookies" for 127.0.0.1 at 2022-12-01 12:04:49 +0100
+Processing by CookiesController#index as HTML
+  Rendering cookies/index.html.erb
+  Rendered cookies/index.html.erb (Duration: 0.2ms | Allocations: 164)
+Completed 200 OK in 1ms (Views: 0.5ms | Allocations: 451)
+
+
+Started GET "/cookies?cookies_accepted=false" for 127.0.0.1 at 2022-12-01 12:04:51 +0100
+Processing by CookiesController#index as HTML
+  Parameters: {"cookies_accepted"=>"false"}
+  Rendering cookies/index.html.erb
+  Rendered cookies/index.html.erb (Duration: 0.2ms | Allocations: 164)
+Completed 200 OK in 1ms (Views: 0.4ms | Allocations: 600)
+
+
+Started GET "/cookies?cookies_accepted=true" for 127.0.0.1 at 2022-12-01 12:04:52 +0100
+Processing by CookiesController#index as HTML
+  Parameters: {"cookies_accepted"=>"true"}
+  Rendering layout layouts/application.html.erb
+  Rendering cookies/index.html.erb within layouts/application
+  Rendered cookies/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 164)
+  Rendered layout layouts/application.html.erb (Duration: 1.7ms | Allocations: 2945)
+Completed 200 OK in 2ms (Views: 2.0ms | Allocations: 3432)
+
+
+Started GET "/application.css" for 127.0.0.1 at 2022-12-01 12:04:52 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/application.css"):
+  
+Started GET "/cookies" for 127.0.0.1 at 2022-12-01 12:04:52 +0100
+Processing by CookiesController#index as HTML
+  Rendering cookies/index.html.erb
+  Rendered cookies/index.html.erb (Duration: 0.3ms | Allocations: 164)
+Completed 200 OK in 1ms (Views: 0.6ms | Allocations: 451)
+
+
+Started GET "/kitty3_1280.jpg" for 127.0.0.1 at 2022-12-01 12:04:52 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/kitty3_1280.jpg"):
+  
+Started GET "/cookies?cookies_accepted=true" for 127.0.0.1 at 2022-12-01 12:07:15 +0100
+Processing by CookiesController#index as HTML
+  Parameters: {"cookies_accepted"=>"true"}
+  Rendering layout layouts/application.html.erb
+  Rendering cookies/index.html.erb within layouts/application
+  Rendered cookies/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 263)
+  Rendered layout layouts/application.html.erb (Duration: 2.6ms | Allocations: 3648)
+Completed 200 OK in 4ms (Views: 3.6ms | Allocations: 4850)
+
+
+Started GET "/application.css" for 127.0.0.1 at 2022-12-01 12:07:15 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/application.css"):
+  
+Started GET "/cookies" for 127.0.0.1 at 2022-12-01 12:07:15 +0100
+Processing by CookiesController#index as HTML
+  Rendering cookies/index.html.erb
+  Rendered cookies/index.html.erb (Duration: 0.2ms | Allocations: 215)
+Completed 200 OK in 1ms (Views: 0.7ms | Allocations: 502)
+
+
+Started GET "/kitty3_1280.jpg" for 127.0.0.1 at 2022-12-01 12:07:15 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/kitty3_1280.jpg"):
+  
+Started GET "/cookies?cookies_accepted=true" for 127.0.0.1 at 2022-12-01 12:08:59 +0100
+Processing by CookiesController#index as HTML
+  Parameters: {"cookies_accepted"=>"true"}
+  Rendering layout layouts/application.html.erb
+  Rendering cookies/index.html.erb within layouts/application
+  Rendered cookies/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 261)
+  Rendered layout layouts/application.html.erb (Duration: 2.3ms | Allocations: 3566)
+Completed 200 OK in 4ms (Views: 3.1ms | Allocations: 4772)
+
+
+Started GET "/application.css" for 127.0.0.1 at 2022-12-01 12:08:59 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/application.css"):
+  
+Started GET "/kitty3_1280.jpg" for 127.0.0.1 at 2022-12-01 12:08:59 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/kitty3_1280.jpg"):
+  
+Started GET "/cookies?cookies_accepted=true" for 127.0.0.1 at 2022-12-01 12:10:43 +0100
+Processing by CookiesController#index as HTML
+  Parameters: {"cookies_accepted"=>"true"}
+  Rendering layout layouts/application.html.erb
+  Rendering cookies/index.html.erb within layouts/application
+  Rendered cookies/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 67)
+  Rendered layout layouts/application.html.erb (Duration: 12.2ms | Allocations: 15010)
+Completed 200 OK in 13ms (Views: 12.9ms | Allocations: 15947)
+
+
+Started GET "/application.css" for 127.0.0.1 at 2022-12-01 12:10:43 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/application.css"):
+  
+Started GET "/kitty3_1280.jpg" for 127.0.0.1 at 2022-12-01 12:10:43 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/kitty3_1280.jpg"):
+  
+Started GET "/" for 127.0.0.1 at 2022-12-01 12:11:12 +0100
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 355)
+  Rendered layout layouts/application.html.erb (Duration: 101.5ms | Allocations: 61501)
+Completed 200 OK in 109ms (Views: 103.1ms | ActiveRecord: 0.0ms | Allocations: 67330)
+
+
+Started GET "/application.css" for 127.0.0.1 at 2022-12-01 12:11:12 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/application.css"):
+  
+Started GET "/kitty3_1280.jpg" for 127.0.0.1 at 2022-12-01 12:11:12 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/kitty3_1280.jpg"):
+  
+Started GET "/cookies" for 127.0.0.1 at 2022-12-01 12:11:12 +0100
+Processing by CookiesController#index as HTML
+  Rendering cookies/index.html.erb
+  Rendered cookies/index.html.erb (Duration: 1.2ms | Allocations: 603)
+Completed 200 OK in 3ms (Views: 3.0ms | ActiveRecord: 0.0ms | Allocations: 1405)
+
+
+Started GET "/cookies?cookies_accepted=true" for 127.0.0.1 at 2022-12-01 12:11:14 +0100
+Processing by CookiesController#index as HTML
+  Parameters: {"cookies_accepted"=>"true"}
+  Rendering cookies/index.html.erb
+  Rendered cookies/index.html.erb (Duration: 0.1ms | Allocations: 56)
+Completed 200 OK in 1ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 501)
+
+
+Started GET "/" for 127.0.0.1 at 2022-12-01 12:11:22 +0100
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 1.6ms | Allocations: 2793)
+Completed 200 OK in 2ms (Views: 1.9ms | ActiveRecord: 0.0ms | Allocations: 3277)
+
+
+Started GET "/application.css" for 127.0.0.1 at 2022-12-01 12:11:22 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/application.css"):
+  
+Started GET "/kitty3_1280.jpg" for 127.0.0.1 at 2022-12-01 12:11:22 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/kitty3_1280.jpg"):
+  
+Started GET "/cookies" for 127.0.0.1 at 2022-12-01 12:11:22 +0100
+Processing by CookiesController#index as HTML
+  Rendering cookies/index.html.erb
+  Rendered cookies/index.html.erb (Duration: 0.5ms | Allocations: 325)
+Completed 200 OK in 1ms (Views: 0.9ms | ActiveRecord: 0.0ms | Allocations: 615)
+
+
+Started GET "/cookies?cookies_accepted=false" for 127.0.0.1 at 2022-12-01 12:11:23 +0100
+Processing by CookiesController#index as HTML
+  Parameters: {"cookies_accepted"=>"false"}
+  Rendering cookies/index.html.erb
+  Rendered cookies/index.html.erb (Duration: 0.1ms | Allocations: 56)
+Completed 200 OK in 1ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 492)
+
+
+Started GET "/" for 127.0.0.1 at 2022-12-01 12:11:31 +0100
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 9)
+  Rendered layout layouts/application.html.erb (Duration: 7.1ms | Allocations: 15110)
+Completed 200 OK in 8ms (Views: 8.0ms | ActiveRecord: 0.0ms | Allocations: 15884)
+
+
+Started GET "/application.css" for 127.0.0.1 at 2022-12-01 12:11:31 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/application.css"):
+  
+Started GET "/kitty3_1280.jpg" for 127.0.0.1 at 2022-12-01 12:11:31 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/kitty3_1280.jpg"):
+  
+Started GET "/" for 127.0.0.1 at 2022-12-01 12:11:33 +0100
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 6.4ms | Allocations: 2884)
+Completed 200 OK in 7ms (Views: 6.9ms | ActiveRecord: 0.0ms | Allocations: 3195)
+
+
+Started GET "/application.css" for 127.0.0.1 at 2022-12-01 12:11:33 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/application.css"):
+  
+Started GET "/kitty3_1280.jpg" for 127.0.0.1 at 2022-12-01 12:11:33 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/kitty3_1280.jpg"):
+  
+Started GET "/" for 127.0.0.1 at 2022-12-01 12:11:52 +0100
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 355)
+  Rendered layout layouts/application.html.erb (Duration: 150.2ms | Allocations: 44168)
+Completed 200 OK in 157ms (Views: 151.9ms | ActiveRecord: 0.0ms | Allocations: 49687)
+
+
+Started GET "/application.css" for 127.0.0.1 at 2022-12-01 12:11:52 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/application.css"):
+  
+Started GET "/kitty3_1280.jpg" for 127.0.0.1 at 2022-12-01 12:11:52 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/kitty3_1280.jpg"):
+  
+Started GET "/" for 127.0.0.1 at 2022-12-01 12:14:25 +0100
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 9)
+  Rendered layout layouts/application.html.erb (Duration: 6.1ms | Allocations: 15040)
+Completed 200 OK in 7ms (Views: 6.9ms | ActiveRecord: 0.0ms | Allocations: 15818)
+
+
+Started GET "/application.css" for 127.0.0.1 at 2022-12-01 12:14:25 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/application.css"):
+  
+Started GET "/kitty3_1280.jpg" for 127.0.0.1 at 2022-12-01 12:14:25 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/kitty3_1280.jpg"):
+  
+Started GET "/" for 127.0.0.1 at 2022-12-01 12:14:31 +0100
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 9)
+  Rendered layout layouts/application.html.erb (Duration: 5.5ms | Allocations: 15090)
+Completed 200 OK in 7ms (Views: 6.3ms | ActiveRecord: 0.0ms | Allocations: 16027)
+
+
+Started GET "/application.css" for 127.0.0.1 at 2022-12-01 12:14:31 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/application.css"):
+  
+Started GET "/cookies" for 127.0.0.1 at 2022-12-01 12:14:31 +0100
+Processing by CookiesController#index as HTML
+  Rendering cookies/index.html.erb
+  Rendered cookies/index.html.erb (Duration: 0.9ms | Allocations: 591)
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.0ms | Allocations: 1392)
+
+
+Started GET "/kitty3_1280.jpg" for 127.0.0.1 at 2022-12-01 12:14:31 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/kitty3_1280.jpg"):
+  
+Started GET "/cookies?cookies_accepted=false" for 127.0.0.1 at 2022-12-01 12:14:32 +0100
+Processing by CookiesController#index as HTML
+  Parameters: {"cookies_accepted"=>"false"}
+  Rendering cookies/index.html.erb
+  Rendered cookies/index.html.erb (Duration: 0.2ms | Allocations: 56)
+Completed 200 OK in 1ms (Views: 0.5ms | ActiveRecord: 0.0ms | Allocations: 490)
+
+
+Started GET "/" for 127.0.0.1 at 2022-12-01 12:14:37 +0100
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 2.1ms | Allocations: 2827)
+Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.0ms | Allocations: 3301)
+
+
+Started GET "/application.css" for 127.0.0.1 at 2022-12-01 12:14:37 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/application.css"):
+  
+Started GET "/kitty3_1280.jpg" for 127.0.0.1 at 2022-12-01 12:14:37 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/kitty3_1280.jpg"):
+  
+Started GET "/" for 127.0.0.1 at 2022-12-01 12:14:37 +0100
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 1.8ms | Allocations: 2826)
+Completed 200 OK in 2ms (Views: 2.1ms | ActiveRecord: 0.0ms | Allocations: 3291)
+
+
+Started GET "/application.css" for 127.0.0.1 at 2022-12-01 12:14:37 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/application.css"):
+  
+Started GET "/kitty3_1280.jpg" for 127.0.0.1 at 2022-12-01 12:14:38 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/kitty3_1280.jpg"):
+  
+Started GET "/cookies" for 127.0.0.1 at 2022-12-01 12:14:38 +0100
+Processing by CookiesController#index as HTML
+  Rendering cookies/index.html.erb
+  Rendered cookies/index.html.erb (Duration: 0.4ms | Allocations: 317)
+Completed 200 OK in 1ms (Views: 0.6ms | ActiveRecord: 0.0ms | Allocations: 607)
+
+
+Started GET "/cookies?cookies_accepted=true" for 127.0.0.1 at 2022-12-01 12:14:39 +0100
+Processing by CookiesController#index as HTML
+  Parameters: {"cookies_accepted"=>"true"}
+  Rendering cookies/index.html.erb
+  Rendered cookies/index.html.erb (Duration: 0.1ms | Allocations: 55)
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 495)
+
+
+Started GET "/" for 127.0.0.1 at 2022-12-01 12:14:41 +0100
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 1.5ms | Allocations: 2826)
+Completed 200 OK in 2ms (Views: 1.9ms | ActiveRecord: 0.0ms | Allocations: 3299)
+
+
+Started GET "/application.css" for 127.0.0.1 at 2022-12-01 12:14:41 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/application.css"):
+  
+Started GET "/kitty3_1280.jpg" for 127.0.0.1 at 2022-12-01 12:14:42 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/kitty3_1280.jpg"):
+  
+Started GET "/cookies" for 127.0.0.1 at 2022-12-01 12:14:42 +0100
+Processing by CookiesController#index as HTML
+  Rendering cookies/index.html.erb
+  Rendered cookies/index.html.erb (Duration: 0.5ms | Allocations: 321)
+Completed 200 OK in 1ms (Views: 0.9ms | ActiveRecord: 0.0ms | Allocations: 611)
+
+
+Started GET "/" for 127.0.0.1 at 2022-12-01 13:48:38 +0100
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 101)
+  Rendered layout layouts/application.html.erb (Duration: 2.5ms | Allocations: 3518)
+Completed 200 OK in 4ms (Views: 3.8ms | Allocations: 4703)
+
+
+Started GET "/application.css" for 127.0.0.1 at 2022-12-01 13:48:38 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/application.css"):
+  
+Started GET "/kitty3_1280.jpg" for 127.0.0.1 at 2022-12-01 13:48:39 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/kitty3_1280.jpg"):
+  
+Started GET "/cookies" for 127.0.0.1 at 2022-12-01 13:48:39 +0100
+Processing by CookiesController#index as HTML
+  Rendering cookies/index.html.erb
+  Rendered cookies/index.html.erb (Duration: 0.7ms | Allocations: 541)
+Completed 200 OK in 2ms (Views: 1.4ms | Allocations: 1313)
+
+
+Started GET "/" for 127.0.0.1 at 2022-12-01 13:49:29 +0100
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 101)
+  Rendered layout layouts/application.html.erb (Duration: 2.7ms | Allocations: 3518)
+Completed 200 OK in 5ms (Views: 4.0ms | Allocations: 4705)
+
+
+Started GET "/application.css" for 127.0.0.1 at 2022-12-01 13:49:29 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/application.css"):
+  
+Started GET "/kitty3_1280.jpg" for 127.0.0.1 at 2022-12-01 13:49:29 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/kitty3_1280.jpg"):
+  
+Started GET "/cookies" for 127.0.0.1 at 2022-12-01 13:49:29 +0100
+Processing by CookiesController#index as HTML
+  Rendering cookies/index.html.erb
+  Rendered cookies/index.html.erb (Duration: 0.7ms | Allocations: 538)
+Completed 200 OK in 2ms (Views: 1.5ms | Allocations: 1311)
+
+
+Started GET "/cookies?cookies_accepted=true" for 127.0.0.1 at 2022-12-01 13:49:31 +0100
+Processing by CookiesController#index as HTML
+  Parameters: {"cookies_accepted"=>"true"}
+  Rendering cookies/index.html.erb
+  Rendered cookies/index.html.erb (Duration: 0.1ms | Allocations: 55)
+Completed 200 OK in 1ms (Views: 0.5ms | Allocations: 495)
+
+
+Started GET "/" for 127.0.0.1 at 2022-12-01 13:49:39 +0100
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 1.8ms | Allocations: 2826)
+Completed 200 OK in 2ms (Views: 2.0ms | Allocations: 3292)
+
+
+Started GET "/application.css" for 127.0.0.1 at 2022-12-01 13:49:39 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/application.css"):
+  
+Started GET "/kitty3_1280.jpg" for 127.0.0.1 at 2022-12-01 13:49:39 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/kitty3_1280.jpg"):
+  
+Started GET "/cookies" for 127.0.0.1 at 2022-12-01 13:49:39 +0100
+Processing by CookiesController#index as HTML
+  Rendering cookies/index.html.erb
+  Rendered cookies/index.html.erb (Duration: 0.4ms | Allocations: 321)
+Completed 200 OK in 1ms (Views: 0.6ms | Allocations: 608)
+
+
+Started GET "/cookies?cookies_accepted=false" for 127.0.0.1 at 2022-12-01 13:49:41 +0100
+Processing by CookiesController#index as HTML
+  Parameters: {"cookies_accepted"=>"false"}
+  Rendering cookies/index.html.erb
+  Rendered cookies/index.html.erb (Duration: 0.1ms | Allocations: 55)
+Completed 200 OK in 1ms (Views: 0.3ms | Allocations: 494)
+
+
+Started GET "/" for 127.0.0.1 at 2022-12-01 13:49:44 +0100
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 1.6ms | Allocations: 2826)
+Completed 200 OK in 2ms (Views: 1.8ms | Allocations: 3294)
+
+
+Started GET "/application.css" for 127.0.0.1 at 2022-12-01 13:49:44 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/application.css"):
+  
+Started GET "/kitty3_1280.jpg" for 127.0.0.1 at 2022-12-01 13:49:44 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/kitty3_1280.jpg"):
+  
+Started GET "/cookies" for 127.0.0.1 at 2022-12-01 13:49:44 +0100
+Processing by CookiesController#index as HTML
+  Rendering cookies/index.html.erb
+  Rendered cookies/index.html.erb (Duration: 0.5ms | Allocations: 311)
+Completed 200 OK in 1ms (Views: 0.8ms | Allocations: 598)
+
+
+Started GET "/" for 127.0.0.1 at 2022-12-01 14:29:33 +0100
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 355)
+  Rendered layout layouts/application.html.erb (Duration: 109.4ms | Allocations: 44237)
+Completed 200 OK in 118ms (Views: 111.1ms | ActiveRecord: 0.0ms | Allocations: 50050)
+
+
+Started GET "/application.css" for 127.0.0.1 at 2022-12-01 14:29:33 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/application.css"):
+  
+Started GET "/kitty3_1280.jpg" for 127.0.0.1 at 2022-12-01 14:29:33 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/kitty3_1280.jpg"):
+  
+Started GET "/cookies" for 127.0.0.1 at 2022-12-01 14:29:33 +0100
+Processing by CookiesController#index as HTML
+  Rendering cookies/index.html.erb
+  Rendered cookies/index.html.erb (Duration: 0.8ms | Allocations: 589)
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.0ms | Allocations: 1392)
+
+
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_try_advisory_lock(4525132559246056695)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to AddRememberDigestToUsers (20221201135059)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (1.7ms)[0m  [1m[35mALTER TABLE "users" ADD "remember_digest" character varying[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20221201135059"]]
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(4525132559246056695)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for 127.0.0.1 at 2022-12-01 14:59:19 +0100
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+
+Zeitwerk::NameError - expected file /home/anon/Bureau/THP/W10/D4/The_cat_shop/app/helpers/sessions_helper.rb to define constant SessionsHelper, but didn't:
+  app/controllers/application_controller.rb:1:in `<main>'
+  app/controllers/home_controller.rb:1:in `<main>'
+
+Started POST "/__better_errors/4935c51667a7db77/variables" for 127.0.0.1 at 2022-12-01 14:59:19 +0100
+Started GET "/" for 127.0.0.1 at 2022-12-01 15:00:32 +0100
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 106)
+  Rendered layout layouts/application.html.erb (Duration: 7.2ms | Allocations: 15678)
+Completed 200 OK in 9ms (Views: 8.1ms | ActiveRecord: 0.0ms | Allocations: 16904)
+
+
+Started GET "/application.css" for 127.0.0.1 at 2022-12-01 15:00:32 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/application.css"):
+  
+Started GET "/kitty3_1280.jpg" for 127.0.0.1 at 2022-12-01 15:00:33 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/kitty3_1280.jpg"):
+  
+Started GET "/cookies" for 127.0.0.1 at 2022-12-01 15:00:33 +0100
+Processing by CookiesController#index as HTML
+  Rendering cookies/index.html.erb
+  Rendered cookies/index.html.erb (Duration: 1.2ms | Allocations: 640)
+Completed 200 OK in 4ms (Views: 3.8ms | ActiveRecord: 0.0ms | Allocations: 1690)
+
+
+Started GET "/login" for 127.0.0.1 at 2022-12-01 15:02:58 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/login"):
+  
+Started GET "/signup" for 127.0.0.1 at 2022-12-01 15:03:03 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/signup"):
+  
+Started GET "/logout" for 127.0.0.1 at 2022-12-01 15:03:07 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/logout"):
+  
+Started GET "/" for 127.0.0.1 at 2022-12-01 15:05:30 +0100
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 355)
+  Rendered layout layouts/application.html.erb (Duration: 80.5ms | Allocations: 44530)
+Completed 200 OK in 88ms (Views: 82.3ms | ActiveRecord: 0.0ms | Allocations: 50344)
+
+
+Started GET "/application.css" for 127.0.0.1 at 2022-12-01 15:05:30 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/application.css"):
+  
+Started GET "/cookies" for 127.0.0.1 at 2022-12-01 15:05:30 +0100
+Processing by CookiesController#index as HTML
+  Rendering cookies/index.html.erb
+  Rendered cookies/index.html.erb (Duration: 0.7ms | Allocations: 604)
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.0ms | Allocations: 1497)
+
+
+Started GET "/kitty3_1280.jpg" for 127.0.0.1 at 2022-12-01 15:05:30 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/kitty3_1280.jpg"):
+  
+Started GET "/cookies?cookies_accepted=true" for 127.0.0.1 at 2022-12-01 15:05:35 +0100
+Processing by CookiesController#index as HTML
+  Parameters: {"cookies_accepted"=>"true"}
+  Rendering layout layouts/application.html.erb
+  Rendering cookies/index.html.erb within layouts/application
+  Rendered cookies/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 55)
+  Rendered layout layouts/application.html.erb (Duration: 3.8ms | Allocations: 2842)
+Completed 200 OK in 5ms (Views: 4.3ms | ActiveRecord: 0.0ms | Allocations: 3399)
+
+
+Started GET "/application.css" for 127.0.0.1 at 2022-12-01 15:05:35 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/application.css"):
+  
+Started GET "/kitty3_1280.jpg" for 127.0.0.1 at 2022-12-01 15:05:35 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/kitty3_1280.jpg"):
+  
+Started GET "/cookies" for 127.0.0.1 at 2022-12-01 15:05:38 +0100
+Processing by CookiesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering cookies/index.html.erb within layouts/application
+  Rendered cookies/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 223)
+  Rendered layout layouts/application.html.erb (Duration: 2.2ms | Allocations: 2962)
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.0ms | Allocations: 3289)
+
+
+Started GET "/application.css" for 127.0.0.1 at 2022-12-01 15:05:38 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/application.css"):
+  
+Started GET "/kitty3_1280.jpg" for 127.0.0.1 at 2022-12-01 15:05:38 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/kitty3_1280.jpg"):
+  
+Started GET "/cookies?cookies_accepted=false" for 127.0.0.1 at 2022-12-01 15:05:45 +0100
+Processing by CookiesController#index as HTML
+  Parameters: {"cookies_accepted"=>"false"}
+  Rendering cookies/index.html.erb
+  Rendered cookies/index.html.erb (Duration: 0.1ms | Allocations: 55)
+Completed 200 OK in 1ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 518)
+
+

@@ -61,6 +61,12 @@
       </div>
     </div>
 
+    
+    <div class="popup-cookies">
+    <%= session[:cookies_accepted] %>
+    <%= turbo_frame_tag :cookies_modal, src: cookies_path if session[:cookies_accepted].nil? %>
+    </div>
+
     <div class="footer">
       <div class="footer_head">
         <div class="footer_accueil">
