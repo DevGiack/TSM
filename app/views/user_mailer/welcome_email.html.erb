@@ -4,13 +4,18 @@
         <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
       </head>
       <body>
-        <h1>Salut <%= @user.first_name %> et bienvenue chez nous !</h1>
+        <h1>Bonjour, <%= @user.first_name %> <%= @user.last_name %> et bienvenue chez les truffiéres de Saint-Martin.</h1>
         <p>
-          Tu t'es inscrit sur monsite.fr en utilisant l'e-mail suivant : <%= @user.email %>.
+            Nous vous remercions pour votre inscription sur notre boutique en ligne.
         </p>
         <p>
-          Pour accéder à ton espace client, connecte-toi via : <%= @url %>.
+            Les truffiéres de Saint-Martin vous propose des truffes sélectionnées de grande qualité au meilleur prix.<br>
+            Notre priorité est votre pleine satisfaction, n'hésitez pas a nous contacter pour toute demande d'information.
         </p>
-        <p> À très vite sur monsite.fr !
+        <p>
+          Pour accéder à votre espace client, connectez-vous via : <%= @url %>.
+        
+        </p>
+        <p> À très vite sur <%= @url %>!
       </body>
     </html>
