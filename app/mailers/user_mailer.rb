@@ -1,3 +1,3 @@
 class UserMailer < ApplicationMailer
-    default from: 'the-cat-shop@outlook.com'
+    default from: 'devgiack@protonmail.com'
   end
