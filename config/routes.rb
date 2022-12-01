@@ -16,6 +16,8 @@ Rails.application.routes.draw do
 
   resources :product
   resources :user_adresses
+  resources :admin_types
+  resources :user_addresses
   resources :payments
   resources :orders
   resources :carts

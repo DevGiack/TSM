@@ -5,7 +5,7 @@
 
   <div class="field">
     <%= f.label :email %><br />
-    <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
+    <%= f.email_field :email, autofocus: true, class: "form-control", placeholder: "exemple@gmail.com", autocomplete: "email" %>
   </div>
 
   <div class="field">
@@ -13,12 +13,27 @@
     <% if @minimum_password_length %>
     <em>(<%= @minimum_password_length %> characters minimum)</em>
     <% end %><br />
-    <%= f.password_field :password, autocomplete: "new-password" %>
+    <%= f.password_field :password, class: "form-control", placeholder: "password", autocomplete: "new-password" %>
   </div>
 
   <div class="field">
     <%= f.label :password_confirmation %><br />
-    <%= f.password_field :password_confirmation, autocomplete: "new-password" %>
+    <%= f.password_field :password_confirmation, class: "form-control", placeholder: "password", autocomplete: "new-password" %>
+  </div>
+
+  <div class="field">
+    <%= f.label :first_name %><br />
+    <%= f.text_field :first_name, class: "form-control", autocomplete: "first_name" %>
+  </div>
+
+  <div class="field">
+    <%= f.label :last_name %><br />
+    <%= f.text_field :last_name, class: "form-control", autocomplete: "last_name" %>
+  </div>
+
+  <div class="field">
+    <%= f.label :phone %><br />
+    <%= f.telephone_field :phone, pattern: /^[0-9]*$/, class: "form-control", autocomplete: "phone" %>
   </div>
 
   <div class="actions">
