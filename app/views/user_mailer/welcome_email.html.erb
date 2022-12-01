@@ -1,0 +1,21 @@
+    <!DOCTYPE html>
+    <html>
+      <head>
+        <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+      </head>
+      <body>
+        <h1>Bonjour, <%= @user.first_name %> <%= @user.last_name %> et bienvenue chez les truffiéres de Saint-Martin.</h1>
+        <p>
+            Nous vous remercions pour votre inscription sur notre boutique en ligne.
+        </p>
+        <p>
+            Les truffiéres de Saint-Martin vous propose des truffes sélectionnées de grande qualité au meilleur prix.<br>
+            Notre priorité est votre pleine satisfaction, n'hésitez pas a nous contacter pour toute demande d'information.
+        </p>
+        <p>
+          Pour accéder à votre espace client, connectez-vous via : <%= @url %>.
+        
+        </p>
+        <p> À très vite sur <%= @url %>!
+      </body>
+    </html>
