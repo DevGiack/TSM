@@ -3,149 +3,181 @@
   <head>
     <title>CatShop</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="button.css">
+    <link rel="stylesheet" href="application.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
     <%= csp_meta_tag %>
 
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <%= javascript_importmap_tags %>
 
 
-    <script src="https://kit.fontawesome.com/3b6e0b8eb1.js" crossorigin="anonymous"></script>
   </head>
 
   <body>
-    <div class="container">
-      <div class="header">
-        <div class="logo">
-          Logo
-        </div>
-        <div class="accueil">
-          Accueil
-        </div>
-        <div class="produits">
-          Produits
-        </div>
-        <div class="recettes">
-          Recettes
-        </div>
-        <div class="panier">
-          Panier
-        </div>
-        <div class="connexion">
-          Connexion
-        </div>
-        <div class="icone_panier">
-          <i class="fa-solid fa-cart-shopping"></i>
-        </div>
-        <div class="icone_profil">
-          <i class="fa-regular fa-circle-user"></i>
-        </div>
-      </div>
-    </div>
 
-    <div class="banner" style="background-image: url(kitty3_1280.jpg);">
-      <div class="banner_title">
-        <h1>Vente de truffes fraîches</h1>
-      </div>
-      <div class="banner_text">
-        <div class="text_area"></div>
-      </div>
-      <div class="btn-produits">
-        <button class="button btn-light" role="button">Nos produits</button>
-      </div>
-      <div class="btn-propos">
-        <button class="button btn-outline-light" role="button">A propos</button>
-      </div>
-    </div>
 
-    <div class="footer">
-      <div class="footer_head">
-        <div class="footer_accueil">
-          Acceuil
-        </div>
-        <div class="footer_produits">
-          Produits
-        </div>
-        <div class="footer_recettes">
-          Recettes
-        </div>
-        <div class="footer_panier">
-          Panier
-        </div>
-        <div class="footer_contact">
-          Contact
-        </div>
-      </div>
-      <div class="footer_body">
-        <div class="fbody_description">
-          <div class="fdescription_title">
-            <div class="dtitle">
-              <h4>Truffe</h4>
-            </div>
-          </div>
-          <div class="description_text">
-            <p>Site de vente de truffes fraîches melanosporum aux professionnels et particuliers</p>
-          </div>
-        </div>
-        <div class="fbody_links">
-          <div class="links_truffe">
-            <div class="ltruffe_title">
-              <h4>Truffe</h4>
-            </div>
-            <div class="ltruffe_1">
-              lien truffe 1
-            </div>
-            <div class="ltruffe_2">
-              lien truffe 2
-            </div>
-          </div>
-          <div class="links_pages">
-            <div class="lpage_title">
-              <h4>Pages</h4>
-            </div>
-            <div class="lpage_1">
-              lien page 1
-            </div>
-            <div class="lpage_2">
-              lien page 2
-            </div>
-          </div>
-          <div class="links_support">
-            <div class="lsupport_title">
-              <h4>Support</h4>
-            </div>
-            <div class="lsupport_1">
-              lien support 1
-            </div>
-            <div class="lsupport_2">
-              lien support 2
-            </div>
-          </div>
+    <nav class="navbar navbar-expand-lg bg-white sticky-top navbar-light shadow-sm">
+      <div class="container">
+        <a class="navbar-brand" href="/">
+          <%= image_tag "TSM_Logo_noir.png", class: "logo_tsm" %>
+          <span>Truffieres Saint-Martin</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+    
+        <div class=" collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav ms-auto ">
+            <li class="nav-item">
+              <a class="nav-link mx-2 text-uppercase active" aria-current="page" href="/">Accueil</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-2 text-uppercase" href="/products">Produits</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-2 text-uppercase" href="#">Recettes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-2 text-uppercase" href="/carts">Panier</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-2 text-uppercase" href="/users/sign_up">Connexion</a>
+            </li>
+          </ul>
+          <ul class="navbar-nav ms-auto iconique">
+            <li class="nav-item">
+              <a class="nav-link mx-2 text-uppercase" href="/carts"><i class="fa-solid fa-cart-shopping me-1"></i></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-2 text-uppercase" href="/users/sign_in"><i class="fa-solid fa-circle-user me-1"></i></a>
+            </li>
+          </ul>
         </div>
       </div>
-      <div class="footer_end">
-        <div class="fcredit">
-          <div class="credits">
-            <p><i class="fa-light fa-circle-c"></i>2023 - Truffe - all rights reserved</p>
-          </div>
-        </div>
-        <div class="fsocial_media">
-          <div class="s_media">
-            <div class="instagram" href="#">
-              <i class="fa-brands fa-instagram"></i>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+    </nav>
 
+    <%= yield %>
+
+    <!-- Remove the container if you want to extend the Footer to full width. -->
+    <div class="container my-5">
+      <!-- Footer -->
+      <footer class="text-center text-lg-start">
+        <!-- Grid container -->
+        <div class="container p-4 pb-0">
+          <!-- Section: Links -->
+          <section class="">
+            <!--Grid row-->
+            <div class="row">
+              <!-- Grid column -->
+              <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                <h5 class="text-uppercase mb-4 font-weight-bold">
+                  S.A.S Delicat - Roy
+                </h5>
+                <p>
+                  Site de vente de truffes fraîches melanosporum aux professionnels et particuliers.
+                </p>
+              </div>
+              <!-- Grid column -->
+
+              <hr class="w-100 clearfix d-md-none" />
+
+              <!-- Grid column -->
+              <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                <h5 class="text-uppercase mb-4 font-weight-bold">Services</h5>
+                <p>
+                  <a class="text-black">Livraisons et retours</a>
+                </p>
+                <p>
+                  <a class="text-black">Paiement</a>
+                </p>
+                <p>
+                  <a class="text-black">À propos</a>
+                </p>
+              </div>
+              <!-- Grid column -->
+
+              <hr class="w-100 clearfix d-md-none" />
+
+              <!-- Grid column -->
+              <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+                <h5 class="text-uppercase mb-4 font-weight-bold">
+                  Mentions légales
+                </h5>
+                <p>
+                  <a class="text-black">C.G.V</a>
+                </p>
+                <p>
+                  <a class="text-black">C.G.U</a>
+                </p>
+                <p>
+                  <a class="text-black">Cookies</a>
+                </p>
+              </div>
+
+              <!-- Grid column -->
+              <hr class="w-100 clearfix d-md-none" />
+
+              <!-- Grid column -->
+              <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+                <h5 class="text-uppercase mb-4 font-weight-bold">Contact</h5>
+                <p><i class="fas fa-home mr-3"></i> Domaine de Saint-Martin des champs</p>
+                <p><i class="fas fa-envelope mr-3"></i> info@truffieres-saint-martin.com</p>
+                <p><i class="fas fa-phone mr-3"></i> +33 (0)6 07 24 23 35</p>
+              </div>
+              <!-- Grid column -->
+            </div>
+            <!--Grid row-->
+          </section>
+          <!-- Section: Links -->
+
+          <hr class="my-3">
+
+          <!-- Section: Copyright -->
+          <section class="p-3 pt-0">
+            <div class="row d-flex align-items-center">
+              <!-- Grid column -->
+              <div class="col-md-7 col-lg-8 text-center text-md-start">
+                <!-- Copyright -->
+                <div class="p-3">
+                  © 2023 Copyright  -  
+                  <a href="https://truffieres-saint-martin.com/"
+                    >https://truffieres-saint-martin.com</a
+                    >
+                </div>
+                <!-- Copyright -->
+              </div>
+              <!-- Grid column -->
+
+              <!-- Grid column -->
+              <div class="col-md-5 col-lg-4 ml-lg-0 text-center text-md-end">
+                <!-- Instagram -->
+                <a
+                  class="btn btn-outline-dark btn-floating m-1"
+                  class="text-black"
+                  role="button"
+                  ><i class="fab fa-instagram"></i
+                  ></a>
+              </div>
+              <!-- Grid column -->
+            </div>
+          </section>
+          <!-- Section: Copyright -->
+        </div>
+        <!-- Grid container -->
+      </footer>
+      <!-- Footer -->
+    </div>
+    <!-- End of .container -->
 
 
   </body>
   <%# Bootstrap JS %>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/3b6e0b8eb1.js" crossorigin="anonymous"></script>
+
 </html>
 
 
