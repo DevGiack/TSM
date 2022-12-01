@@ -5178,3 +5178,790 @@ Processing by HomeController#index as TURBO_STREAM
 Completed 200 OK in 21ms (Views: 19.5ms | ActiveRecord: 0.0ms | Allocations: 3152)
 
 
+Started GET "/users/sign_up" for ::1 at 2022-12-01 06:12:04 +0100
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Users::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 2.0ms | Allocations: 237)
+  Rendered devise/shared/_links.html.erb (Duration: 2.6ms | Allocations: 850)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 10669.8ms | Allocations: 353350)
+  Rendered layout layouts/application.html.erb (Duration: 10914.7ms | Allocations: 387878)
+Completed 200 OK in 10996ms (Views: 10925.9ms | ActiveRecord: 5.6ms | Allocations: 414802)
+
+
+Started POST "/users" for ::1 at 2022-12-01 06:12:29 +0100
+Processing by Users::RegistrationsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"brecinneuxaweu-2@yopmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "first_name"=>"", "last_name"=>"", "phone"=>""}, "commit"=>"Sign up"}
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users/registrations_controller.rb:14:in `create'
+  [1m[36mUser Exists? (1.8ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "brecinneuxaweu-2@yopmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users/registrations_controller.rb:14:in `create'
+  [1m[36mUser Create (0.9ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "reset_password_token", "reset_password_sent_at", "remember_created_at", "confirmation_token", "confirmed_at", "confirmation_sent_at", "unconfirmed_email", "first_name", "last_name", "phone", "last_login", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15) RETURNING "id"[0m  [["email", "brecinneuxaweu-2@yopmail.com"], ["encrypted_password", "[FILTERED]"], ["reset_password_token", "[FILTERED]"], ["reset_password_sent_at", "[FILTERED]"], ["remember_created_at", nil], ["confirmation_token", "[FILTERED]"], ["confirmed_at", nil], ["confirmation_sent_at", "2022-12-01 05:12:30.068713"], ["unconfirmed_email", nil], ["first_name", ""], ["last_name", ""], ["phone", ""], ["last_login", nil], ["created_at", "2022-12-01 05:12:30.068546"], ["updated_at", "2022-12-01 05:12:30.068546"]]
+  ↳ app/controllers/users/registrations_controller.rb:14:in `create'
+  [1m[36mTRANSACTION (3.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users/registrations_controller.rb:14:in `create'
+  Rendering devise/mailer/confirmation_instructions.html.erb
+  Rendered devise/mailer/confirmation_instructions.html.erb (Duration: 1.1ms | Allocations: 387)
+Devise::Mailer#confirmation_instructions: processed outbound mail in 5.6ms
+Delivered mail 638837be1660b_10ca23e80187c1@devgiack-VirtualBox.mail (1007.6ms)
+Date: Thu, 01 Dec 2022 06:12:30 +0100
+From: devgiack@protonmail.com
+Reply-To: devgiack@protonmail.com
+To: brecinneuxaweu-2@yopmail.com
+Message-ID: <638837be1660b_10ca23e80187c1@devgiack-VirtualBox.mail>
+Subject: Confirmation instructions
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p>Welcome brecinneuxaweu-2@yopmail.com!</p>
+
+<p>You can confirm your account email through the link below:</p>
+
+<p><a href="http://localhost:3000/users/confirmation?confirmation_token=X4czWzWJM2pT764Bo2FC">Confirm my account</a></p>
+
+Redirected to http://localhost:3000/
+Completed 302 Found in 1397ms (ActiveRecord: 6.7ms | Allocations: 19731)
+
+
+Started GET "/" for ::1 at 2022-12-01 06:12:31 +0100
+Processing by HomeController#index as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 99)
+  Rendered layout layouts/application.html.erb (Duration: 8.2ms | Allocations: 2990)
+Completed 200 OK in 12ms (Views: 11.3ms | ActiveRecord: 0.0ms | Allocations: 3974)
+
+
+Started GET "/users/sign_up" for ::1 at 2022-12-01 06:13:59 +0100
+Processing by Users::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.1ms | Allocations: 14)
+  Rendered devise/shared/_links.html.erb (Duration: 0.3ms | Allocations: 139)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 4.8ms | Allocations: 2084)
+  Rendered layout layouts/application.html.erb (Duration: 8.3ms | Allocations: 4435)
+Completed 200 OK in 10ms (Views: 9.3ms | ActiveRecord: 0.0ms | Allocations: 5296)
+
+
+Started POST "/users" for ::1 at 2022-12-01 06:14:09 +0100
+Processing by Users::RegistrationsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"alt.cu-e96ze9k@yopmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "first_name"=>"", "last_name"=>"", "phone"=>""}, "commit"=>"Sign up"}
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users/registrations_controller.rb:14:in `create'
+  [1m[36mUser Exists? (0.6ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "alt.cu-e96ze9k@yopmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users/registrations_controller.rb:14:in `create'
+  [1m[36mUser Create (0.7ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "reset_password_token", "reset_password_sent_at", "remember_created_at", "confirmation_token", "confirmed_at", "confirmation_sent_at", "unconfirmed_email", "first_name", "last_name", "phone", "last_login", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15) RETURNING "id"[0m  [["email", "alt.cu-e96ze9k@yopmail.com"], ["encrypted_password", "[FILTERED]"], ["reset_password_token", "[FILTERED]"], ["reset_password_sent_at", "[FILTERED]"], ["remember_created_at", nil], ["confirmation_token", "[FILTERED]"], ["confirmed_at", nil], ["confirmation_sent_at", "2022-12-01 05:14:09.412416"], ["unconfirmed_email", nil], ["first_name", ""], ["last_name", ""], ["phone", ""], ["last_login", nil], ["created_at", "2022-12-01 05:14:09.412332"], ["updated_at", "2022-12-01 05:14:09.412332"]]
+  ↳ app/controllers/users/registrations_controller.rb:14:in `create'
+  [1m[36mTRANSACTION (2.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users/registrations_controller.rb:14:in `create'
+  Rendering devise/mailer/confirmation_instructions.html.erb
+  Rendered devise/mailer/confirmation_instructions.html.erb (Duration: 0.3ms | Allocations: 86)
+Devise::Mailer#confirmation_instructions: processed outbound mail in 2.1ms
+Delivered mail 6388382167124_10ca23ebc18850@devgiack-VirtualBox.mail (874.4ms)
+Date: Thu, 01 Dec 2022 06:14:09 +0100
+From: devgiack@protonmail.com
+Reply-To: devgiack@protonmail.com
+To: alt.cu-e96ze9k@yopmail.com
+Message-ID: <6388382167124_10ca23ebc18850@devgiack-VirtualBox.mail>
+Subject: Confirmation instructions
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p>Welcome alt.cu-e96ze9k@yopmail.com!</p>
+
+<p>You can confirm your account email through the link below:</p>
+
+<p><a href="http://localhost:3000/users/confirmation?confirmation_token=Z7S4ZqBv3utu4zoSpTNv">Confirm my account</a></p>
+
+Redirected to http://localhost:3000/
+Completed 302 Found in 1147ms (ActiveRecord: 4.1ms | Allocations: 8688)
+
+
+Started GET "/" for ::1 at 2022-12-01 06:14:10 +0100
+Processing by HomeController#index as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 4.2ms | Allocations: 2800)
+Completed 200 OK in 6ms (Views: 5.1ms | ActiveRecord: 0.0ms | Allocations: 3117)
+
+
+Started GET "/users/sign_up" for ::1 at 2022-12-01 06:23:40 +0100
+Processing by Users::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.0ms | Allocations: 16)
+  Rendered devise/shared/_links.html.erb (Duration: 0.6ms | Allocations: 164)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 7.9ms | Allocations: 2202)
+  Rendered layout layouts/application.html.erb (Duration: 21.1ms | Allocations: 15915)
+Completed 200 OK in 50ms (Views: 22.7ms | ActiveRecord: 11.2ms | Allocations: 24110)
+
+
+Started POST "/users" for ::1 at 2022-12-01 06:24:11 +0100
+Processing by Users::RegistrationsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"brecinneuxaweu@yopmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "first_name"=>"", "last_name"=>"", "phone"=>""}, "commit"=>"Sign up"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users/registrations_controller.rb:14:in `create'
+  [1m[36mUser Exists? (1.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "brecinneuxaweu@yopmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users/registrations_controller.rb:14:in `create'
+  [1m[36mUser Create (0.7ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "reset_password_token", "reset_password_sent_at", "remember_created_at", "confirmation_token", "confirmed_at", "confirmation_sent_at", "unconfirmed_email", "first_name", "last_name", "phone", "last_login", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15) RETURNING "id"[0m  [["email", "brecinneuxaweu@yopmail.com"], ["encrypted_password", "[FILTERED]"], ["reset_password_token", "[FILTERED]"], ["reset_password_sent_at", "[FILTERED]"], ["remember_created_at", nil], ["confirmation_token", "[FILTERED]"], ["confirmed_at", nil], ["confirmation_sent_at", "2022-12-01 05:24:11.700260"], ["unconfirmed_email", nil], ["first_name", ""], ["last_name", ""], ["phone", ""], ["last_login", nil], ["created_at", "2022-12-01 05:24:11.700127"], ["updated_at", "2022-12-01 05:24:11.700127"]]
+  ↳ app/controllers/users/registrations_controller.rb:14:in `create'
+  [1m[36mTRANSACTION (7.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users/registrations_controller.rb:14:in `create'
+  Rendering devise/mailer/confirmation_instructions.html.erb
+  Rendered devise/mailer/confirmation_instructions.html.erb (Duration: 0.5ms | Allocations: 111)
+Devise::Mailer#confirmation_instructions: processed outbound mail in 4.4ms
+Delivered mail 63883a7bb41f9_10ca23e94189a@devgiack-VirtualBox.mail (955.6ms)
+Date: Thu, 01 Dec 2022 06:24:11 +0100
+From: devgiack@protonmail.com
+Reply-To: devgiack@protonmail.com
+To: brecinneuxaweu@yopmail.com
+Message-ID: <63883a7bb41f9_10ca23e94189a@devgiack-VirtualBox.mail>
+Subject: Confirmation instructions
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p>Welcome brecinneuxaweu@yopmail.com!</p>
+
+<p>You can confirm your account email through the link below:</p>
+
+<p><a href="http://localhost:3000/users/confirmation?confirmation_token=JCuerTQdkwsLp1uyPa4s">Confirm my account</a></p>
+
+Redirected to http://localhost:3000/
+Completed 302 Found in 1237ms (ActiveRecord: 9.6ms | Allocations: 19324)
+
+
+Started GET "/" for ::1 at 2022-12-01 06:24:12 +0100
+Processing by HomeController#index as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 9)
+  Rendered layout layouts/application.html.erb (Duration: 5.7ms | Allocations: 2898)
+Completed 200 OK in 9ms (Views: 8.7ms | ActiveRecord: 0.0ms | Allocations: 3671)
+
+
+Started GET "/users/sign_up" for ::1 at 2022-12-01 06:24:40 +0100
+Processing by Users::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.1ms | Allocations: 14)
+  Rendered devise/shared/_links.html.erb (Duration: 0.3ms | Allocations: 139)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 6.1ms | Allocations: 2084)
+  Rendered layout layouts/application.html.erb (Duration: 10.5ms | Allocations: 4434)
+Completed 200 OK in 15ms (Views: 13.4ms | ActiveRecord: 0.0ms | Allocations: 5288)
+
+
+Started POST "/users" for ::1 at 2022-12-01 06:24:48 +0100
+Processing by Users::RegistrationsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"alt.d9-0omq6y4u@yopmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "first_name"=>"", "last_name"=>"", "phone"=>""}, "commit"=>"Sign up"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users/registrations_controller.rb:14:in `create'
+  [1m[36mUser Exists? (1.0ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "alt.d9-0omq6y4u@yopmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users/registrations_controller.rb:14:in `create'
+  [1m[36mUser Create (1.4ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "reset_password_token", "reset_password_sent_at", "remember_created_at", "confirmation_token", "confirmed_at", "confirmation_sent_at", "unconfirmed_email", "first_name", "last_name", "phone", "last_login", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15) RETURNING "id"[0m  [["email", "alt.d9-0omq6y4u@yopmail.com"], ["encrypted_password", "[FILTERED]"], ["reset_password_token", "[FILTERED]"], ["reset_password_sent_at", "[FILTERED]"], ["remember_created_at", nil], ["confirmation_token", "[FILTERED]"], ["confirmed_at", nil], ["confirmation_sent_at", "2022-12-01 05:24:48.656498"], ["unconfirmed_email", nil], ["first_name", ""], ["last_name", ""], ["phone", ""], ["last_login", nil], ["created_at", "2022-12-01 05:24:48.655939"], ["updated_at", "2022-12-01 05:24:48.655939"]]
+  ↳ app/controllers/users/registrations_controller.rb:14:in `create'
+  [1m[36mTRANSACTION (2.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users/registrations_controller.rb:14:in `create'
+  Rendering devise/mailer/confirmation_instructions.html.erb
+  Rendered devise/mailer/confirmation_instructions.html.erb (Duration: 0.4ms | Allocations: 85)
+Devise::Mailer#confirmation_instructions: processed outbound mail in 3.1ms
+Delivered mail 63883aa0a3bb3_10ca23ebc19082@devgiack-VirtualBox.mail (1019.4ms)
+Date: Thu, 01 Dec 2022 06:24:48 +0100
+From: devgiack@protonmail.com
+Reply-To: devgiack@protonmail.com
+To: alt.d9-0omq6y4u@yopmail.com
+Message-ID: <63883aa0a3bb3_10ca23ebc19082@devgiack-VirtualBox.mail>
+Subject: Confirmation instructions
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p>Welcome alt.d9-0omq6y4u@yopmail.com!</p>
+
+<p>You can confirm your account email through the link below:</p>
+
+<p><a href="http://localhost:3000/users/confirmation?confirmation_token=Stnr9WX65-9AKtFxHcQh">Confirm my account</a></p>
+
+Redirected to http://localhost:3000/
+Completed 302 Found in 1299ms (ActiveRecord: 5.0ms | Allocations: 8653)
+
+
+Started GET "/" for ::1 at 2022-12-01 06:24:49 +0100
+Processing by HomeController#index as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 10.5ms | Allocations: 2794)
+Completed 200 OK in 12ms (Views: 11.7ms | ActiveRecord: 0.0ms | Allocations: 3110)
+
+
+Started GET "/users/sign_up" for ::1 at 2022-12-01 06:31:29 +0100
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Users::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 7.3ms | Allocations: 237)
+  Rendered devise/shared/_links.html.erb (Duration: 2.4ms | Allocations: 850)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 430.4ms | Allocations: 346255)
+  Rendered layout layouts/application.html.erb (Duration: 522.6ms | Allocations: 380819)
+Completed 200 OK in 569ms (Views: 533.3ms | ActiveRecord: 7.8ms | Allocations: 407749)
+
+
+Started POST "/users" for ::1 at 2022-12-01 06:31:38 +0100
+Processing by Users::RegistrationsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"brecinneuxaw@yopmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "first_name"=>"", "last_name"=>"", "phone"=>""}, "commit"=>"Sign up"}
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users/registrations_controller.rb:14:in `create'
+  [1m[36mUser Exists? (3.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "brecinneuxaw@yopmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users/registrations_controller.rb:14:in `create'
+  [1m[36mUser Create (2.0ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "reset_password_token", "reset_password_sent_at", "remember_created_at", "confirmation_token", "confirmed_at", "confirmation_sent_at", "unconfirmed_email", "first_name", "last_name", "phone", "last_login", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15) RETURNING "id"[0m  [["email", "brecinneuxaw@yopmail.com"], ["encrypted_password", "[FILTERED]"], ["reset_password_token", "[FILTERED]"], ["reset_password_sent_at", "[FILTERED]"], ["remember_created_at", nil], ["confirmation_token", "[FILTERED]"], ["confirmed_at", nil], ["confirmation_sent_at", "2022-12-01 05:31:39.097587"], ["unconfirmed_email", nil], ["first_name", ""], ["last_name", ""], ["phone", ""], ["last_login", nil], ["created_at", "2022-12-01 05:31:39.097283"], ["updated_at", "2022-12-01 05:31:39.097283"]]
+  ↳ app/controllers/users/registrations_controller.rb:14:in `create'
+  Rendering layout layouts/mailer.html.erb
+  Rendering user_mailer/welcome_email.html.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.html.erb within layouts/mailer (Duration: 0.9ms | Allocations: 193)
+  Rendered layout layouts/mailer.html.erb (Duration: 2.4ms | Allocations: 409)
+  Rendering layout layouts/mailer.text.erb
+  Rendering user_mailer/welcome_email.text.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.text.erb within layouts/mailer (Duration: 0.6ms | Allocations: 162)
+  Rendered layout layouts/mailer.text.erb (Duration: 1.6ms | Allocations: 342)
+UserMailer#welcome_email: processed outbound mail in 11.8ms
+Delivered mail 63883c3b1f532_11e413e80879a5@devgiack-VirtualBox.mail (786.1ms)
+Date: Thu, 01 Dec 2022 06:31:39 +0100
+From: no-reply@monsite.fr
+To: brecinneuxaw@yopmail.com
+Message-ID: <63883c3b1f532_11e413e80879a5@devgiack-VirtualBox.mail>
+Subject: Bienvenue chez nous !
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_63883c3b1e1f0_11e413e808781b";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_63883c3b1e1f0_11e413e808781b
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: base64
+
+ICAgIFNhbHV0ICBldCBiaWVudmVudWUgY2hleiBub3VzICENCiAgICA9PT09
+PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09
+PT09PT09PT09DQoNCiAgICBUdSB0J2VzIGluc2NyaXQgc3VyIG1vbnNpdGUu
+ZnIgZW4gdXRpbGlzYW50IGwnZS1tYWlsIHN1aXZhbnQgOiBicmVjaW5uZXV4
+YXdAeW9wbWFpbC5jb20uDQoNCiAgICBQb3VyIGFjY8OpZGVyIMOgIHRvbiBl
+c3BhY2UgY2xpZW50LCBjb25uZWN0ZS10b2kgdmlhIDogaHR0cDovL21vbnNp
+dGUuZnIvbG9naW4uDQoNCiAgICDDgCB0csOocyB2aXRlIHN1ciBtb25zaXRl
+LmZyICENCg==
+
+----==_mimepart_63883c3b1e1f0_11e413e808781b
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf=
+-8" />=0D
+    <style>=0D
+      /* Email styles need to be inline */=0D
+    </style>=0D
+  </head>=0D
+=0D
+  <body>=0D
+        <!DOCTYPE html>=0D
+    <html>=0D
+      <head>=0D
+        <meta content=3D'text/html; charset=3DUTF-8' http-equiv=3D'Conten=
+t-Type' />=0D
+      </head>=0D
+      <body>=0D
+        <h1>Salut  et bienvenue chez nous !</h1>=0D
+        <p>=0D
+          Tu t'es inscrit sur monsite.fr en utilisant l'e-mail suivant : =
+brecinneuxaw@yopmail.com.=0D
+        </p>=0D
+        <p>=0D
+          Pour acc=C3=A9der =C3=A0 ton espace client, connecte-toi via : =
+http://monsite.fr/login.=0D
+        </p>=0D
+        <p> =C3=80 tr=C3=A8s vite sur monsite.fr !=0D
+      </body>=0D
+    </html>=0D
+  </body>=0D
+</html>=0D
+
+----==_mimepart_63883c3b1e1f0_11e413e808781b--
+
+  [1m[36mTRANSACTION (17.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users/registrations_controller.rb:14:in `create'
+  Rendering devise/mailer/confirmation_instructions.html.erb
+  Rendered devise/mailer/confirmation_instructions.html.erb (Duration: 1.6ms | Allocations: 386)
+Devise::Mailer#confirmation_instructions: processed outbound mail in 7.4ms
+Delivered mail 63883c3be7346_11e413e808809a@devgiack-VirtualBox.mail (756.6ms)
+Date: Thu, 01 Dec 2022 06:31:39 +0100
+From: devgiack@protonmail.com
+Reply-To: devgiack@protonmail.com
+To: brecinneuxaw@yopmail.com
+Message-ID: <63883c3be7346_11e413e808809a@devgiack-VirtualBox.mail>
+Subject: Confirmation instructions
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p>Welcome brecinneuxaw@yopmail.com!</p>
+
+<p>You can confirm your account email through the link below:</p>
+
+<p><a href="http://localhost:3000/users/confirmation?confirmation_token=Afyh-RsQf79S6xFeN7GK">Confirm my account</a></p>
+
+Redirected to http://localhost:3000/
+Completed 302 Found in 1881ms (ActiveRecord: 23.6ms | Allocations: 41474)
+
+
+Started GET "/" for ::1 at 2022-12-01 06:31:40 +0100
+Processing by HomeController#index as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 99)
+  Rendered layout layouts/application.html.erb (Duration: 6.9ms | Allocations: 2998)
+Completed 200 OK in 10ms (Views: 9.7ms | ActiveRecord: 0.0ms | Allocations: 3982)
+
+
+Started GET "/users/confirmation?confirmation_token=[FILTERED]" for ::1 at 2022-12-01 06:31:48 +0100
+Processing by Devise::ConfirmationsController#show as HTML
+  Parameters: {"confirmation_token"=>"[FILTERED]"}
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."confirmation_token" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["confirmation_token", "[FILTERED]"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (3.7ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Update (0.5ms)[0m  [1m[33mUPDATE "users" SET "confirmed_at" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["confirmed_at", "2022-12-01 05:31:48.624530"], ["updated_at", "2022-12-01 05:31:48.625500"], ["id", 70]]
+  [1m[36mTRANSACTION (14.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 52], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 64ms (ActiveRecord: 21.6ms | Allocations: 6771)
+
+
+Started GET "/" for ::1 at 2022-12-01 06:31:48 +0100
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 7)
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 52], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:19
+  Rendered layout layouts/application.html.erb (Duration: 14.8ms | Allocations: 3579)
+Completed 200 OK in 18ms (Views: 16.2ms | ActiveRecord: 1.0ms | Allocations: 3892)
+
+
+Started GET "/users/sign_out" for ::1 at 2022-12-01 06:33:02 +0100
+Processing by Devise::SessionsController#destroy as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 52], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 46ms (ActiveRecord: 0.6ms | Allocations: 2721)
+
+
+Started GET "/" for ::1 at 2022-12-01 06:33:02 +0100
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 4.3ms | Allocations: 2860)
+Completed 200 OK in 6ms (Views: 5.2ms | ActiveRecord: 0.0ms | Allocations: 3174)
+
+
+Started GET "/users/confirmation?confirmation_token=[FILTERED]" for ::1 at 2022-12-01 06:33:22 +0100
+Processing by Devise::ConfirmationsController#show as HTML
+  Parameters: {"confirmation_token"=>"[FILTERED]"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."confirmation_token" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["confirmation_token", "[FILTERED]"], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering devise/confirmations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 1.0ms | Allocations: 570)
+  Rendered devise/shared/_links.html.erb (Duration: 5.3ms | Allocations: 466)
+  Rendered devise/confirmations/new.html.erb within layouts/application (Duration: 15.5ms | Allocations: 3159)
+  Rendered layout layouts/application.html.erb (Duration: 25.7ms | Allocations: 5613)
+Completed 200 OK in 36ms (Views: 30.4ms | ActiveRecord: 0.6ms | Allocations: 7572)
+
+
+Started POST "/users/confirmation" for ::1 at 2022-12-01 06:33:33 +0100
+Processing by Devise::ConfirmationsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"brecinneuxaw@yopmail.com"}, "commit"=>"Resend confirmation instructions"}
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."unconfirmed_email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["unconfirmed_email", "brecinneuxaw@yopmail.com"], ["LIMIT", 1]]
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "brecinneuxaw@yopmail.com"], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering devise/confirmations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 4.2ms | Allocations: 467)
+  Rendered devise/shared/_links.html.erb (Duration: 1.1ms | Allocations: 209)
+  Rendered devise/confirmations/new.html.erb within layouts/application (Duration: 8.9ms | Allocations: 1958)
+  Rendered layout layouts/application.html.erb (Duration: 13.9ms | Allocations: 4387)
+Completed 200 OK in 35ms (Views: 15.3ms | ActiveRecord: 2.6ms | Allocations: 8113)
+
+
+Started POST "/users/confirmation" for ::1 at 2022-12-01 06:33:36 +0100
+Processing by Devise::ConfirmationsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"brecinneuxaw@yopmail.com"}, "commit"=>"Resend confirmation instructions"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."unconfirmed_email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["unconfirmed_email", "brecinneuxaw@yopmail.com"], ["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "brecinneuxaw@yopmail.com"], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering devise/confirmations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 3.0ms | Allocations: 467)
+  Rendered devise/shared/_links.html.erb (Duration: 0.7ms | Allocations: 209)
+  Rendered devise/confirmations/new.html.erb within layouts/application (Duration: 10.0ms | Allocations: 1958)
+  Rendered layout layouts/application.html.erb (Duration: 16.8ms | Allocations: 4387)
+Completed 200 OK in 28ms (Views: 17.9ms | ActiveRecord: 0.8ms | Allocations: 7984)
+
+
+Started GET "/users/sign_up" for ::1 at 2022-12-01 06:33:54 +0100
+Processing by Users::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.0ms | Allocations: 14)
+  Rendered devise/shared/_links.html.erb (Duration: 0.4ms | Allocations: 139)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 4.1ms | Allocations: 2084)
+  Rendered layout layouts/application.html.erb (Duration: 8.3ms | Allocations: 4435)
+Completed 200 OK in 11ms (Views: 9.1ms | ActiveRecord: 0.0ms | Allocations: 5374)
+
+
+Started GET "/users/sign_in" for ::1 at 2022-12-01 06:33:56 +0100
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.8ms | Allocations: 212)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 26.1ms | Allocations: 9350)
+  Rendered layout layouts/application.html.erb (Duration: 29.6ms | Allocations: 11778)
+Completed 200 OK in 33ms (Views: 31.7ms | ActiveRecord: 0.0ms | Allocations: 13315)
+
+
+Started POST "/users/sign_in" for ::1 at 2022-12-01 06:34:17 +0100
+Processing by Devise::SessionsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"brecinneuxaw@yopmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "brecinneuxaw@yopmail.com"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 256ms (ActiveRecord: 0.7ms | Allocations: 2819)
+
+
+Started GET "/" for ::1 at 2022-12-01 06:34:17 +0100
+Processing by HomeController#index as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 70], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:19
+  Rendered layout layouts/application.html.erb (Duration: 8.3ms | Allocations: 3561)
+Completed 200 OK in 10ms (Views: 8.8ms | ActiveRecord: 0.6ms | Allocations: 3878)
+
+
+Started GET "/users/sign_up" for ::1 at 2022-12-01 06:37:59 +0100
+Processing by Users::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.1ms | Allocations: 16)
+  Rendered devise/shared/_links.html.erb (Duration: 0.3ms | Allocations: 164)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 4.4ms | Allocations: 2202)
+  Rendered layout layouts/application.html.erb (Duration: 16.6ms | Allocations: 16020)
+Completed 200 OK in 34ms (Views: 18.9ms | ActiveRecord: 6.4ms | Allocations: 21983)
+
+
+Started POST "/users" for ::1 at 2022-12-01 06:38:11 +0100
+Processing by Users::RegistrationsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"alt.za-9oofignn@yopmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "first_name"=>"", "last_name"=>"", "phone"=>""}, "commit"=>"Sign up"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users/registrations_controller.rb:14:in `create'
+  [1m[36mUser Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "alt.za-9oofignn@yopmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users/registrations_controller.rb:14:in `create'
+  [1m[36mUser Create (0.6ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "reset_password_token", "reset_password_sent_at", "remember_created_at", "confirmation_token", "confirmed_at", "confirmation_sent_at", "unconfirmed_email", "first_name", "last_name", "phone", "last_login", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15) RETURNING "id"[0m  [["email", "alt.za-9oofignn@yopmail.com"], ["encrypted_password", "[FILTERED]"], ["reset_password_token", "[FILTERED]"], ["reset_password_sent_at", "[FILTERED]"], ["remember_created_at", nil], ["confirmation_token", "[FILTERED]"], ["confirmed_at", nil], ["confirmation_sent_at", "2022-12-01 05:38:12.066568"], ["unconfirmed_email", nil], ["first_name", ""], ["last_name", ""], ["phone", ""], ["last_login", nil], ["created_at", "2022-12-01 05:38:12.066430"], ["updated_at", "2022-12-01 05:38:12.066430"]]
+  ↳ app/controllers/users/registrations_controller.rb:14:in `create'
+  Rendering layout layouts/mailer.html.erb
+  Rendering user_mailer/welcome_email.html.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.html.erb within layouts/mailer (Duration: 0.1ms | Allocations: 14)
+  Rendered layout layouts/mailer.html.erb (Duration: 0.5ms | Allocations: 96)
+  Rendering layout layouts/mailer.text.erb
+  Rendering user_mailer/welcome_email.text.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.text.erb within layouts/mailer (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/mailer.text.erb (Duration: 0.6ms | Allocations: 86)
+UserMailer#welcome_email: processed outbound mail in 7.7ms
+Delivered mail 63883dc4147ca_11e413e948825e@devgiack-VirtualBox.mail (1004.0ms)
+Date: Thu, 01 Dec 2022 06:38:12 +0100
+From: devgiack@protonmail.com
+To: alt.za-9oofignn@yopmail.com
+Message-ID: <63883dc4147ca_11e413e948825e@devgiack-VirtualBox.mail>
+Subject: Bienvenue chez nous !
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_63883dc41375c_11e413e94881e8";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_63883dc41375c_11e413e94881e8
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: base64
+
+ICAgIFNhbHV0ICBldCBiaWVudmVudWUgY2hleiBub3VzICENCiAgICA9PT09
+PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09
+PT09PT09PT09DQoNCiAgICBUdSB0J2VzIGluc2NyaXQgc3VyIG1vbnNpdGUu
+ZnIgZW4gdXRpbGlzYW50IGwnZS1tYWlsIHN1aXZhbnQgOiBhbHQuemEtOW9v
+Zmlnbm5AeW9wbWFpbC5jb20uDQoNCiAgICBQb3VyIGFjY8OpZGVyIMOgIHRv
+biBlc3BhY2UgY2xpZW50LCBjb25uZWN0ZS10b2kgdmlhIDogaHR0cDovL21v
+bnNpdGUuZnIvbG9naW4uDQoNCiAgICDDgCB0csOocyB2aXRlIHN1ciBtb25z
+aXRlLmZyICENCg==
+
+----==_mimepart_63883dc41375c_11e413e94881e8
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf=
+-8" />=0D
+    <style>=0D
+      /* Email styles need to be inline */=0D
+    </style>=0D
+  </head>=0D
+=0D
+  <body>=0D
+        <!DOCTYPE html>=0D
+    <html>=0D
+      <head>=0D
+        <meta content=3D'text/html; charset=3DUTF-8' http-equiv=3D'Conten=
+t-Type' />=0D
+      </head>=0D
+      <body>=0D
+        <h1>Salut  et bienvenue chez nous !</h1>=0D
+        <p>=0D
+          Tu t'es inscrit sur monsite.fr en utilisant l'e-mail suivant : =
+alt.za-9oofignn@yopmail.com.=0D
+        </p>=0D
+        <p>=0D
+          Pour acc=C3=A9der =C3=A0 ton espace client, connecte-toi via : =
+http://monsite.fr/login.=0D
+        </p>=0D
+        <p> =C3=80 tr=C3=A8s vite sur monsite.fr !=0D
+      </body>=0D
+    </html>=0D
+  </body>=0D
+</html>=0D
+
+----==_mimepart_63883dc41375c_11e413e94881e8--
+
+  [1m[36mTRANSACTION (16.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users/registrations_controller.rb:14:in `create'
+  Rendering devise/mailer/confirmation_instructions.html.erb
+  Rendered devise/mailer/confirmation_instructions.html.erb (Duration: 0.6ms | Allocations: 110)
+Devise::Mailer#confirmation_instructions: processed outbound mail in 8.8ms
+Delivered mail 63883dc51dc62_11e413e94883e0@devgiack-VirtualBox.mail (848.4ms)
+Date: Thu, 01 Dec 2022 06:38:13 +0100
+From: devgiack@protonmail.com
+Reply-To: devgiack@protonmail.com
+To: alt.za-9oofignn@yopmail.com
+Message-ID: <63883dc51dc62_11e413e94883e0@devgiack-VirtualBox.mail>
+Subject: Confirmation instructions
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p>Welcome alt.za-9oofignn@yopmail.com!</p>
+
+<p>You can confirm your account email through the link below:</p>
+
+<p><a href="http://localhost:3000/users/confirmation?confirmation_token=dxSqnfJ1K7sT8CxBNzxP">Confirm my account</a></p>
+
+Redirected to http://localhost:3000/
+Completed 302 Found in 2171ms (ActiveRecord: 17.9ms | Allocations: 31663)
+
+
+Started GET "/" for ::1 at 2022-12-01 06:38:13 +0100
+Processing by HomeController#index as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 9)
+  Rendered layout layouts/application.html.erb (Duration: 5.2ms | Allocations: 2897)
+Completed 200 OK in 8ms (Views: 7.4ms | ActiveRecord: 0.0ms | Allocations: 3670)
+
+
+Started GET "/users/sign_up" for ::1 at 2022-12-01 07:03:56 +0100
+Processing by Users::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 2.0ms | Allocations: 223)
+  Rendered devise/shared/_links.html.erb (Duration: 2.0ms | Allocations: 587)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 11.6ms | Allocations: 3467)
+  Rendered layout layouts/application.html.erb (Duration: 31.1ms | Allocations: 17628)
+Completed 200 OK in 62ms (Views: 34.4ms | ActiveRecord: 12.1ms | Allocations: 26282)
+
+
+Started POST "/users" for ::1 at 2022-12-01 07:04:37 +0100
+Processing by Users::RegistrationsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"alt.za-9oofignn@yopmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "first_name"=>"Jaccomo", "last_name"=>"De Gregorio", "phone"=>"0656666660"}, "commit"=>"Sign up"}
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users/registrations_controller.rb:14:in `create'
+  [1m[36mUser Exists? (8.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "alt.za-9oofignn@yopmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users/registrations_controller.rb:14:in `create'
+  [1m[36mTRANSACTION (1.3ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/users/registrations_controller.rb:14:in `create'
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 1.0ms | Allocations: 522)
+  Rendered devise/shared/_links.html.erb (Duration: 0.3ms | Allocations: 153)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 6.7ms | Allocations: 3261)
+  Rendered layout layouts/application.html.erb (Duration: 10.3ms | Allocations: 5664)
+Completed 200 OK in 287ms (Views: 11.5ms | ActiveRecord: 10.3ms | Allocations: 10445)
+
+
+Started POST "/users" for ::1 at 2022-12-01 07:04:41 +0100
+Processing by Users::RegistrationsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"alt.za-9oofignn@yopmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "first_name"=>"Jaccomo", "last_name"=>"De Gregorio", "phone"=>"0656666660"}, "commit"=>"Sign up"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users/registrations_controller.rb:14:in `create'
+  [1m[36mUser Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "alt.za-9oofignn@yopmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users/registrations_controller.rb:14:in `create'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/users/registrations_controller.rb:14:in `create'
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.9ms | Allocations: 466)
+  Rendered devise/shared/_links.html.erb (Duration: 0.5ms | Allocations: 153)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 14.9ms | Allocations: 3196)
+  Rendered layout layouts/application.html.erb (Duration: 19.2ms | Allocations: 5599)
+Completed 200 OK in 291ms (Views: 20.2ms | ActiveRecord: 0.6ms | Allocations: 9548)
+
+
+Started POST "/users" for ::1 at 2022-12-01 07:05:07 +0100
+Processing by Users::RegistrationsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"brecinneuxa@yopmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "first_name"=>"Jaccomo", "last_name"=>"De Gregorio", "phone"=>"0656666660"}, "commit"=>"Sign up"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users/registrations_controller.rb:14:in `create'
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "brecinneuxa@yopmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users/registrations_controller.rb:14:in `create'
+  [1m[36mUser Create (0.7ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "reset_password_token", "reset_password_sent_at", "remember_created_at", "confirmation_token", "confirmed_at", "confirmation_sent_at", "unconfirmed_email", "first_name", "last_name", "phone", "last_login", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15) RETURNING "id"[0m  [["email", "brecinneuxa@yopmail.com"], ["encrypted_password", "[FILTERED]"], ["reset_password_token", "[FILTERED]"], ["reset_password_sent_at", "[FILTERED]"], ["remember_created_at", nil], ["confirmation_token", "[FILTERED]"], ["confirmed_at", nil], ["confirmation_sent_at", "2022-12-01 06:05:07.480737"], ["unconfirmed_email", nil], ["first_name", "Jaccomo"], ["last_name", "De Gregorio"], ["phone", "0656666660"], ["last_login", nil], ["created_at", "2022-12-01 06:05:07.480576"], ["updated_at", "2022-12-01 06:05:07.480576"]]
+  ↳ app/controllers/users/registrations_controller.rb:14:in `create'
+  Rendering layout layouts/mailer.html.erb
+  Rendering user_mailer/welcome_email.html.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.html.erb within layouts/mailer (Duration: 2.0ms | Allocations: 217)
+  Rendered layout layouts/mailer.html.erb (Duration: 4.3ms | Allocations: 432)
+  Rendering layout layouts/mailer.text.erb
+  Rendering user_mailer/welcome_email.text.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.text.erb within layouts/mailer (Duration: 1.2ms | Allocations: 157)
+  Rendered layout layouts/mailer.text.erb (Duration: 2.5ms | Allocations: 339)
+UserMailer#welcome_email: processed outbound mail in 16.7ms
+Delivered mail 6388441380af5_11e413e80885a3@devgiack-VirtualBox.mail (877.7ms)
+Date: Thu, 01 Dec 2022 07:05:07 +0100
+From: devgiack@protonmail.com
+To: brecinneuxa@yopmail.com
+Message-ID: <6388441380af5_11e413e80885a3@devgiack-VirtualBox.mail>
+Subject: Bienvenue chez nous !
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_638844137f571_11e413e80884c6";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_638844137f571_11e413e80884c6
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: base64
+
+ICAgIFNhbHV0IEphY2NvbW8gZXQgYmllbnZlbnVlIGNoZXogbm91cyAhDQog
+ICAgPT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09
+PT09PT09PT09PT09PT09PQ0KDQogICAgVHUgdCdlcyBpbnNjcml0IHN1ciBt
+b25zaXRlLmZyIGVuIHV0aWxpc2FudCBsJ2UtbWFpbCBzdWl2YW50IDogYnJl
+Y2lubmV1eGFAeW9wbWFpbC5jb20uDQoNCiAgICBQb3VyIGFjY8OpZGVyIMOg
+IHRvbiBlc3BhY2UgY2xpZW50LCBjb25uZWN0ZS10b2kgdmlhIDogaHR0cDov
+L3RydWZmaWVyZXMtc2FpbnQtbWFydGluLmNvbS4NCg0KICAgIMOAIHRyw6hz
+IHZpdGUgc3VyIG1vbnNpdGUuZnIgIQ0K
+
+----==_mimepart_638844137f571_11e413e80884c6
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf=
+-8" />=0D
+    <style>=0D
+      /* Email styles need to be inline */=0D
+    </style>=0D
+  </head>=0D
+=0D
+  <body>=0D
+        <!DOCTYPE html>=0D
+    <html>=0D
+      <head>=0D
+        <meta content=3D'text/html; charset=3DUTF-8' http-equiv=3D'Conten=
+t-Type' />=0D
+      </head>=0D
+      <body>=0D
+        <h1>Bonjour, Jaccomo De Gregorio et bienvenue chez les truffi=C3=A9=
+res de Saint-Martin.</h1>=0D
+        <p>=0D
+            Nous vous remercions pour votre inscription sur notre boutiqu=
+e en ligne.=0D
+        </p>=0D
+        <p>=0D
+            Les truffi=C3=A9res de Saint-Martin vous propose des truffes =
+s=C3=A9lectionn=C3=A9es de grande qualit=C3=A9 au meilleur prix.=0D
+            Notre priorit=C3=A9 est votre pleine satisfaction, n'h=C3=A9s=
+itez pas a nous contacter pour toute demande d'information.=0D
+        </p>=0D
+        <p>=0D
+          Pour acc=C3=A9der =C3=A0 votre espace client, connectez-vous vi=
+a : http://truffieres-saint-martin.com.=0D
+        =0D
+        </p>=0D
+        <p> =C3=80 tr=C3=A8s vite sur http://truffieres-saint-martin.com!=
+=0D
+      </body>=0D
+    </html>=0D
+  </body>=0D
+</html>=0D
+
+----==_mimepart_638844137f571_11e413e80884c6--
+
+  [1m[36mTRANSACTION (25.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users/registrations_controller.rb:14:in `create'
+  Rendering devise/mailer/confirmation_instructions.html.erb
+  Rendered devise/mailer/confirmation_instructions.html.erb (Duration: 1.7ms | Allocations: 241)
+Devise::Mailer#confirmation_instructions: processed outbound mail in 7.2ms
+Delivered mail 638844146c45e_11e413e808869e@devgiack-VirtualBox.mail (934.4ms)
+Date: Thu, 01 Dec 2022 07:05:08 +0100
+From: devgiack@protonmail.com
+Reply-To: devgiack@protonmail.com
+To: brecinneuxa@yopmail.com
+Message-ID: <638844146c45e_11e413e808869e@devgiack-VirtualBox.mail>
+Subject: Confirmation instructions
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p>Welcome brecinneuxa@yopmail.com!</p>
+
+<p>You can confirm your account email through the link below:</p>
+
+<p><a href="http://localhost:3000/users/confirmation?confirmation_token=NGxEhayZxQpzRm5sEvx_">Confirm my account</a></p>
+
+Redirected to http://localhost:3000/
+Completed 302 Found in 2169ms (ActiveRecord: 26.8ms | Allocations: 39314)
+
+
+Started GET "/" for ::1 at 2022-12-01 07:05:09 +0100
+Processing by HomeController#index as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 1.1ms | Allocations: 100)
+  Rendered layout layouts/application.html.erb (Duration: 7.8ms | Allocations: 2987)
+Completed 200 OK in 11ms (Views: 10.4ms | ActiveRecord: 0.0ms | Allocations: 3924)
+
+

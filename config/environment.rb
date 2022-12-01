@@ -5,10 +5,10 @@ require_relative "application"
 Rails.application.initialize!
 
 ActionMailer::Base.smtp_settings = {
-    :user_name => 'the-cat-shop@outlook.com',
-    :password => ENV['SENDINBLUE'],
-    :domain => 'localhost',
-    :address => 'smtp-relay.sendinblue.com',
+    :user_name => 'apikey',
+    :password => ENV['SENDGRID_PWD'],
+    :domain => 'monsite.fr',
+    :address => 'smtp.sendgrid.net',
     :port => 587,
     :authentication => :plain,
     :enable_starttls_auto => true

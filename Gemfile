@@ -55,6 +55,9 @@ gem "rubocop"
 gem "faker"
 gem "dotenv"
 
+#Mail
+gem 'sendgrid-ruby'
+
 #Users 
 gem "devise"
 
