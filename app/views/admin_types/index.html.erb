@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Admin types</h1>
+
+<div id="admin_types">
+  <% @admin_types.each do |admin_type| %>
+    <%= render admin_type %>
+    <p>
+      <%= link_to "Show this admin type", admin_type %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New admin type", new_admin_type_path %>
