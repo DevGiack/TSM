@@ -16141,3 +16141,385 @@ Processing by Devise::SessionsController#new as HTML
 Completed 200 OK in 17ms (Views: 15.4ms | ActiveRecord: 0.0ms | Allocations: 6033)
 
 
+Started GET "/" for 127.0.0.1 at 2022-12-01 22:27:20 +0100
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 466.3ms | Allocations: 65303)
+  Rendered layout layouts/application.html.erb (Duration: 492.5ms | Allocations: 84155)
+Completed 200 OK in 507ms (Views: 497.0ms | ActiveRecord: 0.0ms | Allocations: 89786)
+
+
+Started GET "/application.css" for 127.0.0.1 at 2022-12-01 22:27:21 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/application.css"):
+  
+Started GET "/" for 127.0.0.1 at 2022-12-01 22:29:31 +0100
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 8.7ms | Allocations: 4331)
+  Rendered layout layouts/application.html.erb (Duration: 47.1ms | Allocations: 20254)
+Completed 200 OK in 51ms (Views: 50.0ms | ActiveRecord: 0.0ms | Allocations: 21315)
+
+
+Started GET "/application.css" for 127.0.0.1 at 2022-12-01 22:29:31 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/application.css"):
+  
+Started GET "/" for 127.0.0.1 at 2022-12-01 22:29:42 +0100
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 10.5ms | Allocations: 3853)
+  Rendered layout layouts/application.html.erb (Duration: 41.6ms | Allocations: 16898)
+Completed 200 OK in 43ms (Views: 42.3ms | ActiveRecord: 0.0ms | Allocations: 17216)
+
+
+Started GET "/application.css" for 127.0.0.1 at 2022-12-01 22:29:42 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/application.css"):
+  
+Started GET "/" for 127.0.0.1 at 2022-12-01 22:30:02 +0100
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 10.8ms | Allocations: 4368)
+  Rendered layout layouts/application.html.erb (Duration: 18.7ms | Allocations: 8855)
+Completed 200 OK in 23ms (Views: 22.3ms | ActiveRecord: 0.0ms | Allocations: 9913)
+
+
+Started GET "/application.css" for 127.0.0.1 at 2022-12-01 22:30:02 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/application.css"):
+  
+Started GET "/" for 127.0.0.1 at 2022-12-01 22:30:28 +0100
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 15.9ms | Allocations: 4357)
+  Rendered layout layouts/application.html.erb (Duration: 46.2ms | Allocations: 20039)
+Completed 200 OK in 51ms (Views: 49.8ms | ActiveRecord: 0.0ms | Allocations: 21097)
+
+
+Started GET "/application.css" for 127.0.0.1 at 2022-12-01 22:30:28 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/application.css"):
+  
+Started GET "/" for 127.0.0.1 at 2022-12-01 22:30:34 +0100
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 5.0ms | Allocations: 3860)
+  Rendered layout layouts/application.html.erb (Duration: 16.8ms | Allocations: 8422)
+Completed 200 OK in 19ms (Views: 17.7ms | ActiveRecord: 0.0ms | Allocations: 8734)
+
+
+Started GET "/application.css" for 127.0.0.1 at 2022-12-01 22:30:34 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/application.css"):
+  
+Started GET "/" for 127.0.0.1 at 2022-12-01 22:31:28 +0100
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 18.5ms | Allocations: 3873)
+  Rendered layout layouts/application.html.erb (Duration: 72.1ms | Allocations: 18944)
+Completed 200 OK in 79ms (Views: 75.0ms | ActiveRecord: 0.0ms | Allocations: 19256)
+
+
+Started GET "/application.css" for 127.0.0.1 at 2022-12-01 22:31:28 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/application.css"):
+  
+Started GET "/" for 127.0.0.1 at 2022-12-01 22:32:13 +0100
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 10.2ms | Allocations: 3872)
+  Rendered layout layouts/application.html.erb (Duration: 35.9ms | Allocations: 17452)
+Completed 200 OK in 37ms (Views: 36.5ms | ActiveRecord: 0.0ms | Allocations: 17763)
+
+
+Started GET "/application.css" for 127.0.0.1 at 2022-12-01 22:32:13 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/application.css"):
+  
+Started GET "/" for 127.0.0.1 at 2022-12-01 22:32:52 +0100
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 9.4ms | Allocations: 3860)
+  Rendered layout layouts/application.html.erb (Duration: 44.9ms | Allocations: 16482)
+Completed 200 OK in 48ms (Views: 46.3ms | ActiveRecord: 0.0ms | Allocations: 16793)
+
+
+Started GET "/application.css" for 127.0.0.1 at 2022-12-01 22:32:52 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/application.css"):
+  
+Started GET "/" for 127.0.0.1 at 2022-12-01 22:33:30 +0100
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 8.8ms | Allocations: 3872)
+  Rendered layout layouts/application.html.erb (Duration: 43.5ms | Allocations: 18451)
+Completed 200 OK in 46ms (Views: 44.2ms | Allocations: 18760)
+
+
+Started GET "/application.css" for 127.0.0.1 at 2022-12-01 22:33:30 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/application.css"):
+  
+Started GET "/" for 127.0.0.1 at 2022-12-01 22:33:42 +0100
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 6.8ms | Allocations: 3872)
+  Rendered layout layouts/application.html.erb (Duration: 30.5ms | Allocations: 17988)
+Completed 200 OK in 32ms (Views: 31.3ms | Allocations: 18297)
+
+
+Started GET "/application.css" for 127.0.0.1 at 2022-12-01 22:33:42 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/application.css"):
+  
+Started GET "/" for 127.0.0.1 at 2022-12-01 22:33:48 +0100
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 6.3ms | Allocations: 3873)
+  Rendered layout layouts/application.html.erb (Duration: 31.5ms | Allocations: 16947)
+Completed 200 OK in 33ms (Views: 32.1ms | Allocations: 17255)
+
+
+Started GET "/application.css" for 127.0.0.1 at 2022-12-01 22:33:48 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/application.css"):
+  
+Started GET "/" for 127.0.0.1 at 2022-12-01 22:33:51 +0100
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 5.1ms | Allocations: 3873)
+  Rendered layout layouts/application.html.erb (Duration: 11.7ms | Allocations: 8438)
+Completed 200 OK in 13ms (Views: 12.2ms | Allocations: 8747)
+
+
+Started GET "/application.css" for 127.0.0.1 at 2022-12-01 22:33:51 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/application.css"):
+  
+Started GET "/" for 127.0.0.1 at 2022-12-01 22:33:59 +0100
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 5.5ms | Allocations: 3870)
+  Rendered layout layouts/application.html.erb (Duration: 26.6ms | Allocations: 17913)
+Completed 200 OK in 28ms (Views: 27.2ms | Allocations: 18222)
+
+
+Started GET "/application.css" for 127.0.0.1 at 2022-12-01 22:33:59 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/application.css"):
+  
+Started GET "/application.css" for 127.0.0.1 at 2022-12-01 22:34:17 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/application.css"):
+  
+Started GET "/" for 127.0.0.1 at 2022-12-01 22:37:05 +0100
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 10.0ms | Allocations: 3872)
+  Rendered layout layouts/application.html.erb (Duration: 41.1ms | Allocations: 17956)
+Completed 200 OK in 43ms (Views: 42.0ms | Allocations: 18265)
+
+
+Started GET "/application.css" for 127.0.0.1 at 2022-12-01 22:37:05 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/application.css"):
+  
+Started GET "/" for 127.0.0.1 at 2022-12-01 22:37:36 +0100
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 7.4ms | Allocations: 4369)
+  Rendered layout layouts/application.html.erb (Duration: 15.6ms | Allocations: 9547)
+Completed 200 OK in 22ms (Views: 20.7ms | Allocations: 10601)
+
+
+Started GET "/application.css" for 127.0.0.1 at 2022-12-01 22:37:36 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/application.css"):
+  
+Started GET "/" for 127.0.0.1 at 2022-12-01 22:37:49 +0100
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 7.6ms | Allocations: 4358)
+  Rendered layout layouts/application.html.erb (Duration: 13.2ms | Allocations: 8845)
+Completed 200 OK in 16ms (Views: 15.0ms | Allocations: 9899)
+
+
+Started GET "/application.css" for 127.0.0.1 at 2022-12-01 22:37:49 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/application.css"):
+  
+Started GET "/" for 127.0.0.1 at 2022-12-01 22:38:54 +0100
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 11.3ms | Allocations: 3872)
+  Rendered layout layouts/application.html.erb (Duration: 54.8ms | Allocations: 18415)
+Completed 200 OK in 57ms (Views: 55.9ms | Allocations: 18725)
+
+
+Started GET "/application.css" for 127.0.0.1 at 2022-12-01 22:38:55 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/application.css"):
+  
+Started GET "/" for 127.0.0.1 at 2022-12-01 22:39:50 +0100
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 7.9ms | Allocations: 3872)
+  Rendered layout layouts/application.html.erb (Duration: 46.8ms | Allocations: 16457)
+Completed 200 OK in 49ms (Views: 47.8ms | Allocations: 16766)
+
+
+Started GET "/application.css" for 127.0.0.1 at 2022-12-01 22:39:51 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/application.css"):
+  
+Started GET "/" for 127.0.0.1 at 2022-12-01 22:40:04 +0100
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 6.1ms | Allocations: 3861)
+  Rendered layout layouts/application.html.erb (Duration: 37.9ms | Allocations: 17905)
+Completed 200 OK in 39ms (Views: 38.5ms | Allocations: 18213)
+
+
+Started GET "/application.css" for 127.0.0.1 at 2022-12-01 22:40:04 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/application.css"):
+  
+Started GET "/" for 127.0.0.1 at 2022-12-01 22:40:12 +0100
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 5.6ms | Allocations: 3872)
+  Rendered layout layouts/application.html.erb (Duration: 28.4ms | Allocations: 18415)
+Completed 200 OK in 29ms (Views: 28.9ms | Allocations: 18724)
+
+
+Started GET "/application.css" for 127.0.0.1 at 2022-12-01 22:40:12 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/application.css"):
+  
+Started GET "/" for 127.0.0.1 at 2022-12-01 22:40:36 +0100
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 7.3ms | Allocations: 3872)
+  Rendered layout layouts/application.html.erb (Duration: 29.0ms | Allocations: 18412)
+Completed 200 OK in 31ms (Views: 29.7ms | Allocations: 18720)
+
+
+Started GET "/application.css" for 127.0.0.1 at 2022-12-01 22:40:36 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/application.css"):
+  
+Started GET "/" for 127.0.0.1 at 2022-12-01 22:42:09 +0100
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 9.1ms | Allocations: 3873)
+  Rendered layout layouts/application.html.erb (Duration: 37.1ms | Allocations: 17985)
+Completed 200 OK in 38ms (Views: 37.8ms | Allocations: 18294)
+
+
+Started GET "/application.css" for 127.0.0.1 at 2022-12-01 22:42:10 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/application.css"):
+  
+Started GET "/" for 127.0.0.1 at 2022-12-01 22:42:40 +0100
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 12.9ms | Allocations: 4370)
+  Rendered layout layouts/application.html.erb (Duration: 28.6ms | Allocations: 9550)
+Completed 200 OK in 33ms (Views: 31.5ms | Allocations: 10604)
+
+
+Started GET "/application.css" for 127.0.0.1 at 2022-12-01 22:42:40 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/application.css"):
+  
+Started GET "/" for 127.0.0.1 at 2022-12-01 22:43:22 +0100
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 9.0ms | Allocations: 4374)
+  Rendered layout layouts/application.html.erb (Duration: 16.1ms | Allocations: 8866)
+Completed 200 OK in 19ms (Views: 18.5ms | Allocations: 9921)
+
+
+Started GET "/application.css" for 127.0.0.1 at 2022-12-01 22:43:22 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/application.css"):
+  
+Started GET "/" for 127.0.0.1 at 2022-12-01 22:44:34 +0100
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 10.2ms | Allocations: 4385)
+  Rendered layout layouts/application.html.erb (Duration: 17.1ms | Allocations: 8877)
+Completed 200 OK in 20ms (Views: 18.9ms | Allocations: 9932)
+
+
+Started GET "/application.css" for 127.0.0.1 at 2022-12-01 22:44:34 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/application.css"):
+  
+Started GET "/" for 127.0.0.1 at 2022-12-01 22:44:54 +0100
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 8.7ms | Allocations: 4366)
+  Rendered layout layouts/application.html.erb (Duration: 16.9ms | Allocations: 8856)
+Completed 200 OK in 21ms (Views: 19.8ms | Allocations: 9911)
+
+
+Started GET "/application.css" for 127.0.0.1 at 2022-12-01 22:44:54 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/application.css"):
+  
+Started GET "/" for 127.0.0.1 at 2022-12-01 22:45:46 +0100
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 9.9ms | Allocations: 4380)
+  Rendered layout layouts/application.html.erb (Duration: 17.3ms | Allocations: 8873)
+Completed 200 OK in 21ms (Views: 20.0ms | Allocations: 9928)
+
+
+Started GET "/application.css" for 127.0.0.1 at 2022-12-01 22:45:46 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/application.css"):
+  
+Started GET "/" for 127.0.0.1 at 2022-12-01 22:46:01 +0100
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 9.0ms | Allocations: 4377)
+  Rendered layout layouts/application.html.erb (Duration: 21.6ms | Allocations: 8870)
+Completed 200 OK in 26ms (Views: 25.0ms | Allocations: 9925)
+
+
+Started GET "/application.css" for 127.0.0.1 at 2022-12-01 22:46:01 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/application.css"):
+  
