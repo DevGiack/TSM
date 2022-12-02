@@ -16523,3 +16523,343 @@ Started GET "/application.css" for 127.0.0.1 at 2022-12-01 22:46:01 +0100
   
 ActionController::RoutingError (No route matches [GET] "/application.css"):
   
+Started GET "/" for 127.0.0.1 at 2022-12-02 09:20:08 +0100
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 432.6ms | Allocations: 66615)
+  Rendered layout layouts/application.html.erb (Duration: 466.2ms | Allocations: 85467)
+Completed 200 OK in 488ms (Views: 474.0ms | ActiveRecord: 0.0ms | Allocations: 91098)
+
+
+Started GET "/application.css" for 127.0.0.1 at 2022-12-02 09:20:09 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/application.css"):
+  
+Started GET "/products" for 127.0.0.1 at 2022-12-02 09:28:49 +0100
+Processing by ProductsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (8.5ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:6
+  Rendered products/_product.html.erb (Duration: 1.6ms | Allocations: 248)
+  Rendered products/_product.html.erb (Duration: 0.1ms | Allocations: 21)
+  Rendered products/_product.html.erb (Duration: 0.1ms | Allocations: 21)
+  Rendered products/_product.html.erb (Duration: 0.0ms | Allocations: 21)
+  Rendered products/_product.html.erb (Duration: 0.0ms | Allocations: 21)
+  Rendered products/_product.html.erb (Duration: 0.0ms | Allocations: 21)
+  Rendered products/_product.html.erb (Duration: 0.0ms | Allocations: 21)
+  Rendered products/_product.html.erb (Duration: 0.1ms | Allocations: 21)
+  Rendered products/_product.html.erb (Duration: 0.0ms | Allocations: 21)
+  Rendered products/_product.html.erb (Duration: 0.0ms | Allocations: 21)
+  Rendered products/_product.html.erb (Duration: 0.0ms | Allocations: 21)
+  Rendered products/_product.html.erb (Duration: 0.0ms | Allocations: 21)
+  Rendered products/_product.html.erb (Duration: 0.0ms | Allocations: 21)
+  Rendered products/_product.html.erb (Duration: 0.0ms | Allocations: 21)
+  Rendered products/_product.html.erb (Duration: 0.0ms | Allocations: 21)
+  Rendered products/_product.html.erb (Duration: 0.0ms | Allocations: 21)
+  Rendered products/_product.html.erb (Duration: 0.0ms | Allocations: 21)
+  Rendered products/_product.html.erb (Duration: 0.2ms | Allocations: 21)
+  Rendered products/_product.html.erb (Duration: 0.1ms | Allocations: 21)
+  Rendered products/_product.html.erb (Duration: 0.0ms | Allocations: 21)
+  Rendered products/_product.html.erb (Duration: 0.0ms | Allocations: 21)
+  Rendered products/_product.html.erb (Duration: 0.0ms | Allocations: 21)
+  Rendered products/_product.html.erb (Duration: 0.0ms | Allocations: 21)
+  Rendered products/_product.html.erb (Duration: 0.0ms | Allocations: 21)
+  Rendered products/_product.html.erb (Duration: 0.0ms | Allocations: 21)
+  Rendered products/index.html.erb within layouts/application (Duration: 105.2ms | Allocations: 24229)
+  Rendered layout layouts/application.html.erb (Duration: 120.2ms | Allocations: 28342)
+Completed 200 OK in 145ms (Views: 126.5ms | ActiveRecord: 42.7ms | Allocations: 30447)
+
+
+Started GET "/carts" for 127.0.0.1 at 2022-12-02 09:29:02 +0100
+Processing by CartsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering carts/index.html.erb within layouts/application
+  [1m[36mCart Load (0.5ms)[0m  [1m[34mSELECT "carts".* FROM "carts"[0m
+  ↳ app/views/carts/index.html.erb:6
+  Rendered carts/index.html.erb within layouts/application (Duration: 3.5ms | Allocations: 1084)
+  Rendered layout layouts/application.html.erb (Duration: 9.1ms | Allocations: 5189)
+Completed 200 OK in 19ms (Views: 10.4ms | ActiveRecord: 0.5ms | Allocations: 7858)
+
+
+Started GET "/carts/new" for 127.0.0.1 at 2022-12-02 09:29:11 +0100
+Processing by CartsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering carts/new.html.erb within layouts/application
+  Rendered carts/_form.html.erb (Duration: 350.3ms | Allocations: 343212)
+  Rendered carts/new.html.erb within layouts/application (Duration: 351.9ms | Allocations: 343508)
+  Rendered layout layouts/application.html.erb (Duration: 356.8ms | Allocations: 347553)
+Completed 200 OK in 378ms (Views: 357.4ms | ActiveRecord: 3.5ms | Allocations: 361453)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2022-12-02 09:29:26 +0100
+Processing by Users::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 1.3ms | Allocations: 229)
+  Rendered devise/shared/_links.html.erb (Duration: 2.0ms | Allocations: 847)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 15.5ms | Allocations: 5074)
+  Rendered layout layouts/application.html.erb (Duration: 20.6ms | Allocations: 9177)
+Completed 200 OK in 46ms (Views: 23.2ms | ActiveRecord: 3.3ms | Allocations: 30589)
+
+
+Started GET "/" for 127.0.0.1 at 2022-12-02 09:29:37 +0100
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 14.3ms | Allocations: 3872)
+  Rendered layout layouts/application.html.erb (Duration: 24.4ms | Allocations: 7735)
+Completed 200 OK in 27ms (Views: 25.6ms | ActiveRecord: 0.0ms | Allocations: 8049)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2022-12-02 09:29:45 +0100
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.8ms | Allocations: 466)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 6.2ms | Allocations: 2478)
+  Rendered layout layouts/application.html.erb (Duration: 10.6ms | Allocations: 6572)
+Completed 200 OK in 15ms (Views: 12.5ms | ActiveRecord: 0.0ms | Allocations: 8354)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2022-12-02 09:29:48 +0100
+Processing by Users::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.1ms | Allocations: 14)
+  Rendered devise/shared/_links.html.erb (Duration: 0.3ms | Allocations: 139)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 7.5ms | Allocations: 2084)
+  Rendered layout layouts/application.html.erb (Duration: 13.6ms | Allocations: 6114)
+Completed 200 OK in 18ms (Views: 15.6ms | ActiveRecord: 0.0ms | Allocations: 6767)
+
+
+Started POST "/users" for 127.0.0.1 at 2022-12-02 09:30:09 +0100
+Processing by Users::RegistrationsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"vawatef@hotmail.fr", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "first_name"=>"awatef", "last_name"=>"Vicente", "phone"=>"0606060606"}, "commit"=>"Sign up"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users/registrations_controller.rb:14:in `create'
+  [1m[36mUser Exists? (7.5ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "vawatef@hotmail.fr"], ["LIMIT", 1]]
+  ↳ app/controllers/users/registrations_controller.rb:14:in `create'
+  [1m[36mUser Create (10.6ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "reset_password_token", "reset_password_sent_at", "remember_created_at", "confirmation_token", "confirmed_at", "confirmation_sent_at", "unconfirmed_email", "first_name", "last_name", "phone", "last_login", "created_at", "updated_at", "is_admin") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15, $16) RETURNING "id"[0m  [["email", "vawatef@hotmail.fr"], ["encrypted_password", "[FILTERED]"], ["reset_password_token", "[FILTERED]"], ["reset_password_sent_at", "[FILTERED]"], ["remember_created_at", nil], ["confirmation_token", "[FILTERED]"], ["confirmed_at", nil], ["confirmation_sent_at", "2022-12-02 08:30:09.629317"], ["unconfirmed_email", nil], ["first_name", "awatef"], ["last_name", "Vicente"], ["phone", "0606060606"], ["last_login", nil], ["created_at", "2022-12-02 08:30:09.629062"], ["updated_at", "2022-12-02 08:30:09.629062"], ["is_admin", false]]
+  ↳ app/controllers/users/registrations_controller.rb:14:in `create'
+  Rendering layout layouts/mailer.html.erb
+  Rendering user_mailer/welcome_email.html.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.html.erb within layouts/mailer (Duration: 0.9ms | Allocations: 218)
+  Rendered layout layouts/mailer.html.erb (Duration: 1.6ms | Allocations: 436)
+  Rendering layout layouts/mailer.text.erb
+  Rendering user_mailer/welcome_email.text.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.text.erb within layouts/mailer (Duration: 0.5ms | Allocations: 180)
+  Rendered layout layouts/mailer.text.erb (Duration: 1.1ms | Allocations: 363)
+UserMailer#welcome_email: processed outbound mail in 10.2ms
+Delivered mail 6389b791a2db3_3a6c3e80819de@MacBook-Pro-de-Awatef.local.mail (933.4ms)
+Date: Fri, 02 Dec 2022 09:30:09 +0100
+From: devgiack@protonmail.com
+To: vawatef@hotmail.fr
+Message-ID: <6389b791a2db3_3a6c3e80819de@MacBook-Pro-de-Awatef.local.mail>
+Subject: =?UTF-8?Q?Bienvenue_chez_les_truffi=C3=A9res_de_Saint-Martin_!?=
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_6389b791a0a48_3a6c3e80818df";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_6389b791a0a48_3a6c3e80818df
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+     Bonjour, awatef Vicente et bienvenue chez les truffi=C3=A9res de Sai=
+nt-Martin.=0D
+=0D
+        Nous vous remercions pour votre inscription sur notre boutique en=
+ ligne.=0D
+ =0D
+        Les truffi=C3=A9res de Saint-Martin vous propose des truffes s=C3=
+=A9lectionn=C3=A9es de grande qualit=C3=A9 au meilleur prix.=0D
+        Notre priorit=C3=A9 est votre pleine satisfaction, n'h=C3=A9sitez=
+ pas a nous contacter pour toute demande d'information.=0D
+=0D
+        Pour acc=C3=A9der =C3=A0 votre espace client, connectez-vous via =
+: http://truffieres-saint-martin.com.=0D
+        =0D
+        =C3=80 tr=C3=A8s vite sur http://truffieres-saint-martin.com!=0D
+
+----==_mimepart_6389b791a0a48_3a6c3e80818df
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf=
+-8" />=0D
+    <style>=0D
+      /* Email styles need to be inline */=0D
+    </style>=0D
+  </head>=0D
+=0D
+  <body>=0D
+        <!DOCTYPE html>=0D
+    <html>=0D
+      <head>=0D
+        <meta content=3D'text/html; charset=3DUTF-8' http-equiv=3D'Conten=
+t-Type' />=0D
+      </head>=0D
+      <body>=0D
+        <h1>Bonjour, awatef Vicente et bienvenue chez les truffi=C3=A9res=
+ de Saint-Martin.</h1>=0D
+        <p>=0D
+            Nous vous remercions pour votre inscription sur notre boutiqu=
+e en ligne.=0D
+        </p>=0D
+        <p>=0D
+            Les truffi=C3=A9res de Saint-Martin vous propose des truffes =
+s=C3=A9lectionn=C3=A9es de grande qualit=C3=A9 au meilleur prix.<br>=0D
+            Notre priorit=C3=A9 est votre pleine satisfaction, n'h=C3=A9s=
+itez pas a nous contacter pour toute demande d'information.=0D
+        </p>=0D
+        <p>=0D
+          Pour acc=C3=A9der =C3=A0 votre espace client, connectez-vous vi=
+a : http://truffieres-saint-martin.com.=0D
+        =0D
+        </p>=0D
+        <p> =C3=80 tr=C3=A8s vite sur http://truffieres-saint-martin.com!=
+=0D
+      </body>=0D
+    </html>=0D
+  </body>=0D
+</html>=0D
+
+----==_mimepart_6389b791a0a48_3a6c3e80818df--
+
+  [1m[36mTRANSACTION (1.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users/registrations_controller.rb:14:in `create'
+  Rendering devise/mailer/confirmation_instructions.html.erb
+  Rendered devise/mailer/confirmation_instructions.html.erb (Duration: 2.0ms | Allocations: 391)
+Devise::Mailer#confirmation_instructions: processed outbound mail in 5.8ms
+Delivered mail 6389b792946f9_3a6c3e808207b@MacBook-Pro-de-Awatef.local.mail (363.7ms)
+Date: Fri, 02 Dec 2022 09:30:10 +0100
+From: devgiack@protonmail.com
+Reply-To: devgiack@protonmail.com
+To: vawatef@hotmail.fr
+Message-ID: <6389b792946f9_3a6c3e808207b@MacBook-Pro-de-Awatef.local.mail>
+Subject: Confirmation instructions
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p>Welcome vawatef@hotmail.fr!</p>
+
+<p>You can confirm your account email through the link below:</p>
+
+<p><a href="http://localhost:3000/users/confirmation?confirmation_token=sXC3uCQFdMRsf984-B4U">Confirm my account</a></p>
+
+Redirected to http://127.0.0.1:3000/
+Completed 302 Found in 1605ms (ActiveRecord: 19.9ms | Allocations: 40376)
+
+
+Started GET "/" for 127.0.0.1 at 2022-12-02 09:30:10 +0100
+Processing by HomeController#index as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 4.3ms | Allocations: 3860)
+  Rendered layout layouts/application.html.erb (Duration: 10.2ms | Allocations: 7723)
+Completed 200 OK in 11ms (Views: 10.7ms | ActiveRecord: 0.0ms | Allocations: 8087)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2022-12-02 09:31:00 +0100
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.4ms | Allocations: 195)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 3.1ms | Allocations: 1311)
+  Rendered layout layouts/application.html.erb (Duration: 13.4ms | Allocations: 5333)
+Completed 200 OK in 16ms (Views: 14.1ms | ActiveRecord: 0.0ms | Allocations: 6032)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2022-12-02 09:31:08 +0100
+Processing by Devise::SessionsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"vawatef@hotmail.fr", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "vawatef@hotmail.fr"], ["LIMIT", 1]]
+Completed 401 Unauthorized in 275ms (ActiveRecord: 1.4ms | Allocations: 9962)
+
+
+Started GET "/users/sign_in.turbo_stream" for 127.0.0.1 at 2022-12-02 09:31:08 +0100
+Processing by Devise::SessionsController#new as TURBO_STREAM
+Completed 406 Not Acceptable in 2ms (ActiveRecord: 0.0ms | Allocations: 882)
+
+
+
+ActionController::UnknownFormat - ActionController::UnknownFormat:
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2022-12-02 09:31:08 +0100
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.5ms | Allocations: 195)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 3.7ms | Allocations: 1311)
+  Rendered layout layouts/application.html.erb (Duration: 15.5ms | Allocations: 5333)
+Completed 200 OK in 22ms (Views: 16.8ms | ActiveRecord: 0.0ms | Allocations: 6033)
+
+
+Started GET "/users/application.css" for 127.0.0.1 at 2022-12-02 09:31:08 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/users/application.css"):
+  
+Started POST "/users/sign_in" for 127.0.0.1 at 2022-12-02 09:31:17 +0100
+Processing by Devise::SessionsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"vawatef@hotmail.fr", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "vawatef@hotmail.fr"], ["LIMIT", 1]]
+Completed 401 Unauthorized in 238ms (ActiveRecord: 0.7ms | Allocations: 1764)
+
+
+Started GET "/users/sign_in.turbo_stream" for 127.0.0.1 at 2022-12-02 09:31:17 +0100
+Processing by Devise::SessionsController#new as TURBO_STREAM
+Completed 406 Not Acceptable in 2ms (ActiveRecord: 0.0ms | Allocations: 864)
+
+
+
+ActionController::UnknownFormat - ActionController::UnknownFormat:
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2022-12-02 09:31:17 +0100
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.7ms | Allocations: 195)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 2.8ms | Allocations: 1311)
+  Rendered layout layouts/application.html.erb (Duration: 8.0ms | Allocations: 5347)
+Completed 200 OK in 10ms (Views: 8.8ms | ActiveRecord: 0.0ms | Allocations: 6044)
+
+
+Started GET "/users/application.css" for 127.0.0.1 at 2022-12-02 09:31:17 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/users/application.css"):
+  
+Started GET "/" for 127.0.0.1 at 2022-12-02 10:24:22 +0100
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 47.5ms | Allocations: 4374)
+  Rendered layout layouts/application.html.erb (Duration: 71.7ms | Allocations: 8853)
+Completed 200 OK in 113ms (Views: 100.3ms | Allocations: 9909)
+
+
+Started GET "/" for 127.0.0.1 at 2022-12-02 10:32:00 +0100
+  [1m[36mActiveRecord::SchemaMigration Pluck (2.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 108.3ms | Allocations: 36847)
+  Rendered layout layouts/application.html.erb (Duration: 241.7ms | Allocations: 55798)
+Completed 200 OK in 260ms (Views: 249.5ms | ActiveRecord: 0.0ms | Allocations: 61429)
+
+
+Started GET "/application.css" for 127.0.0.1 at 2022-12-02 10:32:01 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/application.css"):
+  
