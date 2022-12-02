@@ -16523,3 +16523,1875 @@ Started GET "/application.css" for 127.0.0.1 at 2022-12-01 22:46:01 +0100
   
 ActionController::RoutingError (No route matches [GET] "/application.css"):
   
+Started GET "/" for ::1 at 2022-12-02 06:17:02 +0100
+  [1m[36mActiveRecord::SchemaMigration Pluck (111.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 1984.9ms | Allocations: 113997)
+  Rendered layout layouts/application.html.erb (Duration: 2005.3ms | Allocations: 130138)
+Completed 200 OK in 2061ms (Views: 2023.6ms | ActiveRecord: 0.0ms | Allocations: 136866)
+
+
+Started GET "/application.css" for ::1 at 2022-12-02 06:17:08 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/application.css"):
+  
+Started GET "/users/sign_in" for ::1 at 2022-12-02 06:17:58 +0100
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 32.8ms | Allocations: 1026)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 1911.6ms | Allocations: 1347004)
+  Rendered layout layouts/application.html.erb (Duration: 1919.3ms | Allocations: 1350459)
+Completed 200 OK in 2061ms (Views: 1922.2ms | ActiveRecord: 90.9ms | Allocations: 1376672)
+
+
+Started GET "/" for ::1 at 2022-12-02 06:21:01 +0100
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 14.3ms | Allocations: 3105)
+  Rendered layout layouts/application.html.erb (Duration: 27.6ms | Allocations: 6303)
+Completed 200 OK in 31ms (Views: 29.8ms | ActiveRecord: 0.0ms | Allocations: 6622)
+
+
+Started GET "/" for ::1 at 2022-12-02 06:31:10 +0100
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 6.7ms | Allocations: 3592)
+  Rendered layout layouts/application.html.erb (Duration: 12.7ms | Allocations: 8054)
+Completed 200 OK in 18ms (Views: 17.5ms | Allocations: 9096)
+
+
+Started GET "/application.css" for ::1 at 2022-12-02 06:31:10 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/application.css"):
+  
+Started GET "/users/sign_up" for ::1 at 2022-12-02 06:31:14 +0100
+Processing by Users::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.7ms | Allocations: 227)
+  Rendered devise/shared/_links.html.erb (Duration: 1.1ms | Allocations: 704)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 25.2ms | Allocations: 3983)
+  Rendered layout layouts/application.html.erb (Duration: 30.3ms | Allocations: 7461)
+Completed 200 OK in 34ms (Views: 32.2ms | Allocations: 9312)
+
+
+Started GET "/users/sign_up" for ::1 at 2022-12-02 06:33:20 +0100
+Processing by Users::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 1.6ms | Allocations: 222)
+  Rendered devise/shared/_links.html.erb (Duration: 2.5ms | Allocations: 572)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 11.0ms | Allocations: 3413)
+  Rendered layout layouts/application.html.erb (Duration: 20.3ms | Allocations: 7550)
+Completed 200 OK in 36ms (Views: 31.0ms | Allocations: 9413)
+
+
+Started GET "/users/application.css" for ::1 at 2022-12-02 06:33:21 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/users/application.css"):
+  
+Started GET "/users/sign_up" for ::1 at 2022-12-02 06:33:41 +0100
+Processing by Users::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 1.0ms | Allocations: 222)
+  Rendered devise/shared/_links.html.erb (Duration: 1.5ms | Allocations: 572)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 10.3ms | Allocations: 3413)
+  Rendered layout layouts/application.html.erb (Duration: 35.4ms | Allocations: 7556)
+Completed 200 OK in 41ms (Views: 38.3ms | Allocations: 9428)
+
+
+Started GET "/users/application.css" for ::1 at 2022-12-02 06:33:41 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/users/application.css"):
+  
+Started GET "/" for ::1 at 2022-12-02 06:35:04 +0100
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 6.1ms | Allocations: 3604)
+  Rendered layout layouts/application.html.erb (Duration: 17.9ms | Allocations: 11574)
+Completed 200 OK in 23ms (Views: 21.3ms | Allocations: 12612)
+
+
+Started GET "/application.css" for ::1 at 2022-12-02 06:35:04 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/application.css"):
+  
+Started GET "/users/sign_up" for ::1 at 2022-12-02 06:35:14 +0100
+Processing by Users::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.6ms | Allocations: 222)
+  Rendered devise/shared/_links.html.erb (Duration: 1.1ms | Allocations: 572)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 7.1ms | Allocations: 3412)
+  Rendered layout layouts/application.html.erb (Duration: 13.1ms | Allocations: 6897)
+Completed 200 OK in 17ms (Views: 15.2ms | Allocations: 8600)
+
+
+Started GET "/users/application.css" for ::1 at 2022-12-02 06:35:14 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/users/application.css"):
+  
+Started GET "/users/sign_in" for ::1 at 2022-12-02 06:35:26 +0100
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 1.0ms | Allocations: 205)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 7.3ms | Allocations: 1714)
+  Rendered layout layouts/application.html.erb (Duration: 13.5ms | Allocations: 5184)
+Completed 200 OK in 30ms (Views: 24.8ms | Allocations: 6694)
+
+
+Started GET "/users/sign_in" for ::1 at 2022-12-02 06:36:32 +0100
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 1.9ms | Allocations: 628)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 8.0ms | Allocations: 2192)
+  Rendered layout layouts/application.html.erb (Duration: 13.2ms | Allocations: 6320)
+Completed 200 OK in 27ms (Views: 24.0ms | Allocations: 8062)
+
+
+Started GET "/users/application.css" for ::1 at 2022-12-02 06:36:32 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/users/application.css"):
+  
+Started GET "/users/sign_in" for ::1 at 2022-12-02 06:37:46 +0100
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 3.5ms | Allocations: 628)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 10.6ms | Allocations: 2192)
+  Rendered layout layouts/application.html.erb (Duration: 20.9ms | Allocations: 6312)
+Completed 200 OK in 27ms (Views: 23.8ms | Allocations: 8076)
+
+
+Started GET "/users/application.css" for ::1 at 2022-12-02 06:37:46 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/users/application.css"):
+  
+Started GET "/users/sign_in" for ::1 at 2022-12-02 06:38:10 +0100
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 1.4ms | Allocations: 628)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 5.9ms | Allocations: 2192)
+  Rendered layout layouts/application.html.erb (Duration: 11.2ms | Allocations: 6322)
+Completed 200 OK in 16ms (Views: 14.8ms | Allocations: 8066)
+
+
+Started GET "/users/application.css" for ::1 at 2022-12-02 06:38:10 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/users/application.css"):
+  
+Started GET "/users/sign_in" for ::1 at 2022-12-02 06:38:13 +0100
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.4ms | Allocations: 195)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 3.5ms | Allocations: 1311)
+  Rendered layout layouts/application.html.erb (Duration: 9.2ms | Allocations: 4710)
+Completed 200 OK in 13ms (Views: 11.0ms | Allocations: 5677)
+
+
+Started GET "/users/application.css" for ::1 at 2022-12-02 06:38:13 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/users/application.css"):
+  
+Started GET "/users/sign_in" for ::1 at 2022-12-02 06:40:19 +0100
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 1.9ms | Allocations: 628)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 8.4ms | Allocations: 2192)
+  Rendered layout layouts/application.html.erb (Duration: 17.6ms | Allocations: 6319)
+Completed 200 OK in 28ms (Views: 25.4ms | Allocations: 8060)
+
+
+Started GET "/users/application.css" for ::1 at 2022-12-02 06:40:19 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/users/application.css"):
+  
+Started GET "/" for ::1 at 2022-12-02 06:40:43 +0100
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 7.2ms | Allocations: 3603)
+  Rendered layout layouts/application.html.erb (Duration: 18.9ms | Allocations: 10910)
+Completed 200 OK in 25ms (Views: 24.4ms | Allocations: 11770)
+
+
+Started GET "/application.css" for ::1 at 2022-12-02 06:40:43 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/application.css"):
+  
+Started GET "/users/sign_up" for ::1 at 2022-12-02 06:41:21 +0100
+Processing by Users::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 1.4ms | Allocations: 222)
+  Rendered devise/shared/_links.html.erb (Duration: 2.5ms | Allocations: 149)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 12.9ms | Allocations: 2935)
+  Rendered layout layouts/application.html.erb (Duration: 23.6ms | Allocations: 6413)
+Completed 200 OK in 28ms (Views: 27.2ms | Allocations: 8045)
+
+
+Started POST "/users" for ::1 at 2022-12-02 06:42:09 +0100
+Processing by Users::RegistrationsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"brecinneuxaweu-2470@yopmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "first_name"=>"Awatef", "last_name"=>"Vicente", "phone"=>"0656711125"}, "commit"=>"Sign up"}
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users/registrations_controller.rb:14:in `create'
+  [1m[36mUser Exists? (33.4ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "brecinneuxaweu-2470@yopmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users/registrations_controller.rb:14:in `create'
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/users/registrations_controller.rb:14:in `create'
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 1.2ms | Allocations: 566)
+  Rendered devise/shared/_links.html.erb (Duration: 0.4ms | Allocations: 153)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 7.9ms | Allocations: 3306)
+  Rendered layout layouts/application.html.erb (Duration: 15.3ms | Allocations: 6790)
+Completed 200 OK in 500ms (Views: 17.2ms | ActiveRecord: 45.3ms | Allocations: 17887)
+
+
+Started POST "/users" for ::1 at 2022-12-02 06:43:05 +0100
+Processing by Users::RegistrationsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"brecinneuxaweu-2470@yopmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "first_name"=>"Awatef", "last_name"=>"Vicente", "phone"=>"0656711125"}, "commit"=>"Sign up"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users/registrations_controller.rb:14:in `create'
+  [1m[36mUser Exists? (0.6ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "brecinneuxaweu-2470@yopmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users/registrations_controller.rb:14:in `create'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/users/registrations_controller.rb:14:in `create'
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 1.0ms | Allocations: 466)
+  Rendered devise/shared/_links.html.erb (Duration: 0.3ms | Allocations: 153)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 6.6ms | Allocations: 3195)
+  Rendered layout layouts/application.html.erb (Duration: 11.9ms | Allocations: 6647)
+Completed 200 OK in 261ms (Views: 13.8ms | ActiveRecord: 0.9ms | Allocations: 10678)
+
+
+Started POST "/users" for ::1 at 2022-12-02 06:43:41 +0100
+Processing by Users::RegistrationsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"tacizaufauxo-5797@yopmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "first_name"=>"Awatef", "last_name"=>"Vicente", "phone"=>"0656711125"}, "commit"=>"Sign up"}
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users/registrations_controller.rb:14:in `create'
+  [1m[36mUser Exists? (2.0ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "tacizaufauxo-5797@yopmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users/registrations_controller.rb:14:in `create'
+  [1m[36mUser Create (51.1ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "reset_password_token", "reset_password_sent_at", "remember_created_at", "confirmation_token", "confirmed_at", "confirmation_sent_at", "unconfirmed_email", "first_name", "last_name", "phone", "last_login", "created_at", "updated_at", "is_admin") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15, $16) RETURNING "id"[0m  [["email", "tacizaufauxo-5797@yopmail.com"], ["encrypted_password", "[FILTERED]"], ["reset_password_token", "[FILTERED]"], ["reset_password_sent_at", "[FILTERED]"], ["remember_created_at", nil], ["confirmation_token", "[FILTERED]"], ["confirmed_at", nil], ["confirmation_sent_at", "2022-12-02 05:43:41.744581"], ["unconfirmed_email", nil], ["first_name", "Awatef"], ["last_name", "Vicente"], ["phone", "0656711125"], ["last_login", nil], ["created_at", "2022-12-02 05:43:41.744402"], ["updated_at", "2022-12-02 05:43:41.744402"], ["is_admin", false]]
+  ↳ app/controllers/users/registrations_controller.rb:14:in `create'
+  Rendering layout layouts/mailer.html.erb
+  Rendering user_mailer/welcome_email.html.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.html.erb within layouts/mailer (Duration: 0.9ms | Allocations: 218)
+  Rendered layout layouts/mailer.html.erb (Duration: 1.7ms | Allocations: 433)
+  Rendering layout layouts/mailer.text.erb
+  Rendering user_mailer/welcome_email.text.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.text.erb within layouts/mailer (Duration: 0.6ms | Allocations: 177)
+  Rendered layout layouts/mailer.text.erb (Duration: 4.5ms | Allocations: 357)
+UserMailer#welcome_email: processed outbound mail in 34.2ms
+Delivered mail 6389908dd476b_17973e945974b@devgiack-VirtualBox.mail (1184.7ms)
+Date: Fri, 02 Dec 2022 06:43:41 +0100
+From: devgiack@protonmail.com
+To: tacizaufauxo-5797@yopmail.com
+Message-ID: <6389908dd476b_17973e945974b@devgiack-VirtualBox.mail>
+Subject: =?UTF-8?Q?Bienvenue_chez_les_truffi=C3=A9res_de_Saint-Martin_!?=
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_6389908dd2b39_17973e94596d";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_6389908dd2b39_17973e94596d
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+     Bonjour, Awatef Vicente et bienvenue chez les truffi=C3=A9res de Sai=
+nt-Martin.=0D
+=0D
+        Nous vous remercions pour votre inscription sur notre boutique en=
+ ligne.=0D
+ =0D
+        Les truffi=C3=A9res de Saint-Martin vous propose des truffes s=C3=
+=A9lectionn=C3=A9es de grande qualit=C3=A9 au meilleur prix.=0D
+        Notre priorit=C3=A9 est votre pleine satisfaction, n'h=C3=A9sitez=
+ pas a nous contacter pour toute demande d'information.=0D
+=0D
+        Pour acc=C3=A9der =C3=A0 votre espace client, connectez-vous via =
+: http://truffieres-saint-martin.com.=0D
+        =0D
+        =C3=80 tr=C3=A8s vite sur http://truffieres-saint-martin.com!=0D
+
+----==_mimepart_6389908dd2b39_17973e94596d
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf=
+-8" />=0D
+    <style>=0D
+      /* Email styles need to be inline */=0D
+    </style>=0D
+  </head>=0D
+=0D
+  <body>=0D
+        <!DOCTYPE html>=0D
+    <html>=0D
+      <head>=0D
+        <meta content=3D'text/html; charset=3DUTF-8' http-equiv=3D'Conten=
+t-Type' />=0D
+      </head>=0D
+      <body>=0D
+        <h1>Bonjour, Awatef Vicente et bienvenue chez les truffi=C3=A9res=
+ de Saint-Martin.</h1>=0D
+        <p>=0D
+            Nous vous remercions pour votre inscription sur notre boutiqu=
+e en ligne.=0D
+        </p>=0D
+        <p>=0D
+            Les truffi=C3=A9res de Saint-Martin vous propose des truffes =
+s=C3=A9lectionn=C3=A9es de grande qualit=C3=A9 au meilleur prix.<br>=0D
+            Notre priorit=C3=A9 est votre pleine satisfaction, n'h=C3=A9s=
+itez pas a nous contacter pour toute demande d'information.=0D
+        </p>=0D
+        <p>=0D
+          Pour acc=C3=A9der =C3=A0 votre espace client, connectez-vous vi=
+a : http://truffieres-saint-martin.com.=0D
+        =0D
+        </p>=0D
+        <p> =C3=80 tr=C3=A8s vite sur http://truffieres-saint-martin.com!=
+=0D
+      </body>=0D
+    </html>=0D
+  </body>=0D
+</html>=0D
+
+----==_mimepart_6389908dd2b39_17973e94596d--
+
+  [1m[36mTRANSACTION (3.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users/registrations_controller.rb:14:in `create'
+  Rendering devise/mailer/confirmation_instructions.html.erb
+  Rendered devise/mailer/confirmation_instructions.html.erb (Duration: 1.9ms | Allocations: 386)
+Devise::Mailer#confirmation_instructions: processed outbound mail in 17.8ms
+Delivered mail 6389908f2479f_17973e9459832@devgiack-VirtualBox.mail (897.1ms)
+Date: Fri, 02 Dec 2022 06:43:43 +0100
+From: devgiack@protonmail.com
+Reply-To: devgiack@protonmail.com
+To: tacizaufauxo-5797@yopmail.com
+Message-ID: <6389908f2479f_17973e9459832@devgiack-VirtualBox.mail>
+Subject: Confirmation instructions
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p>Welcome tacizaufauxo-5797@yopmail.com!</p>
+
+<p>You can confirm your account email through the link below:</p>
+
+<p><a href="http://localhost:3000/users/confirmation?confirmation_token=UGLxgPfTTm5z6MGQ6Hya">Confirm my account</a></p>
+
+Redirected to http://localhost:3000/
+Completed 302 Found in 2627ms (ActiveRecord: 57.7ms | Allocations: 44684)
+
+
+Started GET "/" for ::1 at 2022-12-02 06:43:44 +0100
+Processing by HomeController#index as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 5.8ms | Allocations: 3106)
+  Rendered layout layouts/application.html.erb (Duration: 11.4ms | Allocations: 6855)
+Completed 200 OK in 14ms (Views: 13.6ms | ActiveRecord: 0.0ms | Allocations: 7220)
+
+
+Started GET "/users/sign_up" for ::1 at 2022-12-02 06:43:49 +0100
+Processing by Users::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.1ms | Allocations: 14)
+  Rendered devise/shared/_links.html.erb (Duration: 0.6ms | Allocations: 139)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 15.7ms | Allocations: 2084)
+  Rendered layout layouts/application.html.erb (Duration: 33.2ms | Allocations: 5488)
+Completed 200 OK in 43ms (Views: 36.1ms | ActiveRecord: 0.0ms | Allocations: 6448)
+
+
+Started POST "/users" for ::1 at 2022-12-02 06:44:14 +0100
+Processing by Users::RegistrationsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"tacizaufauxo-5797@yopmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "first_name"=>"", "last_name"=>"", "phone"=>""}, "commit"=>"Sign up"}
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users/registrations_controller.rb:14:in `create'
+  [1m[36mUser Exists? (0.7ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "tacizaufauxo-5797@yopmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users/registrations_controller.rb:14:in `create'
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/users/registrations_controller.rb:14:in `create'
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 1.3ms | Allocations: 466)
+  Rendered devise/shared/_links.html.erb (Duration: 0.3ms | Allocations: 153)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 7.0ms | Allocations: 3195)
+  Rendered layout layouts/application.html.erb (Duration: 12.1ms | Allocations: 6647)
+Completed 200 OK in 260ms (Views: 13.3ms | ActiveRecord: 1.9ms | Allocations: 10688)
+
+
+Started POST "/users" for ::1 at 2022-12-02 06:45:36 +0100
+Processing by Users::RegistrationsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"tacizau@yopmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "first_name"=>"", "last_name"=>"", "phone"=>""}, "commit"=>"Sign up"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users/registrations_controller.rb:14:in `create'
+  [1m[36mUser Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "tacizau@yopmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users/registrations_controller.rb:14:in `create'
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "reset_password_token", "reset_password_sent_at", "remember_created_at", "confirmation_token", "confirmed_at", "confirmation_sent_at", "unconfirmed_email", "first_name", "last_name", "phone", "last_login", "created_at", "updated_at", "is_admin") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15, $16) RETURNING "id"[0m  [["email", "tacizau@yopmail.com"], ["encrypted_password", "[FILTERED]"], ["reset_password_token", "[FILTERED]"], ["reset_password_sent_at", "[FILTERED]"], ["remember_created_at", nil], ["confirmation_token", "[FILTERED]"], ["confirmed_at", nil], ["confirmation_sent_at", "2022-12-02 05:45:36.810232"], ["unconfirmed_email", nil], ["first_name", ""], ["last_name", ""], ["phone", ""], ["last_login", nil], ["created_at", "2022-12-02 05:45:36.810139"], ["updated_at", "2022-12-02 05:45:36.810139"], ["is_admin", false]]
+  ↳ app/controllers/users/registrations_controller.rb:14:in `create'
+  Rendering layout layouts/mailer.html.erb
+  Rendering user_mailer/welcome_email.html.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.html.erb within layouts/mailer (Duration: 0.2ms | Allocations: 15)
+  Rendered layout layouts/mailer.html.erb (Duration: 1.2ms | Allocations: 94)
+  Rendering layout layouts/mailer.text.erb
+  Rendering user_mailer/welcome_email.text.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.text.erb within layouts/mailer (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/mailer.text.erb (Duration: 0.6ms | Allocations: 86)
+UserMailer#welcome_email: processed outbound mail in 15.0ms
+Delivered mail 63899100ca864_17973ea860018@devgiack-VirtualBox.mail (432.5ms)
+Date: Fri, 02 Dec 2022 06:45:36 +0100
+From: devgiack@protonmail.com
+To: tacizau@yopmail.com
+Message-ID: <63899100ca864_17973ea860018@devgiack-VirtualBox.mail>
+Subject: =?UTF-8?Q?Bienvenue_chez_les_truffi=C3=A9res_de_Saint-Martin_!?=
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_63899100c9887_17973ea859998";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_63899100c9887_17973ea859998
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+     Bonjour,   et bienvenue chez les truffi=C3=A9res de Saint-Martin.=0D=
+
+=0D
+        Nous vous remercions pour votre inscription sur notre boutique en=
+ ligne.=0D
+ =0D
+        Les truffi=C3=A9res de Saint-Martin vous propose des truffes s=C3=
+=A9lectionn=C3=A9es de grande qualit=C3=A9 au meilleur prix.=0D
+        Notre priorit=C3=A9 est votre pleine satisfaction, n'h=C3=A9sitez=
+ pas a nous contacter pour toute demande d'information.=0D
+=0D
+        Pour acc=C3=A9der =C3=A0 votre espace client, connectez-vous via =
+: http://truffieres-saint-martin.com.=0D
+        =0D
+        =C3=80 tr=C3=A8s vite sur http://truffieres-saint-martin.com!=0D
+
+----==_mimepart_63899100c9887_17973ea859998
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf=
+-8" />=0D
+    <style>=0D
+      /* Email styles need to be inline */=0D
+    </style>=0D
+  </head>=0D
+=0D
+  <body>=0D
+        <!DOCTYPE html>=0D
+    <html>=0D
+      <head>=0D
+        <meta content=3D'text/html; charset=3DUTF-8' http-equiv=3D'Conten=
+t-Type' />=0D
+      </head>=0D
+      <body>=0D
+        <h1>Bonjour,   et bienvenue chez les truffi=C3=A9res de Saint-Mar=
+tin.</h1>=0D
+        <p>=0D
+            Nous vous remercions pour votre inscription sur notre boutiqu=
+e en ligne.=0D
+        </p>=0D
+        <p>=0D
+            Les truffi=C3=A9res de Saint-Martin vous propose des truffes =
+s=C3=A9lectionn=C3=A9es de grande qualit=C3=A9 au meilleur prix.<br>=0D
+            Notre priorit=C3=A9 est votre pleine satisfaction, n'h=C3=A9s=
+itez pas a nous contacter pour toute demande d'information.=0D
+        </p>=0D
+        <p>=0D
+          Pour acc=C3=A9der =C3=A0 votre espace client, connectez-vous vi=
+a : http://truffieres-saint-martin.com.=0D
+        =0D
+        </p>=0D
+        <p> =C3=80 tr=C3=A8s vite sur http://truffieres-saint-martin.com!=
+=0D
+      </body>=0D
+    </html>=0D
+  </body>=0D
+</html>=0D
+
+----==_mimepart_63899100c9887_17973ea859998--
+
+  [1m[36mTRANSACTION (73.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users/registrations_controller.rb:14:in `create'
+  Rendering devise/mailer/confirmation_instructions.html.erb
+  Rendered devise/mailer/confirmation_instructions.html.erb (Duration: 0.3ms | Allocations: 85)
+Devise::Mailer#confirmation_instructions: processed outbound mail in 2.5ms
+Delivered mail 6389910154ebd_17973ea86013e@devgiack-VirtualBox.mail (770.9ms)
+Date: Fri, 02 Dec 2022 06:45:37 +0100
+From: devgiack@protonmail.com
+Reply-To: devgiack@protonmail.com
+To: tacizau@yopmail.com
+Message-ID: <6389910154ebd_17973ea86013e@devgiack-VirtualBox.mail>
+Subject: Confirmation instructions
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p>Welcome tacizau@yopmail.com!</p>
+
+<p>You can confirm your account email through the link below:</p>
+
+<p><a href="http://localhost:3000/users/confirmation?confirmation_token=L9xfLpt5_1RAuzhZbcyY">Confirm my account</a></p>
+
+Redirected to http://localhost:3000/
+Completed 302 Found in 1553ms (ActiveRecord: 74.1ms | Allocations: 26332)
+
+
+Started GET "/" for ::1 at 2022-12-02 06:45:38 +0100
+Processing by HomeController#index as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 4.2ms | Allocations: 3093)
+  Rendered layout layouts/application.html.erb (Duration: 9.5ms | Allocations: 6845)
+Completed 200 OK in 11ms (Views: 10.4ms | ActiveRecord: 0.0ms | Allocations: 7161)
+
+
+Started GET "/users/confirmation?confirmation_token=[FILTERED]" for ::1 at 2022-12-02 06:45:59 +0100
+Processing by Devise::ConfirmationsController#show as HTML
+  Parameters: {"confirmation_token"=>"[FILTERED]"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."confirmation_token" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["confirmation_token", "[FILTERED]"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Update (56.8ms)[0m  [1m[33mUPDATE "users" SET "confirmed_at" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["confirmed_at", "2022-12-02 05:45:59.393576"], ["updated_at", "2022-12-02 05:45:59.393993"], ["id", 74]]
+  [1m[36mTRANSACTION (1.8ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/users/sign_in
+Completed 302 Found in 76ms (ActiveRecord: 59.6ms | Allocations: 5807)
+
+
+Started GET "/users/sign_in" for ::1 at 2022-12-02 06:45:59 +0100
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.3ms | Allocations: 195)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 3.4ms | Allocations: 1311)
+  Rendered layout layouts/application.html.erb (Duration: 8.9ms | Allocations: 4707)
+Completed 200 OK in 12ms (Views: 10.2ms | ActiveRecord: 0.0ms | Allocations: 5673)
+
+
+Started GET "/users/application.css" for ::1 at 2022-12-02 06:45:59 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/users/application.css"):
+  
+Started POST "/users/sign_in" for ::1 at 2022-12-02 06:46:33 +0100
+Processing by Devise::SessionsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"tacizau@yopmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "tacizau@yopmail.com"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 289ms (ActiveRecord: 0.8ms | Allocations: 2857)
+
+
+Started GET "/" for ::1 at 2022-12-02 06:46:33 +0100
+Processing by HomeController#index as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 5.3ms | Allocations: 3094)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 74], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:46
+  Rendered layout layouts/application.html.erb (Duration: 15.1ms | Allocations: 8489)
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 0.5ms | Allocations: 8787)
+
+
+
+ArgumentError - wrong number of arguments (given 1, expected 0):
+  app/views/layouts/application.html.erb:47
+
+Started POST "/__better_errors/f03d40252ee0f86f/variables" for ::1 at 2022-12-02 06:46:33 +0100
+Started GET "/users/sign_in" for ::1 at 2022-12-02 06:47:11 +0100
+Processing by Devise::SessionsController#new as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 74], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 17ms (ActiveRecord: 0.8ms | Allocations: 1748)
+
+
+Started GET "/" for ::1 at 2022-12-02 06:47:11 +0100
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 5.2ms | Allocations: 3604)
+  [1m[36mUser Load (4.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 74], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:46
+  Rendered layout layouts/application.html.erb (Duration: 25.1ms | Allocations: 8713)
+Completed 200 OK in 29ms (Views: 23.4ms | ActiveRecord: 4.6ms | Allocations: 9753)
+
+
+Started GET "/application.css" for ::1 at 2022-12-02 06:47:11 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/application.css"):
+  
+Started GET "/" for ::1 at 2022-12-02 06:48:46 +0100
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 8.9ms | Allocations: 3607)
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 74], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:46
+  Rendered layout layouts/application.html.erb (Duration: 43.1ms | Allocations: 8729)
+Completed 200 OK in 54ms (Views: 52.4ms | ActiveRecord: 0.7ms | Allocations: 9771)
+
+
+Started GET "/application.css" for ::1 at 2022-12-02 06:48:46 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/application.css"):
+  
+Started GET "/" for ::1 at 2022-12-02 06:54:23 +0100
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 9.3ms | Allocations: 3605)
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 74], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:46
+  Rendered layout layouts/application.html.erb (Duration: 29.3ms | Allocations: 8725)
+Completed 200 OK in 46ms (Views: 42.7ms | ActiveRecord: 0.7ms | Allocations: 9766)
+
+
+Started GET "/application.css" for ::1 at 2022-12-02 06:54:23 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/application.css"):
+  
+Started GET "/" for ::1 at 2022-12-02 06:55:30 +0100
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 6.7ms | Allocations: 3592)
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 74], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:46
+  Rendered layout layouts/application.html.erb (Duration: 18.4ms | Allocations: 8692)
+Completed 200 OK in 30ms (Views: 25.8ms | ActiveRecord: 0.9ms | Allocations: 9733)
+
+
+Started GET "/application.css" for ::1 at 2022-12-02 06:55:30 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/application.css"):
+  
+Started GET "/products" for ::1 at 2022-12-02 06:57:11 +0100
+Processing by ProductsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (60.1ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:6
+  Rendered products/_product.html.erb (Duration: 1.3ms | Allocations: 236)
+  Rendered products/_product.html.erb (Duration: 0.1ms | Allocations: 21)
+  Rendered products/_product.html.erb (Duration: 0.1ms | Allocations: 21)
+  Rendered products/_product.html.erb (Duration: 0.1ms | Allocations: 21)
+  Rendered products/_product.html.erb (Duration: 0.1ms | Allocations: 21)
+  Rendered products/_product.html.erb (Duration: 0.1ms | Allocations: 21)
+  Rendered products/_product.html.erb (Duration: 0.1ms | Allocations: 21)
+  Rendered products/_product.html.erb (Duration: 0.1ms | Allocations: 22)
+  Rendered products/_product.html.erb (Duration: 0.1ms | Allocations: 21)
+  Rendered products/_product.html.erb (Duration: 0.1ms | Allocations: 21)
+  Rendered products/_product.html.erb (Duration: 0.1ms | Allocations: 21)
+  Rendered products/_product.html.erb (Duration: 0.1ms | Allocations: 22)
+  Rendered products/_product.html.erb (Duration: 0.1ms | Allocations: 21)
+  Rendered products/_product.html.erb (Duration: 0.1ms | Allocations: 21)
+  Rendered products/_product.html.erb (Duration: 0.1ms | Allocations: 21)
+  Rendered products/_product.html.erb (Duration: 0.1ms | Allocations: 21)
+  Rendered products/_product.html.erb (Duration: 0.1ms | Allocations: 21)
+  Rendered products/_product.html.erb (Duration: 0.1ms | Allocations: 21)
+  Rendered products/_product.html.erb (Duration: 0.2ms | Allocations: 22)
+  Rendered products/_product.html.erb (Duration: 0.1ms | Allocations: 21)
+  Rendered products/_product.html.erb (Duration: 0.1ms | Allocations: 21)
+  Rendered products/_product.html.erb (Duration: 0.1ms | Allocations: 21)
+  Rendered products/_product.html.erb (Duration: 0.1ms | Allocations: 21)
+  Rendered products/_product.html.erb (Duration: 0.1ms | Allocations: 21)
+  Rendered products/_product.html.erb (Duration: 0.1ms | Allocations: 21)
+  Rendered products/index.html.erb within layouts/application (Duration: 126.3ms | Allocations: 20404)
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 74], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:46
+  Rendered layout layouts/application.html.erb (Duration: 137.4ms | Allocations: 24615)
+Completed 200 OK in 149ms (Views: 73.1ms | ActiveRecord: 67.9ms | Allocations: 26676)
+
+
+Started GET "/" for ::1 at 2022-12-02 06:58:23 +0100
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 7.0ms | Allocations: 3093)
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 74], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:46
+  Rendered layout layouts/application.html.erb (Duration: 25.4ms | Allocations: 7493)
+Completed 200 OK in 28ms (Views: 25.8ms | ActiveRecord: 1.6ms | Allocations: 7808)
+
+
+Started GET "/carts" for ::1 at 2022-12-02 06:58:52 +0100
+Processing by CartsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering carts/index.html.erb within layouts/application
+  [1m[36mCart Load (13.7ms)[0m  [1m[34mSELECT "carts".* FROM "carts"[0m
+  ↳ app/views/carts/index.html.erb:6
+  Rendered carts/index.html.erb within layouts/application (Duration: 19.1ms | Allocations: 1313)
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 74], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:46
+  Rendered layout layouts/application.html.erb (Duration: 35.2ms | Allocations: 5511)
+Completed 200 OK in 83ms (Views: 22.9ms | ActiveRecord: 14.5ms | Allocations: 8400)
+
+
+Started GET "/users/sign_in" for ::1 at 2022-12-02 06:59:00 +0100
+Processing by Devise::SessionsController#new as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 74], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 8ms (ActiveRecord: 0.7ms | Allocations: 1677)
+
+
+Started GET "/" for ::1 at 2022-12-02 06:59:00 +0100
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 7.4ms | Allocations: 3093)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 74], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:46
+  Rendered layout layouts/application.html.erb (Duration: 18.4ms | Allocations: 7519)
+Completed 200 OK in 20ms (Views: 19.2ms | ActiveRecord: 0.2ms | Allocations: 7833)
+
+
+Started GET "/" for ::1 at 2022-12-02 09:21:01 +0100
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 9.9ms | Allocations: 3607)
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 74], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:46
+  Rendered layout layouts/application.html.erb (Duration: 75.0ms | Allocations: 11668)
+Completed 200 OK in 80ms (Views: 78.3ms | ActiveRecord: 21.5ms | Allocations: 12706)
+
+
+Started GET "/application.css" for ::1 at 2022-12-02 09:21:01 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/application.css"):
+  
+Started GET "/admin" for ::1 at 2022-12-02 10:05:03 +0100
+Processing by Admin::AdminController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering admin/admin/index.html.erb within layouts/application
+  Rendered admin/admin/index.html.erb within layouts/application (Duration: 2.9ms | Allocations: 242)
+  Rendered layout layouts/application.html.erb (Duration: 34.6ms | Allocations: 28167)
+Completed 200 OK in 40ms (Views: 38.0ms | Allocations: 29397)
+
+
+Started GET "/application.css" for ::1 at 2022-12-02 10:05:03 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/application.css"):
+  
+Started GET "/admin/product" for ::1 at 2022-12-02 10:06:48 +0100
+Processing by Admin::ProductController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering admin/product/index.html.erb within layouts/application
+  [1m[36mProduct Load (1.0ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/admin/product/index.html.erb:4
+  Rendered admin/product/index.html.erb within layouts/application (Duration: 32.5ms | Allocations: 6969)
+  Rendered layout layouts/application.html.erb (Duration: 41.9ms | Allocations: 14464)
+Completed 200 OK in 49ms (Views: 44.0ms | ActiveRecord: 12.5ms | Allocations: 16429)
+
+
+Started GET "/admin/product/2" for ::1 at 2022-12-02 10:07:23 +0100
+Processing by Admin::ProductController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mProduct Load (0.6ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/admin/product_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering admin/product/show.html.erb within layouts/application
+  Rendered admin/product/show.html.erb within layouts/application (Duration: 2.5ms | Allocations: 433)
+  Rendered layout layouts/application.html.erb (Duration: 12.1ms | Allocations: 7756)
+Completed 200 OK in 20ms (Views: 13.1ms | ActiveRecord: 1.2ms | Allocations: 9274)
+
+
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT pg_try_advisory_lock(4525132559246056695)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (2.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to DropAdminTypes (20221202091832)
+  [1m[36mTRANSACTION (2.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (213.7ms)[0m  [1m[35mDROP TABLE "admin_types"[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.9ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20221202091832"]]
+  [1m[36mTRANSACTION (4.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (64.9ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT pg_advisory_unlock(4525132559246056695)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Pluck (0.7ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Pluck (0.8ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Pluck (0.6ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (102.2ms)[0m  [1m[35mDROP DATABASE IF EXISTS "cat_shop_development"[0m
+  [1m[35m (63.5ms)[0m  [1m[35mDROP DATABASE IF EXISTS "cat_shop_test"[0m
+  [1m[35m (880.4ms)[0m  [1m[35mCREATE DATABASE "cat_shop_development" ENCODING = 'unicode'[0m
+  [1m[35m (98.2ms)[0m  [1m[35mCREATE DATABASE "cat_shop_test" ENCODING = 'unicode'[0m
+  [1m[35m (19.1ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  [1m[35m (17.4ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_try_advisory_lock(4525132559246056695)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to DeviseCreateUsers (20221128141326)
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (33.1ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "email" character varying DEFAULT '' NOT NULL, "encrypted_password" character varying DEFAULT '' NOT NULL, "reset_password_token" character varying, "reset_password_sent_at" timestamp(6), "remember_created_at" timestamp(6), "confirmation_token" character varying, "confirmed_at" timestamp(6), "confirmation_sent_at" timestamp(6), "unconfirmed_email" character varying, "first_name" character varying, "last_name" character varying, "phone" character varying, "last_login" timestamp, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (5.6ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")[0m
+  [1m[35m (5.6ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_reset_password_token" ON "users" ("reset_password_token")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.9ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20221128141326"]]
+  [1m[36mTRANSACTION (3.5ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateProductCategories (20221128151125)
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (14.3ms)[0m  [1m[35mCREATE TABLE "product_categories" ("id" bigserial primary key, "name" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (1.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20221128151125"]]
+  [1m[36mTRANSACTION (4.8ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateProducts (20221128151205)
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (16.9ms)[0m  [1m[35mCREATE TABLE "products" ("id" bigserial primary key, "name" character varying, "description" text, "unity" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL, "price" float)[0m
+  [1m[35m (0.7ms)[0m  [1m[35mALTER TABLE "products" ADD "product_category_id" bigint[0m
+  [1m[35m (9.4ms)[0m  [1m[35mCREATE INDEX "index_products_on_product_category_id" ON "products" ("product_category_id")[0m
+  [1m[35m (1.7ms)[0m  [1m[35mALTER TABLE "products" ADD CONSTRAINT "fk_rails_efe167855e"
+FOREIGN KEY ("product_category_id")
+  REFERENCES "product_categories" ("id")
+[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.7ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20221128151205"]]
+  [1m[36mTRANSACTION (2.4ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateDiscounts (20221128151207)
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (14.9ms)[0m  [1m[35mCREATE TABLE "discounts" ("id" bigserial primary key, "name" character varying, "discount_percent" integer, "active" boolean, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (0.6ms)[0m  [1m[35mALTER TABLE "discounts" ADD "product_id" bigint[0m
+  [1m[35m (6.2ms)[0m  [1m[35mCREATE INDEX "index_discounts_on_product_id" ON "discounts" ("product_id")[0m
+  [1m[35m (1.6ms)[0m  [1m[35mALTER TABLE "discounts" ADD CONSTRAINT "fk_rails_d0493c5775"
+FOREIGN KEY ("product_id")
+  REFERENCES "products" ("id")
+[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20221128151207"]]
+  [1m[36mTRANSACTION (3.0ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateStocks (20221128151247)
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (6.5ms)[0m  [1m[35mCREATE TABLE "stocks" ("id" bigserial primary key, "quantity_gr" integer, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (0.6ms)[0m  [1m[35mALTER TABLE "stocks" ADD "product_id" bigint[0m
+  [1m[35m (5.3ms)[0m  [1m[35mCREATE INDEX "index_stocks_on_product_id" ON "stocks" ("product_id")[0m
+  [1m[35m (1.6ms)[0m  [1m[35mALTER TABLE "stocks" ADD CONSTRAINT "fk_rails_cfc800c26b"
+FOREIGN KEY ("product_id")
+  REFERENCES "products" ("id")
+[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.7ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20221128151247"]]
+  [1m[36mTRANSACTION (2.4ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateCarts (20221128151332)
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (7.8ms)[0m  [1m[35mCREATE TABLE "carts" ("id" bigserial primary key, "quantity" integer, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (3.9ms)[0m  [1m[35mALTER TABLE "carts" ADD "product_id" bigint[0m
+  [1m[35m (6.0ms)[0m  [1m[35mCREATE INDEX "index_carts_on_product_id" ON "carts" ("product_id")[0m
+  [1m[35m (1.5ms)[0m  [1m[35mALTER TABLE "carts" ADD CONSTRAINT "fk_rails_916f2a1419"
+FOREIGN KEY ("product_id")
+  REFERENCES "products" ("id")
+[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.7ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20221128151332"]]
+  [1m[36mTRANSACTION (2.7ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateUserAddresses (20221128151553)
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (11.0ms)[0m  [1m[35mCREATE TABLE "user_addresses" ("id" bigserial primary key, "address_number" integer, "address_street" character varying, "address_city" character varying, "address_zip" integer, "address_state" character varying, "address_country" character varying, "address_type" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (5.1ms)[0m  [1m[35mALTER TABLE "user_addresses" ADD "user_id" bigint[0m
+  [1m[35m (4.9ms)[0m  [1m[35mCREATE INDEX "index_user_addresses_on_user_id" ON "user_addresses" ("user_id")[0m
+  [1m[35m (1.3ms)[0m  [1m[35mALTER TABLE "user_addresses" ADD CONSTRAINT "fk_rails_2718c5b54a"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.9ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20221128151553"]]
+  [1m[36mTRANSACTION (4.3ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateOrders (20221128151554)
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (7.1ms)[0m  [1m[35mCREATE TABLE "orders" ("id" bigserial primary key, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (0.7ms)[0m  [1m[35mALTER TABLE "orders" ADD "cart_id" bigint[0m
+  [1m[35m (6.0ms)[0m  [1m[35mCREATE INDEX "index_orders_on_cart_id" ON "orders" ("cart_id")[0m
+  [1m[35m (1.4ms)[0m  [1m[35mALTER TABLE "orders" ADD CONSTRAINT "fk_rails_5cdf0e0ad4"
+FOREIGN KEY ("cart_id")
+  REFERENCES "carts" ("id")
+[0m
+  [1m[35m (0.8ms)[0m  [1m[35mALTER TABLE "orders" ADD "user_id" bigint[0m
+  [1m[35m (7.5ms)[0m  [1m[35mCREATE INDEX "index_orders_on_user_id" ON "orders" ("user_id")[0m
+  [1m[35m (1.9ms)[0m  [1m[35mALTER TABLE "orders" ADD CONSTRAINT "fk_rails_f868b47f6a"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.8ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20221128151554"]]
+  [1m[36mTRANSACTION (2.7ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreatePayments (20221128151735)
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (18.1ms)[0m  [1m[35mCREATE TABLE "payments" ("id" bigserial primary key, "payment_type" character varying, "status" boolean, "amount" float, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (0.6ms)[0m  [1m[35mALTER TABLE "payments" ADD "user_id" bigint[0m
+  [1m[35m (6.3ms)[0m  [1m[35mCREATE INDEX "index_payments_on_user_id" ON "payments" ("user_id")[0m
+  [1m[35m (1.6ms)[0m  [1m[35mALTER TABLE "payments" ADD CONSTRAINT "fk_rails_081dc04a02"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+[0m
+  [1m[35m (0.9ms)[0m  [1m[35mALTER TABLE "payments" ADD "order_id" bigint[0m
+  [1m[35m (6.1ms)[0m  [1m[35mCREATE INDEX "index_payments_on_order_id" ON "payments" ("order_id")[0m
+  [1m[35m (1.8ms)[0m  [1m[35mALTER TABLE "payments" ADD CONSTRAINT "fk_rails_6af949464b"
+FOREIGN KEY ("order_id")
+  REFERENCES "orders" ("id")
+[0m
+  [1m[36mActiveRecord::SchemaMigration Create (1.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20221128151735"]]
+  [1m[36mTRANSACTION (2.8ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateAdminTypes (20221128170639)
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (6.2ms)[0m  [1m[35mCREATE TABLE "admin_types" ("id" bigserial primary key, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (0.8ms)[0m  [1m[35mALTER TABLE "admin_types" ADD "user_id" bigint[0m
+  [1m[35m (6.3ms)[0m  [1m[35mCREATE INDEX "index_admin_types_on_user_id" ON "admin_types" ("user_id")[0m
+  [1m[35m (1.4ms)[0m  [1m[35mALTER TABLE "admin_types" ADD CONSTRAINT "fk_rails_22b2adb9ae"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20221128170639"]]
+  [1m[36mTRANSACTION (2.1ms)[0m  [1m[35mCOMMIT[0m
+Migrating to AddIsAdminToUser (20221129200406)
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.8ms)[0m  [1m[35mALTER TABLE "users" ADD "is_admin" boolean[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.9ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20221129200406"]]
+  [1m[36mTRANSACTION (2.5ms)[0m  [1m[35mCOMMIT[0m
+Migrating to UpdateToUser (20221129204108)
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (22.7ms)[0m  [1m[35mALTER TABLE "users" DROP COLUMN "is_admin"[0m
+  [1m[35m (0.6ms)[0m  [1m[35mALTER TABLE "users" ADD "is_admin" boolean DEFAULT FALSE[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20221129204108"]]
+  [1m[36mTRANSACTION (2.2ms)[0m  [1m[35mCOMMIT[0m
+Migrating to DropAdminTypes (20221202091832)
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (1.4ms)[0m  [1m[35mDROP TABLE "admin_types"[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.7ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20221202091832"]]
+  [1m[36mTRANSACTION (3.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (1.3ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.8ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2022-12-02 09:28:09.128617"], ["updated_at", "2022-12-02 09:28:09.128617"]]
+  [1m[36mTRANSACTION (2.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(4525132559246056695)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Pluck (0.7ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Pluck (0.6ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Pluck (0.6ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (980.1ms)[0m  [1m[35mDROP DATABASE IF EXISTS "cat_shop_development"[0m
+  [1m[35m (62.6ms)[0m  [1m[35mDROP DATABASE IF EXISTS "cat_shop_test"[0m
+  [1m[35m (93.2ms)[0m  [1m[35mCREATE DATABASE "cat_shop_development" ENCODING = 'unicode'[0m
+  [1m[35m (78.7ms)[0m  [1m[35mCREATE DATABASE "cat_shop_test" ENCODING = 'unicode'[0m
+  [1m[35m (19.8ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  [1m[35m (14.9ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT pg_try_advisory_lock(4525132559246056695)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to DeviseCreateUsers (20221128141326)
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (12.4ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "email" character varying DEFAULT '' NOT NULL, "encrypted_password" character varying DEFAULT '' NOT NULL, "reset_password_token" character varying, "reset_password_sent_at" timestamp(6), "remember_created_at" timestamp(6), "confirmation_token" character varying, "confirmed_at" timestamp(6), "confirmation_sent_at" timestamp(6), "unconfirmed_email" character varying, "first_name" character varying, "last_name" character varying, "phone" character varying, "last_login" timestamp, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (6.0ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")[0m
+  [1m[35m (6.5ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_reset_password_token" ON "users" ("reset_password_token")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.9ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20221128141326"]]
+  [1m[36mTRANSACTION (2.4ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateProductCategories (20221128151125)
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (19.3ms)[0m  [1m[35mCREATE TABLE "product_categories" ("id" bigserial primary key, "name" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20221128151125"]]
+  [1m[36mTRANSACTION (2.4ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateProducts (20221128151205)
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (14.4ms)[0m  [1m[35mCREATE TABLE "products" ("id" bigserial primary key, "name" character varying, "description" text, "unity" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL, "price" float)[0m
+  [1m[35m (1.0ms)[0m  [1m[35mALTER TABLE "products" ADD "product_category_id" bigint[0m
+  [1m[35m (9.1ms)[0m  [1m[35mCREATE INDEX "index_products_on_product_category_id" ON "products" ("product_category_id")[0m
+  [1m[35m (2.4ms)[0m  [1m[35mALTER TABLE "products" ADD CONSTRAINT "fk_rails_efe167855e"
+FOREIGN KEY ("product_category_id")
+  REFERENCES "product_categories" ("id")
+[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20221128151205"]]
+  [1m[36mTRANSACTION (2.5ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateDiscounts (20221128151207)
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (23.4ms)[0m  [1m[35mCREATE TABLE "discounts" ("id" bigserial primary key, "name" character varying, "discount_percent" integer, "active" boolean, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (0.7ms)[0m  [1m[35mALTER TABLE "discounts" ADD "product_id" bigint[0m
+  [1m[35m (6.2ms)[0m  [1m[35mCREATE INDEX "index_discounts_on_product_id" ON "discounts" ("product_id")[0m
+  [1m[35m (1.4ms)[0m  [1m[35mALTER TABLE "discounts" ADD CONSTRAINT "fk_rails_d0493c5775"
+FOREIGN KEY ("product_id")
+  REFERENCES "products" ("id")
+[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.7ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20221128151207"]]
+  [1m[36mTRANSACTION (2.7ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateStocks (20221128151247)
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (6.3ms)[0m  [1m[35mCREATE TABLE "stocks" ("id" bigserial primary key, "quantity_gr" integer, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (0.8ms)[0m  [1m[35mALTER TABLE "stocks" ADD "product_id" bigint[0m
+  [1m[35m (6.2ms)[0m  [1m[35mCREATE INDEX "index_stocks_on_product_id" ON "stocks" ("product_id")[0m
+  [1m[35m (1.4ms)[0m  [1m[35mALTER TABLE "stocks" ADD CONSTRAINT "fk_rails_cfc800c26b"
+FOREIGN KEY ("product_id")
+  REFERENCES "products" ("id")
+[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.7ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20221128151247"]]
+  [1m[36mTRANSACTION (2.2ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateCarts (20221128151332)
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (7.8ms)[0m  [1m[35mCREATE TABLE "carts" ("id" bigserial primary key, "quantity" integer, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (0.9ms)[0m  [1m[35mALTER TABLE "carts" ADD "product_id" bigint[0m
+  [1m[35m (7.0ms)[0m  [1m[35mCREATE INDEX "index_carts_on_product_id" ON "carts" ("product_id")[0m
+  [1m[35m (1.2ms)[0m  [1m[35mALTER TABLE "carts" ADD CONSTRAINT "fk_rails_916f2a1419"
+FOREIGN KEY ("product_id")
+  REFERENCES "products" ("id")
+[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.9ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20221128151332"]]
+  [1m[36mTRANSACTION (2.7ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateUserAddresses (20221128151553)
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (15.7ms)[0m  [1m[35mCREATE TABLE "user_addresses" ("id" bigserial primary key, "address_number" integer, "address_street" character varying, "address_city" character varying, "address_zip" integer, "address_state" character varying, "address_country" character varying, "address_type" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (0.7ms)[0m  [1m[35mALTER TABLE "user_addresses" ADD "user_id" bigint[0m
+  [1m[35m (7.2ms)[0m  [1m[35mCREATE INDEX "index_user_addresses_on_user_id" ON "user_addresses" ("user_id")[0m
+  [1m[35m (1.9ms)[0m  [1m[35mALTER TABLE "user_addresses" ADD CONSTRAINT "fk_rails_2718c5b54a"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.9ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20221128151553"]]
+  [1m[36mTRANSACTION (2.9ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateOrders (20221128151554)
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (8.2ms)[0m  [1m[35mCREATE TABLE "orders" ("id" bigserial primary key, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (1.1ms)[0m  [1m[35mALTER TABLE "orders" ADD "cart_id" bigint[0m
+  [1m[35m (7.3ms)[0m  [1m[35mCREATE INDEX "index_orders_on_cart_id" ON "orders" ("cart_id")[0m
+  [1m[35m (1.4ms)[0m  [1m[35mALTER TABLE "orders" ADD CONSTRAINT "fk_rails_5cdf0e0ad4"
+FOREIGN KEY ("cart_id")
+  REFERENCES "carts" ("id")
+[0m
+  [1m[35m (0.7ms)[0m  [1m[35mALTER TABLE "orders" ADD "user_id" bigint[0m
+  [1m[35m (7.3ms)[0m  [1m[35mCREATE INDEX "index_orders_on_user_id" ON "orders" ("user_id")[0m
+  [1m[35m (1.2ms)[0m  [1m[35mALTER TABLE "orders" ADD CONSTRAINT "fk_rails_f868b47f6a"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.7ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20221128151554"]]
+  [1m[36mTRANSACTION (2.7ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreatePayments (20221128151735)
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (12.0ms)[0m  [1m[35mCREATE TABLE "payments" ("id" bigserial primary key, "payment_type" character varying, "status" boolean, "amount" float, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (0.8ms)[0m  [1m[35mALTER TABLE "payments" ADD "user_id" bigint[0m
+  [1m[35m (6.0ms)[0m  [1m[35mCREATE INDEX "index_payments_on_user_id" ON "payments" ("user_id")[0m
+  [1m[35m (5.1ms)[0m  [1m[35mALTER TABLE "payments" ADD CONSTRAINT "fk_rails_081dc04a02"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+[0m
+  [1m[35m (0.6ms)[0m  [1m[35mALTER TABLE "payments" ADD "order_id" bigint[0m
+  [1m[35m (6.3ms)[0m  [1m[35mCREATE INDEX "index_payments_on_order_id" ON "payments" ("order_id")[0m
+  [1m[35m (1.3ms)[0m  [1m[35mALTER TABLE "payments" ADD CONSTRAINT "fk_rails_6af949464b"
+FOREIGN KEY ("order_id")
+  REFERENCES "orders" ("id")
+[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20221128151735"]]
+  [1m[36mTRANSACTION (2.6ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateAdminTypes (20221128170639)
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (9.2ms)[0m  [1m[35mCREATE TABLE "admin_types" ("id" bigserial primary key, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (0.6ms)[0m  [1m[35mALTER TABLE "admin_types" ADD "user_id" bigint[0m
+  [1m[35m (11.3ms)[0m  [1m[35mCREATE INDEX "index_admin_types_on_user_id" ON "admin_types" ("user_id")[0m
+  [1m[35m (2.1ms)[0m  [1m[35mALTER TABLE "admin_types" ADD CONSTRAINT "fk_rails_22b2adb9ae"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20221128170639"]]
+  [1m[36mTRANSACTION (2.5ms)[0m  [1m[35mCOMMIT[0m
+Migrating to AddIsAdminToUser (20221129200406)
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (1.0ms)[0m  [1m[35mALTER TABLE "users" ADD "is_admin" boolean[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20221129200406"]]
+  [1m[36mTRANSACTION (2.2ms)[0m  [1m[35mCOMMIT[0m
+Migrating to UpdateToUser (20221129204108)
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (1.3ms)[0m  [1m[35mALTER TABLE "users" DROP COLUMN "is_admin"[0m
+  [1m[35m (1.2ms)[0m  [1m[35mALTER TABLE "users" ADD "is_admin" boolean DEFAULT FALSE[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20221129204108"]]
+  [1m[36mTRANSACTION (2.2ms)[0m  [1m[35mCOMMIT[0m
+Migrating to DropAdminTypes (20221202091832)
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (1.6ms)[0m  [1m[35mDROP TABLE "admin_types"[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.7ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20221202091832"]]
+  [1m[36mTRANSACTION (3.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.8ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (1.9ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2022-12-02 09:29:51.910740"], ["updated_at", "2022-12-02 09:29:51.910740"]]
+  [1m[36mTRANSACTION (2.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.7ms)[0m  [1m[34mSELECT pg_advisory_unlock(4525132559246056695)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (1.2ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "reset_password_token", "reset_password_sent_at", "remember_created_at", "confirmation_token", "confirmed_at", "confirmation_sent_at", "unconfirmed_email", "first_name", "last_name", "phone", "last_login", "created_at", "updated_at", "is_admin") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15, $16) RETURNING "id"[0m  [["email", "lenard_spinka@senger.org"], ["encrypted_password", "[FILTERED]"], ["reset_password_token", "[FILTERED]"], ["reset_password_sent_at", "[FILTERED]"], ["remember_created_at", nil], ["confirmation_token", "[FILTERED]"], ["confirmed_at", nil], ["confirmation_sent_at", "2022-12-02 09:29:52.714433"], ["unconfirmed_email", nil], ["first_name", "Elvira"], ["last_name", "Bauch"], ["phone", "5969297859"], ["last_login", "2022-12-02 09:29:52.714019"], ["created_at", "2022-12-02 09:29:52.714322"], ["updated_at", "2022-12-02 09:29:52.714322"], ["is_admin", false]]
+  Rendering layout layouts/mailer.html.erb
+  Rendering user_mailer/welcome_email.html.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.html.erb within layouts/mailer (Duration: 2.0ms | Allocations: 485)
+  Rendered layout layouts/mailer.html.erb (Duration: 3.9ms | Allocations: 691)
+  Rendering layout layouts/mailer.text.erb
+  Rendering user_mailer/welcome_email.text.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.text.erb within layouts/mailer (Duration: 1.5ms | Allocations: 177)
+  Rendered layout layouts/mailer.text.erb (Duration: 4.0ms | Allocations: 324)
+UserMailer#welcome_email: processed outbound mail in 212.6ms
+Delivered mail 6389c590e664c_44981040-380@devgiack-VirtualBox.mail (996.7ms)
+Date: Fri, 02 Dec 2022 10:29:52 +0100
+From: devgiack@protonmail.com
+To: lenard_spinka@senger.org
+Message-ID: <6389c590e664c_44981040-380@devgiack-VirtualBox.mail>
+Subject: =?UTF-8?Q?Bienvenue_chez_les_truffi=C3=A9res_de_Saint-Martin_!?=
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_6389c590e504a_44981040-423";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_6389c590e504a_44981040-423
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+     Bonjour, Elvira Bauch et bienvenue chez les truffi=C3=A9res de Saint=
+-Martin.=0D
+=0D
+        Nous vous remercions pour votre inscription sur notre boutique en=
+ ligne.=0D
+ =0D
+        Les truffi=C3=A9res de Saint-Martin vous propose des truffes s=C3=
+=A9lectionn=C3=A9es de grande qualit=C3=A9 au meilleur prix.=0D
+        Notre priorit=C3=A9 est votre pleine satisfaction, n'h=C3=A9sitez=
+ pas a nous contacter pour toute demande d'information.=0D
+=0D
+        Pour acc=C3=A9der =C3=A0 votre espace client, connectez-vous via =
+: http://truffieres-saint-martin.com.=0D
+        =0D
+        =C3=80 tr=C3=A8s vite sur http://truffieres-saint-martin.com!=0D
+
+----==_mimepart_6389c590e504a_44981040-423
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf=
+-8" />=0D
+    <style>=0D
+      /* Email styles need to be inline */=0D
+    </style>=0D
+  </head>=0D
+=0D
+  <body>=0D
+        <!DOCTYPE html>=0D
+    <html>=0D
+      <head>=0D
+        <meta content=3D'text/html; charset=3DUTF-8' http-equiv=3D'Conten=
+t-Type' />=0D
+      </head>=0D
+      <body>=0D
+        <h1>Bonjour, Elvira Bauch et bienvenue chez les truffi=C3=A9res d=
+e Saint-Martin.</h1>=0D
+        <p>=0D
+            Nous vous remercions pour votre inscription sur notre boutiqu=
+e en ligne.=0D
+        </p>=0D
+        <p>=0D
+            Les truffi=C3=A9res de Saint-Martin vous propose des truffes =
+s=C3=A9lectionn=C3=A9es de grande qualit=C3=A9 au meilleur prix.<br>=0D
+            Notre priorit=C3=A9 est votre pleine satisfaction, n'h=C3=A9s=
+itez pas a nous contacter pour toute demande d'information.=0D
+        </p>=0D
+        <p>=0D
+          Pour acc=C3=A9der =C3=A0 votre espace client, connectez-vous vi=
+a : http://truffieres-saint-martin.com.=0D
+        =0D
+        </p>=0D
+        <p> =C3=80 tr=C3=A8s vite sur http://truffieres-saint-martin.com!=
+=0D
+      </body>=0D
+    </html>=0D
+  </body>=0D
+</html>=0D
+
+----==_mimepart_6389c590e504a_44981040-423--
+
+  [1m[36mTRANSACTION (24.4ms)[0m  [1m[35mCOMMIT[0m
+  Rendering devise/mailer/confirmation_instructions.html.erb
+  Rendered devise/mailer/confirmation_instructions.html.erb (Duration: 3.3ms | Allocations: 1066)
+Devise::Mailer#confirmation_instructions: processed outbound mail in 6.3ms
+Delivered mail 6389c591eddaa_44981040-231@devgiack-VirtualBox.mail (898.6ms)
+Date: Fri, 02 Dec 2022 10:29:53 +0100
+From: devgiack@protonmail.com
+Reply-To: devgiack@protonmail.com
+To: lenard_spinka@senger.org
+Message-ID: <6389c591eddaa_44981040-231@devgiack-VirtualBox.mail>
+Subject: Confirmation instructions
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p>Welcome lenard_spinka@senger.org!</p>
+
+<p>You can confirm your account email through the link below:</p>
+
+<p><a href="http://localhost:3000/users/confirmation?confirmation_token=z2-WqzWtQ6LteKyaA3Lu">Confirm my account</a></p>
+
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mTRANSACTION (1.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUserAddress Create (16.2ms)[0m  [1m[32mINSERT INTO "user_addresses" ("address_number", "address_street", "address_city", "address_zip", "address_state", "address_country", "address_type", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"[0m  [["address_number", 68], ["address_street", "Garnett Islands"], ["address_city", "Port Dominicchester"], ["address_zip", 41800], ["address_state", "Loir-et-Cher"], ["address_country", "FRANCE"], ["address_type", "perso"], ["created_at", "2022-12-02 09:29:54.936337"], ["updated_at", "2022-12-02 09:29:54.936337"], ["user_id", 1]]
+  [1m[36mTRANSACTION (19.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUserAddress Create (0.3ms)[0m  [1m[32mINSERT INTO "user_addresses" ("address_number", "address_street", "address_city", "address_zip", "address_state", "address_country", "address_type", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"[0m  [["address_number", 78], ["address_street", "Feest Extensions"], ["address_city", "Utefurt"], ["address_zip", 38190], ["address_state", "Isère"], ["address_country", "FRANCE"], ["address_type", "vacances"], ["created_at", "2022-12-02 09:29:54.982302"], ["updated_at", "2022-12-02 09:29:54.982302"], ["user_id", 1]]
+  [1m[36mTRANSACTION (2.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "reset_password_token", "reset_password_sent_at", "remember_created_at", "confirmation_token", "confirmed_at", "confirmation_sent_at", "unconfirmed_email", "first_name", "last_name", "phone", "last_login", "created_at", "updated_at", "is_admin") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15, $16) RETURNING "id"[0m  [["email", "bibi.reynolds@zulauf.io"], ["encrypted_password", "[FILTERED]"], ["reset_password_token", "[FILTERED]"], ["reset_password_sent_at", "[FILTERED]"], ["remember_created_at", nil], ["confirmation_token", "[FILTERED]"], ["confirmed_at", nil], ["confirmation_sent_at", "2022-12-02 09:29:55.229231"], ["unconfirmed_email", nil], ["first_name", "Willette"], ["last_name", "Flatley"], ["phone", "3428018519"], ["last_login", "2022-12-02 09:29:55.228846"], ["created_at", "2022-12-02 09:29:55.229161"], ["updated_at", "2022-12-02 09:29:55.229161"], ["is_admin", false]]
+  Rendering layout layouts/mailer.html.erb
+  Rendering user_mailer/welcome_email.html.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.html.erb within layouts/mailer (Duration: 0.2ms | Allocations: 15)
+  Rendered layout layouts/mailer.html.erb (Duration: 0.5ms | Allocations: 61)
+  Rendering layout layouts/mailer.text.erb
+  Rendering user_mailer/welcome_email.text.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.text.erb within layouts/mailer (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/mailer.text.erb (Duration: 0.2ms | Allocations: 53)
+UserMailer#welcome_email: processed outbound mail in 4.6ms
+Delivered mail 6389c5933b3de_44981040010@devgiack-VirtualBox.mail (458.7ms)
+Date: Fri, 02 Dec 2022 10:29:55 +0100
+From: devgiack@protonmail.com
+To: bibi.reynolds@zulauf.io
+Message-ID: <6389c5933b3de_44981040010@devgiack-VirtualBox.mail>
+Subject: =?UTF-8?Q?Bienvenue_chez_les_truffi=C3=A9res_de_Saint-Martin_!?=
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_6389c5933a967_44981040-13f";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_6389c5933a967_44981040-13f
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+     Bonjour, Willette Flatley et bienvenue chez les truffi=C3=A9res de S=
+aint-Martin.=0D
+=0D
+        Nous vous remercions pour votre inscription sur notre boutique en=
+ ligne.=0D
+ =0D
+        Les truffi=C3=A9res de Saint-Martin vous propose des truffes s=C3=
+=A9lectionn=C3=A9es de grande qualit=C3=A9 au meilleur prix.=0D
+        Notre priorit=C3=A9 est votre pleine satisfaction, n'h=C3=A9sitez=
+ pas a nous contacter pour toute demande d'information.=0D
+=0D
+        Pour acc=C3=A9der =C3=A0 votre espace client, connectez-vous via =
+: http://truffieres-saint-martin.com.=0D
+        =0D
+        =C3=80 tr=C3=A8s vite sur http://truffieres-saint-martin.com!=0D
+
+----==_mimepart_6389c5933a967_44981040-13f
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf=
+-8" />=0D
+    <style>=0D
+      /* Email styles need to be inline */=0D
+    </style>=0D
+  </head>=0D
+=0D
+  <body>=0D
+        <!DOCTYPE html>=0D
+    <html>=0D
+      <head>=0D
+        <meta content=3D'text/html; charset=3DUTF-8' http-equiv=3D'Conten=
+t-Type' />=0D
+      </head>=0D
+      <body>=0D
+        <h1>Bonjour, Willette Flatley et bienvenue chez les truffi=C3=A9r=
+es de Saint-Martin.</h1>=0D
+        <p>=0D
+            Nous vous remercions pour votre inscription sur notre boutiqu=
+e en ligne.=0D
+        </p>=0D
+        <p>=0D
+            Les truffi=C3=A9res de Saint-Martin vous propose des truffes =
+s=C3=A9lectionn=C3=A9es de grande qualit=C3=A9 au meilleur prix.<br>=0D
+            Notre priorit=C3=A9 est votre pleine satisfaction, n'h=C3=A9s=
+itez pas a nous contacter pour toute demande d'information.=0D
+        </p>=0D
+        <p>=0D
+          Pour acc=C3=A9der =C3=A0 votre espace client, connectez-vous vi=
+a : http://truffieres-saint-martin.com.=0D
+        =0D
+        </p>=0D
+        <p> =C3=80 tr=C3=A8s vite sur http://truffieres-saint-martin.com!=
+=0D
+      </body>=0D
+    </html>=0D
+  </body>=0D
+</html>=0D
+
+----==_mimepart_6389c5933a967_44981040-13f--
+
+  [1m[36mTRANSACTION (19.6ms)[0m  [1m[35mCOMMIT[0m
+  Rendering devise/mailer/confirmation_instructions.html.erb
+  Rendered devise/mailer/confirmation_instructions.html.erb (Duration: 0.6ms | Allocations: 85)
+Devise::Mailer#confirmation_instructions: processed outbound mail in 2.2ms
+Delivered mail 6389c593b0fe7_449810401e7@devgiack-VirtualBox.mail (439.8ms)
+Date: Fri, 02 Dec 2022 10:29:55 +0100
+From: devgiack@protonmail.com
+Reply-To: devgiack@protonmail.com
+To: bibi.reynolds@zulauf.io
+Message-ID: <6389c593b0fe7_449810401e7@devgiack-VirtualBox.mail>
+Subject: Confirmation instructions
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p>Welcome bibi.reynolds@zulauf.io!</p>
+
+<p>You can confirm your account email through the link below:</p>
+
+<p><a href="http://localhost:3000/users/confirmation?confirmation_token=MsFLqfCeYK9_xUpLX2_p">Confirm my account</a></p>
+
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUserAddress Create (0.8ms)[0m  [1m[32mINSERT INTO "user_addresses" ("address_number", "address_street", "address_city", "address_zip", "address_state", "address_country", "address_type", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"[0m  [["address_number", 48], ["address_street", "Reilly Club"], ["address_city", "Rosenabury"], ["address_zip", 91560], ["address_state", "Essonne"], ["address_country", "FRANCE"], ["address_type", "home"], ["created_at", "2022-12-02 09:29:56.168204"], ["updated_at", "2022-12-02 09:29:56.168204"], ["user_id", 2]]
+  [1m[36mTRANSACTION (3.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUserAddress Create (1.0ms)[0m  [1m[32mINSERT INTO "user_addresses" ("address_number", "address_street", "address_city", "address_zip", "address_state", "address_country", "address_type", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"[0m  [["address_number", 61], ["address_street", "Zemlak Neck"], ["address_city", "North Rochellville"], ["address_zip", 94540], ["address_state", "Val-de-Marne"], ["address_country", "FRANCE"], ["address_type", "home"], ["created_at", "2022-12-02 09:29:56.178964"], ["updated_at", "2022-12-02 09:29:56.178964"], ["user_id", 2]]
+  [1m[36mTRANSACTION (2.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (1.9ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (0.9ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "reset_password_token", "reset_password_sent_at", "remember_created_at", "confirmation_token", "confirmed_at", "confirmation_sent_at", "unconfirmed_email", "first_name", "last_name", "phone", "last_login", "created_at", "updated_at", "is_admin") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15, $16) RETURNING "id"[0m  [["email", "eldridge@powlowski-kunde.net"], ["encrypted_password", "[FILTERED]"], ["reset_password_token", "[FILTERED]"], ["reset_password_sent_at", "[FILTERED]"], ["remember_created_at", nil], ["confirmation_token", "[FILTERED]"], ["confirmed_at", nil], ["confirmation_sent_at", "2022-12-02 09:29:56.433187"], ["unconfirmed_email", nil], ["first_name", "Shawana"], ["last_name", "Dare"], ["phone", "8016675275"], ["last_login", "2022-12-02 09:29:56.432890"], ["created_at", "2022-12-02 09:29:56.433141"], ["updated_at", "2022-12-02 09:29:56.433141"], ["is_admin", false]]
+  Rendering layout layouts/mailer.html.erb
+  Rendering user_mailer/welcome_email.html.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.html.erb within layouts/mailer (Duration: 0.1ms | Allocations: 15)
+  Rendered layout layouts/mailer.html.erb (Duration: 0.5ms | Allocations: 61)
+  Rendering layout layouts/mailer.text.erb
+  Rendering user_mailer/welcome_email.text.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.text.erb within layouts/mailer (Duration: 0.0ms | Allocations: 7)
+  Rendered layout layouts/mailer.text.erb (Duration: 0.1ms | Allocations: 53)
+UserMailer#welcome_email: processed outbound mail in 3.2ms
+Delivered mail 6389c5946c3d9_4498104034f@devgiack-VirtualBox.mail (465.4ms)
+Date: Fri, 02 Dec 2022 10:29:56 +0100
+From: devgiack@protonmail.com
+To: eldridge@powlowski-kunde.net
+Message-ID: <6389c5946c3d9_4498104034f@devgiack-VirtualBox.mail>
+Subject: =?UTF-8?Q?Bienvenue_chez_les_truffi=C3=A9res_de_Saint-Martin_!?=
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_6389c5946bb5b_449810402da";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_6389c5946bb5b_449810402da
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+     Bonjour, Shawana Dare et bienvenue chez les truffi=C3=A9res de Saint=
+-Martin.=0D
+=0D
+        Nous vous remercions pour votre inscription sur notre boutique en=
+ ligne.=0D
+ =0D
+        Les truffi=C3=A9res de Saint-Martin vous propose des truffes s=C3=
+=A9lectionn=C3=A9es de grande qualit=C3=A9 au meilleur prix.=0D
+        Notre priorit=C3=A9 est votre pleine satisfaction, n'h=C3=A9sitez=
+ pas a nous contacter pour toute demande d'information.=0D
+=0D
+        Pour acc=C3=A9der =C3=A0 votre espace client, connectez-vous via =
+: http://truffieres-saint-martin.com.=0D
+        =0D
+        =C3=80 tr=C3=A8s vite sur http://truffieres-saint-martin.com!=0D
+
+----==_mimepart_6389c5946bb5b_449810402da
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf=
+-8" />=0D
+    <style>=0D
+      /* Email styles need to be inline */=0D
+    </style>=0D
+  </head>=0D
+=0D
+  <body>=0D
+        <!DOCTYPE html>=0D
+    <html>=0D
+      <head>=0D
+        <meta content=3D'text/html; charset=3DUTF-8' http-equiv=3D'Conten=
+t-Type' />=0D
+      </head>=0D
+      <body>=0D
+        <h1>Bonjour, Shawana Dare et bienvenue chez les truffi=C3=A9res d=
+e Saint-Martin.</h1>=0D
+        <p>=0D
+            Nous vous remercions pour votre inscription sur notre boutiqu=
+e en ligne.=0D
+        </p>=0D
+        <p>=0D
+            Les truffi=C3=A9res de Saint-Martin vous propose des truffes =
+s=C3=A9lectionn=C3=A9es de grande qualit=C3=A9 au meilleur prix.<br>=0D
+            Notre priorit=C3=A9 est votre pleine satisfaction, n'h=C3=A9s=
+itez pas a nous contacter pour toute demande d'information.=0D
+        </p>=0D
+        <p>=0D
+          Pour acc=C3=A9der =C3=A0 votre espace client, connectez-vous vi=
+a : http://truffieres-saint-martin.com.=0D
+        =0D
+        </p>=0D
+        <p> =C3=80 tr=C3=A8s vite sur http://truffieres-saint-martin.com!=
+=0D
+      </body>=0D
+    </html>=0D
+  </body>=0D
+</html>=0D
+
+----==_mimepart_6389c5946bb5b_449810402da--
+
+  [1m[36mTRANSACTION (26.0ms)[0m  [1m[35mCOMMIT[0m
+  Rendering devise/mailer/confirmation_instructions.html.erb
+  Rendered devise/mailer/confirmation_instructions.html.erb (Duration: 0.2ms | Allocations: 85)
+Devise::Mailer#confirmation_instructions: processed outbound mail in 1.4ms
+Delivered mail 6389c594e6561_44981040446@devgiack-VirtualBox.mail (416.4ms)
+Date: Fri, 02 Dec 2022 10:29:56 +0100
+From: devgiack@protonmail.com
+Reply-To: devgiack@protonmail.com
+To: eldridge@powlowski-kunde.net
+Message-ID: <6389c594e6561_44981040446@devgiack-VirtualBox.mail>
+Subject: Confirmation instructions
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p>Welcome eldridge@powlowski-kunde.net!</p>
+
+<p>You can confirm your account email through the link below:</p>
+
+<p><a href="http://localhost:3000/users/confirmation?confirmation_token=dp4RyA2Qd_uCCyaq_wyL">Confirm my account</a></p>
+
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUserAddress Create (0.3ms)[0m  [1m[32mINSERT INTO "user_addresses" ("address_number", "address_street", "address_city", "address_zip", "address_state", "address_country", "address_type", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"[0m  [["address_number", 137], ["address_street", "Dicki Throughway"], ["address_city", "Harrisborough"], ["address_zip", 500], ["address_state", "Ain"], ["address_country", "FRANCE"], ["address_type", "work"], ["created_at", "2022-12-02 09:29:57.362614"], ["updated_at", "2022-12-02 09:29:57.362614"], ["user_id", 3]]
+  [1m[36mTRANSACTION (3.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUserAddress Create (0.3ms)[0m  [1m[32mINSERT INTO "user_addresses" ("address_number", "address_street", "address_city", "address_zip", "address_state", "address_country", "address_type", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"[0m  [["address_number", 21], ["address_street", "Lakin Cape"], ["address_city", "North Luciside"], ["address_zip", 53710], ["address_state", "Mayenne"], ["address_country", "FRANCE"], ["address_type", "secondaire"], ["created_at", "2022-12-02 09:29:57.372350"], ["updated_at", "2022-12-02 09:29:57.372350"], ["user_id", 3]]
+  [1m[36mTRANSACTION (2.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "reset_password_token", "reset_password_sent_at", "remember_created_at", "confirmation_token", "confirmed_at", "confirmation_sent_at", "unconfirmed_email", "first_name", "last_name", "phone", "last_login", "created_at", "updated_at", "is_admin") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15, $16) RETURNING "id"[0m  [["email", "bari@reichel-torp.biz"], ["encrypted_password", "[FILTERED]"], ["reset_password_token", "[FILTERED]"], ["reset_password_sent_at", "[FILTERED]"], ["remember_created_at", nil], ["confirmation_token", "[FILTERED]"], ["confirmed_at", nil], ["confirmation_sent_at", "2022-12-02 09:29:57.628452"], ["unconfirmed_email", nil], ["first_name", "Odell"], ["last_name", "Kessler"], ["phone", "4458223173"], ["last_login", "2022-12-02 09:29:57.627958"], ["created_at", "2022-12-02 09:29:57.628400"], ["updated_at", "2022-12-02 09:29:57.628400"], ["is_admin", false]]
+  Rendering layout layouts/mailer.html.erb
+  Rendering user_mailer/welcome_email.html.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.html.erb within layouts/mailer (Duration: 0.1ms | Allocations: 15)
+  Rendered layout layouts/mailer.html.erb (Duration: 0.4ms | Allocations: 61)
+  Rendering layout layouts/mailer.text.erb
+  Rendering user_mailer/welcome_email.text.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.text.erb within layouts/mailer (Duration: 0.0ms | Allocations: 7)
+  Rendered layout layouts/mailer.text.erb (Duration: 0.1ms | Allocations: 53)
+UserMailer#welcome_email: processed outbound mail in 3.9ms
+Delivered mail 6389c5959b791_4498104065@devgiack-VirtualBox.mail (447.7ms)
+Date: Fri, 02 Dec 2022 10:29:57 +0100
+From: devgiack@protonmail.com
+To: bari@reichel-torp.biz
+Message-ID: <6389c5959b791_4498104065@devgiack-VirtualBox.mail>
+Subject: =?UTF-8?Q?Bienvenue_chez_les_truffi=C3=A9res_de_Saint-Martin_!?=
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_6389c5959ad0c_449810405ac";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_6389c5959ad0c_449810405ac
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+     Bonjour, Odell Kessler et bienvenue chez les truffi=C3=A9res de Sain=
+t-Martin.=0D
+=0D
+        Nous vous remercions pour votre inscription sur notre boutique en=
+ ligne.=0D
+ =0D
+        Les truffi=C3=A9res de Saint-Martin vous propose des truffes s=C3=
+=A9lectionn=C3=A9es de grande qualit=C3=A9 au meilleur prix.=0D
+        Notre priorit=C3=A9 est votre pleine satisfaction, n'h=C3=A9sitez=
+ pas a nous contacter pour toute demande d'information.=0D
+=0D
+        Pour acc=C3=A9der =C3=A0 votre espace client, connectez-vous via =
+: http://truffieres-saint-martin.com.=0D
+        =0D
+        =C3=80 tr=C3=A8s vite sur http://truffieres-saint-martin.com!=0D
+
+----==_mimepart_6389c5959ad0c_449810405ac
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf=
+-8" />=0D
+    <style>=0D
+      /* Email styles need to be inline */=0D
+    </style>=0D
+  </head>=0D
+=0D
+  <body>=0D
+        <!DOCTYPE html>=0D
+    <html>=0D
+      <head>=0D
+        <meta content=3D'text/html; charset=3DUTF-8' http-equiv=3D'Conten=
+t-Type' />=0D
+      </head>=0D
+      <body>=0D
+        <h1>Bonjour, Odell Kessler et bienvenue chez les truffi=C3=A9res =
+de Saint-Martin.</h1>=0D
+        <p>=0D
+            Nous vous remercions pour votre inscription sur notre boutiqu=
+e en ligne.=0D
+        </p>=0D
+        <p>=0D
+            Les truffi=C3=A9res de Saint-Martin vous propose des truffes =
+s=C3=A9lectionn=C3=A9es de grande qualit=C3=A9 au meilleur prix.<br>=0D
+            Notre priorit=C3=A9 est votre pleine satisfaction, n'h=C3=A9s=
+itez pas a nous contacter pour toute demande d'information.=0D
+        </p>=0D
+        <p>=0D
+          Pour acc=C3=A9der =C3=A0 votre espace client, connectez-vous vi=
+a : http://truffieres-saint-martin.com.=0D
+        =0D
+        </p>=0D
+        <p> =C3=80 tr=C3=A8s vite sur http://truffieres-saint-martin.com!=
+=0D
+      </body>=0D
+    </html>=0D
+  </body>=0D
+</html>=0D
+
+----==_mimepart_6389c5959ad0c_449810405ac--
+
+  [1m[36mTRANSACTION (11.6ms)[0m  [1m[35mCOMMIT[0m
+  Rendering devise/mailer/confirmation_instructions.html.erb
+  Rendered devise/mailer/confirmation_instructions.html.erb (Duration: 0.2ms | Allocations: 85)
+Devise::Mailer#confirmation_instructions: processed outbound mail in 1.8ms
+Delivered mail 6389c596184d9_44981040723@devgiack-VirtualBox.mail (430.6ms)
+Date: Fri, 02 Dec 2022 10:29:58 +0100
+From: devgiack@protonmail.com
+Reply-To: devgiack@protonmail.com
+To: bari@reichel-torp.biz
+Message-ID: <6389c596184d9_44981040723@devgiack-VirtualBox.mail>
+Subject: Confirmation instructions
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p>Welcome bari@reichel-torp.biz!</p>
+
+<p>You can confirm your account email through the link below:</p>
+
+<p><a href="http://localhost:3000/users/confirmation?confirmation_token=T6mq6XwoWnrKgtBk9zaH">Confirm my account</a></p>
+
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUserAddress Create (0.3ms)[0m  [1m[32mINSERT INTO "user_addresses" ("address_number", "address_street", "address_city", "address_zip", "address_state", "address_country", "address_type", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"[0m  [["address_number", 79], ["address_street", "Tromp Forges"], ["address_city", "East Loyd"], ["address_zip", 54270], ["address_state", "Meurthe-et-Moselle"], ["address_country", "FRANCE"], ["address_type", "vacances"], ["created_at", "2022-12-02 09:29:58.532941"], ["updated_at", "2022-12-02 09:29:58.532941"], ["user_id", 4]]
+  [1m[36mTRANSACTION (2.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUserAddress Create (0.5ms)[0m  [1m[32mINSERT INTO "user_addresses" ("address_number", "address_street", "address_city", "address_zip", "address_state", "address_country", "address_type", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"[0m  [["address_number", 44], ["address_street", "Jeanine Trail"], ["address_city", "Toyton"], ["address_zip", 30460], ["address_state", "Gard"], ["address_country", "FRANCE"], ["address_type", "perso"], ["created_at", "2022-12-02 09:29:58.542272"], ["updated_at", "2022-12-02 09:29:58.542272"], ["user_id", 4]]
+  [1m[36mTRANSACTION (2.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "reset_password_token", "reset_password_sent_at", "remember_created_at", "confirmation_token", "confirmed_at", "confirmation_sent_at", "unconfirmed_email", "first_name", "last_name", "phone", "last_login", "created_at", "updated_at", "is_admin") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15, $16) RETURNING "id"[0m  [["email", "porsha@huels.co"], ["encrypted_password", "[FILTERED]"], ["reset_password_token", "[FILTERED]"], ["reset_password_sent_at", "[FILTERED]"], ["remember_created_at", nil], ["confirmation_token", "[FILTERED]"], ["confirmed_at", nil], ["confirmation_sent_at", "2022-12-02 09:29:58.803123"], ["unconfirmed_email", nil], ["first_name", "Cristen"], ["last_name", "Mills"], ["phone", "1035646522"], ["last_login", "2022-12-02 09:29:58.802801"], ["created_at", "2022-12-02 09:29:58.803039"], ["updated_at", "2022-12-02 09:29:58.803039"], ["is_admin", false]]
+  Rendering layout layouts/mailer.html.erb
+  Rendering user_mailer/welcome_email.html.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.html.erb within layouts/mailer (Duration: 0.1ms | Allocations: 15)
+  Rendered layout layouts/mailer.html.erb (Duration: 0.3ms | Allocations: 61)
+  Rendering layout layouts/mailer.text.erb
+  Rendering user_mailer/welcome_email.text.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.text.erb within layouts/mailer (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/mailer.text.erb (Duration: 0.4ms | Allocations: 53)
+UserMailer#welcome_email: processed outbound mail in 5.4ms
+Delivered mail 6389c596c6981_44981040991@devgiack-VirtualBox.mail (455.8ms)
+Date: Fri, 02 Dec 2022 10:29:58 +0100
+From: devgiack@protonmail.com
+To: porsha@huels.co
+Message-ID: <6389c596c6981_44981040991@devgiack-VirtualBox.mail>
+Subject: =?UTF-8?Q?Bienvenue_chez_les_truffi=C3=A9res_de_Saint-Martin_!?=
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_6389c596c5d95_449810408e5";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_6389c596c5d95_449810408e5
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+     Bonjour, Cristen Mills et bienvenue chez les truffi=C3=A9res de Sain=
+t-Martin.=0D
+=0D
+        Nous vous remercions pour votre inscription sur notre boutique en=
+ ligne.=0D
+ =0D
+        Les truffi=C3=A9res de Saint-Martin vous propose des truffes s=C3=
+=A9lectionn=C3=A9es de grande qualit=C3=A9 au meilleur prix.=0D
+        Notre priorit=C3=A9 est votre pleine satisfaction, n'h=C3=A9sitez=
+ pas a nous contacter pour toute demande d'information.=0D
+=0D
+        Pour acc=C3=A9der =C3=A0 votre espace client, connectez-vous via =
+: http://truffieres-saint-martin.com.=0D
+        =0D
+        =C3=80 tr=C3=A8s vite sur http://truffieres-saint-martin.com!=0D
+
+----==_mimepart_6389c596c5d95_449810408e5
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf=
+-8" />=0D
+    <style>=0D
+      /* Email styles need to be inline */=0D
+    </style>=0D
+  </head>=0D
+=0D
+  <body>=0D
+        <!DOCTYPE html>=0D
+    <html>=0D
+      <head>=0D
+        <meta content=3D'text/html; charset=3DUTF-8' http-equiv=3D'Conten=
+t-Type' />=0D
+      </head>=0D
+      <body>=0D
+        <h1>Bonjour, Cristen Mills et bienvenue chez les truffi=C3=A9res =
+de Saint-Martin.</h1>=0D
+        <p>=0D
+            Nous vous remercions pour votre inscription sur notre boutiqu=
+e en ligne.=0D
+        </p>=0D
+        <p>=0D
+            Les truffi=C3=A9res de Saint-Martin vous propose des truffes =
+s=C3=A9lectionn=C3=A9es de grande qualit=C3=A9 au meilleur prix.<br>=0D
+            Notre priorit=C3=A9 est votre pleine satisfaction, n'h=C3=A9s=
+itez pas a nous contacter pour toute demande d'information.=0D
+        </p>=0D
+        <p>=0D
+          Pour acc=C3=A9der =C3=A0 votre espace client, connectez-vous vi=
+a : http://truffieres-saint-martin.com.=0D
+        =0D
+        </p>=0D
+        <p> =C3=80 tr=C3=A8s vite sur http://truffieres-saint-martin.com!=
+=0D
+      </body>=0D
+    </html>=0D
+  </body>=0D
+</html>=0D
+
+----==_mimepart_6389c596c5d95_449810408e5--
+
+  [1m[36mTRANSACTION (26.9ms)[0m  [1m[35mCOMMIT[0m
+  Rendering devise/mailer/confirmation_instructions.html.erb
+  Rendered devise/mailer/confirmation_instructions.html.erb (Duration: 0.2ms | Allocations: 85)
+Devise::Mailer#confirmation_instructions: processed outbound mail in 1.5ms
+Delivered mail 6389c597490ea_449810401099@devgiack-VirtualBox.mail (436.8ms)
+Date: Fri, 02 Dec 2022 10:29:59 +0100
+From: devgiack@protonmail.com
+Reply-To: devgiack@protonmail.com
+To: porsha@huels.co
+Message-ID: <6389c597490ea_449810401099@devgiack-VirtualBox.mail>
+Subject: Confirmation instructions
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p>Welcome porsha@huels.co!</p>
+
+<p>You can confirm your account email through the link below:</p>
+
+<p><a href="http://localhost:3000/users/confirmation?confirmation_token=ZoWDSoBDvLoCy8EiKER1">Confirm my account</a></p>
+
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUserAddress Create (0.6ms)[0m  [1m[32mINSERT INTO "user_addresses" ("address_number", "address_street", "address_city", "address_zip", "address_state", "address_country", "address_type", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"[0m  [["address_number", 127], ["address_street", "Hester Ville"], ["address_city", "Dickensmouth"], ["address_zip", 81170], ["address_state", "Tarn"], ["address_country", "FRANCE"], ["address_type", "work"], ["created_at", "2022-12-02 09:29:59.740629"], ["updated_at", "2022-12-02 09:29:59.740629"], ["user_id", 5]]
+  [1m[36mTRANSACTION (2.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUserAddress Create (0.4ms)[0m  [1m[32mINSERT INTO "user_addresses" ("address_number", "address_street", "address_city", "address_zip", "address_state", "address_country", "address_type", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"[0m  [["address_number", 93], ["address_street", "Quigley Port"], ["address_city", "West Billieborough"], ["address_zip", 84760], ["address_state", "Vaucluse"], ["address_country", "FRANCE"], ["address_type", "secondaire"], ["created_at", "2022-12-02 09:29:59.750093"], ["updated_at", "2022-12-02 09:29:59.750093"], ["user_id", 5]]
+  [1m[36mTRANSACTION (2.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProductCategory Create (0.7ms)[0m  [1m[32mINSERT INTO "product_categories" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Lebanese"], ["created_at", "2022-12-02 09:29:59.786752"], ["updated_at", "2022-12-02 09:29:59.786752"]]
+  [1m[36mTRANSACTION (2.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProductCategory Create (0.8ms)[0m  [1m[32mINSERT INTO "product_categories" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Turkish"], ["created_at", "2022-12-02 09:29:59.793511"], ["updated_at", "2022-12-02 09:29:59.793511"]]
+  [1m[36mTRANSACTION (2.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mProductCategory Load (0.8ms)[0m  [1m[34mSELECT "product_categories".* FROM "product_categories"[0m
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProduct Create (1.0ms)[0m  [1m[32mINSERT INTO "products" ("name", "description", "unity", "created_at", "updated_at", "price", "product_category_id") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Hummus"], ["description", "Vel aut sed. Repellendus recusandae aliquam. Dicta eius repellendus. Nisi optio sunt. Dolorem itaque in. Est recusandae minima. Nemo quae eos."], ["unity", "Gr"], ["created_at", "2022-12-02 09:29:59.820560"], ["updated_at", "2022-12-02 09:29:59.820560"], ["price", 97.06], ["product_category_id", 1]]
+  [1m[36mTRANSACTION (2.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mProductCategory Load (0.7ms)[0m  [1m[34mSELECT "product_categories".* FROM "product_categories"[0m
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProduct Create (0.7ms)[0m  [1m[32mINSERT INTO "products" ("name", "description", "unity", "created_at", "updated_at", "price", "product_category_id") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Lasagne"], ["description", "Accusamus molestias repellendus. Eligendi dolor blanditiis. Mollitia commodi sint. Neque consectetur eum. Blanditiis dicta saepe. Rem ad numquam. Perspiciatis iste cum."], ["unity", "Gr"], ["created_at", "2022-12-02 09:29:59.831793"], ["updated_at", "2022-12-02 09:29:59.831793"], ["price", 57.69], ["product_category_id", 2]]
+  [1m[36mTRANSACTION (3.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mProductCategory Load (0.7ms)[0m  [1m[34mSELECT "product_categories".* FROM "product_categories"[0m
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProduct Create (0.8ms)[0m  [1m[32mINSERT INTO "products" ("name", "description", "unity", "created_at", "updated_at", "price", "product_category_id") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Katsu Curry"], ["description", "Qui dolor quae. Numquam pariatur ut. Numquam nostrum ducimus. Dolores et exercitationem. Fugit sit saepe. Reiciendis est cupiditate. Soluta provident repudiandae."], ["unity", "Gr"], ["created_at", "2022-12-02 09:29:59.842663"], ["updated_at", "2022-12-02 09:29:59.842663"], ["price", 27.12], ["product_category_id", 1]]
+  [1m[36mTRANSACTION (2.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (0.8ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "reset_password_token", "reset_password_sent_at", "remember_created_at", "confirmation_token", "confirmed_at", "confirmation_sent_at", "unconfirmed_email", "first_name", "last_name", "phone", "last_login", "created_at", "updated_at", "is_admin") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15, $16) RETURNING "id"[0m  [["email", "admin@admin.com"], ["encrypted_password", "[FILTERED]"], ["reset_password_token", "[FILTERED]"], ["reset_password_sent_at", "[FILTERED]"], ["remember_created_at", nil], ["confirmation_token", "[FILTERED]"], ["confirmed_at", nil], ["confirmation_sent_at", "2022-12-02 09:30:00.105582"], ["unconfirmed_email", nil], ["first_name", "admin"], ["last_name", "admin"], ["phone", "6441468127"], ["last_login", "2022-12-02 09:30:00.105254"], ["created_at", "2022-12-02 09:30:00.105529"], ["updated_at", "2022-12-02 09:30:00.105529"], ["is_admin", true]]
+  Rendering layout layouts/mailer.html.erb
+  Rendering user_mailer/welcome_email.html.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.html.erb within layouts/mailer (Duration: 0.1ms | Allocations: 15)
+  Rendered layout layouts/mailer.html.erb (Duration: 0.5ms | Allocations: 61)
+  Rendering layout layouts/mailer.text.erb
+  Rendering user_mailer/welcome_email.text.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.text.erb within layouts/mailer (Duration: 0.0ms | Allocations: 7)
+  Rendered layout layouts/mailer.text.erb (Duration: 0.2ms | Allocations: 53)
+UserMailer#welcome_email: processed outbound mail in 4.4ms
+Delivered mail 6389c5981c21d_4498104012bc@devgiack-VirtualBox.mail (482.0ms)
+Date: Fri, 02 Dec 2022 10:30:00 +0100
+From: devgiack@protonmail.com
+To: admin@admin.com
+Message-ID: <6389c5981c21d_4498104012bc@devgiack-VirtualBox.mail>
+Subject: =?UTF-8?Q?Bienvenue_chez_les_truffi=C3=A9res_de_Saint-Martin_!?=
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_6389c5981b649_449810401175";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_6389c5981b649_449810401175
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+     Bonjour, admin admin et bienvenue chez les truffi=C3=A9res de Saint-=
+Martin.=0D
+=0D
+        Nous vous remercions pour votre inscription sur notre boutique en=
+ ligne.=0D
+ =0D
+        Les truffi=C3=A9res de Saint-Martin vous propose des truffes s=C3=
+=A9lectionn=C3=A9es de grande qualit=C3=A9 au meilleur prix.=0D
+        Notre priorit=C3=A9 est votre pleine satisfaction, n'h=C3=A9sitez=
+ pas a nous contacter pour toute demande d'information.=0D
+=0D
+        Pour acc=C3=A9der =C3=A0 votre espace client, connectez-vous via =
+: http://truffieres-saint-martin.com.=0D
+        =0D
+        =C3=80 tr=C3=A8s vite sur http://truffieres-saint-martin.com!=0D
+
+----==_mimepart_6389c5981b649_449810401175
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf=
+-8" />=0D
+    <style>=0D
+      /* Email styles need to be inline */=0D
+    </style>=0D
+  </head>=0D
+=0D
+  <body>=0D
+        <!DOCTYPE html>=0D
+    <html>=0D
+      <head>=0D
+        <meta content=3D'text/html; charset=3DUTF-8' http-equiv=3D'Conten=
+t-Type' />=0D
+      </head>=0D
+      <body>=0D
+        <h1>Bonjour, admin admin et bienvenue chez les truffi=C3=A9res de=
+ Saint-Martin.</h1>=0D
+        <p>=0D
+            Nous vous remercions pour votre inscription sur notre boutiqu=
+e en ligne.=0D
+        </p>=0D
+        <p>=0D
+            Les truffi=C3=A9res de Saint-Martin vous propose des truffes =
+s=C3=A9lectionn=C3=A9es de grande qualit=C3=A9 au meilleur prix.<br>=0D
+            Notre priorit=C3=A9 est votre pleine satisfaction, n'h=C3=A9s=
+itez pas a nous contacter pour toute demande d'information.=0D
+        </p>=0D
+        <p>=0D
+          Pour acc=C3=A9der =C3=A0 votre espace client, connectez-vous vi=
+a : http://truffieres-saint-martin.com.=0D
+        =0D
+        </p>=0D
+        <p> =C3=80 tr=C3=A8s vite sur http://truffieres-saint-martin.com!=
+=0D
+      </body>=0D
+    </html>=0D
+  </body>=0D
+</html>=0D
+
+----==_mimepart_6389c5981b649_449810401175--
+
+  [1m[36mTRANSACTION (56.6ms)[0m  [1m[35mCOMMIT[0m
+  Rendering devise/mailer/confirmation_instructions.html.erb
+  Rendered devise/mailer/confirmation_instructions.html.erb (Duration: 0.2ms | Allocations: 85)
+Devise::Mailer#confirmation_instructions: processed outbound mail in 1.7ms
+Delivered mail 6389c598a0aa5_449810401356@devgiack-VirtualBox.mail (449.8ms)
+Date: Fri, 02 Dec 2022 10:30:00 +0100
+From: devgiack@protonmail.com
+Reply-To: devgiack@protonmail.com
+To: admin@admin.com
+Message-ID: <6389c598a0aa5_449810401356@devgiack-VirtualBox.mail>
+Subject: Confirmation instructions
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p>Welcome admin@admin.com!</p>
+
+<p>You can confirm your account email through the link below:</p>
+
+<p><a href="http://localhost:3000/users/confirmation?confirmation_token=MvV7tp9SKrKEdUPebEni">Confirm my account</a></p>
+
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mProduct Load (1.6ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
