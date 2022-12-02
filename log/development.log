@@ -16863,3 +16863,17 @@ Started GET "/application.css" for 127.0.0.1 at 2022-12-02 10:32:01 +0100
   
 ActionController::RoutingError (No route matches [GET] "/application.css"):
   
+Started GET "/" for 127.0.0.1 at 2022-12-02 10:51:00 +0100
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 827.5ms | Allocations: 76932)
+  Rendered layout layouts/application.html.erb (Duration: 846.7ms | Allocations: 95461)
+Completed 200 OK in 864ms (Views: 851.1ms | ActiveRecord: 0.0ms | Allocations: 101093)
+
+
+Started GET "/application.css" for 127.0.0.1 at 2022-12-02 10:51:01 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/application.css"):
+  
