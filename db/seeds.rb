@@ -57,6 +57,17 @@ end
     ).save!(validate: false)
 end
 
+3.times do |t|
+    product = Product.new(
+        name: Faker::Food.dish,
+        description: Faker::Lorem.sentences(number: 7).join(" "),
+        unity: "Gr",
+        price:  Faker::Number.decimal(l_digits: 2),
+        product_category_id: ProductCategory.all.sample.id,
+        is_highlighted: true
+    ).save!(validate: false)
+end
+
 
 password = 'admin123'
 encrypted = User.new(:password => password).encrypted_password
