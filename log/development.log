@@ -16523,3 +16523,648 @@ Started GET "/application.css" for 127.0.0.1 at 2022-12-01 22:46:01 +0100
   
 ActionController::RoutingError (No route matches [GET] "/application.css"):
   
+Started GET "/" for ::1 at 2022-12-02 06:17:02 +0100
+  [1m[36mActiveRecord::SchemaMigration Pluck (111.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 1984.9ms | Allocations: 113997)
+  Rendered layout layouts/application.html.erb (Duration: 2005.3ms | Allocations: 130138)
+Completed 200 OK in 2061ms (Views: 2023.6ms | ActiveRecord: 0.0ms | Allocations: 136866)
+
+
+Started GET "/application.css" for ::1 at 2022-12-02 06:17:08 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/application.css"):
+  
+Started GET "/users/sign_in" for ::1 at 2022-12-02 06:17:58 +0100
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 32.8ms | Allocations: 1026)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 1911.6ms | Allocations: 1347004)
+  Rendered layout layouts/application.html.erb (Duration: 1919.3ms | Allocations: 1350459)
+Completed 200 OK in 2061ms (Views: 1922.2ms | ActiveRecord: 90.9ms | Allocations: 1376672)
+
+
+Started GET "/" for ::1 at 2022-12-02 06:21:01 +0100
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 14.3ms | Allocations: 3105)
+  Rendered layout layouts/application.html.erb (Duration: 27.6ms | Allocations: 6303)
+Completed 200 OK in 31ms (Views: 29.8ms | ActiveRecord: 0.0ms | Allocations: 6622)
+
+
+Started GET "/" for ::1 at 2022-12-02 06:31:10 +0100
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 6.7ms | Allocations: 3592)
+  Rendered layout layouts/application.html.erb (Duration: 12.7ms | Allocations: 8054)
+Completed 200 OK in 18ms (Views: 17.5ms | Allocations: 9096)
+
+
+Started GET "/application.css" for ::1 at 2022-12-02 06:31:10 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/application.css"):
+  
+Started GET "/users/sign_up" for ::1 at 2022-12-02 06:31:14 +0100
+Processing by Users::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.7ms | Allocations: 227)
+  Rendered devise/shared/_links.html.erb (Duration: 1.1ms | Allocations: 704)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 25.2ms | Allocations: 3983)
+  Rendered layout layouts/application.html.erb (Duration: 30.3ms | Allocations: 7461)
+Completed 200 OK in 34ms (Views: 32.2ms | Allocations: 9312)
+
+
+Started GET "/users/sign_up" for ::1 at 2022-12-02 06:33:20 +0100
+Processing by Users::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 1.6ms | Allocations: 222)
+  Rendered devise/shared/_links.html.erb (Duration: 2.5ms | Allocations: 572)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 11.0ms | Allocations: 3413)
+  Rendered layout layouts/application.html.erb (Duration: 20.3ms | Allocations: 7550)
+Completed 200 OK in 36ms (Views: 31.0ms | Allocations: 9413)
+
+
+Started GET "/users/application.css" for ::1 at 2022-12-02 06:33:21 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/users/application.css"):
+  
+Started GET "/users/sign_up" for ::1 at 2022-12-02 06:33:41 +0100
+Processing by Users::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 1.0ms | Allocations: 222)
+  Rendered devise/shared/_links.html.erb (Duration: 1.5ms | Allocations: 572)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 10.3ms | Allocations: 3413)
+  Rendered layout layouts/application.html.erb (Duration: 35.4ms | Allocations: 7556)
+Completed 200 OK in 41ms (Views: 38.3ms | Allocations: 9428)
+
+
+Started GET "/users/application.css" for ::1 at 2022-12-02 06:33:41 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/users/application.css"):
+  
+Started GET "/" for ::1 at 2022-12-02 06:35:04 +0100
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 6.1ms | Allocations: 3604)
+  Rendered layout layouts/application.html.erb (Duration: 17.9ms | Allocations: 11574)
+Completed 200 OK in 23ms (Views: 21.3ms | Allocations: 12612)
+
+
+Started GET "/application.css" for ::1 at 2022-12-02 06:35:04 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/application.css"):
+  
+Started GET "/users/sign_up" for ::1 at 2022-12-02 06:35:14 +0100
+Processing by Users::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.6ms | Allocations: 222)
+  Rendered devise/shared/_links.html.erb (Duration: 1.1ms | Allocations: 572)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 7.1ms | Allocations: 3412)
+  Rendered layout layouts/application.html.erb (Duration: 13.1ms | Allocations: 6897)
+Completed 200 OK in 17ms (Views: 15.2ms | Allocations: 8600)
+
+
+Started GET "/users/application.css" for ::1 at 2022-12-02 06:35:14 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/users/application.css"):
+  
+Started GET "/users/sign_in" for ::1 at 2022-12-02 06:35:26 +0100
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 1.0ms | Allocations: 205)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 7.3ms | Allocations: 1714)
+  Rendered layout layouts/application.html.erb (Duration: 13.5ms | Allocations: 5184)
+Completed 200 OK in 30ms (Views: 24.8ms | Allocations: 6694)
+
+
+Started GET "/users/sign_in" for ::1 at 2022-12-02 06:36:32 +0100
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 1.9ms | Allocations: 628)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 8.0ms | Allocations: 2192)
+  Rendered layout layouts/application.html.erb (Duration: 13.2ms | Allocations: 6320)
+Completed 200 OK in 27ms (Views: 24.0ms | Allocations: 8062)
+
+
+Started GET "/users/application.css" for ::1 at 2022-12-02 06:36:32 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/users/application.css"):
+  
+Started GET "/users/sign_in" for ::1 at 2022-12-02 06:37:46 +0100
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 3.5ms | Allocations: 628)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 10.6ms | Allocations: 2192)
+  Rendered layout layouts/application.html.erb (Duration: 20.9ms | Allocations: 6312)
+Completed 200 OK in 27ms (Views: 23.8ms | Allocations: 8076)
+
+
+Started GET "/users/application.css" for ::1 at 2022-12-02 06:37:46 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/users/application.css"):
+  
+Started GET "/users/sign_in" for ::1 at 2022-12-02 06:38:10 +0100
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 1.4ms | Allocations: 628)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 5.9ms | Allocations: 2192)
+  Rendered layout layouts/application.html.erb (Duration: 11.2ms | Allocations: 6322)
+Completed 200 OK in 16ms (Views: 14.8ms | Allocations: 8066)
+
+
+Started GET "/users/application.css" for ::1 at 2022-12-02 06:38:10 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/users/application.css"):
+  
+Started GET "/users/sign_in" for ::1 at 2022-12-02 06:38:13 +0100
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.4ms | Allocations: 195)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 3.5ms | Allocations: 1311)
+  Rendered layout layouts/application.html.erb (Duration: 9.2ms | Allocations: 4710)
+Completed 200 OK in 13ms (Views: 11.0ms | Allocations: 5677)
+
+
+Started GET "/users/application.css" for ::1 at 2022-12-02 06:38:13 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/users/application.css"):
+  
+Started GET "/users/sign_in" for ::1 at 2022-12-02 06:40:19 +0100
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 1.9ms | Allocations: 628)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 8.4ms | Allocations: 2192)
+  Rendered layout layouts/application.html.erb (Duration: 17.6ms | Allocations: 6319)
+Completed 200 OK in 28ms (Views: 25.4ms | Allocations: 8060)
+
+
+Started GET "/users/application.css" for ::1 at 2022-12-02 06:40:19 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/users/application.css"):
+  
+Started GET "/" for ::1 at 2022-12-02 06:40:43 +0100
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 7.2ms | Allocations: 3603)
+  Rendered layout layouts/application.html.erb (Duration: 18.9ms | Allocations: 10910)
+Completed 200 OK in 25ms (Views: 24.4ms | Allocations: 11770)
+
+
+Started GET "/application.css" for ::1 at 2022-12-02 06:40:43 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/application.css"):
+  
+Started GET "/users/sign_up" for ::1 at 2022-12-02 06:41:21 +0100
+Processing by Users::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 1.4ms | Allocations: 222)
+  Rendered devise/shared/_links.html.erb (Duration: 2.5ms | Allocations: 149)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 12.9ms | Allocations: 2935)
+  Rendered layout layouts/application.html.erb (Duration: 23.6ms | Allocations: 6413)
+Completed 200 OK in 28ms (Views: 27.2ms | Allocations: 8045)
+
+
+Started POST "/users" for ::1 at 2022-12-02 06:42:09 +0100
+Processing by Users::RegistrationsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"brecinneuxaweu-2470@yopmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "first_name"=>"Awatef", "last_name"=>"Vicente", "phone"=>"0656711125"}, "commit"=>"Sign up"}
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users/registrations_controller.rb:14:in `create'
+  [1m[36mUser Exists? (33.4ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "brecinneuxaweu-2470@yopmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users/registrations_controller.rb:14:in `create'
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/users/registrations_controller.rb:14:in `create'
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 1.2ms | Allocations: 566)
+  Rendered devise/shared/_links.html.erb (Duration: 0.4ms | Allocations: 153)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 7.9ms | Allocations: 3306)
+  Rendered layout layouts/application.html.erb (Duration: 15.3ms | Allocations: 6790)
+Completed 200 OK in 500ms (Views: 17.2ms | ActiveRecord: 45.3ms | Allocations: 17887)
+
+
+Started POST "/users" for ::1 at 2022-12-02 06:43:05 +0100
+Processing by Users::RegistrationsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"brecinneuxaweu-2470@yopmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "first_name"=>"Awatef", "last_name"=>"Vicente", "phone"=>"0656711125"}, "commit"=>"Sign up"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users/registrations_controller.rb:14:in `create'
+  [1m[36mUser Exists? (0.6ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "brecinneuxaweu-2470@yopmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users/registrations_controller.rb:14:in `create'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/users/registrations_controller.rb:14:in `create'
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 1.0ms | Allocations: 466)
+  Rendered devise/shared/_links.html.erb (Duration: 0.3ms | Allocations: 153)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 6.6ms | Allocations: 3195)
+  Rendered layout layouts/application.html.erb (Duration: 11.9ms | Allocations: 6647)
+Completed 200 OK in 261ms (Views: 13.8ms | ActiveRecord: 0.9ms | Allocations: 10678)
+
+
+Started POST "/users" for ::1 at 2022-12-02 06:43:41 +0100
+Processing by Users::RegistrationsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"tacizaufauxo-5797@yopmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "first_name"=>"Awatef", "last_name"=>"Vicente", "phone"=>"0656711125"}, "commit"=>"Sign up"}
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users/registrations_controller.rb:14:in `create'
+  [1m[36mUser Exists? (2.0ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "tacizaufauxo-5797@yopmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users/registrations_controller.rb:14:in `create'
+  [1m[36mUser Create (51.1ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "reset_password_token", "reset_password_sent_at", "remember_created_at", "confirmation_token", "confirmed_at", "confirmation_sent_at", "unconfirmed_email", "first_name", "last_name", "phone", "last_login", "created_at", "updated_at", "is_admin") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15, $16) RETURNING "id"[0m  [["email", "tacizaufauxo-5797@yopmail.com"], ["encrypted_password", "[FILTERED]"], ["reset_password_token", "[FILTERED]"], ["reset_password_sent_at", "[FILTERED]"], ["remember_created_at", nil], ["confirmation_token", "[FILTERED]"], ["confirmed_at", nil], ["confirmation_sent_at", "2022-12-02 05:43:41.744581"], ["unconfirmed_email", nil], ["first_name", "Awatef"], ["last_name", "Vicente"], ["phone", "0656711125"], ["last_login", nil], ["created_at", "2022-12-02 05:43:41.744402"], ["updated_at", "2022-12-02 05:43:41.744402"], ["is_admin", false]]
+  ↳ app/controllers/users/registrations_controller.rb:14:in `create'
+  Rendering layout layouts/mailer.html.erb
+  Rendering user_mailer/welcome_email.html.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.html.erb within layouts/mailer (Duration: 0.9ms | Allocations: 218)
+  Rendered layout layouts/mailer.html.erb (Duration: 1.7ms | Allocations: 433)
+  Rendering layout layouts/mailer.text.erb
+  Rendering user_mailer/welcome_email.text.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.text.erb within layouts/mailer (Duration: 0.6ms | Allocations: 177)
+  Rendered layout layouts/mailer.text.erb (Duration: 4.5ms | Allocations: 357)
+UserMailer#welcome_email: processed outbound mail in 34.2ms
+Delivered mail 6389908dd476b_17973e945974b@devgiack-VirtualBox.mail (1184.7ms)
+Date: Fri, 02 Dec 2022 06:43:41 +0100
+From: devgiack@protonmail.com
+To: tacizaufauxo-5797@yopmail.com
+Message-ID: <6389908dd476b_17973e945974b@devgiack-VirtualBox.mail>
+Subject: =?UTF-8?Q?Bienvenue_chez_les_truffi=C3=A9res_de_Saint-Martin_!?=
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_6389908dd2b39_17973e94596d";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_6389908dd2b39_17973e94596d
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+     Bonjour, Awatef Vicente et bienvenue chez les truffi=C3=A9res de Sai=
+nt-Martin.=0D
+=0D
+        Nous vous remercions pour votre inscription sur notre boutique en=
+ ligne.=0D
+ =0D
+        Les truffi=C3=A9res de Saint-Martin vous propose des truffes s=C3=
+=A9lectionn=C3=A9es de grande qualit=C3=A9 au meilleur prix.=0D
+        Notre priorit=C3=A9 est votre pleine satisfaction, n'h=C3=A9sitez=
+ pas a nous contacter pour toute demande d'information.=0D
+=0D
+        Pour acc=C3=A9der =C3=A0 votre espace client, connectez-vous via =
+: http://truffieres-saint-martin.com.=0D
+        =0D
+        =C3=80 tr=C3=A8s vite sur http://truffieres-saint-martin.com!=0D
+
+----==_mimepart_6389908dd2b39_17973e94596d
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf=
+-8" />=0D
+    <style>=0D
+      /* Email styles need to be inline */=0D
+    </style>=0D
+  </head>=0D
+=0D
+  <body>=0D
+        <!DOCTYPE html>=0D
+    <html>=0D
+      <head>=0D
+        <meta content=3D'text/html; charset=3DUTF-8' http-equiv=3D'Conten=
+t-Type' />=0D
+      </head>=0D
+      <body>=0D
+        <h1>Bonjour, Awatef Vicente et bienvenue chez les truffi=C3=A9res=
+ de Saint-Martin.</h1>=0D
+        <p>=0D
+            Nous vous remercions pour votre inscription sur notre boutiqu=
+e en ligne.=0D
+        </p>=0D
+        <p>=0D
+            Les truffi=C3=A9res de Saint-Martin vous propose des truffes =
+s=C3=A9lectionn=C3=A9es de grande qualit=C3=A9 au meilleur prix.<br>=0D
+            Notre priorit=C3=A9 est votre pleine satisfaction, n'h=C3=A9s=
+itez pas a nous contacter pour toute demande d'information.=0D
+        </p>=0D
+        <p>=0D
+          Pour acc=C3=A9der =C3=A0 votre espace client, connectez-vous vi=
+a : http://truffieres-saint-martin.com.=0D
+        =0D
+        </p>=0D
+        <p> =C3=80 tr=C3=A8s vite sur http://truffieres-saint-martin.com!=
+=0D
+      </body>=0D
+    </html>=0D
+  </body>=0D
+</html>=0D
+
+----==_mimepart_6389908dd2b39_17973e94596d--
+
+  [1m[36mTRANSACTION (3.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users/registrations_controller.rb:14:in `create'
+  Rendering devise/mailer/confirmation_instructions.html.erb
+  Rendered devise/mailer/confirmation_instructions.html.erb (Duration: 1.9ms | Allocations: 386)
+Devise::Mailer#confirmation_instructions: processed outbound mail in 17.8ms
+Delivered mail 6389908f2479f_17973e9459832@devgiack-VirtualBox.mail (897.1ms)
+Date: Fri, 02 Dec 2022 06:43:43 +0100
+From: devgiack@protonmail.com
+Reply-To: devgiack@protonmail.com
+To: tacizaufauxo-5797@yopmail.com
+Message-ID: <6389908f2479f_17973e9459832@devgiack-VirtualBox.mail>
+Subject: Confirmation instructions
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p>Welcome tacizaufauxo-5797@yopmail.com!</p>
+
+<p>You can confirm your account email through the link below:</p>
+
+<p><a href="http://localhost:3000/users/confirmation?confirmation_token=UGLxgPfTTm5z6MGQ6Hya">Confirm my account</a></p>
+
+Redirected to http://localhost:3000/
+Completed 302 Found in 2627ms (ActiveRecord: 57.7ms | Allocations: 44684)
+
+
+Started GET "/" for ::1 at 2022-12-02 06:43:44 +0100
+Processing by HomeController#index as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 5.8ms | Allocations: 3106)
+  Rendered layout layouts/application.html.erb (Duration: 11.4ms | Allocations: 6855)
+Completed 200 OK in 14ms (Views: 13.6ms | ActiveRecord: 0.0ms | Allocations: 7220)
+
+
+Started GET "/users/sign_up" for ::1 at 2022-12-02 06:43:49 +0100
+Processing by Users::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.1ms | Allocations: 14)
+  Rendered devise/shared/_links.html.erb (Duration: 0.6ms | Allocations: 139)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 15.7ms | Allocations: 2084)
+  Rendered layout layouts/application.html.erb (Duration: 33.2ms | Allocations: 5488)
+Completed 200 OK in 43ms (Views: 36.1ms | ActiveRecord: 0.0ms | Allocations: 6448)
+
+
+Started POST "/users" for ::1 at 2022-12-02 06:44:14 +0100
+Processing by Users::RegistrationsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"tacizaufauxo-5797@yopmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "first_name"=>"", "last_name"=>"", "phone"=>""}, "commit"=>"Sign up"}
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users/registrations_controller.rb:14:in `create'
+  [1m[36mUser Exists? (0.7ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "tacizaufauxo-5797@yopmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users/registrations_controller.rb:14:in `create'
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/users/registrations_controller.rb:14:in `create'
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 1.3ms | Allocations: 466)
+  Rendered devise/shared/_links.html.erb (Duration: 0.3ms | Allocations: 153)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 7.0ms | Allocations: 3195)
+  Rendered layout layouts/application.html.erb (Duration: 12.1ms | Allocations: 6647)
+Completed 200 OK in 260ms (Views: 13.3ms | ActiveRecord: 1.9ms | Allocations: 10688)
+
+
+Started POST "/users" for ::1 at 2022-12-02 06:45:36 +0100
+Processing by Users::RegistrationsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"tacizau@yopmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "first_name"=>"", "last_name"=>"", "phone"=>""}, "commit"=>"Sign up"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users/registrations_controller.rb:14:in `create'
+  [1m[36mUser Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "tacizau@yopmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users/registrations_controller.rb:14:in `create'
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "reset_password_token", "reset_password_sent_at", "remember_created_at", "confirmation_token", "confirmed_at", "confirmation_sent_at", "unconfirmed_email", "first_name", "last_name", "phone", "last_login", "created_at", "updated_at", "is_admin") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15, $16) RETURNING "id"[0m  [["email", "tacizau@yopmail.com"], ["encrypted_password", "[FILTERED]"], ["reset_password_token", "[FILTERED]"], ["reset_password_sent_at", "[FILTERED]"], ["remember_created_at", nil], ["confirmation_token", "[FILTERED]"], ["confirmed_at", nil], ["confirmation_sent_at", "2022-12-02 05:45:36.810232"], ["unconfirmed_email", nil], ["first_name", ""], ["last_name", ""], ["phone", ""], ["last_login", nil], ["created_at", "2022-12-02 05:45:36.810139"], ["updated_at", "2022-12-02 05:45:36.810139"], ["is_admin", false]]
+  ↳ app/controllers/users/registrations_controller.rb:14:in `create'
+  Rendering layout layouts/mailer.html.erb
+  Rendering user_mailer/welcome_email.html.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.html.erb within layouts/mailer (Duration: 0.2ms | Allocations: 15)
+  Rendered layout layouts/mailer.html.erb (Duration: 1.2ms | Allocations: 94)
+  Rendering layout layouts/mailer.text.erb
+  Rendering user_mailer/welcome_email.text.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.text.erb within layouts/mailer (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/mailer.text.erb (Duration: 0.6ms | Allocations: 86)
+UserMailer#welcome_email: processed outbound mail in 15.0ms
+Delivered mail 63899100ca864_17973ea860018@devgiack-VirtualBox.mail (432.5ms)
+Date: Fri, 02 Dec 2022 06:45:36 +0100
+From: devgiack@protonmail.com
+To: tacizau@yopmail.com
+Message-ID: <63899100ca864_17973ea860018@devgiack-VirtualBox.mail>
+Subject: =?UTF-8?Q?Bienvenue_chez_les_truffi=C3=A9res_de_Saint-Martin_!?=
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_63899100c9887_17973ea859998";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_63899100c9887_17973ea859998
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+     Bonjour,   et bienvenue chez les truffi=C3=A9res de Saint-Martin.=0D=
+
+=0D
+        Nous vous remercions pour votre inscription sur notre boutique en=
+ ligne.=0D
+ =0D
+        Les truffi=C3=A9res de Saint-Martin vous propose des truffes s=C3=
+=A9lectionn=C3=A9es de grande qualit=C3=A9 au meilleur prix.=0D
+        Notre priorit=C3=A9 est votre pleine satisfaction, n'h=C3=A9sitez=
+ pas a nous contacter pour toute demande d'information.=0D
+=0D
+        Pour acc=C3=A9der =C3=A0 votre espace client, connectez-vous via =
+: http://truffieres-saint-martin.com.=0D
+        =0D
+        =C3=80 tr=C3=A8s vite sur http://truffieres-saint-martin.com!=0D
+
+----==_mimepart_63899100c9887_17973ea859998
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf=
+-8" />=0D
+    <style>=0D
+      /* Email styles need to be inline */=0D
+    </style>=0D
+  </head>=0D
+=0D
+  <body>=0D
+        <!DOCTYPE html>=0D
+    <html>=0D
+      <head>=0D
+        <meta content=3D'text/html; charset=3DUTF-8' http-equiv=3D'Conten=
+t-Type' />=0D
+      </head>=0D
+      <body>=0D
+        <h1>Bonjour,   et bienvenue chez les truffi=C3=A9res de Saint-Mar=
+tin.</h1>=0D
+        <p>=0D
+            Nous vous remercions pour votre inscription sur notre boutiqu=
+e en ligne.=0D
+        </p>=0D
+        <p>=0D
+            Les truffi=C3=A9res de Saint-Martin vous propose des truffes =
+s=C3=A9lectionn=C3=A9es de grande qualit=C3=A9 au meilleur prix.<br>=0D
+            Notre priorit=C3=A9 est votre pleine satisfaction, n'h=C3=A9s=
+itez pas a nous contacter pour toute demande d'information.=0D
+        </p>=0D
+        <p>=0D
+          Pour acc=C3=A9der =C3=A0 votre espace client, connectez-vous vi=
+a : http://truffieres-saint-martin.com.=0D
+        =0D
+        </p>=0D
+        <p> =C3=80 tr=C3=A8s vite sur http://truffieres-saint-martin.com!=
+=0D
+      </body>=0D
+    </html>=0D
+  </body>=0D
+</html>=0D
+
+----==_mimepart_63899100c9887_17973ea859998--
+
+  [1m[36mTRANSACTION (73.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users/registrations_controller.rb:14:in `create'
+  Rendering devise/mailer/confirmation_instructions.html.erb
+  Rendered devise/mailer/confirmation_instructions.html.erb (Duration: 0.3ms | Allocations: 85)
+Devise::Mailer#confirmation_instructions: processed outbound mail in 2.5ms
+Delivered mail 6389910154ebd_17973ea86013e@devgiack-VirtualBox.mail (770.9ms)
+Date: Fri, 02 Dec 2022 06:45:37 +0100
+From: devgiack@protonmail.com
+Reply-To: devgiack@protonmail.com
+To: tacizau@yopmail.com
+Message-ID: <6389910154ebd_17973ea86013e@devgiack-VirtualBox.mail>
+Subject: Confirmation instructions
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p>Welcome tacizau@yopmail.com!</p>
+
+<p>You can confirm your account email through the link below:</p>
+
+<p><a href="http://localhost:3000/users/confirmation?confirmation_token=L9xfLpt5_1RAuzhZbcyY">Confirm my account</a></p>
+
+Redirected to http://localhost:3000/
+Completed 302 Found in 1553ms (ActiveRecord: 74.1ms | Allocations: 26332)
+
+
+Started GET "/" for ::1 at 2022-12-02 06:45:38 +0100
+Processing by HomeController#index as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 4.2ms | Allocations: 3093)
+  Rendered layout layouts/application.html.erb (Duration: 9.5ms | Allocations: 6845)
+Completed 200 OK in 11ms (Views: 10.4ms | ActiveRecord: 0.0ms | Allocations: 7161)
+
+
+Started GET "/users/confirmation?confirmation_token=[FILTERED]" for ::1 at 2022-12-02 06:45:59 +0100
+Processing by Devise::ConfirmationsController#show as HTML
+  Parameters: {"confirmation_token"=>"[FILTERED]"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."confirmation_token" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["confirmation_token", "[FILTERED]"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Update (56.8ms)[0m  [1m[33mUPDATE "users" SET "confirmed_at" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["confirmed_at", "2022-12-02 05:45:59.393576"], ["updated_at", "2022-12-02 05:45:59.393993"], ["id", 74]]
+  [1m[36mTRANSACTION (1.8ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/users/sign_in
+Completed 302 Found in 76ms (ActiveRecord: 59.6ms | Allocations: 5807)
+
+
+Started GET "/users/sign_in" for ::1 at 2022-12-02 06:45:59 +0100
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.3ms | Allocations: 195)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 3.4ms | Allocations: 1311)
+  Rendered layout layouts/application.html.erb (Duration: 8.9ms | Allocations: 4707)
+Completed 200 OK in 12ms (Views: 10.2ms | ActiveRecord: 0.0ms | Allocations: 5673)
+
+
+Started GET "/users/application.css" for ::1 at 2022-12-02 06:45:59 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/users/application.css"):
+  
+Started POST "/users/sign_in" for ::1 at 2022-12-02 06:46:33 +0100
+Processing by Devise::SessionsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"tacizau@yopmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "tacizau@yopmail.com"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 289ms (ActiveRecord: 0.8ms | Allocations: 2857)
+
+
+Started GET "/" for ::1 at 2022-12-02 06:46:33 +0100
+Processing by HomeController#index as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 5.3ms | Allocations: 3094)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 74], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:46
+  Rendered layout layouts/application.html.erb (Duration: 15.1ms | Allocations: 8489)
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 0.5ms | Allocations: 8787)
+
+
+
+ArgumentError - wrong number of arguments (given 1, expected 0):
+  app/views/layouts/application.html.erb:47
+
+Started POST "/__better_errors/f03d40252ee0f86f/variables" for ::1 at 2022-12-02 06:46:33 +0100
+Started GET "/users/sign_in" for ::1 at 2022-12-02 06:47:11 +0100
+Processing by Devise::SessionsController#new as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 74], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 17ms (ActiveRecord: 0.8ms | Allocations: 1748)
+
+
+Started GET "/" for ::1 at 2022-12-02 06:47:11 +0100
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 5.2ms | Allocations: 3604)
+  [1m[36mUser Load (4.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 74], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:46
+  Rendered layout layouts/application.html.erb (Duration: 25.1ms | Allocations: 8713)
+Completed 200 OK in 29ms (Views: 23.4ms | ActiveRecord: 4.6ms | Allocations: 9753)
+
+
+Started GET "/application.css" for ::1 at 2022-12-02 06:47:11 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/application.css"):
+  
+Started GET "/" for ::1 at 2022-12-02 06:48:46 +0100
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 8.9ms | Allocations: 3607)
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 74], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:46
+  Rendered layout layouts/application.html.erb (Duration: 43.1ms | Allocations: 8729)
+Completed 200 OK in 54ms (Views: 52.4ms | ActiveRecord: 0.7ms | Allocations: 9771)
+
+
+Started GET "/application.css" for ::1 at 2022-12-02 06:48:46 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/application.css"):
+  

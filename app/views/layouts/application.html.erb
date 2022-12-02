@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>CatShop</title>
+    <title>Truffieres de Saint-Martin</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="application.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
@@ -22,7 +22,7 @@
       <div class="container">
         <a class="navbar-brand" href="/">
           <%= image_tag "TSM_Logo_noir.png", class: "logo_tsm" %>
-          <span>Truffieres Saint-Martin</span>
+          <span>Truffieres de Saint-Martin</span>
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -34,16 +34,20 @@
               <a class="nav-link mx-2 text-uppercase active" aria-current="page" href="/">Accueil</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link mx-2 text-uppercase active" href="/products">Produits</a>
+              <a class="nav-link mx-2 text-uppercase" href="/products">Produits</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link mx-2 text-uppercase active" href="#">Recettes</a>
+              <a class="nav-link mx-2 text-uppercase" href="#">Recettes</a>
             </li>
             <li class="nav-item">
               <a class="nav-link mx-2 text-uppercase" href="/carts">Panier</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link mx-2 text-uppercase" href="/users/sign_up">Connexion</a>
+              <% if user_signed_in? %>    
+                  <a class="nav-link mx-2 text-uppercase" href="#"><%= current_user.email %></a>
+              <% else %>
+                  <a class="nav-link mx-2 text-uppercase" href="/users/sign_up">Connexion</a>
+              <% end %>
             </li>
           </ul>
           <ul class="navbar-nav ms-auto iconique">
