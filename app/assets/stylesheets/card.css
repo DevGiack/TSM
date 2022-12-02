@@ -1,3 +1,38 @@
+.title-product{
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+  margin-bottom: 30px;
+}
+
+.card-products{
+  display: flex;
+  align-content: space-around;
+}
+.card h4{
+  color: var(--secondary);
+}
+
+.card p{
+  color: var(--primary);
+}
+
+.card-img{
+  border-radius: 5px;
+  box-shadow: 0px 6px 10px 1px rgba(0,0,0,0.29);
+}
+
+.col{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 24px;
+}
+
+
+
+
+
+
 
 #contour{
   /* Rectangle 1 */
