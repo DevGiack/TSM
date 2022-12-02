@@ -1,14 +1,109 @@
-<p style="color: green"><%= notice %></p>
+
 
 <h1>Products</h1>
 
 <div id="products">
-  <% @products.each do |product| %>
-    <%= render product %>
-    <p>
-      <%= link_to "Show this product", product %>
-    </p>
-  <% end %>
+  <div class="container-fluid">
+    <div class="d-flex justify-content-center row mx-2 row-cols-4">
+      <% @products.each do |product| %>
+        <div class="col">
+          <div class="card" style="width: 20rem;">
+            <%= image_tag "truffe_1.jpg", class: "card-img" %>
+            <div class="card-body">
+              <h4 class="card-title"><%= product.name%></h4>
+              <p class="card-text"><%= product.description%></p>
+            </div>
+            <div class="card-body">
+              <button class="button btn-outline btn-sm" role="button"><%= link_to "Show this product", product %></button>
+            </div>
+          </div>
+        </div>
+
+      <% end %>
+    </div>
+  </div>
 </div>
 
-<%= link_to "New product", new_product_path %>
+<h2><%= link_to "New product", new_product_path %></h2>
+
+<!--<p style="color: green"><%= notice %></p>-->
+
+<!--show product
+
+<% @products.each do |product| %>
+  <div class="container bootdey">
+    <div class="col-md-12">
+      <section class="panel">
+        <div class="panel-body">
+          <div class="col-md-6">
+              <div class="pro-img-details">
+                <%= image_tag "truffe_1.jpeg", class: "card-img" %>
+              </div>
+              <div class="pro-img-list">
+                  <a href="#">
+                      <img src="https://via.placeholder.com/115x100/FF7F50/000000" alt="">                  </a>
+                  <a href="#">
+                      <img src="https://via.placeholder.com/115x100/FF7F50/000000" alt="">
+                  </a>
+              </div>
+          </div>
+          <div class="col-md-6">
+            <h4 class="pro-d-title">
+              <%= product.name %>
+            </h4>
+            <div class="m-bot15"><span class="amount-old"><h4><%= product.price %> € </h4> </span> </div>
+
+
+            <div class="product_meta">
+                <span class="posted_in"> <strong>Categories:</strong> <a rel="tag" href="#">Jackets</a>, <a rel="tag" href="#">Men</a>, <a rel="tag" href="#">Shirts</a>, <a rel="tag" href="#">T-shirt</a>.</span>
+                <span class="tagged_as"><strong>Tags:</strong> <a rel="tag" href="#">mens</a>, <a rel="tag" href="#">womens</a>.</span>
+            </div>
+            <div class="form-group">
+              <label>Quantity</label>
+              <div class="input-group">
+                <input type="button" value="-" class="button-minus border rounded-circle  icon-shape icon-sm mx-1 " data-field="quantity">
+                <input type="quantiy" placeholder="1" class="form-control quantity">
+                <input type="button" value="-" class="button-minus border rounded-circle  icon-shape icon-sm mx-1 " data-field="quantity">
+              </div>
+            </div>
+
+
+            <div style="width:150px;padding:50px;">
+              <div class="input-group">
+                <span class="input-group-btn">
+                  <button type="button" class="btn btn-default btn-number" disabled="disabled" data-type="minus" data-field="quant[1]">
+                    <span class="glyphicon glyphicon-minus"></span>
+                  </button>
+                </span>
+                <input type="number" class="form-control" id="input1" value="1" min="1" max="10">
+                <span class="input-group-btn">
+                  <button type="button" class="btn btn-default btn-number" data-type="plus" data-field="quant[1]">
+                    <span class="glyphicon glyphicon-plus"></span>
+                  </button>
+                </span>
+              </div>
+            </div>
+            <p>
+              <button class="button btn-secondary" role="button">Acheter maintenant</button>
+              <button class="button btn-primary" role="button">Ajouter au panier</button>
+
+            </p>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <div class="card w-75">
+    <div class="card-header", style="background-color: #fff">
+      <h4>Détails</h4>
+    </div>
+    <div class="card-body">
+      <p>
+        <%= product.description%>
+      </p>
+    </div>
+  </div>
+<% end %>
+
+-->
