@@ -56,6 +56,21 @@ end
         product_category_id: ProductCategory.all.sample.id
     ).save!(validate: false)
 end
+x = 1
+3.times do |t|
+    img_name = "truffe_" + x.to_s + '.jpeg'
+    product = Product.new(
+        name: Faker::Food.dish,
+        description: Faker::Lorem.sentences(number: 7).join(" "),
+        unity: "Gr",
+        price:  Faker::Number.decimal(l_digits: 2),
+        product_category_id: ProductCategory.all.sample.id,
+        is_highlighted: true,
+        product_image: img_name
+
+    ).save!(validate: false)
+    x += 1
+end
 
 
 password = 'admin123'
@@ -70,3 +85,5 @@ user = User.new(
     last_login: Time.now,
     is_admin: true
     ).save!(validate: false)
+    
+    admin = AdminUser.create!(email: 'admin@example.com', password: 'password', password_confirmation: 'password').save!(validate: false)
