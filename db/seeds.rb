@@ -85,3 +85,5 @@ user = User.new(
     last_login: Time.now,
     is_admin: true
     ).save!(validate: false)
+    
+    admin = AdminUser.create!(email: 'admin@example.com', password: 'password', password_confirmation: 'password').save!(validate: false)
