@@ -13,7 +13,7 @@ password = '123456'
 types = ["home","work","perso","secondaire","vacances"]
 states = ["Ain","Aisne","Allier","Alpes","Hautes-Alpes","Alpes-Maritimes","Ardêche","Ardennes","Ariège","Aube","Aude","Aveyron","Bouches-du-Rhône","Calvados","Cantal","Charente","Charente-Maritime","Cher","Corrèze","Corse-du-Sud","Haute-Corse","Côte-d'Or","Côtes","Creuse","Dordogne","Doubs","Drôme","Eure","Eure-et-Loir","Finistère","Gard","Haute-Garonne","Gers","Gironde","Hérault","Île-et-Vilaine","Indre","Indre-et-Loire","Isère","Jura","Landes","Loir-et-Cher","Loire","Haute-Loire","Loire-Atlantique","Loiret","Lot","Lot-et-Garonne","Lozère","Maine-et-Loire","Manche","Marne","Haute-Marne","Mayenne","Meurthe-et-Moselle","Meuse","Morbihan","Moselle","Nièvre","Nord","Oise","Orne","Pas-de-Calais","Puy-de-Dôme","Pyrénées-Atlantiques","Hautes-Pyrénées","Pyrénées-Orientales","Bas-Rhin","Haut-Rhin","Rhône","Haute-Saône","Saône-et-Loire","Sarthe","Savoie","Haute-Savoie","Paris","Seine-Maritime","Seine-et-Marne","Yvelines","Deux-Sèvres","Somme","Tarn","Tarn-et-Garonne","Var","Vaucluse","Vendée","Vienne","Haute-Vienne","Vosges","Yonne","Territoire-de-Belfort","Essonne","Hauts-de-Seine","Seine-Saint-Denis","Val-de-Marne","Val-d'Oise"]
 
-50.times do |t|
+5.times do |t|
 
     password = '123456'
     encrypted = User.new(:password => password).encrypted_password
@@ -43,11 +43,11 @@ states = ["Ain","Aisne","Allier","Alpes","Hautes-Alpes","Alpes-Maritimes","Ardê
 
 end
 
-6.times do |t|
+2.times do |t|
     category = ProductCategory.new(name: Faker::Food.ethnic_category).save!(validate: false)
 end
 
-25.times do |t|
+3.times do |t|
     product = Product.new(
         name: Faker::Food.dish,
         description: Faker::Lorem.sentences(number: 7).join(" "),
@@ -56,3 +56,17 @@ end
         product_category_id: ProductCategory.all.sample.id
     ).save!(validate: false)
 end
+
+
+password = 'admin123'
+encrypted = User.new(:password => password).encrypted_password
+
+user = User.new(
+    email: "admin@admin.com", 
+    encrypted_password: encrypted,
+    first_name: "admin",
+    last_name: "admin",
+    phone: Faker::Number.between(from: 1000000000, to: 9999999999).to_s,
+    last_login: Time.now,
+    is_admin: true
+    ).save!(validate: false)
