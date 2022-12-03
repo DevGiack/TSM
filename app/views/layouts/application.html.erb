@@ -13,7 +13,7 @@
   <body>
     <nav class="navbar navbar-expand-lg bg-white sticky-top navbar-light shadow-sm">
       <div class="container">
-        <a class="navbar-brand" href="/">
+        <a class="navbar-brand" href="<%= root_path %>">
           <%= image_tag "TSM_Logo_noir.png", class: "logo_tsm" %>
           <span>Truffieres de Saint-Martin</span>
         </a>
@@ -24,31 +24,31 @@
         <div class=" collapse navbar-collapse" id="navbarNavDropdown">
           <ul class="navbar-nav ms-auto ">
             <li class="nav-item">
-              <a class="nav-link mx-2 text-uppercase active" aria-current="page" href="/">Accueil</a>
+              <a class="nav-link mx-2 text-uppercase active" aria-current="page" href="<%= root_path %>">Accueil</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link mx-2 text-uppercase" href="/products">Produits</a>
+              <a class="nav-link mx-2 text-uppercase" href="<%= products_path %>">Produits</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link mx-2 text-uppercase" href="#">Recettes</a>
+              <a class="nav-link mx-2 text-uppercase" href="<%= root_path %>">Recettes</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link mx-2 text-uppercase" href="/carts">Panier</a>
+              <a class="nav-link mx-2 text-uppercase" href="<%= carts_path %>">Panier</a>
             </li>
             <li class="nav-item">
               <% if user_signed_in? %>    
-                  <a class="nav-link mx-2 text-uppercase" href="#"><%= current_user.email%></a>
+                  <a class="nav-link mx-2 text-uppercase"><%= current_user.email%></a>
               <% else %>
-                  <a class="nav-link mx-2 text-uppercase" href="/users/sign_up">Connexion</a> <!--Créer une page Sign-up / Login commune-->
+                  <a class="nav-link mx-2 text-uppercase" href="<%= new_user_registration_path %>">Connexion</a> <!--Créer une page Sign-up / Login commune-->
               <% end %>
             </li>
           </ul>
           <ul class="navbar-nav ms-auto iconique">
             <li class="nav-item">
-              <a class="nav-link mx-2 text-uppercase" href="/carts"><i class="fa-solid fa-cart-shopping me-1"></i></a>
+              <a class="nav-link mx-2 text-uppercase" href="<%= carts_path %>"><i class="fa-solid fa-cart-shopping me-1"></i></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link mx-2 text-uppercase" href="/users/sign_in"><i class="fa-solid fa-circle-user me-1"></i></a>
+              <a class="nav-link mx-2 text-uppercase" href="<%= new_user_session_path %>"><i class="fa-solid fa-circle-user me-1"></i></a>
             </li>
           </ul>
         </div>
