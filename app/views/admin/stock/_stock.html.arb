@@ -1,0 +1,6 @@
+  # app/views/admin/calendar/_stock.html.arb
+  table_for Stock.all do
+    column "Product_id", :product_id
+    column "Quantity", :quantity_gr
+  end
+  
