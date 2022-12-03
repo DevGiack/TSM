@@ -1,9 +1,0 @@
-<div>
-<%=link_to 'Créer un produit', new_admin_product_path%>
-
-<% @products.each do |product|%>
-    <p>Produit numéro <%=product.id%><p>
-    <p><%=product.name%></p>
-    <%=link_to 'Plus de détails', admin_product_path(product.id)%>
-<%end%> 
-</div>
