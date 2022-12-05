@@ -17,49 +17,54 @@
 
   </head>
   <body>
-    <!--<nav class="navbar navbar-expand-lg bg-white sticky-top navbar-light shadow-sm">
+    <nav class="navbar navbar-expand-lg bg-white sticky-top navbar-light shadow-sm">
       <div class="container">
-        <a class="navbar-brand" href="<%= root_path %>">
+        <div class= "navbar-brand">
+        <%= link_to root_path do %>
           <%= image_tag "TSM_Logo_noir.png", class: "logo_tsm" %>
-          <span>Truffieres de Saint-Martin</span>
-        </a>
+        <% end %>
+          <%= link_to "Truffieres de Saint-Martin", root_path %>
+        </div>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-    
         <div class=" collapse navbar-collapse" id="navbarNavDropdown">
           <ul class="navbar-nav ms-auto ">
             <li class="nav-item">
-              <a class="nav-link mx-2 text-uppercase active" aria-current="page" href="<%= root_path %>">Accueil</a>
+              <%= link_to "Accueil", root_path, class:"nav-link mx-2 text-uppercase" %>
             </li>
             <li class="nav-item">
-              <a class="nav-link mx-2 text-uppercase" href="<%= products_path %>">Produits</a>
+              <%= link_to "Produits", products_path, class:"nav-link mx-2 text-uppercase" %>
             </li>
             <li class="nav-item">
-              <a class="nav-link mx-2 text-uppercase" href="<%= root_path %>">Recettes</a>
+              <%= link_to "Recettes", root_path, class:"nav-link mx-2 text-uppercase" %>
             </li>
             <li class="nav-item">
-              <a class="nav-link mx-2 text-uppercase" href="<%= carts_path %>">Panier</a>
+              <%= link_to "Panier", carts_path, class:"nav-link mx-2 text-uppercase" %>
             </li>
             <li class="nav-item">
-              <% if user_signed_in? %>    
-                  <a class="nav-link mx-2 text-uppercase"><%= current_user.email%></a>
+              <% if user_signed_in? %>
+                <%= link_to current_user.email, class:"nav-link mx-2 text-uppercase" %>  
               <% else %>
-                  <a class="nav-link mx-2 text-uppercase" href="<%= new_user_registration_path %>">Connexion</a>
+                <%= link_to "Connexion", new_user_registration_path, class:"nav-link mx-2 text-uppercase" %>
               <% end %>
             </li>
           </ul>
           <ul class="navbar-nav ms-auto iconique">
             <li class="nav-item">
-              <a class="nav-link mx-2 text-uppercase" href="<%= carts_path %>"><i class="fa-solid fa-cart-shopping me-1"></i></a>
+              <%= link_to carts_path, class:"nav-link mx-2 text-uppercase" do %>
+                <i class="fa-solid fa-cart-shopping me-1"></i>
+              <% end %>
             </li>
             <li class="nav-item">
-              <a class="nav-link mx-2 text-uppercase" href="<%= new_user_session_path %>"><i class="fa-solid fa-circle-user me-1"></i></a>
+              <%= link_to new_user_registration_path, class:"nav-link mx-2 text-uppercase" do %>
+                <i class="fa-solid fa-circle-user me-1"></i>
+              <% end %>
             </li>
           </ul>
         </div>
       </div>
-    </nav> -->
+    </nav>
 
     <%= yield %>
 
