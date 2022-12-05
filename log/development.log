@@ -21825,3 +21825,34 @@ Started GET "/application.css" for 127.0.0.1 at 2022-12-02 19:06:44 +0100
   
 ActionController::RoutingError (No route matches [GET] "/application.css"):
   
+Started GET "/" for 127.0.0.1 at 2022-12-03 21:21:29 +0100
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 122.6ms | Allocations: 4189)
+  Rendered layout layouts/application.html.erb (Duration: 216.3ms | Allocations: 8435)
+Completed 200 OK in 388ms (Views: 260.7ms | Allocations: 9309)
+
+
+Started GET "/products" for 127.0.0.1 at 2022-12-03 21:22:05 +0100
+Processing by ProductsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (10.1ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:8
+  Rendered products/index.html.erb within layouts/application (Duration: 1091.3ms | Allocations: 24284)
+  Rendered layout layouts/application.html.erb (Duration: 1110.6ms | Allocations: 28311)
+Completed 200 OK in 1151ms (Views: 1122.8ms | ActiveRecord: 106.3ms | Allocations: 28637)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2022-12-03 21:22:08 +0100
+Processing by Users::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 8.0ms | Allocations: 225)
+  Rendered devise/shared/_links.html.erb (Duration: 11.5ms | Allocations: 575)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 104.0ms | Allocations: 3429)
+  Rendered layout layouts/application.html.erb (Duration: 115.4ms | Allocations: 7645)
+Completed 200 OK in 162ms (Views: 137.3ms | ActiveRecord: 0.0ms | Allocations: 9096)
+
+
