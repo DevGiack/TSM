@@ -4,7 +4,7 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 ruby "3.0.0"
 gem 'sassc-rails'
 gem 'activeadmin'
-
+gem 'acts_as_shopping_cart'
 # Plus integrations with:
 gem 'cancancan'
 gem 'draper'
