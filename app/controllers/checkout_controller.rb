@@ -1,5 +1,6 @@
 class CheckoutController < ApplicationController
     def create
+      Stripe.api_key = 'sk_test_VePHdqKTYQjKNInc7u56JBrQ'
       @total = params[:total].to_d
       @session = Stripe::Checkout::Session.create(
         payment_method_types: ['card'],

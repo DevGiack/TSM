@@ -1,9 +1,19 @@
-<h1>New cart</h1>
+<p style="color: green"><%= notice %></p>
 
-<%= render "form", cart: @cart %>
+<h1>Cart</h1>
 
-<br>
-
-<div>
-  <%= link_to "Back to carts", carts_path %>
+<div id="carts">
+<table style="color: black; width: 50%">
+  <tr>
+    <th>id</th>
+    <th>quantity</th>
+    <th>prix HT</th>
+  </tr>
+  <% @cart.each do |c| %>
+    <tr><td><%= c.item_id %></td><td><%= c.quantity %></td><td><%= c.price_cents %></td><tr>
+  <% end %>
+    <tr><td></td><th>total TTC </th><td><%= @total %></td><tr>
+  </table>
 </div>
+
+<%= link_to "New cart", new_cart_path %>

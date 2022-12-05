@@ -1,14 +1,19 @@
 <p style="color: green"><%= notice %></p>
 
-<h1>Carts</h1>
+<h1>Cart</h1>
 
 <div id="carts">
-  <% @carts.each do |cart| %>
-    <%= render cart %>
-    <p>
-      <%= link_to "Show this cart", cart %>
-    </p>
+<table style="color: black; width: 50%">
+  <tr>
+    <th>id</th>
+    <th>quantity</th>
+    <th>prix HT</th>
+  </tr>
+  <% @cart.each do |c| %>
+    <tr><td><%= c.item_id %></td><td><%= c.quantity %></td><td><%= c.price_cents %></td><tr>
   <% end %>
+    <tr><td></td><th>total TTC</th><td><%= @total %></td><tr>
+  </table>
 </div>
-
-<%= link_to "New cart", new_cart_path %>
+<%= link_to "Payer", checkout_create_path(:total => @total) %>
+<%= link_to "Delete cart", new_cart_path %>
