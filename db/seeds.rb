@@ -93,3 +93,5 @@ user = User.new(
     ).save!(validate: false)
     
     admin = AdminUser.create!(email: 'admin@example.com', password: 'password', password_confirmation: 'password').save!(validate: false)
+
+    alexis = User.create!(email: 'adeloing@gmail.com', password: '123456', password_confirmation: '123456', first_name: 'alexis', last_name: 'deloingce', phone: 00).save!(validate: false)
