@@ -14,7 +14,6 @@ Rails.application.routes.draw do
     resources :product
   end
 
-  resources :product
   resources :user_adresses
   resources :admin_types
   resources :user_addresses
