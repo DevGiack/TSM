@@ -1,12 +1,18 @@
 <div id="<%= dom_id cart %>">
   <p>
     <strong>Id product:</strong>
-    <%= cart.ID_product %>
+    <%= cart.product_id %>
   </p>
-
+  <p>
+    <strong>product name:</strong>
+    <%= cart.product.name %>
+  </p>
   <p>
     <strong>Quantity:</strong>
-    <%= cart.Quantity %>
+    <%= cart.quantity %>
   </p>
-
+    <p>
+    <strong>Price:</strong>
+    <%= cart.product.price %>
+  </p>
 </div>
