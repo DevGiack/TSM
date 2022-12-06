@@ -6,7 +6,7 @@
   </div>
   <div class="carousel-inner">
     <div class="carousel-item c-item active">
-      <%= image_tag "bois_truffe.jpeg", class:"d-block w-100 c-image"%>
+      <%= image_tag "bois_truffe.jpg", class:"d-block w-100 c-image"%>
       <div class="carousel-caption d-none d-md-block">
         <h5>First slide label</h5>
         <p>Some representative placeholder content for the first slide.</p>
@@ -15,7 +15,7 @@
       </div>
     </div>
     <div class="carousel-item c-item">
-      <%= image_tag "chien.jpg", class:"d-block w-100 c-image"%>
+      <%= image_tag "chien.jpg", class:"d-block w-100 c-image" %>
       <div class="carousel-caption d-none d-md-block">
         <h5>Second slide label</h5>
         <p>Some representative placeholder content for the second slide.</p>
@@ -24,7 +24,7 @@
       </div>
     </div>
     <div class="carousel-item c-item">
-      <%= image_tag "main_truffe.jpeg", class: "d-block w-100 c-image" %>
+      <%= image_tag "main_truffe.jpg", class: "d-block w-100 c-image" %>
       <div class="carousel-caption d-none d-md-block">
         <h5>Third slide label</h5>
         <p>Some representative placeholder content for the third slide.</p>
@@ -60,7 +60,11 @@
     <% @highlighted_products.each do |hp| %>
   <div class="col">
     <div class="card" style="width: 21.5rem;">
+<<<<<<< HEAD
       <%= image_tag hp.product_image, class: "card-img" %>
+=======
+      <%= image_tag "truffe_1.jpg", class: "card-img" %>
+>>>>>>> e92cdded4e72f776fd175f930b2c0cea00de9b59
       <div class="card-body">
         <h4 class="card-title"><%= hp.price %> € / gr</h4>
         <b><p><%= hp.name %></p></b>
