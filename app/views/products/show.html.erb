@@ -1,10 +1,69 @@
-<p style="color: green"><%= notice %></p>
+<div class="container-fluid product_page">
+  <div class="row d-flex flex-wrap">
+    <div class="col" style="margin-bottom: 0px; padding: 0px">
+      <%= image_tag "truffe_1.jpg", class: "img-fluid" %>
+    </div>
 
-<%= render @product %>
+    <div class="col product_detail">
+      <div class="raw-cols-5">
+        <div class="raw mb-2 product_text">
+          <h2><%= @product.name%></h2>
+        </div>
 
-<div>
-  <%= link_to "Edit this product", edit_product_path(@product) %> |
-  <%= link_to "Back to products", products_path %>
+        <div class="raw mb-5 product_text">
+          <h3><%= @product.price%>€</h3>
+        </div>
 
-  <%= button_to "Destroy this product", @product, method: :delete %>
+        <div class="raw product_text">
+          <h4>Poids</h4>
+          <h5><%= @product.unity%></h5>
+        </div>
+
+
+        <div class="raw">
+          <h4>Quantité</h4>
+          <div class="quantity">
+          <a href="#" class="quantity__minus"><span>-</span></a>
+          <input name="quantity" type="text" class="quantity__input" value="1">
+          <a href="#" class="quantity__plus"><span>+</span></a>
+        </div>
+        </div>
+
+        <div class="col m-0">
+          <div class="col">
+            <button class="button btn-secondary " role="button"><%= link_to "Acheter maintenant", edit_product_path(@product), class:"edit_product" %></button>
+          </div>
+          <div class="col">
+            <button class="button btn-primary" role="button"><%= link_to "Ajouter au panier", products_path, class:"edit_product"%></button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
 </div>
+
+
+  <div class="container m-4 mx-auto product_description">
+    <div class="row-cols m-2">
+      <div class="col m-4 justify-content-start">
+        <h3>Détails</h3>
+      </div>
+      <div class="col">
+        <p><%= @product.description%></p>
+      </div>
+
+    </div>
+  </div>
+
+<p style="color: #green"><%= notice %></p>
+<button class="button btn-primary" role="button"><%= link_to "Edit this product", edit_product_path(@product), class:"edit_product" %></button>
+
+<button class="button btn-secondary" role="button"><%= link_to "Back to products", products_path, class:"product_link"%></button>
+
+
+
+<button class="button btn-outline" role="button"><%= link_to "Destroy this product", @product, method: :delete %></button>
+
+

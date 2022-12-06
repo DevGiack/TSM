@@ -189,7 +189,10 @@ a{
 
 
 
-
+.quantity{
+  margin: 0 15px;
+  width: 50px !important;
+}
 
 
 
