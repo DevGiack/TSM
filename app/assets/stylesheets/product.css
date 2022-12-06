@@ -33,7 +33,6 @@
 
 .product_page{
 	background-color: #fff;
-	margin-top: 80px;
 }
 
 .product_page h2,h4,h5{
@@ -83,9 +82,9 @@
     color:black;
 }
 
+/* Button incrementation */
 
-
-.quantity {
+/* .quantity {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -133,4 +132,4 @@
 .quantity__minus:visited,
 .quantity__plus:visited {
   color: #fff;
-}
+} */
