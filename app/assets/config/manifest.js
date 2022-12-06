@@ -7,3 +7,4 @@
 //= link bootstrap.js
 
 //= link bootstrap.css
+//= link_directory ../javascripts .css

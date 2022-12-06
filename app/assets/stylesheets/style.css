@@ -305,6 +305,7 @@ label{
   -moz-border-radius: 20px;
   -ms-border-radius: 20px;
   -o-border-radius: 20px;
+  background-color: #fff;
 }
 .card-back {
   transform: rotateY(180deg);
@@ -409,4 +410,8 @@ label{
   opacity: 0;
   -webkit-transition: all 200ms linear;
     transition: all 200ms linear;
+}
+
+.field{
+  border: 500px ;
 }

@@ -150,3 +150,30 @@
   padding: 0,5rem;
   font-size: 12px;
 }
+
+/* button incrémentation */
+.wrapper{
+ height: 120px;
+ min-width: 380px;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ background: rgb(122, 115, 115);
+ border-radius: 12px;
+ box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+}
+.wrapper span{
+ width: 100%;
+ text-align: center;
+ font-size: 55px;
+ font-weight: 600;
+ cursor: pointer;
+ user-select: none;
+}
+.wrapper span.num{
+ font-size: 50px;
+ border-right: 2px solid rgba(0,0,0,0.2);
+ border-left: 2px solid rgba(0,0,0,0.2);
+ pointer-events: none;
+}
+/* end */
