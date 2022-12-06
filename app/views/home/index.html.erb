@@ -8,27 +8,27 @@
     <div class="carousel-item c-item active">
       <%= image_tag "bois_truffe.jpg", class:"d-block w-100 c-image"%>
       <div class="carousel-caption d-none d-md-block">
-        <h5>First slide label</h5>
-        <p>Some representative placeholder content for the first slide.</p>
-        <button class="button btn-secondary" role="button">Mangez votre bébé chat</button>
+        <h3>First slide label</h3>
+        <h5>Some representative placeholder content for the first slide.</h5>
+        <button class="button btn-secondary btn-lg" role="button">DÉCOUVREZ NOS TRUFFES FRAÎCHES</button>
 
       </div>
     </div>
     <div class="carousel-item c-item">
       <%= image_tag "chien.jpg", class:"d-block w-100 c-image" %>
       <div class="carousel-caption d-none d-md-block">
-        <h5>Second slide label</h5>
-        <p>Some representative placeholder content for the second slide.</p>
-        <button class="button btn-primary" role="button">Oh! un chat roux</button>
+        <h3>Second slide label</h3>
+        <h5>Some representative placeholder content for the second slide.</h5>
+        <button class="button btn-secondary btn-lg" role="button">DES TRUFFES DE GRANDE QUALITEE</button>
 
       </div>
     </div>
     <div class="carousel-item c-item">
       <%= image_tag "main_truffe.jpg", class: "d-block w-100 c-image" %>
       <div class="carousel-caption d-none d-md-block">
-        <h5>Third slide label</h5>
-        <p>Some representative placeholder content for the third slide.</p>
-        <button class="button btn-light" role="button">Comme t'y es beau</button>
+        <h3>Third slide label</h3>
+        <h5>Some representative placeholder content for the third slide.</h5>
+        <button class="button btn-secondary btn-lg" role="button">DES TRUFFES D'EXCEPTION !</button>
 
       </div>
     </div>
@@ -48,12 +48,14 @@
 <div class="title-product">
 
   <div class="truffle-symbol">
-    <span class="material-symbols-outlined">
-    hive
-    </span>
+    <i class="fa-solid fa-store"></i>
   </div>
 
-  <h1>Nos Produits</h1>
+  <h1>NOS PRODUITS DU MOMENT</h1>
+
+  <div class="truffle-symbol">
+    <i class="fa-solid fa-store"></i>
+  </div>
 </div>
 
 <div class="row row-cols-1 row-cols-md-3 g-4">
@@ -61,17 +63,39 @@
   <div class="col">
     <div class="card" style="width: 21.5rem;">
       <%= image_tag hp.product_image, class: "card-img" %>
-      <div class="card-body">
+      <div class="card-body cardb-text">
         <h4 class="card-title"><%= hp.price %> € / gr</h4>
         <b><p><%= hp.name %></p></b>
         <p class="card-text"><%= hp.description %></p>
       </div>
-      <div class="card-body">
+      <div class="card-body cardb-buy">
         <button class="button btn-outline btn-sm" role="button"><%= link_to "Disponible", product_path(hp.id) , class:"card-link"%></button>
-        <div><%= link_to 'Add to cart', home_add_path(:product_id => hp.id) %></div>
+        <button class="button btn-secondary btn-sm" role="button"><%= link_to "Ajouter au panier", home_add_path(:product_id => hp.id), class:"card-buy" %></button>
       </div>
     </div>
   </div>
     <%end%>
 </div>
 
+<!--CARD-->
+
+<!--BANNER HISTOIRE-->
+
+<div class="container my-5 small-banner">
+  <div class="row d-flex flex-wrap">
+    <div class="col-4">
+      <%= image_tag "cloche.jpg", class:"d-block w-100 c-image smallb-image" %>
+
+    </div>
+    <div class="col-8 smallb-text">
+      <div class="flex-column">
+        <h1>NOTRE HISTOIRE</h1>
+        <h4>La passion de l'exception</h4>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+        <div class="smb-logo"><%= image_tag "tsm-transparent.png", class:"smallb-logo" %></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--BANNER HISTOIRE-->

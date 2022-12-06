@@ -32,7 +32,7 @@ body{
   color:#fff;
   background-image: url('truffe_bg1.jpg');
   background-repeat:repeat;
-  background-size: 200%;
+  background-size: 100%;
   font-family: var(--body-font-family);
 }
 
@@ -51,8 +51,21 @@ body{
   width: 3.5em;
 }
 
-.navbar li a{
-  font-size: 0.80em;
+.tsm_name{
+  font-size: 0.75em;
+  text-decoration: none;
+}
+
+.tsm_name:hover{
+  color: var(--secondary);
+}
+
+.navbar li {
+  font-size: 0.90em;
+}
+
+.navbar li:hover {
+  color: var(--secondary);
 }
 
 .navbar span{
@@ -62,6 +75,10 @@ body{
 
 .iconique{
   font-size: 1.5em;
+}
+
+.nav-item:hover{
+  color: var(--secondary);
 }
 
 
@@ -79,13 +96,25 @@ body{
   object-fit: cover;
 }
 
+.c-item h3, 
+.c-item h5, 
+.c-item p{
+  color: var(--secondary);
+  text-shadow: -1px -1px 1px rgba(255,255,255,.1), 1px 1px 1px rgba(0,0,0,.5), 4px 5px 6px rgba(0,0,0,0.17);
+}
+
 
 /************************/
 /*        FOOTER        */
 /************************/
+.footer-container{
+  padding-left: 7%;
+  padding-right: 7%;
+  
+}
 
 footer{
-  border-radius: 20px;
+  border-radius: 13px;
   font-family: var(--body-font-family);
   color: #333333;
   background-color: #fff;
