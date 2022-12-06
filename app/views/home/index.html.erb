@@ -48,12 +48,14 @@
 <div class="title-product">
 
   <div class="truffle-symbol">
-    <span class="material-symbols-outlined">
-    hive
-    </span>
+    <i class="fa-solid fa-store"></i>
   </div>
 
-  <h1>Nos Produits</h1>
+  <h1>NOS PRODUITS DU MOMENT</h1>
+
+  <div class="truffle-symbol">
+    <i class="fa-solid fa-store"></i>
+  </div>
 </div>
 
 <div class="row row-cols-1 row-cols-md-3 g-4">
@@ -61,14 +63,14 @@
   <div class="col">
     <div class="card" style="width: 21.5rem;">
       <%= image_tag hp.product_image, class: "card-img" %>
-      <div class="card-body">
+      <div class="card-body cardb-text">
         <h4 class="card-title"><%= hp.price %> € / gr</h4>
         <b><p><%= hp.name %></p></b>
         <p class="card-text"><%= hp.description %></p>
       </div>
-      <div class="card-body">
+      <div class="card-body cardb-buy">
         <button class="button btn-outline btn-sm" role="button"><%= link_to "Disponible", product_path(hp.id) , class:"card-link"%></button>
-        <div><%= link_to 'Add to cart', home_add_path(:product_id => hp.id) %></div>
+        <button class="button btn-secondary btn-sm" role="button"><%= link_to "Ajouter au panier", home_add_path(:product_id => hp.id), class:"card-buy" %></button>
       </div>
     </div>
   </div>

@@ -1,8 +1,16 @@
 .title-product{
   display: flex;
   justify-content: center;
-  margin-top: 100px;
-  margin-bottom: 30px;
+  margin-top: 70px;
+  margin-bottom: 50px;
+}
+
+.truffle-symbol{
+  font-size: 2em;
+  margin-right: 10px;
+  margin-left: 10px;
+  display: flex;
+  justify-content: center;
 }
 
 .card-products{
@@ -20,6 +28,31 @@
 .card-img{
   border-radius: 5px;
   box-shadow: 0px 6px 10px 1px rgba(0,0,0,0.29);
+  max-height: 200px;
+}
+
+.cardb-text{
+  height: 224px;
+}
+
+.cardb-buy{
+  height: 5em;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.cardb-buy button{
+  max-height: 1.5em;
+  box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.3);}
+
+.card-body .card-link:hover{
+  color: var(--secondary);
+}
+
+.card-body .card-buy:hover{
+  color: var(--primary);
 }
 
 .col{
@@ -27,9 +60,6 @@
   justify-content: center;
   margin-bottom: 24px;
 }
-
-
-
 
 
 
