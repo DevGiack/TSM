@@ -113,7 +113,7 @@
 .btn-outline:disabled { 
   cursor: not-allowed;
   background: rgba(0, 0, 0, .08);
-  color: rgba(0, 0, 0, .3);
+  color: rgba(116, 115, 115, 0.3);
 }
 
 .btn-outline-light{
