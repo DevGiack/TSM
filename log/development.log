@@ -5112,7 +5112,6 @@ FOREIGN KEY ("user_id")
   [1m[36mTRANSACTION (1.2ms)[0m  [1m[35mCOMMIT[0m
   [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(4525132559246056695)[0m
   [1m[36mActiveRecord::SchemaMigration Pluck (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
-<<<<<<< HEAD
 Started GET "/" for 127.0.0.1 at 2022-12-01 11:38:27 +0100
 
 ActiveRecord::NoDatabaseError - We could not find your database: cat_shop_development. Which can be found in the database configuration file located at config/database.yml.
@@ -5261,7 +5260,6 @@ From: devgiack@protonmail.com
 Reply-To: devgiack@protonmail.com
 To: fredrick.lindgren@predovic.org
 Message-ID: <638884423f0c2_928101897530@MacBook-Pro-de-Awatef.local.mail>
-=======
 Started GET "/" for ::1 at 2022-11-30 16:26:25 +0100
   [1m[36mActiveRecord::SchemaMigration Pluck (1.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
 Processing by HomeController#index as HTML
@@ -5303,14 +5301,12 @@ From: the-cat-shop@outlook.com
 Reply-To: the-cat-shop@outlook.com
 To: alt.ew-aobolhaw@yopmail.com
 Message-ID: <63877643e3082_8ddf3e94-4d3@devgiack-VirtualBox.mail>
->>>>>>> development
 Subject: Confirmation instructions
 Mime-Version: 1.0
 Content-Type: text/html;
  charset=UTF-8
 Content-Transfer-Encoding: 7bit
 
-<<<<<<< HEAD
 <p>Welcome fredrick.lindgren@predovic.org!</p>
 
 <p>You can confirm your account email through the link below:</p>
@@ -5337,7 +5333,6 @@ From: devgiack@protonmail.com
 Reply-To: devgiack@protonmail.com
 To: sheryll_dietrich@hauck.co
 Message-ID: <63888442c797d_92810189763b@MacBook-Pro-de-Awatef.local.mail>
-=======
 <p>Welcome alt.ew-aobolhaw@yopmail.com!</p>
 
 <p>You can confirm your account email through the link below:</p>
@@ -5389,14 +5384,12 @@ From: devgiack@protonmail.com
 Reply-To: devgiack@protonmail.com
 To: brecinneuxaweu-2@yopmail.com
 Message-ID: <638837be1660b_10ca23e80187c1@devgiack-VirtualBox.mail>
->>>>>>> development
 Subject: Confirmation instructions
 Mime-Version: 1.0
 Content-Type: text/html;
  charset=UTF-8
 Content-Transfer-Encoding: 7bit
 
-<<<<<<< HEAD
 <p>Welcome sheryll_dietrich@hauck.co!</p>
 
 <p>You can confirm your account email through the link below:</p>
@@ -5423,7 +5416,6 @@ From: devgiack@protonmail.com
 Reply-To: devgiack@protonmail.com
 To: vince.auer@hickle.net
 Message-ID: <638884434d2b2_928101897739@MacBook-Pro-de-Awatef.local.mail>
-=======
 <p>Welcome brecinneuxaweu-2@yopmail.com!</p>
 
 <p>You can confirm your account email through the link below:</p>
@@ -5474,14 +5466,12 @@ From: devgiack@protonmail.com
 Reply-To: devgiack@protonmail.com
 To: alt.cu-e96ze9k@yopmail.com
 Message-ID: <6388382167124_10ca23ebc18850@devgiack-VirtualBox.mail>
->>>>>>> development
 Subject: Confirmation instructions
 Mime-Version: 1.0
 Content-Type: text/html;
  charset=UTF-8
 Content-Transfer-Encoding: 7bit
 
-<<<<<<< HEAD
 <p>Welcome vince.auer@hickle.net!</p>
 
 <p>You can confirm your account email through the link below:</p>
@@ -5508,7 +5498,6 @@ From: devgiack@protonmail.com
 Reply-To: devgiack@protonmail.com
 To: dwight.howell@stehr.com
 Message-ID: <63888443c636a_92810189781c@MacBook-Pro-de-Awatef.local.mail>
-=======
 <p>Welcome alt.cu-e96ze9k@yopmail.com!</p>
 
 <p>You can confirm your account email through the link below:</p>
@@ -5559,14 +5548,12 @@ From: devgiack@protonmail.com
 Reply-To: devgiack@protonmail.com
 To: brecinneuxaweu@yopmail.com
 Message-ID: <63883a7bb41f9_10ca23e94189a@devgiack-VirtualBox.mail>
->>>>>>> development
 Subject: Confirmation instructions
 Mime-Version: 1.0
 Content-Type: text/html;
  charset=UTF-8
 Content-Transfer-Encoding: 7bit
 
-<<<<<<< HEAD
 <p>Welcome dwight.howell@stehr.com!</p>
 
 <p>You can confirm your account email through the link below:</p>
@@ -5593,7 +5580,6 @@ From: devgiack@protonmail.com
 Reply-To: devgiack@protonmail.com
 To: elijah@howe-marquardt.name
 Message-ID: <638884444b533_92810189799c@MacBook-Pro-de-Awatef.local.mail>
-=======
 <p>Welcome brecinneuxaweu@yopmail.com!</p>
 
 <p>You can confirm your account email through the link below:</p>
@@ -5644,14 +5630,12 @@ From: devgiack@protonmail.com
 Reply-To: devgiack@protonmail.com
 To: alt.d9-0omq6y4u@yopmail.com
 Message-ID: <63883aa0a3bb3_10ca23ebc19082@devgiack-VirtualBox.mail>
->>>>>>> development
 Subject: Confirmation instructions
 Mime-Version: 1.0
 Content-Type: text/html;
  charset=UTF-8
 Content-Transfer-Encoding: 7bit
 
-<<<<<<< HEAD
 <p>Welcome elijah@howe-marquardt.name!</p>
 
 <p>You can confirm your account email through the link below:</p>
@@ -5742,7 +5726,6 @@ From: devgiack@protonmail.com
 Reply-To: devgiack@protonmail.com
 To: kendrick@corkery.net
 Message-ID: <63888445ca985_928101898211@MacBook-Pro-de-Awatef.local.mail>
-=======
 <p>Welcome alt.d9-0omq6y4u@yopmail.com!</p>
 
 <p>You can confirm your account email through the link below:</p>
@@ -5870,14 +5853,12 @@ From: devgiack@protonmail.com
 Reply-To: devgiack@protonmail.com
 To: brecinneuxaw@yopmail.com
 Message-ID: <63883c3be7346_11e413e808809a@devgiack-VirtualBox.mail>
->>>>>>> development
 Subject: Confirmation instructions
 Mime-Version: 1.0
 Content-Type: text/html;
  charset=UTF-8
 Content-Transfer-Encoding: 7bit
 
-<<<<<<< HEAD
 <p>Welcome kendrick@corkery.net!</p>
 
 <p>You can confirm your account email through the link below:</p>
@@ -5968,7 +5949,6 @@ From: devgiack@protonmail.com
 Reply-To: devgiack@protonmail.com
 To: vernell@green.biz
 Message-ID: <6388844754179_9281018985df@MacBook-Pro-de-Awatef.local.mail>
-=======
 <p>Welcome brecinneuxaw@yopmail.com!</p>
 
 <p>You can confirm your account email through the link below:</p>
@@ -6215,14 +6195,12 @@ From: devgiack@protonmail.com
 Reply-To: devgiack@protonmail.com
 To: alt.za-9oofignn@yopmail.com
 Message-ID: <63883dc51dc62_11e413e94883e0@devgiack-VirtualBox.mail>
->>>>>>> development
 Subject: Confirmation instructions
 Mime-Version: 1.0
 Content-Type: text/html;
  charset=UTF-8
 Content-Transfer-Encoding: 7bit
 
-<<<<<<< HEAD
 <p>Welcome vernell@green.biz!</p>
 
 <p>You can confirm your account email through the link below:</p>
@@ -6313,7 +6291,6 @@ From: devgiack@protonmail.com
 Reply-To: devgiack@protonmail.com
 To: rusty@heller.io
 Message-ID: <63888448d4821_9281018988eb@MacBook-Pro-de-Awatef.local.mail>
-=======
 <p>Welcome alt.za-9oofignn@yopmail.com!</p>
 
 <p>You can confirm your account email through the link below:</p>
@@ -6485,15 +6462,12 @@ From: devgiack@protonmail.com
 Reply-To: devgiack@protonmail.com
 To: brecinneuxa@yopmail.com
 Message-ID: <638844146c45e_11e413e808869e@devgiack-VirtualBox.mail>
->>>>>>> development
 Subject: Confirmation instructions
 Mime-Version: 1.0
 Content-Type: text/html;
  charset=UTF-8
 Content-Transfer-Encoding: 7bit
 
-<<<<<<< HEAD
-<p>Welcome rusty@heller.io!</p>
 
 <p>You can confirm your account email through the link below:</p>
 
@@ -14366,9 +14340,7 @@ Completed 200 OK in 453ms (Views: 441.6ms | ActiveRecord: 0.0ms | Allocations: 7
 Started GET "/application.css" for 127.0.0.1 at 2022-12-01 19:20:57 +0100
   
 ActionController::RoutingError (No route matches [GET] "/application.css"):
-=======
 <p>Welcome brecinneuxa@yopmail.com!</p>
-
 <p>You can confirm your account email through the link below:</p>
 
 <p><a href="http://localhost:3000/users/confirmation?confirmation_token=NGxEhayZxQpzRm5sEvx_">Confirm my account</a></p>
@@ -14443,10 +14415,8 @@ Completed 200 OK in 637ms (Views: 626.0ms | ActiveRecord: 0.0ms | Allocations: 1
 Started GET "/kitty3_1280.jpg" for 127.0.0.1 at 2022-12-01 18:13:50 +0100
   
 ActionController::RoutingError (No route matches [GET] "/kitty3_1280.jpg"):
->>>>>>> development
   
 Started GET "/" for 127.0.0.1 at 2022-12-01 19:33:55 +0100
-  [1m[36mActiveRecord::SchemaMigration Pluck (1.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
 Processing by HomeController#index as HTML
   Rendering layout layouts/application.html.erb
   Rendering home/index.html.erb within layouts/application
