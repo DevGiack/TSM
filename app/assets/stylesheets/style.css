@@ -206,7 +206,10 @@ label{
 }
 .title-form-left{
   display: flex;
-  align-items: center;
+  align-items: start;
+  font-size: 56px;
+  margin-top: 100px;
+  text-align: start;
 }
 
 .full-height{

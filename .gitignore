@@ -2,3 +2,4 @@ log/
 tmp/
 .env 
 /config/credentials/development.key
+log/development.log
