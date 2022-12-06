@@ -1,5 +1,6 @@
 log/
 log/development.log
 tmp/
-.env 
+.env
 /config/credentials/development.key
+log/development.log
