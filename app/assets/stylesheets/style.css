@@ -107,9 +107,14 @@ body{
 /************************/
 /*        FOOTER        */
 /************************/
+.footer-container{
+  padding-left: 7%;
+  padding-right: 7%;
+  
+}
 
 footer{
-  border-radius: 20px;
+  border-radius: 13px;
   font-family: var(--body-font-family);
   color: #333333;
   background-color: #fff;

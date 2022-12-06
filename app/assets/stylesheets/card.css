@@ -62,6 +62,41 @@
 }
 
 
+/************************/
+/*     SMALL-BANNER     */
+/************************/
+
+.small-banner{
+  background-color: #fff;
+  color: var(--primary);
+  border-radius: 13px;
+}
+
+.smallb-image{
+  border-radius: 13px 0 0 13px;
+  box-shadow: 3px 0px 6px 0px rgba(0,0,0,0.3);
+}
+
+.smallb-text{
+  margin-top: 1.5em;
+  display: flex;
+  justify-content: center;
+}
+
+.smallb-text p{
+  width: 85%;
+  margin-top: 2em;
+  margin-left: 2em;
+}
+
+.smb-logo{
+  display: flex;
+  justify-content: center;
+}
+
+.smallb-logo{
+  width: 50%;
+}
 
 
 #contour{
