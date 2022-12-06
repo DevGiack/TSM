@@ -32006,6 +32006,7 @@ Processing by HomeController#index as HTML
 Completed 200 OK in 247ms (Views: 222.6ms | ActiveRecord: 1.9ms | Allocations: 81645)
 
 
+<<<<<<< HEAD
   [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
   [1m[36mActiveRecord::InternalMetadata Pluck (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
   [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
@@ -44109,5 +44110,1446 @@ Processing by CheckoutController#success as HTML
   ↳ app/views/layouts/application.html.erb:45
   Rendered layout layouts/application.html.erb (Duration: 20.7ms | Allocations: 11756)
 Completed 200 OK in 602ms (Views: 22.0ms | ActiveRecord: 0.2ms | Allocations: 16935)
+=======
+Started GET "/" for ::1 at 2022-12-05 14:07:03 +0100
+  [1m[36mActiveRecord::SchemaMigration Pluck (2.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 67.0ms | Allocations: 1239)
+  Rendered layout layouts/application.html.erb (Duration: 100.1ms | Allocations: 3710)
+Completed 500 Internal Server Error in 415ms (ActiveRecord: 6.5ms | Allocations: 10327)
+
+
+
+ActionView::SyntaxErrorInTemplate - Encountered a syntax error while rendering template: check <!DOCTYPE html>
+<html>
+  <head>
+    <title>Truffieres de Saint-Martin</title>
+    <%= csp_meta_tag %>
+    <%= csrf_meta_tags %>
+    <%= javascript_include_tag "https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" %>
+    <%= javascript_include_tag "https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" %>
+    <%= javascript_include_tag "https://kit.fontawesome.com/3b6e0b8eb1.js" %>
+    <%= stylesheet_link_tag "bootstrap", media:"all", "data-turbo-track": "reload" %>
+    <%= javascript_include_tag "bootstrap", "data-turbo-track": "reload" %>
+    <%= stylesheet_link_tag "application", media:"all", "data-turbo-track": "reload" %>
+    <%= javascript_include_tag "application", "data-turbo-track": "reload" %>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-white sticky-top navbar-light shadow-sm">
+      <div class="container">
+        <%= link_to root_path, class:"navbar-brand" do %>
+        <%= image_tag "TSM_Logo_noir.png", class: "logo_tsm" %>
+        <%= link_to "Truffieres de Saint-Martin" %>
+        <%= end %>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class=" collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav ms-auto ">
+            <li class="nav-item">
+              <a class="nav-link mx-2 text-uppercase active" aria-current="page" href="<%= root_path %>">Accueil</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-2 text-uppercase" href="<%= products_path %>">Produits</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-2 text-uppercase" href="<%= root_path %>">Recettes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-2 text-uppercase" href="<%= carts_path %>">Panier</a>
+            </li>
+            <li class="nav-item">
+              <% if user_signed_in? %>    
+                  <a class="nav-link mx-2 text-uppercase"><%= current_user.email%></a>
+              <% else %>
+                  <a class="nav-link mx-2 text-uppercase" href="<%= new_user_registration_path %>">Connexion</a>
+              <% end %>
+            </li>
+          </ul>
+          <ul class="navbar-nav ms-auto iconique">
+            <li class="nav-item">
+              <a class="nav-link mx-2 text-uppercase" href="<%= carts_path %>"><i class="fa-solid fa-cart-shopping me-1"></i></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-2 text-uppercase" href="<%= new_user_session_path %>"><i class="fa-solid fa-circle-user me-1"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <%= yield %>
+    <!-- Remove the container if you want to extend the Footer to full width. -->
+    <div class="container my-5">
+      <!-- Footer -->
+      <footer class="text-center text-lg-start">
+        <!-- Grid container -->
+        <div class="container p-4 pb-0">
+          <!-- Section: Links -->
+          <section class="">
+            <!--Grid row-->
+            <div class="row">
+              <!-- Grid column -->
+              <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                <h5 class="text-uppercase mb-4 font-weight-bold">
+                  S.A.S Delicat - Roy
+                </h5>
+                <p>
+                  Site de vente de truffes fraîches melanosporum aux professionnels et particuliers.
+                </p>
+              </div>
+              <!-- Grid column -->
+              <hr class="w-100 clearfix d-md-none" />
+              <!-- Grid column -->
+              <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                <h5 class="text-uppercase mb-4 font-weight-bold">Services</h5>
+                <p>
+                  <a class="text-black">Livraisons et retours</a>
+                </p>
+                <p>
+                  <a class="text-black">Paiement</a>
+                </p>
+                <p>
+                  <a class="text-black">À propos</a>
+                </p>
+              </div>
+              <!-- Grid column -->
+              <hr class="w-100 clearfix d-md-none" />
+              <!-- Grid column -->
+              <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+                <h5 class="text-uppercase mb-4 font-weight-bold">
+                  Mentions légales
+                </h5>
+                <p>
+                  <a class="text-black">C.G.V</a>
+                </p>
+                <p>
+                  <a class="text-black">C.G.U</a>
+                </p>
+                <p>
+                  <a class="text-black">Cookies</a>
+                </p>
+              </div>
+              <!-- Grid column -->
+              <hr class="w-100 clearfix d-md-none" />
+              <!-- Grid column -->
+              <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+                <h5 class="text-uppercase mb-4 font-weight-bold">Contact</h5>
+                <p><i class="fas fa-home mr-3"></i> Domaine de Saint-Martin des champs</p>
+                <p><i class="fas fa-envelope mr-3"></i> info@truffieres-saint-martin.com</p>
+                <p><i class="fas fa-phone mr-3"></i> +33 (0)6 07 24 23 35</p>
+              </div>
+              <!-- Grid column -->
+            </div>
+            <!--Grid row-->
+          </section>
+          <!-- Section: Links -->
+          <hr class="my-3">
+          <!-- Section: Copyright -->
+          <section class="p-3 pt-0">
+            <div class="row d-flex align-items-center">
+              <!-- Grid column -->
+              <div class="col-md-7 col-lg-8 text-center text-md-start">
+                <!-- Copyright -->
+                <div class="p-3">
+                  © 2023 Copyright  -  
+                  <a href="https://truffieres-saint-martin.com/"
+                    >https://truffieres-saint-martin.com</a
+                    >
+                </div>
+                <!-- Copyright -->
+              </div>
+              <!-- Grid column -->
+              <!-- Grid column -->
+              <div class="col-md-5 col-lg-4 ml-lg-0 text-center text-md-end">
+                <!-- Instagram -->
+                <a
+                  class="btn btn-outline-dark btn-floating m-1"
+                  class="text-black"
+                  role="button"
+                  ><i class="fab fa-instagram"></i
+                  ></a>
+              </div>
+              <!-- Grid column -->
+            </div>
+          </section>
+          <!-- Section: Copyright -->
+        </div>
+        <!-- Grid container -->
+      </footer>
+      <!-- Footer -->
+    </div>
+    <!-- End of .container -->
+  </body>
+  </html>:
+
+Started POST "/__better_errors/1f209c4c545b6e13/variables" for ::1 at 2022-12-05 14:07:05 +0100
+Started GET "/" for ::1 at 2022-12-05 14:07:34 +0100
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 2.4ms | Allocations: 910)
+  Rendered layout layouts/application.html.erb (Duration: 4.1ms | Allocations: 2636)
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.0ms | Allocations: 3715)
+
+
+
+ActionView::SyntaxErrorInTemplate - Encountered a syntax error while rendering template: check <!DOCTYPE html>
+<html>
+  <head>
+    <title>Truffieres de Saint-Martin</title>
+    <%= csp_meta_tag %>
+    <%= csrf_meta_tags %>
+    <%= javascript_include_tag "https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" %>
+    <%= javascript_include_tag "https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" %>
+    <%= javascript_include_tag "https://kit.fontawesome.com/3b6e0b8eb1.js" %>
+    <%= stylesheet_link_tag "bootstrap", media:"all", "data-turbo-track": "reload" %>
+    <%= javascript_include_tag "bootstrap", "data-turbo-track": "reload" %>
+    <%= stylesheet_link_tag "application", media:"all", "data-turbo-track": "reload" %>
+    <%= javascript_include_tag "application", "data-turbo-track": "reload" %>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-white sticky-top navbar-light shadow-sm">
+      <div class="container">
+        <%= link_to root_path, class: "navbar-brand" do %>
+        <%= image_tag "TSM_Logo_noir.png", class: "logo_tsm" %>
+        <%= link_to "Truffieres de Saint-Martin" %>
+        <%= end %>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class=" collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav ms-auto ">
+            <li class="nav-item">
+              <a class="nav-link mx-2 text-uppercase active" aria-current="page" href="<%= root_path %>">Accueil</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-2 text-uppercase" href="<%= products_path %>">Produits</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-2 text-uppercase" href="<%= root_path %>">Recettes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-2 text-uppercase" href="<%= carts_path %>">Panier</a>
+            </li>
+            <li class="nav-item">
+              <% if user_signed_in? %>    
+                  <a class="nav-link mx-2 text-uppercase"><%= current_user.email%></a>
+              <% else %>
+                  <a class="nav-link mx-2 text-uppercase" href="<%= new_user_registration_path %>">Connexion</a>
+              <% end %>
+            </li>
+          </ul>
+          <ul class="navbar-nav ms-auto iconique">
+            <li class="nav-item">
+              <a class="nav-link mx-2 text-uppercase" href="<%= carts_path %>"><i class="fa-solid fa-cart-shopping me-1"></i></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-2 text-uppercase" href="<%= new_user_session_path %>"><i class="fa-solid fa-circle-user me-1"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <%= yield %>
+    <!-- Remove the container if you want to extend the Footer to full width. -->
+    <div class="container my-5">
+      <!-- Footer -->
+      <footer class="text-center text-lg-start">
+        <!-- Grid container -->
+        <div class="container p-4 pb-0">
+          <!-- Section: Links -->
+          <section class="">
+            <!--Grid row-->
+            <div class="row">
+              <!-- Grid column -->
+              <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                <h5 class="text-uppercase mb-4 font-weight-bold">
+                  S.A.S Delicat - Roy
+                </h5>
+                <p>
+                  Site de vente de truffes fraîches melanosporum aux professionnels et particuliers.
+                </p>
+              </div>
+              <!-- Grid column -->
+              <hr class="w-100 clearfix d-md-none" />
+              <!-- Grid column -->
+              <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                <h5 class="text-uppercase mb-4 font-weight-bold">Services</h5>
+                <p>
+                  <a class="text-black">Livraisons et retours</a>
+                </p>
+                <p>
+                  <a class="text-black">Paiement</a>
+                </p>
+                <p>
+                  <a class="text-black">À propos</a>
+                </p>
+              </div>
+              <!-- Grid column -->
+              <hr class="w-100 clearfix d-md-none" />
+              <!-- Grid column -->
+              <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+                <h5 class="text-uppercase mb-4 font-weight-bold">
+                  Mentions légales
+                </h5>
+                <p>
+                  <a class="text-black">C.G.V</a>
+                </p>
+                <p>
+                  <a class="text-black">C.G.U</a>
+                </p>
+                <p>
+                  <a class="text-black">Cookies</a>
+                </p>
+              </div>
+              <!-- Grid column -->
+              <hr class="w-100 clearfix d-md-none" />
+              <!-- Grid column -->
+              <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+                <h5 class="text-uppercase mb-4 font-weight-bold">Contact</h5>
+                <p><i class="fas fa-home mr-3"></i> Domaine de Saint-Martin des champs</p>
+                <p><i class="fas fa-envelope mr-3"></i> info@truffieres-saint-martin.com</p>
+                <p><i class="fas fa-phone mr-3"></i> +33 (0)6 07 24 23 35</p>
+              </div>
+              <!-- Grid column -->
+            </div>
+            <!--Grid row-->
+          </section>
+          <!-- Section: Links -->
+          <hr class="my-3">
+          <!-- Section: Copyright -->
+          <section class="p-3 pt-0">
+            <div class="row d-flex align-items-center">
+              <!-- Grid column -->
+              <div class="col-md-7 col-lg-8 text-center text-md-start">
+                <!-- Copyright -->
+                <div class="p-3">
+                  © 2023 Copyright  -  
+                  <a href="https://truffieres-saint-martin.com/"
+                    >https://truffieres-saint-martin.com</a
+                    >
+                </div>
+                <!-- Copyright -->
+              </div>
+              <!-- Grid column -->
+              <!-- Grid column -->
+              <div class="col-md-5 col-lg-4 ml-lg-0 text-center text-md-end">
+                <!-- Instagram -->
+                <a
+                  class="btn btn-outline-dark btn-floating m-1"
+                  class="text-black"
+                  role="button"
+                  ><i class="fab fa-instagram"></i
+                  ></a>
+              </div>
+              <!-- Grid column -->
+            </div>
+          </section>
+          <!-- Section: Copyright -->
+        </div>
+        <!-- Grid container -->
+      </footer>
+      <!-- Footer -->
+    </div>
+    <!-- End of .container -->
+  </body>
+  </html>:
+
+Started POST "/__better_errors/199409b888b3e62d/variables" for ::1 at 2022-12-05 14:07:34 +0100
+Started GET "/" for ::1 at 2022-12-05 14:07:59 +0100
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 2.8ms | Allocations: 910)
+  Rendered layout layouts/application.html.erb (Duration: 6.7ms | Allocations: 2635)
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.0ms | Allocations: 3712)
+
+
+
+ActionView::SyntaxErrorInTemplate - Encountered a syntax error while rendering template: check <!DOCTYPE html>
+<html>
+  <head>
+    <title>Truffieres de Saint-Martin</title>
+    <%= csp_meta_tag %>
+    <%= csrf_meta_tags %>
+    <%= javascript_include_tag "https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" %>
+    <%= javascript_include_tag "https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" %>
+    <%= javascript_include_tag "https://kit.fontawesome.com/3b6e0b8eb1.js" %>
+    <%= stylesheet_link_tag "bootstrap", media:"all", "data-turbo-track": "reload" %>
+    <%= javascript_include_tag "bootstrap", "data-turbo-track": "reload" %>
+    <%= stylesheet_link_tag "application", media:"all", "data-turbo-track": "reload" %>
+    <%= javascript_include_tag "application", "data-turbo-track": "reload" %>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-white sticky-top navbar-light shadow-sm">
+      <div class="container">
+        <%= link_to root_path class: "navbar-brand" do %>
+        <%= image_tag "TSM_Logo_noir.png", class: "logo_tsm" %>
+        <%= link_to "Truffieres de Saint-Martin" %>
+        <%= end %>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class=" collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav ms-auto ">
+            <li class="nav-item">
+              <a class="nav-link mx-2 text-uppercase active" aria-current="page" href="<%= root_path %>">Accueil</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-2 text-uppercase" href="<%= products_path %>">Produits</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-2 text-uppercase" href="<%= root_path %>">Recettes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-2 text-uppercase" href="<%= carts_path %>">Panier</a>
+            </li>
+            <li class="nav-item">
+              <% if user_signed_in? %>    
+                  <a class="nav-link mx-2 text-uppercase"><%= current_user.email%></a>
+              <% else %>
+                  <a class="nav-link mx-2 text-uppercase" href="<%= new_user_registration_path %>">Connexion</a>
+              <% end %>
+            </li>
+          </ul>
+          <ul class="navbar-nav ms-auto iconique">
+            <li class="nav-item">
+              <a class="nav-link mx-2 text-uppercase" href="<%= carts_path %>"><i class="fa-solid fa-cart-shopping me-1"></i></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-2 text-uppercase" href="<%= new_user_session_path %>"><i class="fa-solid fa-circle-user me-1"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <%= yield %>
+    <!-- Remove the container if you want to extend the Footer to full width. -->
+    <div class="container my-5">
+      <!-- Footer -->
+      <footer class="text-center text-lg-start">
+        <!-- Grid container -->
+        <div class="container p-4 pb-0">
+          <!-- Section: Links -->
+          <section class="">
+            <!--Grid row-->
+            <div class="row">
+              <!-- Grid column -->
+              <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                <h5 class="text-uppercase mb-4 font-weight-bold">
+                  S.A.S Delicat - Roy
+                </h5>
+                <p>
+                  Site de vente de truffes fraîches melanosporum aux professionnels et particuliers.
+                </p>
+              </div>
+              <!-- Grid column -->
+              <hr class="w-100 clearfix d-md-none" />
+              <!-- Grid column -->
+              <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                <h5 class="text-uppercase mb-4 font-weight-bold">Services</h5>
+                <p>
+                  <a class="text-black">Livraisons et retours</a>
+                </p>
+                <p>
+                  <a class="text-black">Paiement</a>
+                </p>
+                <p>
+                  <a class="text-black">À propos</a>
+                </p>
+              </div>
+              <!-- Grid column -->
+              <hr class="w-100 clearfix d-md-none" />
+              <!-- Grid column -->
+              <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+                <h5 class="text-uppercase mb-4 font-weight-bold">
+                  Mentions légales
+                </h5>
+                <p>
+                  <a class="text-black">C.G.V</a>
+                </p>
+                <p>
+                  <a class="text-black">C.G.U</a>
+                </p>
+                <p>
+                  <a class="text-black">Cookies</a>
+                </p>
+              </div>
+              <!-- Grid column -->
+              <hr class="w-100 clearfix d-md-none" />
+              <!-- Grid column -->
+              <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+                <h5 class="text-uppercase mb-4 font-weight-bold">Contact</h5>
+                <p><i class="fas fa-home mr-3"></i> Domaine de Saint-Martin des champs</p>
+                <p><i class="fas fa-envelope mr-3"></i> info@truffieres-saint-martin.com</p>
+                <p><i class="fas fa-phone mr-3"></i> +33 (0)6 07 24 23 35</p>
+              </div>
+              <!-- Grid column -->
+            </div>
+            <!--Grid row-->
+          </section>
+          <!-- Section: Links -->
+          <hr class="my-3">
+          <!-- Section: Copyright -->
+          <section class="p-3 pt-0">
+            <div class="row d-flex align-items-center">
+              <!-- Grid column -->
+              <div class="col-md-7 col-lg-8 text-center text-md-start">
+                <!-- Copyright -->
+                <div class="p-3">
+                  © 2023 Copyright  -  
+                  <a href="https://truffieres-saint-martin.com/"
+                    >https://truffieres-saint-martin.com</a
+                    >
+                </div>
+                <!-- Copyright -->
+              </div>
+              <!-- Grid column -->
+              <!-- Grid column -->
+              <div class="col-md-5 col-lg-4 ml-lg-0 text-center text-md-end">
+                <!-- Instagram -->
+                <a
+                  class="btn btn-outline-dark btn-floating m-1"
+                  class="text-black"
+                  role="button"
+                  ><i class="fab fa-instagram"></i
+                  ></a>
+              </div>
+              <!-- Grid column -->
+            </div>
+          </section>
+          <!-- Section: Copyright -->
+        </div>
+        <!-- Grid container -->
+      </footer>
+      <!-- Footer -->
+    </div>
+    <!-- End of .container -->
+  </body>
+  </html>:
+
+Started POST "/__better_errors/8f05f055394dfe75/variables" for ::1 at 2022-12-05 14:07:59 +0100
+Started GET "/" for ::1 at 2022-12-05 14:08:47 +0100
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 2.0ms | Allocations: 910)
+  Rendered layout layouts/application.html.erb (Duration: 4.1ms | Allocations: 2634)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.0ms | Allocations: 3704)
+
+
+
+ActionView::SyntaxErrorInTemplate - Encountered a syntax error while rendering template: check <!DOCTYPE html>
+<html>
+  <head>
+    <title>Truffieres de Saint-Martin</title>
+    <%= csp_meta_tag %>
+    <%= csrf_meta_tags %>
+    <%= javascript_include_tag "https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" %>
+    <%= javascript_include_tag "https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" %>
+    <%= javascript_include_tag "https://kit.fontawesome.com/3b6e0b8eb1.js" %>
+    <%= stylesheet_link_tag "bootstrap", media:"all", "data-turbo-track": "reload" %>
+    <%= javascript_include_tag "bootstrap", "data-turbo-track": "reload" %>
+    <%= stylesheet_link_tag "application", media:"all", "data-turbo-track": "reload" %>
+    <%= javascript_include_tag "application", "data-turbo-track": "reload" %>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-white sticky-top navbar-light shadow-sm">
+      <div class="container">
+        <%= link_to root_path, class: "navbar-brand" do %>
+        <%= image_tag "TSM_Logo_noir.png", class: "logo_tsm" %>
+        <%= link_to root_path "Truffieres de Saint-Martin" %>
+        <%= end %>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class=" collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav ms-auto ">
+            <li class="nav-item">
+              <a class="nav-link mx-2 text-uppercase active" aria-current="page" href="<%= root_path %>">Accueil</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-2 text-uppercase" href="<%= products_path %>">Produits</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-2 text-uppercase" href="<%= root_path %>">Recettes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-2 text-uppercase" href="<%= carts_path %>">Panier</a>
+            </li>
+            <li class="nav-item">
+              <% if user_signed_in? %>    
+                  <a class="nav-link mx-2 text-uppercase"><%= current_user.email%></a>
+              <% else %>
+                  <a class="nav-link mx-2 text-uppercase" href="<%= new_user_registration_path %>">Connexion</a>
+              <% end %>
+            </li>
+          </ul>
+          <ul class="navbar-nav ms-auto iconique">
+            <li class="nav-item">
+              <a class="nav-link mx-2 text-uppercase" href="<%= carts_path %>"><i class="fa-solid fa-cart-shopping me-1"></i></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-2 text-uppercase" href="<%= new_user_session_path %>"><i class="fa-solid fa-circle-user me-1"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <%= yield %>
+    <!-- Remove the container if you want to extend the Footer to full width. -->
+    <div class="container my-5">
+      <!-- Footer -->
+      <footer class="text-center text-lg-start">
+        <!-- Grid container -->
+        <div class="container p-4 pb-0">
+          <!-- Section: Links -->
+          <section class="">
+            <!--Grid row-->
+            <div class="row">
+              <!-- Grid column -->
+              <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                <h5 class="text-uppercase mb-4 font-weight-bold">
+                  S.A.S Delicat - Roy
+                </h5>
+                <p>
+                  Site de vente de truffes fraîches melanosporum aux professionnels et particuliers.
+                </p>
+              </div>
+              <!-- Grid column -->
+              <hr class="w-100 clearfix d-md-none" />
+              <!-- Grid column -->
+              <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                <h5 class="text-uppercase mb-4 font-weight-bold">Services</h5>
+                <p>
+                  <a class="text-black">Livraisons et retours</a>
+                </p>
+                <p>
+                  <a class="text-black">Paiement</a>
+                </p>
+                <p>
+                  <a class="text-black">À propos</a>
+                </p>
+              </div>
+              <!-- Grid column -->
+              <hr class="w-100 clearfix d-md-none" />
+              <!-- Grid column -->
+              <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+                <h5 class="text-uppercase mb-4 font-weight-bold">
+                  Mentions légales
+                </h5>
+                <p>
+                  <a class="text-black">C.G.V</a>
+                </p>
+                <p>
+                  <a class="text-black">C.G.U</a>
+                </p>
+                <p>
+                  <a class="text-black">Cookies</a>
+                </p>
+              </div>
+              <!-- Grid column -->
+              <hr class="w-100 clearfix d-md-none" />
+              <!-- Grid column -->
+              <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+                <h5 class="text-uppercase mb-4 font-weight-bold">Contact</h5>
+                <p><i class="fas fa-home mr-3"></i> Domaine de Saint-Martin des champs</p>
+                <p><i class="fas fa-envelope mr-3"></i> info@truffieres-saint-martin.com</p>
+                <p><i class="fas fa-phone mr-3"></i> +33 (0)6 07 24 23 35</p>
+              </div>
+              <!-- Grid column -->
+            </div>
+            <!--Grid row-->
+          </section>
+          <!-- Section: Links -->
+          <hr class="my-3">
+          <!-- Section: Copyright -->
+          <section class="p-3 pt-0">
+            <div class="row d-flex align-items-center">
+              <!-- Grid column -->
+              <div class="col-md-7 col-lg-8 text-center text-md-start">
+                <!-- Copyright -->
+                <div class="p-3">
+                  © 2023 Copyright  -  
+                  <a href="https://truffieres-saint-martin.com/"
+                    >https://truffieres-saint-martin.com</a
+                    >
+                </div>
+                <!-- Copyright -->
+              </div>
+              <!-- Grid column -->
+              <!-- Grid column -->
+              <div class="col-md-5 col-lg-4 ml-lg-0 text-center text-md-end">
+                <!-- Instagram -->
+                <a
+                  class="btn btn-outline-dark btn-floating m-1"
+                  class="text-black"
+                  role="button"
+                  ><i class="fab fa-instagram"></i
+                  ></a>
+              </div>
+              <!-- Grid column -->
+            </div>
+          </section>
+          <!-- Section: Copyright -->
+        </div>
+        <!-- Grid container -->
+      </footer>
+      <!-- Footer -->
+    </div>
+    <!-- End of .container -->
+  </body>
+  </html>:
+
+Started POST "/__better_errors/fed057ffbb2aa570/variables" for ::1 at 2022-12-05 14:08:47 +0100
+Started GET "/" for ::1 at 2022-12-05 14:12:29 +0100
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 22.8ms | Allocations: 910)
+  Rendered layout layouts/application.html.erb (Duration: 26.2ms | Allocations: 2622)
+Completed 500 Internal Server Error in 38ms (ActiveRecord: 0.0ms | Allocations: 3692)
+
+
+
+ActionView::SyntaxErrorInTemplate - Encountered a syntax error while rendering template: check <!DOCTYPE html>
+<html>
+  <head>
+    <title>Truffieres de Saint-Martin</title>
+    <%= csp_meta_tag %>
+    <%= javascript_include_tag "https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" %>
+    <%= javascript_include_tag "https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" %>
+    <%= javascript_include_tag "https://kit.fontawesome.com/3b6e0b8eb1.js" %>
+    <%= stylesheet_link_tag "bootstrap", media:"all", "data-turbo-track": "reload" %>
+    <%= javascript_include_tag "bootstrap", "data-turbo-track": "reload" %>
+    <%= stylesheet_link_tag "application", media:"all", "data-turbo-track": "reload" %>
+    <%= javascript_include_tag "application", "data-turbo-track": "reload" %>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-white sticky-top navbar-light shadow-sm">
+      <div class="container">
+        <%= link_to root_path, class:"navbar-brand" do %>
+        <%= image_tag "TSM_Logo_noir.png", class:"logo_tsm" %>
+        <%= link_to root_path "Truffieres de Saint-Martin" %>
+        <%= end %>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class=" collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav ms-auto ">
+            <li class="nav-item">
+              <a class="nav-link mx-2 text-uppercase active" aria-current="page" href="<%= root_path %>">Accueil</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-2 text-uppercase" href="<%= products_path %>">Produits</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-2 text-uppercase" href="<%= root_path %>">Recettes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-2 text-uppercase" href="<%= carts_path %>">Panier</a>
+            </li>
+            <li class="nav-item">
+              <% if user_signed_in? %>    
+                  <a class="nav-link mx-2 text-uppercase"><%= current_user.email%></a>
+              <% else %>
+                  <a class="nav-link mx-2 text-uppercase" href="<%= new_user_registration_path %>">Connexion</a>
+              <% end %>
+            </li>
+          </ul>
+          <ul class="navbar-nav ms-auto iconique">
+            <li class="nav-item">
+              <a class="nav-link mx-2 text-uppercase" href="<%= carts_path %>"><i class="fa-solid fa-cart-shopping me-1"></i></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-2 text-uppercase" href="<%= new_user_session_path %>"><i class="fa-solid fa-circle-user me-1"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <%= yield %>
+    <!-- Remove the container if you want to extend the Footer to full width. -->
+    <div class="container my-5">
+      <!-- Footer -->
+      <footer class="text-center text-lg-start">
+        <!-- Grid container -->
+        <div class="container p-4 pb-0">
+          <!-- Section: Links -->
+          <section class="">
+            <!--Grid row-->
+            <div class="row">
+              <!-- Grid column -->
+              <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                <h5 class="text-uppercase mb-4 font-weight-bold">
+                  S.A.S Delicat - Roy
+                </h5>
+                <p>
+                  Site de vente de truffes fraîches melanosporum aux professionnels et particuliers.
+                </p>
+              </div>
+              <!-- Grid column -->
+              <hr class="w-100 clearfix d-md-none" />
+              <!-- Grid column -->
+              <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                <h5 class="text-uppercase mb-4 font-weight-bold">Services</h5>
+                <p>
+                  <a class="text-black">Livraisons et retours</a>
+                </p>
+                <p>
+                  <a class="text-black">Paiement</a>
+                </p>
+                <p>
+                  <a class="text-black">À propos</a>
+                </p>
+              </div>
+              <!-- Grid column -->
+              <hr class="w-100 clearfix d-md-none" />
+              <!-- Grid column -->
+              <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+                <h5 class="text-uppercase mb-4 font-weight-bold">
+                  Mentions légales
+                </h5>
+                <p>
+                  <a class="text-black">C.G.V</a>
+                </p>
+                <p>
+                  <a class="text-black">C.G.U</a>
+                </p>
+                <p>
+                  <a class="text-black">Cookies</a>
+                </p>
+              </div>
+              <!-- Grid column -->
+              <hr class="w-100 clearfix d-md-none" />
+              <!-- Grid column -->
+              <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+                <h5 class="text-uppercase mb-4 font-weight-bold">Contact</h5>
+                <p><i class="fas fa-home mr-3"></i> Domaine de Saint-Martin des champs</p>
+                <p><i class="fas fa-envelope mr-3"></i> info@truffieres-saint-martin.com</p>
+                <p><i class="fas fa-phone mr-3"></i> +33 (0)6 07 24 23 35</p>
+              </div>
+              <!-- Grid column -->
+            </div>
+            <!--Grid row-->
+          </section>
+          <!-- Section: Links -->
+          <hr class="my-3">
+          <!-- Section: Copyright -->
+          <section class="p-3 pt-0">
+            <div class="row d-flex align-items-center">
+              <!-- Grid column -->
+              <div class="col-md-7 col-lg-8 text-center text-md-start">
+                <!-- Copyright -->
+                <div class="p-3">
+                  © 2023 Copyright  -  
+                  <a href="https://truffieres-saint-martin.com/"
+                    >https://truffieres-saint-martin.com</a
+                    >
+                </div>
+                <!-- Copyright -->
+              </div>
+              <!-- Grid column -->
+              <!-- Grid column -->
+              <div class="col-md-5 col-lg-4 ml-lg-0 text-center text-md-end">
+                <!-- Instagram -->
+                <a
+                  class="btn btn-outline-dark btn-floating m-1"
+                  class="text-black"
+                  role="button"
+                  ><i class="fab fa-instagram"></i
+                  ></a>
+              </div>
+              <!-- Grid column -->
+            </div>
+          </section>
+          <!-- Section: Copyright -->
+        </div>
+        <!-- Grid container -->
+      </footer>
+      <!-- Footer -->
+    </div>
+    <!-- End of .container -->
+  </body>
+  </html>:
+
+Started POST "/__better_errors/bba3a6861f15bf8c/variables" for ::1 at 2022-12-05 14:12:30 +0100
+Started GET "/" for ::1 at 2022-12-05 14:12:39 +0100
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 2.4ms | Allocations: 913)
+  Rendered layout layouts/application.html.erb (Duration: 7.2ms | Allocations: 2611)
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.0ms | Allocations: 3681)
+
+
+
+ActionView::SyntaxErrorInTemplate - Encountered a syntax error while rendering template: check <!DOCTYPE html>
+<html>
+  <head>
+    <title>Truffieres de Saint-Martin</title>
+    <%= javascript_include_tag "https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" %>
+    <%= javascript_include_tag "https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" %>
+    <%= javascript_include_tag "https://kit.fontawesome.com/3b6e0b8eb1.js" %>
+    <%= stylesheet_link_tag "bootstrap", media:"all", "data-turbo-track": "reload" %>
+    <%= javascript_include_tag "bootstrap", "data-turbo-track": "reload" %>
+    <%= stylesheet_link_tag "application", media:"all", "data-turbo-track": "reload" %>
+    <%= javascript_include_tag "application", "data-turbo-track": "reload" %>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-white sticky-top navbar-light shadow-sm">
+      <div class="container">
+        <%= link_to root_path, class:"navbar-brand" do %>
+        <%= image_tag "TSM_Logo_noir.png", class:"logo_tsm" %>
+        <%= link_to root_path "Truffieres de Saint-Martin" %>
+        <%= end %>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class=" collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav ms-auto ">
+            <li class="nav-item">
+              <a class="nav-link mx-2 text-uppercase active" aria-current="page" href="<%= root_path %>">Accueil</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-2 text-uppercase" href="<%= products_path %>">Produits</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-2 text-uppercase" href="<%= root_path %>">Recettes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-2 text-uppercase" href="<%= carts_path %>">Panier</a>
+            </li>
+            <li class="nav-item">
+              <% if user_signed_in? %>    
+                  <a class="nav-link mx-2 text-uppercase"><%= current_user.email%></a>
+              <% else %>
+                  <a class="nav-link mx-2 text-uppercase" href="<%= new_user_registration_path %>">Connexion</a>
+              <% end %>
+            </li>
+          </ul>
+          <ul class="navbar-nav ms-auto iconique">
+            <li class="nav-item">
+              <a class="nav-link mx-2 text-uppercase" href="<%= carts_path %>"><i class="fa-solid fa-cart-shopping me-1"></i></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-2 text-uppercase" href="<%= new_user_session_path %>"><i class="fa-solid fa-circle-user me-1"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <%= yield %>
+    <!-- Remove the container if you want to extend the Footer to full width. -->
+    <div class="container my-5">
+      <!-- Footer -->
+      <footer class="text-center text-lg-start">
+        <!-- Grid container -->
+        <div class="container p-4 pb-0">
+          <!-- Section: Links -->
+          <section class="">
+            <!--Grid row-->
+            <div class="row">
+              <!-- Grid column -->
+              <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                <h5 class="text-uppercase mb-4 font-weight-bold">
+                  S.A.S Delicat - Roy
+                </h5>
+                <p>
+                  Site de vente de truffes fraîches melanosporum aux professionnels et particuliers.
+                </p>
+              </div>
+              <!-- Grid column -->
+              <hr class="w-100 clearfix d-md-none" />
+              <!-- Grid column -->
+              <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                <h5 class="text-uppercase mb-4 font-weight-bold">Services</h5>
+                <p>
+                  <a class="text-black">Livraisons et retours</a>
+                </p>
+                <p>
+                  <a class="text-black">Paiement</a>
+                </p>
+                <p>
+                  <a class="text-black">À propos</a>
+                </p>
+              </div>
+              <!-- Grid column -->
+              <hr class="w-100 clearfix d-md-none" />
+              <!-- Grid column -->
+              <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+                <h5 class="text-uppercase mb-4 font-weight-bold">
+                  Mentions légales
+                </h5>
+                <p>
+                  <a class="text-black">C.G.V</a>
+                </p>
+                <p>
+                  <a class="text-black">C.G.U</a>
+                </p>
+                <p>
+                  <a class="text-black">Cookies</a>
+                </p>
+              </div>
+              <!-- Grid column -->
+              <hr class="w-100 clearfix d-md-none" />
+              <!-- Grid column -->
+              <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+                <h5 class="text-uppercase mb-4 font-weight-bold">Contact</h5>
+                <p><i class="fas fa-home mr-3"></i> Domaine de Saint-Martin des champs</p>
+                <p><i class="fas fa-envelope mr-3"></i> info@truffieres-saint-martin.com</p>
+                <p><i class="fas fa-phone mr-3"></i> +33 (0)6 07 24 23 35</p>
+              </div>
+              <!-- Grid column -->
+            </div>
+            <!--Grid row-->
+          </section>
+          <!-- Section: Links -->
+          <hr class="my-3">
+          <!-- Section: Copyright -->
+          <section class="p-3 pt-0">
+            <div class="row d-flex align-items-center">
+              <!-- Grid column -->
+              <div class="col-md-7 col-lg-8 text-center text-md-start">
+                <!-- Copyright -->
+                <div class="p-3">
+                  © 2023 Copyright  -  
+                  <a href="https://truffieres-saint-martin.com/"
+                    >https://truffieres-saint-martin.com</a
+                    >
+                </div>
+                <!-- Copyright -->
+              </div>
+              <!-- Grid column -->
+              <!-- Grid column -->
+              <div class="col-md-5 col-lg-4 ml-lg-0 text-center text-md-end">
+                <!-- Instagram -->
+                <a
+                  class="btn btn-outline-dark btn-floating m-1"
+                  class="text-black"
+                  role="button"
+                  ><i class="fab fa-instagram"></i
+                  ></a>
+              </div>
+              <!-- Grid column -->
+            </div>
+          </section>
+          <!-- Section: Copyright -->
+        </div>
+        <!-- Grid container -->
+      </footer>
+      <!-- Footer -->
+    </div>
+    <!-- End of .container -->
+  </body>
+  </html>:
+
+Started POST "/__better_errors/4190cb8fccba69f1/variables" for ::1 at 2022-12-05 14:12:40 +0100
+Started GET "/" for ::1 at 2022-12-05 14:13:05 +0100
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 8.6ms | Allocations: 910)
+  Rendered layout layouts/application.html.erb (Duration: 46.8ms | Allocations: 3684)
+Completed 200 OK in 58ms (Views: 54.8ms | Allocations: 4814)
+
+
+Started GET "/" for ::1 at 2022-12-05 14:14:44 +0100
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 1.6ms | Allocations: 910)
+  Rendered layout layouts/application.html.erb (Duration: 4.6ms | Allocations: 2620)
+Completed 500 Internal Server Error in 10ms (Allocations: 3688)
+
+
+
+ActionView::SyntaxErrorInTemplate - Encountered a syntax error while rendering template: check <!DOCTYPE html>
+<html>
+  <head>
+    <title>Truffieres de Saint-Martin</title>
+    <%= csp_meta_tag %>
+    <%= csrf_meta_tags %>
+    <%= javascript_include_tag "https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" %>
+    <%= javascript_include_tag "https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" %>
+    <%= javascript_include_tag "https://kit.fontawesome.com/3b6e0b8eb1.js" %>
+    <%= stylesheet_link_tag "bootstrap", media:"all", "data-turbo-track": "reload" %>
+    <%= javascript_include_tag "bootstrap", "data-turbo-track": "reload" %>
+    <%= stylesheet_link_tag "application", media:"all", "data-turbo-track": "reload" %>
+    <%= javascript_include_tag "application", "data-turbo-track": "reload" %>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-white sticky-top navbar-light shadow-sm">
+      <div class="container">
+        <%= link_to root_path do %>
+          <%= image_tag "TSM_Logo_noir.png", class: "navbar-brand logo_tsm" %>
+        <%= end %>
+          <span>Truffieres de Saint-Martin</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class=" collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav ms-auto ">
+            <li class="nav-item">
+              <a class="nav-link mx-2 text-uppercase active" aria-current="page" href="<%= root_path %>">Accueil</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-2 text-uppercase" href="<%= products_path %>">Produits</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-2 text-uppercase" href="<%= root_path %>">Recettes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-2 text-uppercase" href="<%= carts_path %>">Panier</a>
+            </li>
+            <li class="nav-item">
+              <% if user_signed_in? %>    
+                  <a class="nav-link mx-2 text-uppercase"><%= current_user.email%></a>
+              <% else %>
+                  <a class="nav-link mx-2 text-uppercase" href="<%= new_user_registration_path %>">Connexion</a>
+              <% end %>
+            </li>
+          </ul>
+          <ul class="navbar-nav ms-auto iconique">
+            <li class="nav-item">
+              <a class="nav-link mx-2 text-uppercase" href="<%= carts_path %>"><i class="fa-solid fa-cart-shopping me-1"></i></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-2 text-uppercase" href="<%= new_user_session_path %>"><i class="fa-solid fa-circle-user me-1"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <%= yield %>
+    <!-- Remove the container if you want to extend the Footer to full width. -->
+    <div class="container my-5">
+      <!-- Footer -->
+      <footer class="text-center text-lg-start">
+        <!-- Grid container -->
+        <div class="container p-4 pb-0">
+          <!-- Section: Links -->
+          <section class="">
+            <!--Grid row-->
+            <div class="row">
+              <!-- Grid column -->
+              <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                <h5 class="text-uppercase mb-4 font-weight-bold">
+                  S.A.S Delicat - Roy
+                </h5>
+                <p>
+                  Site de vente de truffes fraîches melanosporum aux professionnels et particuliers.
+                </p>
+              </div>
+              <!-- Grid column -->
+              <hr class="w-100 clearfix d-md-none" />
+              <!-- Grid column -->
+              <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                <h5 class="text-uppercase mb-4 font-weight-bold">Services</h5>
+                <p>
+                  <a class="text-black">Livraisons et retours</a>
+                </p>
+                <p>
+                  <a class="text-black">Paiement</a>
+                </p>
+                <p>
+                  <a class="text-black">À propos</a>
+                </p>
+              </div>
+              <!-- Grid column -->
+              <hr class="w-100 clearfix d-md-none" />
+              <!-- Grid column -->
+              <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+                <h5 class="text-uppercase mb-4 font-weight-bold">
+                  Mentions légales
+                </h5>
+                <p>
+                  <a class="text-black">C.G.V</a>
+                </p>
+                <p>
+                  <a class="text-black">C.G.U</a>
+                </p>
+                <p>
+                  <a class="text-black">Cookies</a>
+                </p>
+              </div>
+              <!-- Grid column -->
+              <hr class="w-100 clearfix d-md-none" />
+              <!-- Grid column -->
+              <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+                <h5 class="text-uppercase mb-4 font-weight-bold">Contact</h5>
+                <p><i class="fas fa-home mr-3"></i> Domaine de Saint-Martin des champs</p>
+                <p><i class="fas fa-envelope mr-3"></i> info@truffieres-saint-martin.com</p>
+                <p><i class="fas fa-phone mr-3"></i> +33 (0)6 07 24 23 35</p>
+              </div>
+              <!-- Grid column -->
+            </div>
+            <!--Grid row-->
+          </section>
+          <!-- Section: Links -->
+          <hr class="my-3">
+          <!-- Section: Copyright -->
+          <section class="p-3 pt-0">
+            <div class="row d-flex align-items-center">
+              <!-- Grid column -->
+              <div class="col-md-7 col-lg-8 text-center text-md-start">
+                <!-- Copyright -->
+                <div class="p-3">
+                  © 2023 Copyright  -  
+                  <a href="https://truffieres-saint-martin.com/"
+                    >https://truffieres-saint-martin.com</a
+                    >
+                </div>
+                <!-- Copyright -->
+              </div>
+              <!-- Grid column -->
+              <!-- Grid column -->
+              <div class="col-md-5 col-lg-4 ml-lg-0 text-center text-md-end">
+                <!-- Instagram -->
+                <a
+                  class="btn btn-outline-dark btn-floating m-1"
+                  class="text-black"
+                  role="button"
+                  ><i class="fab fa-instagram"></i
+                  ></a>
+              </div>
+              <!-- Grid column -->
+            </div>
+          </section>
+          <!-- Section: Copyright -->
+        </div>
+        <!-- Grid container -->
+      </footer>
+      <!-- Footer -->
+    </div>
+    <!-- End of .container -->
+  </body>
+  </html>:
+
+Started POST "/__better_errors/d9e87f2284a56d06/variables" for ::1 at 2022-12-05 14:14:44 +0100
+Started GET "/" for ::1 at 2022-12-05 14:15:10 +0100
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 2.3ms | Allocations: 910)
+  Rendered layout layouts/application.html.erb (Duration: 11.0ms | Allocations: 5006)
+Completed 200 OK in 17ms (Views: 16.1ms | Allocations: 6103)
+
+
+Started GET "/" for ::1 at 2022-12-05 14:15:42 +0100
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 19.2ms | Allocations: 910)
+  Rendered layout layouts/application.html.erb (Duration: 28.7ms | Allocations: 3419)
+Completed 200 OK in 36ms (Views: 33.7ms | Allocations: 4523)
+
+
+Started GET "/" for ::1 at 2022-12-05 14:16:29 +0100
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 1.8ms | Allocations: 910)
+  Rendered layout layouts/application.html.erb (Duration: 6.9ms | Allocations: 3430)
+Completed 200 OK in 15ms (Views: 13.6ms | Allocations: 4534)
+
+
+Started GET "/" for ::1 at 2022-12-05 14:16:31 +0100
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 283)
+  Rendered layout layouts/application.html.erb (Duration: 4.3ms | Allocations: 1681)
+Completed 200 OK in 8ms (Views: 6.6ms | Allocations: 2042)
+
+
+Started GET "/" for ::1 at 2022-12-05 14:19:20 +0100
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 2.1ms | Allocations: 910)
+  Rendered layout layouts/application.html.erb (Duration: 6.3ms | Allocations: 3367)
+Completed 200 OK in 12ms (Views: 10.5ms | Allocations: 4463)
+
+
+Started GET "/" for ::1 at 2022-12-05 14:19:23 +0100
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 1.1ms | Allocations: 283)
+  Rendered layout layouts/application.html.erb (Duration: 20.5ms | Allocations: 1634)
+Completed 200 OK in 27ms (Views: 25.0ms | Allocations: 1994)
+
+
+Started GET "/" for ::1 at 2022-12-05 14:19:55 +0100
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 2.6ms | Allocations: 910)
+  Rendered layout layouts/application.html.erb (Duration: 8.5ms | Allocations: 4091)
+Completed 500 Internal Server Error in 21ms (Allocations: 5161)
+
+
+
+ArgumentError - wrong number of arguments (given 3, expected 1..2):
+  app/views/layouts/application.html.erb:26
+
+Started POST "/__better_errors/88df00628e8b3ec7/variables" for ::1 at 2022-12-05 14:19:55 +0100
+Started GET "/" for ::1 at 2022-12-05 14:20:30 +0100
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 2.0ms | Allocations: 910)
+  Rendered layout layouts/application.html.erb (Duration: 7.2ms | Allocations: 3346)
+Completed 200 OK in 12ms (Views: 10.8ms | Allocations: 4443)
+
+
+Started GET "/" for ::1 at 2022-12-05 14:21:57 +0100
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 1.3ms | Allocations: 911)
+  Rendered layout layouts/application.html.erb (Duration: 7.2ms | Allocations: 3445)
+Completed 200 OK in 14ms (Views: 11.6ms | Allocations: 4542)
+
+
+Started GET "/" for ::1 at 2022-12-05 14:28:50 +0100
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 7.1ms | Allocations: 910)
+  Rendered layout layouts/application.html.erb (Duration: 11.8ms | Allocations: 3445)
+Completed 200 OK in 18ms (Views: 15.4ms | Allocations: 4542)
+
+
+Started GET "/" for ::1 at 2022-12-05 14:30:50 +0100
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 283)
+  Rendered layout layouts/application.html.erb (Duration: 5.3ms | Allocations: 1660)
+Completed 200 OK in 9ms (Views: 6.9ms | Allocations: 2020)
+
+
+Started GET "/" for ::1 at 2022-12-05 14:30:54 +0100
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 283)
+  Rendered layout layouts/application.html.erb (Duration: 4.5ms | Allocations: 1672)
+Completed 200 OK in 7ms (Views: 6.4ms | Allocations: 2031)
+
+
+Started GET "/" for ::1 at 2022-12-05 14:40:08 +0100
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 13.3ms | Allocations: 910)
+  Rendered layout layouts/application.html.erb (Duration: 41.8ms | Allocations: 3474)
+Completed 200 OK in 88ms (Views: 68.1ms | Allocations: 4570)
+
+
+Started GET "/" for ::1 at 2022-12-05 14:40:39 +0100
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 4.0ms | Allocations: 910)
+  Rendered layout layouts/application.html.erb (Duration: 12.9ms | Allocations: 3478)
+Completed 200 OK in 25ms (Views: 21.6ms | Allocations: 4575)
+
+
+Started GET "/" for ::1 at 2022-12-05 14:43:14 +0100
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 4.8ms | Allocations: 910)
+  Rendered layout layouts/application.html.erb (Duration: 12.2ms | Allocations: 3495)
+Completed 200 OK in 23ms (Views: 20.9ms | Allocations: 4592)
+
+
+Started GET "/" for ::1 at 2022-12-05 14:49:29 +0100
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 1.6ms | Allocations: 910)
+  Rendered layout layouts/application.html.erb (Duration: 10.8ms | Allocations: 3573)
+Completed 200 OK in 17ms (Views: 15.2ms | Allocations: 4670)
+
+
+Started GET "/" for ::1 at 2022-12-05 14:49:31 +0100
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 283)
+  Rendered layout layouts/application.html.erb (Duration: 3.6ms | Allocations: 1763)
+Completed 200 OK in 10ms (Views: 6.1ms | Allocations: 2123)
+
+
+Started GET "/" for ::1 at 2022-12-05 14:50:52 +0100
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 2.1ms | Allocations: 910)
+  Rendered layout layouts/application.html.erb (Duration: 8.7ms | Allocations: 3583)
+Completed 200 OK in 20ms (Views: 13.8ms | Allocations: 4679)
+
+
+Started GET "/" for ::1 at 2022-12-05 14:53:31 +0100
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 7.8ms | Allocations: 910)
+  Rendered layout layouts/application.html.erb (Duration: 23.5ms | Allocations: 3657)
+Completed 200 OK in 41ms (Views: 38.9ms | Allocations: 4754)
+
+
+Started GET "/" for ::1 at 2022-12-05 14:56:28 +0100
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 3.6ms | Allocations: 910)
+  Rendered layout layouts/application.html.erb (Duration: 13.0ms | Allocations: 3729)
+Completed 200 OK in 25ms (Views: 23.4ms | Allocations: 4826)
+
+
+Started GET "/" for ::1 at 2022-12-05 14:59:38 +0100
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 283)
+  Rendered layout layouts/application.html.erb (Duration: 9.3ms | Allocations: 1857)
+Completed 200 OK in 14ms (Views: 12.5ms | Allocations: 2217)
+
+
+Started GET "/" for ::1 at 2022-12-05 15:01:33 +0100
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 283)
+  Rendered layout layouts/application.html.erb (Duration: 4.2ms | Allocations: 1859)
+Completed 200 OK in 6ms (Views: 4.9ms | Allocations: 2218)
+
+
+Started GET "/" for ::1 at 2022-12-05 15:02:42 +0100
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 28.2ms | Allocations: 1239)
+  Rendered layout layouts/application.html.erb (Duration: 49.2ms | Allocations: 4493)
+Completed 200 OK in 208ms (Views: 89.1ms | ActiveRecord: 6.4ms | Allocations: 11155)
+
+
+Started GET "/" for ::1 at 2022-12-05 15:02:52 +0100
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 283)
+  Rendered layout layouts/application.html.erb (Duration: 5.0ms | Allocations: 1858)
+Completed 200 OK in 8ms (Views: 7.0ms | ActiveRecord: 0.0ms | Allocations: 2230)
+>>>>>>> e92cdded4e72f776fd175f930b2c0cea00de9b59
 
 
