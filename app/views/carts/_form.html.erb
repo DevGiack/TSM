@@ -12,16 +12,20 @@
   <% end %>
 
   <div>
-    <%= form.label :ID_product, style: "display: block" %>
-    <%= form.number_field :ID_product %>
+    <%= form.label :product_id, style: "display: block" %>
+    <%= form.number_field :product_id %>
   </div>
 
   <div>
-    <%= form.label :Quantity, style: "display: block" %>
-    <%= form.number_field :Quantity %>
+    <%= form.label :quantity, style: "display: block" %>
+    <%= form.number_field :quantity %>
   </div>
-
   <div>
+   <div>
+    <%= form.label "test", style: "display: block" %>
+    <%= form.number_field :user_id %>
+  </div>
+  <div> 
     <%= form.submit %>
   </div>
 <% end %>
