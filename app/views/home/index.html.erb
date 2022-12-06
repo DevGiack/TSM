@@ -6,7 +6,7 @@
   </div>
   <div class="carousel-inner">
     <div class="carousel-item c-item active">
-      <%= image_tag "bois_truffe.jpeg", class:"d-block w-100 c-image"%>
+      <%= image_tag "bois_truffe.jpg", class:"d-block w-100 c-image"%>
       <div class="carousel-caption d-none d-md-block">
         <h5>First slide label</h5>
         <p>Some representative placeholder content for the first slide.</p>
@@ -15,7 +15,7 @@
       </div>
     </div>
     <div class="carousel-item c-item">
-      <%= image_tag "chien.jpg", class:"d-block w-100 c-image"%>
+      <%= image_tag "chien.jpg", class:"d-block w-100 c-image" %>
       <div class="carousel-caption d-none d-md-block">
         <h5>Second slide label</h5>
         <p>Some representative placeholder content for the second slide.</p>
@@ -24,7 +24,7 @@
       </div>
     </div>
     <div class="carousel-item c-item">
-      <%= image_tag "main_truffe.jpeg", class: "d-block w-100 c-image" %>
+      <%= image_tag "main_truffe.jpg", class: "d-block w-100 c-image" %>
       <div class="carousel-caption d-none d-md-block">
         <h5>Third slide label</h5>
         <p>Some representative placeholder content for the third slide.</p>
@@ -56,64 +56,24 @@
   <h1>Nos Produits</h1>
 </div>
 
-
 <div class="row row-cols-1 row-cols-md-3 g-4">
+    <% @highlighted_products.each do |hp| %>
   <div class="col">
     <div class="card" style="width: 21.5rem;">
-      <%= image_tag "truffe_1.jpeg", class: "card-img" %>
+      <%= image_tag hp.product_image, class: "card-img" %>
       <div class="card-body">
-        <h4 class="card-title">Prix en français dans le texte comme Jaccomo il veut €</h4>
-        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        <h4 class="card-title"><%= hp.price %> € / gr</h4>
+        <b><p><%= hp.name %></p></b>
+        <p class="card-text"><%= hp.description %></p>
       </div>
       <div class="card-body">
         <a href="#" class="card-link">
           <button class="button btn-outline btn-sm" role="button">Disponible</button>
         </a>
-        <a href="#" class="card-link">
-          <span class="material-symbols-outlined">
-          add_shopping_cart
-          </span>
-        </a>
+        <div><%= link_to 'Add to cart', home_add_path(:product_id => hp.id) %></div>
       </div>
     </div>
   </div>
-  <div class="col">
-    <div class="card" style="width: 21.5rem;">
-      <%= image_tag "truffe_2.jpg", class: "card-img" %>
-      <div class="card-body">
-        <h4 class="card-title">Prix en français dans le texte comme Jaccomo il veut €</h4>
-        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-      </div>
-      <div class="card-body">
-        <a href="#" class="card-link">
-          <button class="button btn-outline btn-sm" role="button">Disponible</button>
-        </a>
-        <a href="#" class="card-link">
-          <span class="material-symbols-outlined">
-          add_shopping_cart
-          </span>
-        </a>
-      </div>
-    </div>
-  </div>
-  <div class="col">
-    <div class="card" style="width: 21.5rem;">
-      <%= image_tag "truffe_3.jpg", class: "card-img" %>
-      <div class="card-body">
-        <h4 class="card-title">Prix en français dans le texte comme Jaccomo il veut €</h4>
-        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-      </div>
-      <div class="card-body">
-        <a href="#" class="card-link">
-          <button class="button btn-outline btn-sm" role="button">Disponible</button>
-        </a>
-        <a href="#" class="card-link">
-          <span class="material-symbols-outlined">
-          add_shopping_cart
-          </span>
-        </a>
-      </div>
-    </div>
-  </div>
+    <%end%>
 </div>
 

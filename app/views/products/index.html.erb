@@ -1,14 +1,41 @@
-<p style="color: green"><%= notice %></p>
 
-<h1>Products</h1>
-
-<div id="products">
-  <% @products.each do |product| %>
-    <%= render product %>
-    <p>
-      <%= link_to "Show this product", product %>
-    </p>
-  <% end %>
+<div class="container-fluid" style="margin-top: 100px;">
+  <div class="d-flex justify-content-center">
+    <h1>Products</h1>
+  </div>  
 </div>
 
-<%= link_to "New product", new_product_path %>
+
+
+<div id="products">
+  <div class="container-fluid">
+    <div class="d-flex justify-content-center row mx-2 row-cols-3">
+      <% @products.each do |product| %>
+        <div class="col">
+          <div class="card" style="width: 25rem;">
+            <%= link_to product do %>
+              <%= image_tag "truffe_1.jpg", class: "card-img" %>
+            <%end%>
+            <div class="card-body">
+              <h4 class="card-title"><%= product.name%></h4>
+              <p class="card-text"><%= product.description%></p>
+            </div>
+            <div class="card-body">
+              <button class="button btn-outline btn-sm" role="button"><%= link_to "Show this product", product_path(product.id) , class:"product_link"%></button>
+            </div>
+          </div>
+        </div>
+
+      <% end %>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid">
+  <div class="d-flex justify-content-center">
+    <h2><%= link_to "New product", new_product_path, class:"new_product" %></h2>
+  </div>  
+</div>
+
+<!--<p style="color: green"><%= notice %></p>-->
+

@@ -30,7 +30,7 @@
 
 body{
   color:#fff;
-  background-image: url(truffe_bg.jpg);
+  background:image-url('truffe_bg.jpg');
   background-repeat:repeat;
   background-size: 100%;
   font-family: var(--body-font-family);
@@ -63,6 +63,7 @@ body{
 .iconique{
   font-size: 1.5em;
 }
+
 
 
 /************************/
@@ -211,7 +212,10 @@ label{
   margin-top: 100px;
   text-align: start;
 }
-
+.quantity{
+  margin: 0 15px;
+  width: 50px !important;
+}
 .full-height{
   min-height: 100vh;
 }
