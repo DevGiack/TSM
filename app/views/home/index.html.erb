@@ -67,9 +67,7 @@
         <p class="card-text"><%= hp.description %></p>
       </div>
       <div class="card-body">
-        <a href="#" class="card-link">
-          <button class="button btn-outline btn-sm" role="button">Disponible</button>
-        </a>
+        <button class="button btn-outline btn-sm" role="button"><%= link_to "Disponible", product_path(hp.id) , class:"card-link"%></button>
         <div><%= link_to 'Add to cart', home_add_path(:product_id => hp.id) %></div>
       </div>
     </div>

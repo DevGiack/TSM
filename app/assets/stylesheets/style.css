@@ -30,7 +30,7 @@
 
 body{
   color:#fff;
-  background:image-url('truffe_bg.jpg');
+  background-image: url('truffe_bg1.jpg');
   background-repeat:repeat;
   background-size: 100%;
   font-family: var(--body-font-family);
