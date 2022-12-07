@@ -51,7 +51,7 @@
             <button class="button btn-secondary shadow" role="button"><%= link_to "Acheter maintenant", edit_product_path(@product), class:"edit_product" %></button>
           </div>
           <div class="col">
-            <button class="button btn-primary shadow" role="button"><%= link_to "Ajouter au panier", products_path, class:"edit_product"%></button>
+            <button class="button btn-primary" role="button"><%= link_to "Ajouter au panier", add_product_path(:product_id =>@product.id), class:"edit_product"%></button>
           </div>
         </div>
 
@@ -99,8 +99,6 @@
     </div>
   </div>
 </div>
-
-
 <p style="color: #green"><%= notice %></p>
 <div class="container">
   <div class="position-relative">
@@ -109,5 +107,3 @@
     <div class="position-absolute top-50 end-0 translate-middle-y"><button class="button btn-outline" role="button"><%= link_to "Destroy this product", @product, method: :delete %></button></div>
   </div>
 </div>
-
-

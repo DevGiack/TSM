@@ -81,7 +81,18 @@ body{
   color: var(--secondary);
 }
 
+.hello{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 0;
+}
 
+.hello p{
+  color: var(--secondary);
+  font-size: 0.80em;
+  margin: 0;
+}
 
 /************************/
 /*        BANNER        */
@@ -141,7 +152,7 @@ body{
   font-weight: var(--body-font-weight);
   line-height: var(--body-line-height);
   text-align: justify;
-  background-color: var(--body-bg);
+background-color: grey;    /* */
 }
 
 hr {
@@ -226,24 +237,7 @@ h6 span{
   padding: 0 20px;
   text-transform: uppercase;
   font-weight: 700;
-}
-label{
-  padding-bottom: 15px;
-  padding-top: 15px;
-}
-.container{
-  padding: 0;
-}
-.title-form-left{
-  display: flex;
-  align-items: start;
-  font-size: 56px;
-  margin-top: 100px;
-  text-align: start;
-}
-.quantity{
-  margin: 0 15px;
-  width: 50px !important;
+  color: var(--bg-primary);
 }
 .full-height{
   min-height: 100vh;
@@ -264,7 +258,7 @@ label{
   padding: 0;
   margin: 10px auto;
   cursor: pointer;
-  background-color: #ffeba7;
+  background-color: var(--secondary);
 }
 .checkbox:checked + label:before,
 .checkbox:not(:checked) + label:before{
@@ -273,10 +267,10 @@ label{
   width: 36px;
   height: 36px;
   border-radius: 50%;
-  color: #ffeba7;
-  background-color: #102770;
+  color:var(--bg-secondary);
+  background-color: var(--bg-light);
   font-family: 'unicons';
-  content: '\eb4f';
+  content: '';
   z-index: 20;
   top: -10px;
   left: -10px;
@@ -314,6 +308,7 @@ label{
 .card-front, .card-back {
   width: 100%;
   height: 140%;
+  background-color: rgb(255, 255, 255);
   background-color: #2a2b38;
   /* background-image:url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/1462889/pat.svg'); */
   background-image:url('fond-or.svg');
@@ -441,7 +436,43 @@ label{
   -webkit-transition: all 200ms linear;
     transition: all 200ms linear;
 }
-
-.field{
-  border: 500px ;
+label{
+  padding-bottom: 15px;
+  padding-top: 15px;
+}
+.container{
+  padding: 0;
+}
+.title-form-left{
+  display: flex;
+  align-items: start;
+  font-size: 56px;
+  margin-top: 100px;
+  text-align: start;
+}
+.quantity{
+  margin: 0 15px;
+  width: 50px !important;
+}
+.link-form{
+  padding-top: 10px;
+  color: var(--bg-primary);
+}
+.link-form:hover{
+  color: var(--bg-secondary);
+}
+.text-signin-signup{
+  color: var(--bg-primary);
+}
+.text_form{
+  color:var(--bg-primary);
+}
+.moove-center-button{
+  color: var(--light);
+}
+.container-link-form{
+  flex-direction: column;
+}
+.text-signin-signup-above-card{
+  color: var(--bg-light);
 }
