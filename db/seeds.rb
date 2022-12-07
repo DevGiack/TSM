@@ -7,7 +7,13 @@
 #   Character.create(name: "Luke", movie: movies.first)
 require 'faker'
 
-User.destroy_all
+# User.destroy_all
+# UserAddress.destroy_all
+# ProductCategory.destroy_all
+# Product.destroy_all
+# Stock.destroy_all
+
+
 
 password = '123456'
 types = ["home","work","perso","secondaire","vacances"]
@@ -64,7 +70,7 @@ end
 end
 x = 1
 3.times do |t|
-    img_name = "truffe_" + x.to_s + '.jpeg'
+    img_name = "truffe_" + x.to_s + '.jpg'
     product = Product.new(
         name: Faker::Food.dish,
         description: Faker::Lorem.sentences(number: 7).join(" "),
@@ -79,19 +85,19 @@ x = 1
 end
 
 
-password = 'admin123'
-encrypted = User.new(:password => password).encrypted_password
+# password = 'admin123'
+# encrypted = User.new(:password => password).encrypted_password
 
-user = User.new(
-    email: "admin@admin.com", 
-    encrypted_password: encrypted,
-    first_name: "admin",
-    last_name: "admin",
-    phone: Faker::Number.between(from: 1000000000, to: 9999999999).to_s,
-    last_login: Time.now,
-    is_admin: true
-    ).save!(validate: false)
+# user = User.new(
+#     email: "admin@admin.com", 
+#     encrypted_password: encrypted,
+#     first_name: "admin",
+#     last_name: "admin",
+#     phone: Faker::Number.between(from: 1000000000, to: 9999999999).to_s,
+#     last_login: Time.now,
+#     is_admin: true
+#     ).save!(validate: false)
     
-    admin = AdminUser.create!(email: 'admin@example.com', password: 'password', password_confirmation: 'password').save!(validate: false)
+    #admin = AdminUser.create!(email: 'admin@example.com', password: 'password', password_confirmation: 'password').save!(validate: false)
 
-    alexis = User.create!(email: 'adeloing@gmail.com', password: '123456', password_confirmation: '123456', first_name: 'alexis', last_name: 'deloingce', phone: 00).save!(validate: false)
+    #alexis = User.create!(email: 'adeloing@gmail.com', password: '123456', password_confirmation: '123456', first_name: 'alexis', last_name: 'deloingce', phone: 00).save!(validate: false)

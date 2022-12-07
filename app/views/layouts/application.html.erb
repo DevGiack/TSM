@@ -24,7 +24,7 @@
         <%= link_to root_path do %>
           <%= image_tag "TSM_Logo_noir.png", class: "logo_tsm" %>
         <% end %>
-          <%= link_to "Truffieres de Saint-Martin", root_path %>
+          <%= link_to "TRUFFIERES SAINT MARTIN", root_path , class:"tsm_name"%>
         </div>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -45,7 +45,7 @@
             </li>
             <li class="nav-item">
               <% if user_signed_in? %>
-                <%= link_to current_user.email, class:"nav-link mx-2 text-uppercase" %>  
+                 
               <% else %>
                 <%= link_to "Connexion", new_user_registration_path, class:"nav-link mx-2 text-uppercase" %>
               <% end %>
@@ -53,13 +53,18 @@
           </ul>
           <ul class="navbar-nav ms-auto iconique">
             <li class="nav-item">
-              <%= link_to carts_path, class:"nav-link mx-2 text-uppercase" do %>
+              <%= link_to carts_path, class:"nav-link mx-2" do %>
                 <i class="fa-solid fa-cart-shopping me-1"></i>
               <% end %>
             </li>
-            <li class="nav-item">
-              <%= link_to new_user_registration_path, class:"nav-link mx-2 text-uppercase" do %>
+            <li class="nav-item">      
+              <%= link_to new_user_registration_path, class:"nav-link mx-2" do %>
                 <i class="fa-solid fa-circle-user me-1"></i>
+              <% end %>
+            </li>
+            <li class="nav-item hello">
+              <% if user_signed_in? %>
+                <p class="text-uppercase">Bonjour <%= current_user.first_name %></p>
               <% end %>
             </li>
           </ul>
@@ -70,7 +75,7 @@
     <%= yield %>
 
     <!-- Remove the container if you want to extend the Footer to full width. -->
-    <div class="container my-5">
+    <div class="container-fluid my-3 footer-container">
       <!-- Footer -->
       <footer class="text-center text-lg-start">
         <!-- Grid container -->
@@ -87,6 +92,7 @@
                 <p>
                   Site de vente de truffes fraîches melanosporum aux professionnels et particuliers.
                 </p>
+                <p>© 2023 Copyright</p>
               </div>
               <!-- Grid column -->
 
@@ -139,40 +145,6 @@
             </div>
             <!--Grid row-->
           </section>
-          <!-- Section: Links -->
-
-          <hr class="my-3">
-
-          <!-- Section: Copyright -->
-          <section class="p-3 pt-0">
-            <div class="row d-flex align-items-center">
-              <!-- Grid column -->
-              <div class="col-md-7 col-lg-8 text-center text-md-start">
-                <!-- Copyright -->
-                <div class="p-3">
-                  © 2023 Copyright  -  
-                  <a href="https://truffieres-saint-martin.com/"
-                    >https://truffieres-saint-martin.com</a
-                    >
-                </div>
-                <!-- Copyright -->
-              </div>
-              <!-- Grid column -->
-
-              <!-- Grid column -->
-              <div class="col-md-5 col-lg-4 ml-lg-0 text-center text-md-end">
-                <!-- Instagram -->
-                <a
-                  class="btn btn-outline-dark btn-floating m-1"
-                  class="text-black"
-                  role="button"
-                  ><i class="fab fa-instagram"></i
-                  ></a>
-              </div>
-              <!-- Grid column -->
-            </div>
-          </section>
-          <!-- Section: Copyright -->
         </div>
         <!-- Grid container -->
       </footer>
@@ -182,6 +154,7 @@
 
 
   </body>
+  <script src="../assets/javascripts/button.js"></script>
   </html>
 
 

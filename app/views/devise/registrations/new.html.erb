@@ -6,7 +6,7 @@
 		<div class="col-2">
 		</div>
 		<div class="col-5 text-center">
-			<h6 class="mb-0 mt-5 pb-3"><span>S'INSCRIRE</span><span>CONNEXION</span></h6>
+			<h6 class="mb-0 mt-5 pb-3"><span class="text-signin-signup-above-card">S'INSCRIRE</span><span class="text-signin-signup-above-card">CONNEXION</span></h6>
 			<input class="checkbox" type="checkbox" id="reg-log" name="reg-log"/>
 			<label for="reg-log"></label>
 			<div class="card-3d-wrap mx-auto">
@@ -52,14 +52,14 @@
 										<%= f.label :Veuillez_confirmer_votre_email, class: "text_form" %><br />
 										<%= f.password_field :password_confirmation, class: "form-control", placeholder: "Mot de passe", autocomplete: "new-password" %>
 									</div>
-								
+
 									<div class="actions mt-3">
 										<%= f.submit "S'incrire", class: "button btn-secondary" %>
 									</div>
 										<% end %>
-										<div class="mt-2">
-											<%= link_to "Je n'ai pas reçu d'email de confirmation", new_user_confirmation_path, class: "link-form" %>
-										</div>
+									<div class="mt-2">
+										<%= link_to "Je n'ai pas reçu d'email de confirmation", new_user_confirmation_path, class: "link-form" %>
+									</div>
 								</div>
 							</div>
 						</div>

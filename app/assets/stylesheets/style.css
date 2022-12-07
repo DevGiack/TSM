@@ -30,7 +30,7 @@
 
 body{
   color:#fff;
-  background:image-url('truffe_bg.jpg');
+  background-image: url('truffe_bg1.jpg');
   background-repeat:repeat;
   background-size: 100%;
   font-family: var(--body-font-family);
@@ -51,8 +51,21 @@ body{
   width: 3.5em;
 }
 
-.navbar li a{
-  font-size: 0.80em;
+.tsm_name{
+  font-size: 0.75em;
+  text-decoration: none;
+}
+
+.tsm_name:hover{
+  color: var(--secondary);
+}
+
+.navbar li {
+  font-size: 0.90em;
+}
+
+.navbar li:hover {
+  color: var(--secondary);
 }
 
 .navbar span{
@@ -64,7 +77,22 @@ body{
   font-size: 1.5em;
 }
 
+.nav-item:hover{
+  color: var(--secondary);
+}
 
+.hello{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 0;
+}
+
+.hello p{
+  color: var(--secondary);
+  font-size: 0.80em;
+  margin: 0;
+}
 
 /************************/
 /*        BANNER        */
@@ -79,13 +107,25 @@ body{
   object-fit: cover;
 }
 
+.c-item h3, 
+.c-item h5, 
+.c-item p{
+  color: var(--secondary);
+  text-shadow: -1px -1px 1px rgba(255,255,255,.1), 1px 1px 1px rgba(0,0,0,.5), 4px 5px 6px rgba(0,0,0,0.17);
+}
+
 
 /************************/
 /*        FOOTER        */
 /************************/
+.footer-container{
+  padding-left: 7%;
+  padding-right: 7%;
+  
+}
 
 footer{
-  border-radius: 20px;
+  border-radius: 13px;
   font-family: var(--body-font-family);
   color: #333333;
   background-color: #fff;
@@ -269,6 +309,9 @@ h6 span{
   width: 100%;
   height: 140%;
   background-color: rgb(255, 255, 255);
+  background-color: #2a2b38;
+  /* background-image:url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/1462889/pat.svg'); */
+  background-image:url('fond-or.svg');
   background-position: bottom center;
   background-repeat: no-repeat;
   background-size: 300%;
@@ -287,6 +330,7 @@ h6 span{
   -moz-border-radius: 20px;
   -ms-border-radius: 20px;
   -o-border-radius: 20px;
+  background-color: #fff;
 }
 .card-back {
   transform: rotateY(180deg);
@@ -423,13 +467,12 @@ label{
 .text_form{
   color:var(--bg-primary);
 }
-.test{
-  margin-left: 30px;
-  margin-right: 60px;
-}
 .moove-center-button{
   color: var(--light);
 }
 .container-link-form{
   flex-direction: column;
+}
+.text-signin-signup-above-card{
+  color: var(--bg-light);
 }
