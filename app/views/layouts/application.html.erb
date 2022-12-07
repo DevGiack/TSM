@@ -43,8 +43,7 @@
               <%= link_to "Panier", carts_path, class:"nav-link mx-2 text-uppercase" %>
             </li>
             <li class="nav-item">
-              <% if user_signed_in? %>
-                 
+              <% if user_signed_in? %>               
               <% else %>
                 <%= link_to "Connexion", new_user_registration_path, class:"nav-link mx-2 text-uppercase" %>
               <% end %>
@@ -56,14 +55,16 @@
                 <i class="fa-solid fa-cart-shopping me-1"></i>
               <% end %>
             </li>
-            <li class="nav-item">      
-              <%= link_to new_user_registration_path, class:"nav-link mx-2" do %>
-                <i class="fa-solid fa-circle-user me-1"></i>
-              <% end %>
-            </li>
             <li class="nav-item hello">
               <% if user_signed_in? %>
+                <%= link_to edit_user_registration_path, class:"nav-link mx-2" do %>
+                  <i class="fa-solid fa-circle-user me-1"></i>
+                <% end %>
                 <p class="text-uppercase">Bonjour <%= current_user.first_name %></p>
+              <% else %>
+                <%= link_to new_user_registration_path, class:"nav-link mx-2" do %>
+                  <i class="fa-solid fa-circle-user me-1"></i>
+                <% end %>
               <% end %>
             </li>
           </ul>
