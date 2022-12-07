@@ -4,6 +4,7 @@
     <title>Truffieres de Saint-Martin</title>
     <%= csp_meta_tag %>
     <%= csrf_meta_tags %>
+    <html lang="fr">
 
     <%= javascript_include_tag "https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" %>
     <%= javascript_include_tag "https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" %>
@@ -43,8 +44,7 @@
               <%= link_to "Panier", carts_path, class:"nav-link mx-2 text-uppercase" %>
             </li>
             <li class="nav-item">
-              <% if user_signed_in? %>
-                <%= link_to current_user.email, class:"nav-link mx-2 text-uppercase" %>  
+              <% if user_signed_in? %>               
               <% else %>
                 <%= link_to "Connexion", new_user_registration_path, class:"nav-link mx-2 text-uppercase" %>
               <% end %>
@@ -52,13 +52,20 @@
           </ul>
           <ul class="navbar-nav ms-auto iconique">
             <li class="nav-item">
-              <%= link_to carts_path, class:"nav-link mx-2 text-uppercase" do %>
+              <%= link_to carts_path, class:"nav-link mx-2" do %>
                 <i class="fa-solid fa-cart-shopping me-1"></i>
               <% end %>
             </li>
-            <li class="nav-item">
-              <%= link_to new_user_registration_path, class:"nav-link mx-2 text-uppercase" do %>
-                <i class="fa-solid fa-circle-user me-1"></i>
+            <li class="nav-item hello">
+              <% if user_signed_in? %>
+                <%= link_to edit_user_registration_path, class:"nav-link mx-2" do %>
+                  <i class="fa-solid fa-circle-user me-1"></i>
+                <% end %>
+                <p class="text-uppercase">Bonjour <%= current_user.first_name %></p>
+              <% else %>
+                <%= link_to new_user_registration_path, class:"nav-link mx-2" do %>
+                  <i class="fa-solid fa-circle-user me-1"></i>
+                <% end %>
               <% end %>
             </li>
           </ul>
