@@ -1,12 +1,12 @@
 <div class="container">
 	<div class="row full-height justify-content-end">
 		<div class="col-5 title-form-left">
-			<h1 class="title-form-left">Créer un compte en 2 minutes et accéder à nos différents produits</h1>
+			<h1 class="title-form-left">Créer un compte en 2 minutes et accédez à nos différents produits</h1>
 		</div>
 		<div class="col-2">
 		</div>
 		<div class="col-5 text-center">
-			<h6 class="mb-0 mt-5 pb-3"><span>Connexion</span><span>S'inscrire</span></h6>
+			<h6 class="mb-0 mt-5 pb-3"><span>S'INSCRIRE</span><span>CONNEXION</span></h6>
 			<input class="checkbox" type="checkbox" id="reg-log" name="reg-log"/>
 			<label for="reg-log"></label>
 			<div class="card-3d-wrap mx-auto">
@@ -14,50 +14,52 @@
 					<div class="card-front">
 						<div class="center-wrap">
 							<div class="section text-center">
-								<h4 class="mb-4 pb-3">Connexion</h4>
+								<h4 class="text-signin-signup mb-4 pb-3">S'INSCRIRE</h4>
 
 								<%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
 								<%= render "devise/shared/error_messages", resource: resource %>
 								<div class="row">		  
 									<div class="col mb-0">
-										<div class=" col-md-6">
+										<div class=" col-md-5">
 											<div class="field">
-												<%= f.label :Prénom %><br />
+												<%= f.label :Prénom, class: "text_form" %><br />
 												<%= f.text_field :first_name, autofocus: true, class: "form-control", autocomplete: "Prénom" %>
 											</div>
 										</div>  
-
-										<div class=" col-md-6">
+										<div class="col-2">
+										</div>
+										<div class=" col-md-5">
 											<div class="field">
-												<%= f.label :Nom %><br />
+												<%= f.label :Nom, class: "text_form" %><br />
 												<%= f.text_field :last_name, class: "form-control", autocomplete: "Nom de famille" %>
 											</div>
 										</div>
 									</div>		
 
 									<div class="field">
-										<%= f.label :email %><br />
+										<%= f.label :email, class: "text_form" %><br />
 										<%= f.email_field :email, class: "form-control", placeholder: "exemple@gmail.com", autocomplete: "email" %>
 									</div>
 								
 									<div class="field">
-										<%= f.label :password %>
+										<%= f.label :Mot_de_passe, class: "text_form" %>
 										<% if @minimum_password_length %>
-										<em>(<%= @minimum_password_length %> characters minimum)</em>
 										<% end %><br />
-										<%= f.password_field :password, class: "form-control", placeholder: "password", autocomplete: "new-password" %>
+										<%= f.password_field :password, class: "form-control", placeholder: "Mot de passe", autocomplete: "new-password" %>
 									</div>
 								
 									<div class="field">
-										<%= f.label :password_confirmation %><br />
-										<%= f.password_field :password_confirmation, class: "form-control", placeholder: "password", autocomplete: "new-password" %>
+										<%= f.label :Veuillez_confirmer_votre_email, class: "text_form" %><br />
+										<%= f.password_field :password_confirmation, class: "form-control", placeholder: "Mot de passe", autocomplete: "new-password" %>
 									</div>
 								
-									<div class="actions mt-2">
-										<%= f.submit "Sign up" %>
+									<div class="actions mt-3">
+										<%= f.submit "Sign up", class: "button btn-secondary" %>
 									</div>
 										<% end %>
-										<%= render "devise/shared/links" %>
+										<div class="mt-2">
+											<%= link_to "Je n'ai pas reçu d'email de confirmation", new_user_confirmation_path, class: "link-form" %>
+										</div>
 								</div>
 							</div>
 						</div>
@@ -65,22 +67,25 @@
 					<div class="card-back">
 						<div class="center-wrap">
 							<div class="section text-center">
-								<h4 class="mb-4 pb-3">S'inscrire</h4>
+								<h4 class="text-signin-signup mb-4 pb-3">CONNEXION</h4>
 									<%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
 									<div class="field">
-										<%= f.label :email %><br />
+										<%= f.label :email, class: "text_form" %><br />
 										<%= f.email_field :email, class: "form-control", autofocus: true, autocomplete: "email" %>
 									</div>
 
 									<div class="field">
-										<%= f.label :password %><br />
+										<%= f.label :password, class: "text_form" %><br />
 										<%= f.password_field :password, class: "form-control", autocomplete: "current-password" %>
 									</div>
 
-									<div class="actions mt-2">
-										<%= f.submit "Log in" %>
+									<div class="actions mt-3">
+										<%= f.submit "Log in", class: "button btn-secondary" %>
 									</div>
 									<% end %>
+									<div class="mt-2">
+										<%= link_to "Mot de passe oublié", new_user_password_path, class: "link-form" %>
+									</div>	
 							</div>
 						</div>
 					</div>
