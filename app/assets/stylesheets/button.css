@@ -39,7 +39,7 @@
 
 .btn-primary:active {
   background: #000000;
-  color: rgb(255, 255, 255, .7);
+  color: rgba(255, 255, 255, .7);
 }
 
 .btn-primary:disabled { 
@@ -61,7 +61,7 @@
 
 .btn-secondary:active {
   background: #caa534;
-  color: rgb(255, 255, 255, .7);
+  color: rgba(255, 255, 255, .7);
 }
 
 .btn-secondary:disabled { 
@@ -83,7 +83,7 @@
 
 .btn-light:active {
   background: #000000;
-  color: rgb(255, 255, 255, .7);
+  color: rgba(255, 255, 255, .7);
 }
 
 .btn-light:disabled { 
@@ -107,7 +107,7 @@
 
 .btn-outline:active {
   background: #000000;
-  color: rgb(255, 255, 255, .7);
+  color: rgba(255, 255, 255, .7);
 }
 
 .btn-outline:disabled { 
