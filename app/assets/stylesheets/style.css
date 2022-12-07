@@ -110,7 +110,6 @@ body{
 .footer-container{
   padding-left: 7%;
   padding-right: 7%;
-  
 }
 
 footer{
@@ -444,4 +443,13 @@ label{
 
 .field{
   border: 500px ;
+}
+
+
+/************************/
+/*        NOTICE        */
+/************************/
+
+.notice{
+  color: var(--success);
 }
