@@ -16,15 +16,34 @@
 
         <div class="raw product_text">
           <h4>Poids</h4>
-          <h5><%= @product.unity%></h5>
+          <div>
+            <button class="btn btn-outline-dark border border-2 border-dark rounded-pill"> 
+              <span>100<span>
+              <span><%= @product.unity%></span>
+            </button>
+            <button class="btn btn-outline-dark border border-2 border-dark rounded-pill"> 
+              <span>250<span>
+              <span><%= @product.unity%></span>
+            </button>
+            <button class="btn btn-outline-dark border border-2 border-dark rounded-pill"> 
+              <span>500<span>
+              <span><%= @product.unity%></span>
+            </button>
+            <button class="btn btn-outline-dark border border-2 border-dark rounded-pill"> 
+              <span>1000<span>
+              <span><%= @product.unity%></span>
+            </button>
+          </div>
         </div>
 
 
         <div class="raw">
           <h4>Quantité</h4>
-          <span class="minus">-</span>
-          <span class="num">01</span>
-          <span class="plus">+</span>
+          <div class="wrapper">
+            <span class="minus">-</span>
+            <span class="num">01</span>
+            <span class="plus">+</span>
+          </div>
         </div>
 
         <div class="col m-0">
@@ -43,18 +62,18 @@
 </div>
 
 
- <%#  <div class="container m-4 mx-auto product_description">
-    <div class="row-cols m-2">
-      <div class="col m-4 justify-content-start">
-        <h3>Détails</h3>
-      </div>
-      <div class="col">
-        <p><%= @product.description%>
-        <%# </p>
-      </div>
-
+<div class="container m-4 mx-auto product_description">
+  <div class="row-cols m-2">
+    <div class="col m-4 justify-content-start">
+      <h3>Détails</h3>
     </div>
-  </div>  %>
+    <div class="col">
+      <p><%= @product.description%>
+      </p>
+    </div>
+
+  </div>
+</div> 
   
 <div class="container my-5 small-banner">
   <div class="text">
