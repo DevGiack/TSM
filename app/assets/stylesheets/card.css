@@ -45,7 +45,13 @@
 
 .cardb-buy button{
   max-height: 1.5em;
-  box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.3);}
+  box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.3);
+}
+
+.cardb-buy h3{
+  color: var(--secondary);
+  max-height: 1.5em;
+}
 
 .card-body .card-link:hover{
   color: var(--secondary);
