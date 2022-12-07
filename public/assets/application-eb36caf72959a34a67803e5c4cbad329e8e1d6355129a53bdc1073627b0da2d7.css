@@ -480,7 +480,7 @@ label{
 
 .btn-primary:active {
   background: #000000;
-  color: rgb(255, 255, 255, .7);
+  color: rgba(255, 255, 255, .7);
 }
 
 .btn-primary:disabled { 
@@ -502,7 +502,7 @@ label{
 
 .btn-secondary:active {
   background: #caa534;
-  color: rgb(255, 255, 255, .7);
+  color: rgba(255, 255, 255, .7);
 }
 
 .btn-secondary:disabled { 
@@ -524,7 +524,7 @@ label{
 
 .btn-light:active {
   background: #000000;
-  color: rgb(255, 255, 255, .7);
+  color: rgba(255, 255, 255, .7);
 }
 
 .btn-light:disabled { 
@@ -548,7 +548,7 @@ label{
 
 .btn-outline:active {
   background: #000000;
-  color: rgb(255, 255, 255, .7);
+  color: rgba(255, 255, 255, .7);
 }
 
 .btn-outline:disabled { 
