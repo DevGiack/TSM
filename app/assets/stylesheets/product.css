@@ -133,3 +133,17 @@
 .quantity__plus:visited {
   color: #fff;
 } */
+
+/* Truffe detail */
+
+.truffle-detail{
+  width: 3%;
+  height: 3%;
+}
+
+.text{
+  padding: 2%;
+}
+.title-text{
+  padding-left: 1% ;
+}

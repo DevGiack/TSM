@@ -43,17 +43,44 @@
 </div>
 
 
-  <div class="container m-4 mx-auto product_description">
+ <%#  <div class="container m-4 mx-auto product_description">
     <div class="row-cols m-2">
       <div class="col m-4 justify-content-start">
         <h3>Détails</h3>
       </div>
       <div class="col">
-        <p><%= @product.description%></p>
+        <p><%= @product.description%>
+        <%# </p>
       </div>
 
     </div>
+  </div>  %>
+  
+<div class="container my-5 small-banner">
+  <div class="text">
+    <div class="d-flex">
+      <%= image_tag "truffe.png", class:"truffle-detail"%>
+      <h2 class="title-text">Détails</h2>
+    </div>
+    <div class="row" >
+      <br>
+      <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur et odio ultricies lectus dictum interdum. 
+      Proin pharetra maximus magna vel aliquam. Nulla facilisi. Aenean finibus vel erat a tempus. Donec consequat augue sed venenatis vehicula. 
+      Pellentesque id eros non ipsum blandit sagittis non vitae ante. Aenean pulvinar vitae justo at facilisis. Vestibulum vitae tortor lorem. 
+      Mauris molestie dolor ac felis lobortis, ac blandit massa hendrerit. Sed iaculis libero nec leo dignissim, eget tristique mi tempus. 
+      Proin vehicula augue sapien, sed rhoncus erat convallis ut.
+      </p>
+      <p class="text">
+      Nunc vel nulla ornare, auctor eros et, blandit ex. Vivamus iaculis lorem nisl, ut vestibulum lorem laoreet sit amet. 
+      Cras in porta tortor, vitae eleifend dui. Integer nec nisl efficitur, consequat sem eu, consequat lacus. Curabitur quis ultricies diam, vitae aliquet nulla. 
+      Fusce semper ex non dui interdum sollicitudin. Sed suscipit sapien ut nulla bibendum, a dapibus elit congue. 
+      Proin sed metus faucibus, maximus lacus id, egestas nulla. Vivamus varius dictum massa sit amet posuere. Integer sed porttitor dolor. 
+      Aliquam venenatis quam at nisl condimentum, vel facilisis velit lobortis.
+      </p>
+    </div>
   </div>
+</div>
+
 
 <p style="color: #green"><%= notice %></p>
 <button class="button btn-primary" role="button"><%= link_to "Edit this product", edit_product_path(@product), class:"edit_product" %></button>
