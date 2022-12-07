@@ -82,6 +82,11 @@ x = 1
 
     ).save!(validate: false)
     x += 1
+
+    stock = Stock.new(
+        quantity_gr: Faker::Number.between(from: 1, to: 7500),
+        product_id: Product.last.id
+    ).save!(validate: false)
 end
 
 
