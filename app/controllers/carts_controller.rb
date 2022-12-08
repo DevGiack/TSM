@@ -2,11 +2,16 @@ class CartsController < ApplicationController
     before_action :extract_shopping_cart
   
     def index
-      # @product = Product.find(1)
-      # @shopping_cart.add(@product, @product.price, 50)
+      @ref = {}
       @total = @shopping_cart.total
       @cart = CartItem.all.where(owner_id: session[:shopping_cart_id])
-      puts session[:shopping_cart_id]
+      @products = Product.all
+      @product_categories = ProductCategory.all
+      @products.each do |enr|
+        puts "enr id = " + enr.id.to_s
+        @ref[enr.id] = {:name => @products.where(id: enr.id)[0].name, :category_name => @product_categories.where(id: enr.product_category_id)[0].name}
+        puts @ref
+      end
     end
   
     def create
