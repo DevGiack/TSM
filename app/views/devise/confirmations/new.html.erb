@@ -12,7 +12,7 @@
                 <%= render "devise/shared/error_messages", resource: resource %>
               
                 <div class="field">
-                  <%= f.label :email, class: "text_form"  %><br />
+                  <%= f.label :email, class: "text_form"  %>
                   <%= f.email_field :email, autofocus: true, autocomplete: "email",  class: "form-control",placeholder: "exemple@gmail.com", value: (resource.pending_reconfirmation? ? resource.unconfirmed_email : resource.email) %>
                 </div>
               

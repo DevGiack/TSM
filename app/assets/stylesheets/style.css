@@ -500,3 +500,17 @@ label{
   top: 0;
   left: 0;  
 }
+
+#error_explanation{
+  color: #0D0D0D;
+}
+#error_explanation li{
+  text-decoration: none;
+  padding: 0;
+  margin: 0;
+}
+
+#error_explanation ul{
+  padding: 0;
+  margin: 0;
+}
