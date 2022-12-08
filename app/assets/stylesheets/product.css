@@ -9,6 +9,7 @@
 /************************/
 /*        INDEX         */
 /************************/
+
 .prod_head{
   margin-bottom: 50px;
 }
@@ -28,10 +29,6 @@
 	color: #fff;
 }
 
-.product_link:active{
-	color: #fff;
-}
-
 .product_link:hover{
 	color: var(--secondary);
 }
@@ -39,20 +36,14 @@
 /************************/
 /*        SHOW          */
 /************************/
+  /* PRODUCT DETAIL */
+/* HEAD */
 
 .product_page{
   border-radius: 0 0 13px 13px;
   margin-bottom: 5em;
   padding-left: 5em;
   padding-right: 5em;
-}
-
-.product_page h2,h4,h5{
-	color: var(--primary);
-}
-
-.product_page h3{
-	color: var(--secondary);
 }
 
 .prod_container{
@@ -63,6 +54,16 @@
   border-radius: 0 0 0 13px;
   display: flex;
 	flex-wrap: wrap;
+}
+
+/* BODY */
+
+.product_page h2,h4,h5{
+	color: var(--primary);
+}
+
+.product_page h3{
+	color: var(--secondary);
 }
 
 .product_detail{
@@ -95,14 +96,33 @@
 	margin: 0.3em;
 }
 
-.btn_poids{
-  background-color: aqua;
-  margin-left:1em;
+/* BUTTON */
+.button_buy{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 1em;
 }
 
-.product_text .product_button {
-	text-align: center;
+.button_buy button{
+  margin: 0.2em;
+  box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.3);
 }
+
+.buy_now_btn:hover{
+  color: #fff;
+}
+
+.add_card_btn{
+  margin-left: 0.5em;
+	color: #fff;
+}
+
+.add_card_btn:hover{
+	color: var(--secondary);
+}
+
+  /* PRODUCT DESCRIPTION */
 
 .product_description{
 	border-radius: 13px;
@@ -132,36 +152,6 @@
   align-items: center;
 }
 
-.button_buy{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin: 1em;
-}
-
-.button_buy button{
-  margin: 0.2em;
-  box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.3);
-}
-
-.buy_now_btn:hover{
-  color: #fff;
-}
-
-.add_card_btn{
-  margin-left: 0.5em;
-	color: #fff;
-}
-
-.add_card_btn:hover{
-	color: var(--secondary);
-}
-
-
-.quote span{
-    color:black;
-}
-
 /* Truffe detail */
 
 .truffle-detail{
@@ -175,3 +165,11 @@
 .title-text{
   padding-left: 1% ;
 }
+
+
+/* .product_text .product_button {
+	text-align: center;
+}
+.quote span{
+  color:black;
+}*/

@@ -1,3 +1,8 @@
+/************************/
+/*    HOME PAGE CARD    */
+/************************/
+
+/* HEADER */
 .title-product{
   display: flex;
   justify-content: center;
@@ -13,10 +18,19 @@
   justify-content: center;
 }
 
-.card-products{
+/* .card-products{
   display: flex;
   align-content: space-around;
+} */
+
+/* BODY */
+
+.col{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 24px;
 }
+
 .card h4{
   color: var(--secondary);
 }
@@ -43,14 +57,16 @@
   align-items: center;
 }
 
-.cardb-buy button{
-  max-height: 1.5em;
-  box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.3);
-}
-
 .cardb-buy h3{
   color: var(--secondary);
   max-height: 1.5em;
+}
+
+/* BUTTON */
+
+.cardb-buy button{
+  max-height: 1.5em;
+  box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.3);
 }
 
 .card-body .card-link:hover{
@@ -60,13 +76,6 @@
 .card-body .card-buy:hover{
   color: var(--primary);
 }
-
-.col{
-  display: flex;
-  justify-content: center;
-  margin-bottom: 24px;
-}
-
 
 /************************/
 /*     SMALL-BANNER     */
@@ -121,6 +130,11 @@
 .smallb-logo{
   width: 50%;
 }
+
+
+/************************/
+/*       KESKE C ?      */
+/************************/
 
 
 #contour{
