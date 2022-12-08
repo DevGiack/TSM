@@ -56,6 +56,11 @@
                 <i class="fa-solid fa-cart-shopping me-1"></i>
               <% end %>
             </li>
+            <li class="nav-item">      
+              <%= link_to edit_user_registration_path, class:"nav-link mx-2" do %>
+                <i class="fa-solid fa-circle-user me-1"></i>
+              <% end %>
+            </li>
             <li class="nav-item hello">
               <% if user_signed_in? %>
                 <%= link_to edit_user_registration_path, class:"nav-link mx-2" do %>

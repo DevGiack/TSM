@@ -30,4 +30,16 @@
 # available at https://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
+  activerecord:
+    attributes:
+      user:
+        email: "Email"
+        password: "Le mot de passe"
+    errors:
+      models:
+        user:
+          attributes:
+            password:
+              blank: "ne peut être vide"
+            email:
+              blank: "ne peut être vide"

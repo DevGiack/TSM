@@ -12,7 +12,7 @@
                 <%= render "devise/shared/error_messages", resource: resource %>
               
                 <div class="field">
-                  <%= f.label :email, class: "text_form"  %><br />
+                  <%= f.label :email, class: "text_form"  %>
                   <%= f.email_field :email, autofocus: true, autocomplete: "email",  class: "form-control",placeholder: "exemple@gmail.com", value: (resource.pending_reconfirmation? ? resource.unconfirmed_email : resource.email) %>
                 </div>
               
@@ -33,3 +33,48 @@
 		</div>
 	</div>
 </div>
+
+<div class="container">
+	<div class="row full-height justify-content-center">
+		<div class="col-5 text-center">
+			<div class="card-3d-wrap mx-auto">
+				<div class="card-3d-wrapper">
+					<div class="card-front">
+            <div class="center-wrap">
+              <div class="section text-center">
+                <h4 class="text-signin-signup mb-4 pb-3">CONNEXION</h4>
+                  <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+                  <div class="field">
+                    <%= f.label :Email, class: "text_form" %><br />
+                    <%= f.email_field :email, class: "form-control", placeholder: "exemple@gmail.com", autofocus: true, autocomplete: "email" %>
+                  </div>
+
+                  <div class="field">
+                    <%= f.label :Mot_de_passe, class: "text_form" %><br />
+                    <%= f.password_field :password, class: "form-control", placeholder: "Mot de passe", autocomplete: "current-password" %>
+                  </div>
+
+                  <div class="actions mt-3">
+                    <%= f.submit "Se connecter", class: "button btn-secondary" %>
+                  </div>
+                  <% end %>
+                  <div class=" container-link-form mt-2">
+                    <div>
+                      <%= link_to "S'incrire", new_user_registration_path, class: "link-form" %>
+                    </div>
+                    <div>
+                      <%= link_to "Mot de passe oublié", new_user_password_path, class: "link-form" %>
+                    </div>
+                    <div>  
+                      <%= link_to "Je n'ai pas reçu d'email de confirmation", new_user_confirmation_path, class: "link-form" %>
+                    </div>
+                  </div>	
+              </div>
+            </div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
