@@ -7,7 +7,7 @@ Rails.application.initialize!
 ActionMailer::Base.smtp_settings = {
     :user_name => 'apikey',
     :password => ENV['SENDGRID_PWD'],
-    :domain => 'monsite.fr',
+    :domain => 'https://truffieresaintmartin.herokuapp.com/',
     :address => 'smtp.sendgrid.net',
     :port => 587,
     :authentication => :plain,
