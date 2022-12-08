@@ -16,7 +16,6 @@
   </table>
 </div>
 
-<% @cart.each do |c| %>
   <section class="h-100 h-custom">
     <div class="container py-5 h-100">
       <div class="row d-flex justify-content-center align-items-center h-100">
@@ -28,127 +27,64 @@
                   <div class="p-5">
                   
                     <div class="d-flex justify-content-between align-items-center mb-5">
-                      <h1 class="fw-bold mb-0 text-black">Shopping Cart</h1>
-                      <h6 class="mb-0 text-muted"><%= c.item_id %> items</h6>
+                      <h1 class="fw-bold mb-0" style="color: var(--secondary);">Mon panier</h1>
+                      <%# <h6 class="mb-0 text-muted"><%= c.item_id <%=items</h6>  %>    <%# indication des id à mettre en indication de quantité de produit dans le panier %>
                     </div>
-
+                  
                     <hr class="my-4">
+                    <% @cart.each do |c| %>
+                      <div class="row mb-4 d-flex justify-content-between align-items-center">
+                        <div class="col-md-2 col-lg-2 col-xl-2">
+                            <%= image_tag "truffe_1.jpg", class: "card-img", alt:"Truffes" %>
+                        </div>
+                        <div class="col-md-3 col-lg-3 col-xl-3">
+                          <h6 class="text-muted">Truffes</h6>
+                          <h6 class="text-black mb-0">produit: <%= c.item_id %></h6>
+                          <h5>€ <%= c.price_cents %></h5>
+                        </div>
+                        <div class="col-md-3 col-lg-3 col-xl-2 d-flex">
+                          <button class="btn btn-link px-2"
+                            onclick="this.parentNode.querySelector('input[type=number]').stepDown()">
+                            <i class="fas fa-minus"></i>
+                          </button>
 
-                    <div class="row mb-4 d-flex justify-content-between align-items-center">
-                      <div class="col-md-2 col-lg-2 col-xl-2">
-                        <img
-                          src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-shopping-carts/img5.webp"
-                          class="img-fluid rounded-3" alt="Cotton T-shirt">
-                      </div>
-                      <div class="col-md-3 col-lg-3 col-xl-3">
-                        <h6 class="text-muted">Shirt</h6>
-                        <h6 class="text-black mb-0">Cotton T-shirt</h6>
-                      </div>
-                      <div class="col-md-3 col-lg-3 col-xl-2 d-flex">
-                        <button class="btn btn-link px-2"
-                          onclick="this.parentNode.querySelector('input[type=number]').stepDown()">
-                          <i class="fas fa-minus"></i>
-                        </button>
+                          <input id="form1" min="0" name="quantity" value="1" type="number"
+                            class="form-control form-control-sm" />
 
-                        <input id="form1" min="0" name="quantity" value="1" type="number"
-                          class="form-control form-control-sm" />
+                          <button class="btn btn-link px-2"
+                            onclick="this.parentNode.querySelector('input[type=number]').stepUp()">
+                            <i class="fas fa-plus"></i>
+                          </button>
+                        </div>
+                        <div class="col-md-3 col-lg-2 col-xl-2 offset-lg-1">
+                          <h6 class="mb-0">€ 44.00</h6>
+                        </div>
+                        <div class="col-md-1 col-lg-1 col-xl-1 text-end">
+                          <a href="#!" class="text-muted"><i class="fas fa-times"></i></a>
+                        </div>
+                      </div>
+                    <hr class="border-4" style="color: var(--secondary);">
+                    <% end %>
 
-                        <button class="btn btn-link px-2"
-                          onclick="this.parentNode.querySelector('input[type=number]').stepUp()">
-                          <i class="fas fa-plus"></i>
-                        </button>
-                      </div>
-                      <div class="col-md-3 col-lg-2 col-xl-2 offset-lg-1">
-                        <h6 class="mb-0">€ 44.00</h6>
-                      </div>
-                      <div class="col-md-1 col-lg-1 col-xl-1 text-end">
-                        <a href="#!" class="text-muted"><i class="fas fa-times"></i></a>
-                      </div>
-                    </div>
-
+                    <%# Pas toucher au back page %>
                     <hr class="my-4">
-
-                    <div class="row mb-4 d-flex justify-content-between align-items-center">
-                      <div class="col-md-2 col-lg-2 col-xl-2">
-                        <img
-                          src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-shopping-carts/img6.webp"
-                          class="img-fluid rounded-3" alt="Cotton T-shirt">
-                      </div>
-                      <div class="col-md-3 col-lg-3 col-xl-3">
-                        <h6 class="text-muted">Shirt</h6>
-                        <h6 class="text-black mb-0">Cotton T-shirt</h6>
-                      </div>
-                      <div class="col-md-3 col-lg-3 col-xl-2 d-flex">
-                        <button class="btn btn-link px-2"
-                          onclick="this.parentNode.querySelector('input[type=number]').stepDown()">
-                          <i class="fas fa-minus"></i>
-                        </button>
-
-                        <input id="form1" min="0" name="quantity" value="1" type="number"
-                          class="form-control form-control-sm" />
-
-                        <button class="btn btn-link px-2"
-                          onclick="this.parentNode.querySelector('input[type=number]').stepUp()">
-                          <i class="fas fa-plus"></i>
-                        </button>
-                      </div>
-                      <div class="col-md-3 col-lg-2 col-xl-2 offset-lg-1">
-                        <h6 class="mb-0">€ 44.00</h6>
-                      </div>
-                      <div class="col-md-1 col-lg-1 col-xl-1 text-end">
-                        <a href="#!" class="text-muted"><i class="fas fa-times"></i></a>
-                      </div>
-                    </div>
-
-                    <hr class="my-4">
-
-                    <div class="row mb-4 d-flex justify-content-between align-items-center">
-                      <div class="col-md-2 col-lg-2 col-xl-2">
-                        <img
-                          src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-shopping-carts/img7.webp"
-                          class="img-fluid rounded-3" alt="Cotton T-shirt">
-                      </div>
-                      <div class="col-md-3 col-lg-3 col-xl-3">
-                        <h6 class="text-muted">Shirt</h6>
-                        <h6 class="text-black mb-0">Cotton T-shirt</h6>
-                      </div>
-                      <div class="col-md-3 col-lg-3 col-xl-2 d-flex">
-                        <button class="btn btn-link px-2"
-                          onclick="this.parentNode.querySelector('input[type=number]').stepDown()">
-                          <i class="fas fa-minus"></i>
-                        </button>
-
-                        <input id="form1" min="0" name="quantity" value="1" type="number"
-                          class="form-control form-control-sm" />
-
-                        <button class="btn btn-link px-2"
-                          onclick="this.parentNode.querySelector('input[type=number]').stepUp()">
-                          <i class="fas fa-plus"></i>
-                        </button>
-                      </div>
-                      <div class="col-md-3 col-lg-2 col-xl-2 offset-lg-1">
-                        <h6 class="mb-0">€ 44.00</h6>
-                      </div>
-                      <div class="col-md-1 col-lg-1 col-xl-1 text-end">
-                        <a href="#!" class="text-muted"><i class="fas fa-times"></i></a>
-                      </div>
-                    </div>
-
-                    <hr class="my-4">
-
                     <div class="pt-5">
                       <h6 class="mb-0"><a href="#!" class="text-body"><i
-                            class="fas fa-long-arrow-alt-left me-2"></i>Back to shop</a></h6>
+                            class="fas fa-long-arrow-alt-left me-2"></i>Revenir à la page produit</a></h6>
                     </div>
+
                   </div>
                 </div>
+
+                <%# Partie de droite! %>
+                <%# <% @cart.each do |c| %> %>
                 <div class="col-lg-4 bg-grey">
                   <div class="p-5">
-                    <h3 class="fw-bold mb-5 mt-2 pt-1 text-black">Votre commande</h3>
+                    <h3 class="fw-bold mb-5 mt-2 pt-1" style="color: var(--secondary);">Récapitulatif de commande</h3>
                     <hr class="my-4">
 
                     <div class="d-flex justify-content-between mb-4">
-                      <h5 class="text-uppercase">Article(s) : <%= c.item_id %></h5>
+                      <h5 class="text-uppercase">Total des articles: </h5>
                       <h5>€ <%= c.price_cents %></h5>
                     </div>
 
@@ -168,7 +104,7 @@
                     <div class="mb-5">
                       <div class="form-outline">
                         <input type="text" id="form3Examplea2" class="form-control form-control-lg" style="border-color: "/>
-                        <label class="form-label text-black" for="form3Examplea2">Enter your code</label>
+                        <%# <label class="form-label text-black" for="form3Examplea2">Enter your code</label> %> <%# Mettre dans le input%>>
                       </div>
                     </div>
 
@@ -188,11 +124,12 @@
                   </div>
                 </div>
               </div>
+              <%end%>
             </div>
           </div>
         </div>
       </div>
     </div>
   </section>
-<% end %>
+
 
