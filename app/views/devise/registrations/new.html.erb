@@ -1,7 +1,7 @@
 <div class="container">
 	<div class="row full-height justify-content-end">
 		<div class="col-5 title-form-left">
-			<h1 class="title-form-left">Créer un compte en 2 minutes et accédez à nos différents produits</h1>
+			<h1 class="title-form-left">Créer compte en 2 minutes et accédez à nos différents produits</h1>
 		</div>
 		<div class="col-2">
 		</div>
@@ -71,12 +71,12 @@
 									<%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
 									<div class="field">
 										<%= f.label :email, class: "text_form" %><br />
-										<%= f.email_field :email, class: "form-control", autofocus: true, autocomplete: "email" %>
+										<%= f.email_field :email, class: "form-control",placeholder: "exemple@gmail.com", autofocus: true, autocomplete: "email" %>
 									</div>
 
 									<div class="field">
 										<%= f.label :Mot_de_passe, class: "text_form" %><br />
-										<%= f.password_field :password, class: "form-control", autocomplete: "current-password" %>
+										<%= f.password_field :password, class: "form-control", placeholder: "Mot de passe", autocomplete: "current-password" %>
 									</div>
 
 									<div class="actions mt-3">
