@@ -121,7 +121,6 @@ body{
 .footer-container{
   padding-left: 7%;
   padding-right: 7%;
-  
 }
 
 footer{
@@ -436,10 +435,26 @@ h6 span{
   -webkit-transition: all 200ms linear;
     transition: all 200ms linear;
 }
+
+.field{
+  border: 500px ;
+}
+
+
+/************************/
+/*        NOTICE        */
+/************************/
+
+.notice{
+  color: var(--success);
+}
+
+
 label{
   padding-bottom: 15px;
   padding-top: 15px;
 }
+
 .container{
   padding: 0;
 }

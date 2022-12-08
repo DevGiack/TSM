@@ -45,7 +45,13 @@
 
 .cardb-buy button{
   max-height: 1.5em;
-  box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.3);}
+  box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.3);
+}
+
+.cardb-buy h3{
+  color: var(--secondary);
+  max-height: 1.5em;
+}
 
 .card-body .card-link:hover{
   color: var(--secondary);
@@ -83,10 +89,28 @@
   justify-content: center;
 }
 
+.smallb-text .col{
+  margin-left: 1.5em;
+  margin-bottom: 0;
+}
+
+.smallb-text .smallb-text_title{
+  margin-bottom: 0.8em;
+}
+
+.smallb-text h1{
+  margin-left: 0.5em;
+  margin-bottom: 0;
+}
+
+.smallb-text h4{
+  font-style: italic;
+}
+
 .smallb-text p{
   width: 85%;
   margin-top: 2em;
-  margin-left: 2em;
+  margin-left: 1.5em;
 }
 
 .smb-logo{

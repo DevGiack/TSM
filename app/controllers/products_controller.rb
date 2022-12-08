@@ -8,6 +8,10 @@ class ProductsController < ApplicationController
 
   # GET /products/1 or /products/1.json
   def show
+    @product = Product.find(params[:id])
+    @stock_id = Stock.where(product_id: @product.id).ids[0]
+    @stock = Stock.find(@stock_id)
+    @stock_quantity = @stock.quantity_gr
   end
 
   # GET /products/new
@@ -55,6 +59,17 @@ class ProductsController < ApplicationController
       format.html { redirect_to products_url, notice: "Product was successfully destroyed." }
       format.json { head :no_content }
     end
+  end
+
+  def add
+    @product = Product.find(params[:id])
+    shopping_cart_id = session[:shopping_cart_id]
+    quantity = cookies[:quantity].to_i
+    factor = cookies[:factor].to_i
+    @shopping_cart = session[:shopping_cart_id] ? Cart.find(shopping_cart_id) : Cart.create
+    session[:shopping_cart_id] = @shopping_cart.id
+    @shopping_cart.add(@product, @product.price, quantity * factor)
+    redirect_back(fallback_location: :back)
   end
 
   private

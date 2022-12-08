@@ -30,6 +30,8 @@ Rails.application.routes.draw do
   get 'checkout/create'
   get 'home/index'
   get 'home/add'
+#  get 'products/:id/add', to: 'products#add'
+  match 'products/:id/add', to: 'products#add', as: 'add_product', via: [:get, :post]
   devise_for :users, :controllers => { registrations: 'users/registrations' }
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
