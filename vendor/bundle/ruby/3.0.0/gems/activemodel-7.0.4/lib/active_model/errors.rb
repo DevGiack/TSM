@@ -386,7 +386,7 @@ module ActiveModel
     #
     #   person = Person.create(address: '123 First St.')
     #   person.errors.full_messages
-    #   # => ["Name is too short (minimum is 5 characters)", "Name can't be blank", "Email can't be blank"]
+    #   # => ["Name is too short (minimum is 5 characters)", "Name can't be blank", "Email ne peut pas être vide"]
     def full_messages
       @errors.map(&:full_message)
     end
