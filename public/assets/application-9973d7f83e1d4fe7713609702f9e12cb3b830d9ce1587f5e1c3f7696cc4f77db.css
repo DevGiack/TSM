@@ -227,7 +227,7 @@ a{
 
 
 /************************/
-/*form sign_in / sign_up*/
+/* form sign_in/sign_up */
 /************************/
 
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800,900');
@@ -490,6 +490,44 @@ label{
 }
 .text-signin-signup-above-card{
   color: var(--bg-light);
+}
+
+/************************/
+/*    form edit user    */
+/************************/
+
+.container-delete{
+  margin-left: -6px;
+  margin-bottom: 60px;
+  margin-top: 300px;
+}
+.button-delete{
+  margin-top: 15px;
+}
+#text-explain-form{
+  margin: 0;
+  padding: 0;
+}
+.card-edit-3d-wrapper{
+  width: 120%;
+  height: 120%;
+  position:absolute;    
+  top: 0;
+  left: 0;  
+}
+
+#error_explanation{
+  color: #0D0D0D;
+}
+#error_explanation li{
+  text-decoration: none;
+  padding: 0;
+  margin: 0;
+}
+
+#error_explanation ul{
+  padding: 0;
+  margin: 0;
 }
 
 .button {
@@ -761,10 +799,28 @@ label{
   justify-content: center;
 }
 
+.smallb-text .col{
+  margin-left: 1.5em;
+  margin-bottom: 0;
+}
+
+.smallb-text .smallb-text_title{
+  margin-bottom: 0.8em;
+}
+
+.smallb-text h1{
+  margin-left: 0.5em;
+  margin-bottom: 0;
+}
+
+.smallb-text h4{
+  font-style: italic;
+}
+
 .smallb-text p{
   width: 85%;
   margin-top: 2em;
-  margin-left: 2em;
+  margin-left: 1.5em;
 }
 
 .smb-logo{
@@ -1003,7 +1059,7 @@ label{
 .product_detail{
   border-radius: 0 0 13px 0;
 	display: flex;
-	align-items: center;
+	align-items:flex-start;
   margin-bottom: 0px;
   width: max-content;
   background-color: #fff;
@@ -1011,10 +1067,8 @@ label{
   padding-right: 2em;
 }
 
-.prod_d_body{
-  width: 100%;
-  padding-left: 5em;
-  padding-right: 5em;
+.raw-cols-5 .raw{
+  margin-bottom: 2em;
 }
 
 .available p{
@@ -1062,11 +1116,31 @@ label{
 	color: var(--primary);
 }
 
+.product_description h3{
+  margin-bottom: 0;
+  margin-left: 0.8em;
+  display: flex;
+  align-items: center;
+}
+
+.button_buy{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 1em;
+}
+
+.button_buy button{
+  margin: 0.2em;
+  box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.3);
+}
+
 .buy_now_btn:hover{
   color: #fff;
 }
 
 .add_card_btn{
+  margin-left: 0.5em;
 	color: #fff;
 }
 
@@ -1092,6 +1166,34 @@ label{
 .title-text{
   padding-left: 1% ;
 }
+
+/* + & - */
+
+
+.plus-minus-input {
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.plus-minus-input .input-group-field {
+  text-align: center;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  padding: 1rem;
+}
+
+.plus-minus-input .input-group-field::-webkit-inner-spin-button,
+.plus-minus-input .input-group-field ::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+          appearance: none;
+}
+
+.plus-minus-input .input-group-button .circle {
+  border-radius: 50%;
+  padding: 0.25em 0.8em;
+}
+
 /*
  * This is a manifest file that'll be compiled into application.css, which will include all the files
  * listed below.

@@ -9,17 +9,17 @@
                 <h4 class="text-signin-signup mb-4 pb-3">CONNEXION</h4>
                   <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
                   <div class="field">
-                    <%= f.label :email, class: "text_form" %><br />
-                    <%= f.email_field :email, class: "form-control", autofocus: true, autocomplete: "email" %>
+                    <%= f.label :Email, class: "text_form" %><br />
+                    <%= f.email_field :email, class: "form-control", placeholder: "exemple@gmail.com", autofocus: true, autocomplete: "email" %>
                   </div>
 
                   <div class="field">
-                    <%= f.label :password, class: "text_form" %><br />
-                    <%= f.password_field :password, class: "form-control", autocomplete: "current-password" %>
+                    <%= f.label :Mot_de_passe, class: "text_form" %><br />
+                    <%= f.password_field :password, class: "form-control", placeholder: "Mot de passe", autocomplete: "current-password" %>
                   </div>
 
                   <div class="actions mt-3">
-                    <%= f.submit "Log in", class: "button btn-secondary" %>
+                    <%= f.submit "Se connecter", class: "button btn-secondary" %>
                   </div>
                   <% end %>
                   <div class=" container-link-form mt-2">

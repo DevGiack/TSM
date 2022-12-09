@@ -45,6 +45,7 @@
 /************************/
 /*form sign_in / sign_up*/
 /************************/
+
 h6 span{
   padding: 0 20px;
   text-transform: uppercase;
@@ -254,4 +255,42 @@ h6 span{
 
 .field{
   border: 500px ;
+}
+
+/************************/
+/*    form edit user    */
+/************************/
+
+.container-delete{
+  margin-left: -6px;
+  margin-bottom: 60px;
+  margin-top: 300px;
+}
+.button-delete{
+  margin-top: 15px;
+}
+#text-explain-form{
+  margin: 0;
+  padding: 0;
+}
+.card-edit-3d-wrapper{
+  width: 120%;
+  height: 120%;
+  position:absolute;    
+  top: 0;
+  left: 0;  
+}
+
+#error_explanation{
+  color: #0D0D0D;
+}
+#error_explanation li{
+  text-decoration: none;
+  padding: 0;
+  margin: 0;
+}
+
+#error_explanation ul{
+  padding: 0;
+  margin: 0;
 }
