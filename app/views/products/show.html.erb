@@ -14,61 +14,61 @@
         <div class="raw product_text">
           <h4>Poids</h4>
           <div>
-          <% if @stock_quantity < 50 %>
-            <button onclick = "qty(50)" class="btn btn-outline-danger disabled border border-2 border-dark rounded-pill"><span>50</span><span><%= @product.unity %></span></button>
-            <button onclick = "qty(100)" class="btn btn-outline-danger disabled border border-2 border-dark rounded-pill"><span>100</span><span><%= @product.unity %></span></button>
-            <button onclick = "qty(250)" class="btn btn-outline-danger disabled border border-2 border-dark rounded-pill"><span>250</span><span><%= @product.unity %></span></button>
-            <button onclick = "qty(500)" class="btn btn-outline-danger disabled border border-2 border-dark rounded-pill"><span>500</span><span><%= @product.unity %></span></button>
-            <button onclick = "qty(1000)" class="btn btn-outline-danger disabled border border-2 border-dark rounded-pill"><span>1000</span><span><%= @product.unity %></span></button>
-          <% elsif @stock_quantity < 100 %>
-            <button onclick = "qty(50)" class="btn btn-outline-dark border border-2 border-dark rounded-pill"><span>50</span><span><%= @product.unity %></span></button>
-            <button onclick = "qty(100)" class="btn btn-outline-danger disabled border border-2 border-dark rounded-pill"><span>100</span><span><%= @product.unity %></span></button>
-            <button onclick = "qty(250)" class="btn btn-outline-danger disabled border border-2 border-dark rounded-pill"><span>250</span><span><%= @product.unity %></span></button>
-            <button onclick = "qty(500)" class="btn btn-outline-danger disabled border border-2 border-dark rounded-pill"><span>500</span><span><%= @product.unity %></span></button>
-            <button onclick = "qty(1000)" class="btn btn-outline-danger disabled border border-2 border-dark rounded-pill"><span>1000</span><span><%= @product.unity %></span></button>
-          <% elsif @stock_quantity < 250 %>
-            <button onclick = "qty(50)" class="btn btn-outline-dark border border-2 border-dark rounded-pill"><span>50</span><span><%= @product.unity %></span></button>
-            <button onclick = "qty(100)" class="btn btn-outline-dark border border-2 border-dark rounded-pill"><span>100</span><span><%= @product.unity %></span></button>
-            <button onclick = "qty(250)" class="btn btn-outline-danger disabled border border-2 border-dark rounded-pill"><span>250</span><span><%= @product.unity %></span></button>
-            <button onclick = "qty(500)" class="btn btn-outline-danger disabled border border-2 border-dark rounded-pill"><span>500</span><span><%= @product.unity %></span></button>
-            <button onclick = "qty(1000)" class="btn btn-outline-danger disabled border border-2 border-dark rounded-pill"><span>1000</span><span><%= @product.unity %></span></button>
-          <% elsif @stock_quantity < 500 %>
-            <button onclick = "qty(50)" class="btn btn-outline-dark border border-2 border-dark rounded-pill"><span>50</span><span><%= @product.unity %></span></button>
-            <button onclick = "qty(100)" class="btn btn-outline-dark border border-2 border-dark rounded-pill"><span>100</span><span><%= @product.unity %></span></button>
-            <button onclick = "qty(250)" class="btn btn-outline-dark border border-2 border-dark rounded-pill"><span>250</span><span><%= @product.unity %></span></button>
-            <button onclick = "qty(500)" class="btn btn-outline-danger disabled border border-2 border-dark rounded-pill"><span>500</span><span><%= @product.unity %></span></button>
-            <button onclick = "qty(1000)" class="btn btn-outline-danger disabled border border-2 border-dark rounded-pill"><span>1000</span><span><%= @product.unity %></span></button>
-          <% elsif @stock_quantity < 1000 %>
-            <button onclick = "qty(50)" class="btn btn-outline-dark border border-2 border-dark rounded-pill"><span>50</span><span><%= @product.unity %></span></button>
-            <button onclick = "qty(100)" class="btn btn-outline-dark border border-2 border-dark rounded-pill"><span>100</span><span><%= @product.unity %></span></button>
-            <button onclick = "qty(250)" class="btn btn-outline-dark border border-2 border-dark rounded-pill"><span>250</span><span><%= @product.unity %></span></button>
-            <button onclick = "qty(500)" class="btn btn-outline-dark border border-2 border-dark rounded-pill"><span>500</span><span><%= @product.unity %></span></button>
-            <button onclick = "qty(1000)" class="btn btn-outline-danger disabled border border-2 border-dark rounded-pill"><span>1000</span><span><%= @product.unity %></span></button>
-          <% else %>
-            <button onclick = "qty(50)" class="btn btn-outline-dark border border-2 border-dark rounded-pill"><span>50</span><span><%= @product.unity %></span></button>
-            <button onclick = "qty(100)" class="btn btn-outline-dark border border-2 border-dark rounded-pill"><span>100</span><span><%= @product.unity %></span></button>
-            <button onclick = "qty(250)" class="btn btn-outline-dark border border-2 border-dark rounded-pill"><span>250</span><span><%= @product.unity %></span></button>
-            <button onclick = "qty(500)" class="btn btn-outline-dark border border-2 border-dark rounded-pill"><span>500</span><span><%= @product.unity %></span></button>
-            <button onclick = "qty(1000)" class="btn btn-outline-dark border border-2 border-dark rounded-pill"><span>1000</span><span><%= @product.unity %></span></button>
-          <% end %>
+            <% if @stock_quantity < 50 %>
+              <button onclick = "qty(50)" class="btn btn-outline-danger disabled border border-2 border-dark rounded-pill"><span>50</span><span><%= @product.unity %></span></button>
+              <button onclick = "qty(100)" class="btn btn-outline-danger disabled border border-2 border-dark rounded-pill"><span>100</span><span><%= @product.unity %></span></button>
+              <button onclick = "qty(250)" class="btn btn-outline-danger disabled border border-2 border-dark rounded-pill"><span>250</span><span><%= @product.unity %></span></button>
+              <button onclick = "qty(500)" class="btn btn-outline-danger disabled border border-2 border-dark rounded-pill"><span>500</span><span><%= @product.unity %></span></button>
+              <button onclick = "qty(1000)" class="btn btn-outline-danger disabled border border-2 border-dark rounded-pill"><span>1000</span><span><%= @product.unity %></span></button>
+            <% elsif @stock_quantity < 100 %>
+              <button onclick = "qty(50)" class="btn btn-outline-dark border border-2 border-dark rounded-pill"><span>50</span><span><%= @product.unity %></span></button>
+              <button onclick = "qty(100)" class="btn btn-outline-danger disabled border border-2 border-dark rounded-pill"><span>100</span><span><%= @product.unity %></span></button>
+              <button onclick = "qty(250)" class="btn btn-outline-danger disabled border border-2 border-dark rounded-pill"><span>250</span><span><%= @product.unity %></span></button>
+              <button onclick = "qty(500)" class="btn btn-outline-danger disabled border border-2 border-dark rounded-pill"><span>500</span><span><%= @product.unity %></span></button>
+              <button onclick = "qty(1000)" class="btn btn-outline-danger disabled border border-2 border-dark rounded-pill"><span>1000</span><span><%= @product.unity %></span></button>
+            <% elsif @stock_quantity < 250 %>
+              <button onclick = "qty(50)" class="btn btn-outline-dark border border-2 border-dark rounded-pill"><span>50</span><span><%= @product.unity %></span></button>
+              <button onclick = "qty(100)" class="btn btn-outline-dark border border-2 border-dark rounded-pill"><span>100</span><span><%= @product.unity %></span></button>
+              <button onclick = "qty(250)" class="btn btn-outline-danger disabled border border-2 border-dark rounded-pill"><span>250</span><span><%= @product.unity %></span></button>
+              <button onclick = "qty(500)" class="btn btn-outline-danger disabled border border-2 border-dark rounded-pill"><span>500</span><span><%= @product.unity %></span></button>
+              <button onclick = "qty(1000)" class="btn btn-outline-danger disabled border border-2 border-dark rounded-pill"><span>1000</span><span><%= @product.unity %></span></button>
+            <% elsif @stock_quantity < 500 %>
+              <button onclick = "qty(50)" class="btn btn-outline-dark border border-2 border-dark rounded-pill"><span>50</span><span><%= @product.unity %></span></button>
+              <button onclick = "qty(100)" class="btn btn-outline-dark border border-2 border-dark rounded-pill"><span>100</span><span><%= @product.unity %></span></button>
+              <button onclick = "qty(250)" class="btn btn-outline-dark border border-2 border-dark rounded-pill"><span>250</span><span><%= @product.unity %></span></button>
+              <button onclick = "qty(500)" class="btn btn-outline-danger disabled border border-2 border-dark rounded-pill"><span>500</span><span><%= @product.unity %></span></button>
+              <button onclick = "qty(1000)" class="btn btn-outline-danger disabled border border-2 border-dark rounded-pill"><span>1000</span><span><%= @product.unity %></span></button>
+            <% elsif @stock_quantity < 1000 %>
+              <button onclick = "qty(50)" class="btn btn-outline-dark border border-2 border-dark rounded-pill"><span>50</span><span><%= @product.unity %></span></button>
+              <button onclick = "qty(100)" class="btn btn-outline-dark border border-2 border-dark rounded-pill"><span>100</span><span><%= @product.unity %></span></button>
+              <button onclick = "qty(250)" class="btn btn-outline-dark border border-2 border-dark rounded-pill"><span>250</span><span><%= @product.unity %></span></button>
+              <button onclick = "qty(500)" class="btn btn-outline-dark border border-2 border-dark rounded-pill"><span>500</span><span><%= @product.unity %></span></button>
+              <button onclick = "qty(1000)" class="btn btn-outline-danger disabled border border-2 border-dark rounded-pill"><span>1000</span><span><%= @product.unity %></span></button>
+            <% else %>
+              <button onclick = "qty(50)" class="btn btn-outline-dark border border-2 border-dark rounded-pill"><span>50</span><span><%= @product.unity %></span></button>
+              <button onclick = "qty(100)" class="btn btn-outline-dark border border-2 border-dark rounded-pill"><span>100</span><span><%= @product.unity %></span></button>
+              <button onclick = "qty(250)" class="btn btn-outline-dark border border-2 border-dark rounded-pill"><span>250</span><span><%= @product.unity %></span></button>
+              <button onclick = "qty(500)" class="btn btn-outline-dark border border-2 border-dark rounded-pill"><span>500</span><span><%= @product.unity %></span></button>
+              <button onclick = "qty(1000)" class="btn btn-outline-dark border border-2 border-dark rounded-pill"><span>1000</span><span><%= @product.unity %></span></button>
+            <% end %>
           </div>
         </div>
 
 
 
-                                        <div class="input-group">
-                                    <span class="input-group-btn">
-                                        <button type="button" class="quantity-left-minus btn btn-outline-danger btn-number"  data-type="minus" data-field="">
-                                          <span>-</span>
-                                        </button>
-                                    </span>
-                                    <input type="text" id="quantity" name="quantity" class="form-control input-number" value="0" min="1" max="100">
-                                    <span class="input-group-btn">
-                                        <button type="button" class="quantity-right-plus btn btn-outline-success btn-number" data-type="plus" data-field="">
-                                            <span>+</span>
-                                        </button>
-                                    </span>
-                                </div>
+        <div class="input-group">
+          <span class="input-group-btn">
+              <button type="button" class="quantity-left-minus btn btn-outline-dark btn-number m-1"  data-type="minus" data-field="">
+                <span>-</span>
+              </button>
+          </span>
+          <input type="text" id="quantity" name="quantity" class="form-control input-number border border-3 rounded-pill m-1" value="0" min="1" max="100">
+          <span class="input-group-btn">
+              <button type="button" class="quantity-right-plus btn btn-secondary btn-number m-1" data-type="plus" data-field="">
+                  <span>+</span>
+              </button>
+          </span>
+        </div>
 
 
 
