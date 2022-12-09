@@ -12,7 +12,7 @@
                     <div class="col-md-5">
                       <div class="field">
                         <%= f.label :Prénom, class: "text_form" %><br />
-                        <%= f.text_field :first_name,class: "form-control",  autofocus: true, autocomplete: "first_name" %>
+                        <%= f.text_field :first_name,class: "form-control", autocomplete: "first_name" %>
                       </div>
                     </div>
 
@@ -22,12 +22,13 @@
                     <div class="col-md-5">
                       <div class="field">
                         <%= f.label :Nom, class: "text_form" %><br />
-                        <%= f.text_field :last_name, class: "form-control", autofocus: true, autocomplete: "last_name" %>
+                        <%= f.text_field :last_name, class: "form-control", autocomplete: "last_name" %>
                       </div>
                     </div>
+                      
                       <div class="field">
-                        <%= f.label :Numéro_de_téléphone, class: "text_form" %><br />
-                        <%= f.telephone_field :phone,class: "form-control",  autofocus: true, autocomplete: "phone" %>
+                        <%= f.label :Email, class: "text_form" %><br />
+                        <%= f.email_field :email,class: "form-control", autocomplete: "email" %>
                       </div>
 
                       <% if devise_mapping.confirmable? && resource.pending_reconfirmation? %>
@@ -47,16 +48,9 @@
                       </div>
 
                       <div class="field">
-                        <%= f.label :Mot_de_passe_actuel, class: "text_form" %><p id="text-explain-form">(Nous avons besoin de votre mot de passe pour modifier votre profil)</p><br />
+                        <%= f.label :Mot_de_passe_actuel, class: "text_form" %><p id="text-explain-form">(Nous avons besoin de votre mot de passe pour modifier votre profil)</p>
                         <%= f.password_field :current_password, class: "form-control", autocomplete: "current-password" %>
                       </div>
-
-
-                      <div class="actions mt-3">
-                        <%= f.submit "Mettre à jour vos données personnelles ", class: "button btn-secondary"%>
-                      </div>
-
-                    <% end %>  
                 </div>	
               </div>
             </div>
@@ -87,7 +81,6 @@
 
                     <div class="col-2">
                     </div>
-
                     <div class="col-md-5">
                       <div class="field">
                         <%= f.label :last_name, class: "text_form" %><br />
@@ -98,12 +91,6 @@
                         <%= f.label :phone, class: "text_form" %><br />
                         <%= f.telephone_field :phone,class: "form-control",  autofocus: true, autocomplete: "phone" %>
                       </div>
-
-                      <div class="actions mt-3">
-                        <%= f.submit "Mettre à jour mon adresse", class: "button btn-secondary"%>
-                      </div>
-
-                    <% end %>  
                 </div>	
             </div>
           </div>
@@ -112,9 +99,14 @@
     </div>
   </div>
   <div class="row container-delete">
+    <div class="actions mt-3 mb-4">
+    <%= f.submit "Mettre à jour mes données personnelles ", class: "button btn-secondary"%>
+    </div>
+    <% end %>  
+    <% end %>  
   <div class="col-md-5">
     <h2>Supprimer mon compte</h2>
-    <%= button_to "Supprimer", registration_path(resource_name), form: { data: { turbo_confirm: "Êtes vous sûrs ?" }}, method: :delete, class:"button-delete button btn-secondary" %>
+    <%= button_to "Supprimer", registration_path(resource_name), data: { confirm: 'Êtes vous sûrs ?' }, method: :delete, class:"button-delete button btn-secondary" %>
   </div>
 </div>
 </div>
