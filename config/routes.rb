@@ -9,13 +9,6 @@ Rails.application.routes.draw do
     get 'cancel', to: 'checkout#cancel', as: 'checkout_cancel'
   end
 
-  # #Admin
-  # namespace :admin do
-  #   root "admin#index"
-  #   resources :user
-  #   resources :product
-  # end
-
   resources :user_adresses
   resources :admin_types
   resources :user_addresses
@@ -30,11 +23,13 @@ Rails.application.routes.draw do
   get 'checkout/create'
   get 'home/index'
   get 'home/add'
+  get 'home/cgv'
+  get 'home/cgu'
+  get 'home/cookies'
 #  get 'products/:id/add', to: 'products#add'
   match 'products/:id/add', to: 'products#add', as: 'add_product', via: [:get, :post]
-  devise_for :users, :controllers => { registrations: 'users/registrations' }
-  # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
-  # Defines the root path route ("/")
+  devise_for :users, :controllers => { registrations: 'users/registrations' }
+
   root "home#index"
 end
