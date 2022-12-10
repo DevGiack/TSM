@@ -26,6 +26,7 @@ Rails.application.routes.draw do
   get 'home/cgv'
   get 'home/cgu'
   get 'home/cookies'
+  get 'home/account'
 #  get 'products/:id/add', to: 'products#add'
   match 'products/:id/add', to: 'products#add', as: 'add_product', via: [:get, :post]
 
