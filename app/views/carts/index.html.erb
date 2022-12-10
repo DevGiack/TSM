@@ -58,7 +58,7 @@
 
                     <%# Pas toucher au back page %>
                     <hr class="my-4">
-                    <div class="pt-5">
+                    <div class="pt-5 m-4 position-absolute bottom-0 start-0">
                       <h6 class="mb-0"><a href="#!" class="text-body"><i
                             class="fas fa-long-arrow-alt-left me-2"></i>Revenir à la page produit</a></h6>
                     </div>
@@ -67,47 +67,49 @@
                 </div>
                 <div class="col-lg-4 bg-grey">
                   <div class="p-5">
-                    <h3 class="fw-bold mb-5 mt-2 pt-1" style="color: var(--secondary);">Récapitulatif</h3>
+                    <h3 class="fw-bold mb-3 mt-2 pt-1" style="color: var(--secondary);">Récapitulatif</h3>
                     <hr class="my-4">
-
+<%# 
                     <div class="d-flex justify-content-between mb-4">
-                    </div>
+                    </div> %>
 
                     <h5 class="text-uppercase mb-3">Livraison</h5>
 
                     <div class="mb-4 pb-2">
-                      <h3 class="fw-bold mb-5 mt-2 pt-1" style="color: green;">Livraison offerte !</h3>
+                      <h3 class="fw-bold mb-2 mt-2 pt-1" style="color: green;">Livraison offerte !</h3>
                     </div>
 
                     <h5 class="text-uppercase mb-3">Code de réduction</h5>
 
-                    <div class="mb-5">
+                    <div class="mb-3">
                       <div class="form-outline">
-                        <input type="text" id="form3Examplea2" class="form-control form-control-lg" style="border-color: "/>
-                        <%# <label class="form-label text-black" for="form3Examplea2">Enter your code</label> %> <%# Mettre dans le input%>>
+                        <input type="text" id="form3Examplea2" class="form-control form-control-lg" style="border-color: ">
+                        <%# <label class="form-label text-black" for="form3Examplea2">Enter your code</label> %> <%# Mettre dans le input%>
                       </div>
                     </div>
 
                     <hr class="my-4">
-                    <div class="d-flex justify-content-between mb-5">
+                    <div class="d-flex justify-content-between mb-3">
                       <h5 class="text-uppercase">Prix total HT</h5>
                       <h5>€ <%= @total * 100/(100+19.6)%></h5>
                     </div>
-                    <div class="d-flex justify-content-between mb-5">
+                    <div class="d-flex justify-content-between mb-3">
                       <h5 class="text-uppercase">TVA</h5>
                       <h5>€ <%= @total - (@total * 100/(100+19.6))%></h5>
                     </div>
-                    <div class="d-flex justify-content-between mb-5">
+                    <div class="d-flex justify-content-between mb-3">
                       <h5 class="text-uppercase">Prix total TTC</h5>
                       <h5>€ <%= @total %></h5>
                     </div>
 
-                    <button type="button" class="btn btn-secondary btn-block btn-m"
-                      data-mdb-ripple-color="dark"><%= link_to "Passer commande", checkout_create_path(:total => @total),class:"text-white" %>
-                    </button>
-                    <button type="button" class="btn btn-danger btn-block btn-m"
-                      data-mdb-ripple-color="dark"><%= link_to "Supprimer le panier", new_cart_path ,class:"text-white"%>
-                    </button>
+                    <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                      <button type="button" class="btn btn-secondary btn-block btn-m mt-5 me-md-2"
+                        data-mdb-ripple-color="dark"><%= link_to "Passer commande", checkout_create_path(:total => @total),class:"text-white" %>
+                      </button>
+                      <button type="button" class="btn btn-danger btn-block btn-m mt-5"
+                        data-mdb-ripple-color="dark"><%= link_to "Supprimer le panier", new_cart_path ,class:"text-white"%>
+                      </button>
+                    </div>
                   </div>
                 </div>
               </div>
