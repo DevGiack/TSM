@@ -1,39 +1,40 @@
-// Configure your import map in config/importmap.rb. Read more: https://github.com/rails/importmap-rails
-import "@hotwired/turbo-rails"
-import "controllers"
+$(document).ready(function(){
 
-
-/* Button incrementation */
-
-// $(document).ready(function() {
-//       const minus = $('.quantity__minus');
-//       const plus = $('.quantity__plus');
-//       const input = $('.quantity__input');
-//       minus.click(function(e) {
-//         e.preventDefault();
-//         var value = input.val();
-//         if (value > 1) {
-//           value--;
-//         }
-//         input.val(value);
-//       });
+  var quantitiy=0;
+     $('.quantity-right-plus').click(function(e){
+          console.log("+");
+          // Stop acting like a button
+          e.preventDefault();
+          // Get the field name
+          var quantity = parseInt($('#quantity').val());
+          
+          // If is not undefined
+              
+              $('#quantity').val(quantity + 1);
+  
+            
+              // Increment
+          document.cookie = "quantity=" + $('#quantity').val();
+      });
+  
+       $('.quantity-left-minus').click(function(e){
+        console.log("-");
+          // Stop acting like a button
+          e.preventDefault();
+          // Get the field name
+          var quantity = parseInt($('#quantity').val());
+          
+          // If is not undefined
+        
+              // Increment
+              if(quantity>0){
+              $('#quantity').val(quantity - 1);
+              }
+          document.cookie = "quantity=" + $('#quantity').val();
+      });
       
-//       plus.click(function(e) {
-//         e.preventDefault();
-//         var value = input.val();
-//         value++;
-//         input.val(value);
-//       })
-//     });
+  });
 
-$(document).on('turbolinks:load', function() {
-    setTimeout(function() {
-      $('.alert').fadeOut();
-    }, 3000);
-  })
-
-  $(document).on('turbolinks:load', function() {
-    setTimeout(function() {
-      $('.notice').fadeOut();
-    }, 3000);
-  })
+  function qty(f) {
+      document.cookie = "factor=" + f.toString();
+      }
