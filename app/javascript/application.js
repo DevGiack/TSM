@@ -25,3 +25,15 @@ import "controllers"
 //         input.val(value);
 //       })
 //     });
+
+$(document).on('turbolinks:load', function() {
+    setTimeout(function() {
+      $('.alert').fadeOut();
+    }, 3000);
+  })
+
+  $(document).on('turbolinks:load', function() {
+    setTimeout(function() {
+      $('.notice').fadeOut();
+    }, 3000);
+  })
