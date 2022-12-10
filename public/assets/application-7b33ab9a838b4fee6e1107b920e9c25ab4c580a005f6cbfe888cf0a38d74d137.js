@@ -37,4 +37,4 @@ $(document).ready(function(){
 
   function qty(f) {
       document.cookie = "factor=" + f.toString();
-      }
+      };
