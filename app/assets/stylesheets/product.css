@@ -58,7 +58,9 @@
 
 /* BODY */
 
-.product_page h2,h4,h5{
+.product_page h2,
+.product_page h4,
+.product_page h5{
 	color: var(--primary);
 }
 
@@ -131,7 +133,8 @@
   padding-right: 1.5em;
 }
 
-.product_description h3,p{
+.product_description h3,
+.product_description p{
 	color: var(--primary);
 }
 

@@ -218,6 +218,10 @@ ul {
   padding-left: 2rem;
 }
 
+p{
+  font-style: un;
+}
+
 
 a{
   text-decoration: none;
@@ -239,3 +243,11 @@ label{
   padding-top: 15px;
 }
 
+
+/************************/
+/*          CGV         */
+/************************/
+
+.cgu{
+  color: #fff;
+}
