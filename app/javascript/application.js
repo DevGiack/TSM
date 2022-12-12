@@ -36,5 +36,15 @@ $(document).ready(function(){
   });
 
   function qty(f) {
-      document.cookie = "factor=" + f.toString();
+    console.log("+");
+    // Stop acting like a button
+    e.preventDefault();
+    // Get the field name
+    var quantity = parseInt($('#quantity').val());
+    
+    // If is not undefined
+        
+    $('#quantity').val(quantity + f);
+      document.cookie = "quantity=" + $('#quantity').val();
+
       }
