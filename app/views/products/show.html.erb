@@ -12,7 +12,8 @@
         </div>
 
         <div class="raw product_text">
-          <h4>Poids</h4>
+        <p></p>
+          <h4>Ajouter :</h4>
           <div>
             <% if @stock_quantity < 50 %>
               <button onclick = "qty(50)" class="btn btn-outline-danger disabled border border-2 border-dark rounded-pill"><span>50</span><span><%= @product.unity %></span></button>
@@ -46,7 +47,7 @@
               <button onclick = "qty(1000)" class="btn btn-outline-danger disabled border border-2 border-dark rounded-pill"><span>1000</span><span><%= @product.unity %></span></button>
             <% else %>
               <button onclick = "qty(50)" class="btn btn-outline-dark border border-2 border-dark rounded-pill"><span>50</span><span><%= @product.unity %></span></button>
-              <button onclick = "qty(100)" class="btn btn-outline-dark border border-2 border-dark rounded-pill"><span>100</span><span><%= @product.unity %></span></button>
+              <button onclick = "qty(100)" class="btn btn-outline-dark border border-2 border-dark rounded-pill qty"><span>100</span><span><%= @product.unity %></span></button>
               <button onclick = "qty(250)" class="btn btn-outline-dark border border-2 border-dark rounded-pill"><span>250</span><span><%= @product.unity %></span></button>
               <button onclick = "qty(500)" class="btn btn-outline-dark border border-2 border-dark rounded-pill"><span>500</span><span><%= @product.unity %></span></button>
               <button onclick = "qty(1000)" class="btn btn-outline-dark border border-2 border-dark rounded-pill"><span>1000</span><span><%= @product.unity %></span></button>
@@ -56,7 +57,7 @@
 
 
 
-
+<div id="show_qty" style="color:black"><b><I>0 gramme</I></b></div>
 
 
 
@@ -64,7 +65,7 @@
         <div class="col m-0">
           <div class="col button_buy">
             <button class="button btn-secondary"><%= link_to "Acheter maintenant", edit_product_path(@product), class:"buy_now_btn" %></button>
-            <button class="button btn-primary"><%= link_to "Ajouter au panier", add_product_path(:product_id =>@product.id, :quantity => session[:quantity]), class:"add_card_btn" %></button>
+            <button class="button btn-primary"><%= link_to "Ajouter au panier", add_product_path(:product_id =>@product.id, :quantity => 100), class:"add_card_btn" %></button>
           </div>
         </div>
       </div>
