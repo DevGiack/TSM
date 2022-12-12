@@ -10,6 +10,10 @@
 /*        INDEX         */
 /************************/
 
+.text-retour{
+  color: var(--secondary)!important;
+}
+
 .prod_head{
   margin-bottom: 50px;
 }
