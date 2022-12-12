@@ -55,6 +55,10 @@ ActiveRecord::Schema[7.0].define(version: 2022_12_07_135825) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.bigint "user_id"
+    t.bigint "payment_id"
+    t.bigint "user_address_id"
+    t.index ["payment_id"], name: "index_orders_on_payment_id"
+    t.index ["user_address_id"], name: "index_orders_on_user_address_id"
     t.index ["user_id"], name: "index_orders_on_user_id"
   end
 
@@ -64,10 +68,6 @@ ActiveRecord::Schema[7.0].define(version: 2022_12_07_135825) do
     t.float "amount"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.bigint "user_id"
-    t.bigint "order_id"
-    t.index ["order_id"], name: "index_payments_on_order_id"
-    t.index ["user_id"], name: "index_payments_on_user_id"
   end
 
   create_table "product_categories", force: :cascade do |t|
@@ -135,9 +135,9 @@ ActiveRecord::Schema[7.0].define(version: 2022_12_07_135825) do
   end
 
   add_foreign_key "discounts", "products"
+  add_foreign_key "orders", "payments"
+  add_foreign_key "orders", "user_addresses"
   add_foreign_key "orders", "users"
-  add_foreign_key "payments", "orders"
-  add_foreign_key "payments", "users"
   add_foreign_key "products", "product_categories"
   add_foreign_key "stocks", "products"
   add_foreign_key "user_addresses", "users"

@@ -1,4 +1,4 @@
-<div class="container mt-4">
+<div class="container mt-5 mb-5">
 	<div class="row full-height justify-content-center">
     <div class="col-5 text-center">
       <div class="card-3d-wrap mx-auto">
@@ -26,87 +26,42 @@
                       </div>
                     </div>
                       
-                      <div class="field">
-                        <%= f.label :Email, class: "text_form" %><br />
-                        <%= f.email_field :email,class: "form-control", autocomplete: "email" %>
-                      </div>
+                    <div class="field">
+                      <%= f.label :Email, class: "text_form" %><br />
+                      <%= f.email_field :email,class: "form-control", autocomplete: "email" %>
+                    </div>
 
-                      <% if devise_mapping.confirmable? && resource.pending_reconfirmation? %>
-                        <div>Currently waiting confirmation for: <%= resource.unconfirmed_email %></div>
+                    <% if devise_mapping.confirmable? && resource.pending_reconfirmation? %>
+                      <div>Currently waiting confirmation for: <%= resource.unconfirmed_email %></div>
+                    <% end %>
+
+                    <div class="field">
+                      <%= f.label :Nouveau_mot_de_passe, class: "text_form" %><br />
+                      <%= f.password_field :password, class: "form-control", autocomplete: "new-password" %>
+                      <% if @minimum_password_length %>
                       <% end %>
+                    </div>
 
-                      <div class="field">
-                        <%= f.label :Nouveau_mot_de_passe, class: "text_form" %><br />
-                        <%= f.password_field :password, class: "form-control", autocomplete: "new-password" %>
-                        <% if @minimum_password_length %>
-                        <% end %>
-                      </div>
+                    <div class="field">
+                      <%= f.label :Veuillez_confirmer_votre_nouveau_mot_de_passe, class: "text_form" %><br />
+                      <%= f.password_field :password_confirmation, class: "form-control", autocomplete: "new-password" %>
+                    </div>
 
-                      <div class="field">
-                        <%= f.label :Veuillez_confirmer_votre_nouveau_mot_de_passe, class: "text_form" %><br />
-                        <%= f.password_field :password_confirmation, class: "form-control", autocomplete: "new-password" %>
-                      </div>
+                    <div class="field">
+                      <%= f.label :Mot_de_passe_actuel, class: "text_form" %><p id="text-explain-form">(Nous avons besoin de votre mot de passe pour modifier votre profil)</p>
+                      <%= f.password_field :current_password, class: "form-control", autocomplete: "current-password" %>
+                    </div>
 
-                      <div class="field">
-                        <%= f.label :Mot_de_passe_actuel, class: "text_form" %><p id="text-explain-form">(Nous avons besoin de votre mot de passe pour modifier votre profil)</p>
-                        <%= f.password_field :current_password, class: "form-control", autocomplete: "current-password" %>
-                      </div>
-                </div>	
+                    <div class="actions mt-3 mb-4">
+                      <%= f.submit "Mettre à jour mes données personnelles ", class: "button btn-secondary"%>
+                    </div>
+                  </div>	
+                <% end %>  
               </div>
-            </div>
-          </div>
-        </div>
-    </div>
-  </div>
-
-  <div class="col-2">
-  </div>
-  
-                
-  <div class="col-5 text-center">
-    <div class="card-3d-wrap mx-auto">
-      <div class="card-edit-3d-wrapper card-3d-wrapper">
-        <div class="card-front">
-          <div class="center-wrap">
-            <div class="section text-center">
-              <%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }) do |f| %>
-                <%= render "devise/shared/error_messages", resource: resource %>
-                  <div class="row">
-                    <div class="col-md-5">
-                        <div class="field">
-                        <%= f.label :Prénom, class: "text_form" %><br />
-                        <%= f.text_field :first_name,class: "form-control",  autofocus: true, autocomplete: "first_name" %>
-                      </div>
-                    </div>
-
-                    <div class="col-2">
-                    </div>
-                    <div class="col-md-5">
-                      <div class="field">
-                        <%= f.label :last_name, class: "text_form" %><br />
-                        <%= f.text_field :last_name, class: "form-control", autofocus: true, autocomplete: "last_name" %>
-                      </div>
-                    </div>
-                      <div class="field">
-                        <%= f.label :phone, class: "text_form" %><br />
-                        <%= f.telephone_field :phone,class: "form-control",  autofocus: true, autocomplete: "phone" %>
-                      </div>
-                </div>	
             </div>
           </div>
         </div>
       </div>
     </div>
   </div>
-  <div class="row container-delete">
-    <div class="actions mt-3 mb-4">
-    <%= f.submit "Mettre à jour mes données personnelles ", class: "button btn-secondary"%>
-    </div>
-    <% end %>  
-    <% end %>  
-  <div class="col-md-5">
-    <h2>Supprimer mon compte</h2>
-    <%= button_to "Supprimer", registration_path(resource_name), data: { confirm: 'Êtes vous sûrs ?' }, method: :delete, class:"button-delete button btn-secondary" %>
-  </div>
-</div>
 </div>
