@@ -1,26 +1,28 @@
 <div class="container-fluid product_page">
 <h1>Mon compte</h1>
 
-<h3>Mes informations personnel</h3>
   <div class="row">
     <div class="card account">
-      <p>Prénom : <%= current_user.first_name %></p>
-      <p>Nom : <%= current_user.last_name %></p>
-      <p>Email : <%= current_user.email %></p>
-      <p>Tel : <%= current_user.phone %></p>
+      <h3 class="card-title">Mes informations personnel</h3>
+        <p>Prénom : <%= current_user.first_name %></p>
+        <p>Nom : <%= current_user.last_name %></p>
+        <p>Email : <%= current_user.email %></p>
+        <p>Mot de passe : *****************</p>
       <button class="button btn-secondary btn-sm"><%= link_to "Modifier mes informations", edit_user_registration_path %></button>
     </div>
   </div>
 
-  <h3>Mon adresse</h3>
   <% @user_addresses.each do |address| %>
   <div class="row">
-    <div class="card" style="width: 21.5rem;">
-        <h4 class="card-title"><%= address.address_type %></h4>
-        <p>address_num: <%= address.address_number %></p>
-        <p>address_rue: <%= address.address_street %></p>
-        <p>address_ville: <%= address.address_city %></p>
-        <p>address_cp: <%= address.address_zip %></p>
+    <div class="card account regle" style="width: 21.5rem;">
+        <h3 class="card-title">Mon adresse</h3>
+        <p>Nom de l'adresse: <%= address.address_city %></p><!-- Mettre à jour le <% %> -->
+        <p>Numéro: <%= address.address_number %></p>
+        <p>Adresse: <%= address.address_street %></p>
+        <p>Code postal: <%= address.address_zip %></p>
+        <p>Ville: <%= address.address_city %></p>
+        <p>Tél : <%= current_user.phone %></p>
+        <button class="button btn-secondary btn-sm"><%= link_to "Modifier mon adresse", edit_user_registration_path %></button> <!-- Mettre à jour le lien avec edit_user_address_path -->
       </div>
     </div>
   </div>
