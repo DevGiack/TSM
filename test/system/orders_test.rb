@@ -14,9 +14,6 @@ class OrdersTest < ApplicationSystemTestCase
     visit orders_url
     click_on "New order"
 
-    fill_in "Cart id", with: @order.Cart_ID
-    fill_in "User id", with: @order.User_ID
-    fill_in "User address id", with: @order.User_address_ID
     click_on "Create Order"
 
     assert_text "Order was successfully created"
@@ -27,9 +24,6 @@ class OrdersTest < ApplicationSystemTestCase
     visit order_url(@order)
     click_on "Edit this order", match: :first
 
-    fill_in "Cart id", with: @order.Cart_ID
-    fill_in "User id", with: @order.User_ID
-    fill_in "User address id", with: @order.User_address_ID
     click_on "Update Order"
 
     assert_text "Order was successfully updated"
