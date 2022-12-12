@@ -12,6 +12,7 @@ class ProductsController < ApplicationController
     @stock_id = Stock.where(product_id: @product.id).ids[0]
     @stock = Stock.find(@stock_id)
     @stock_quantity = @stock.quantity_gr
+    puts cookies[:quantity]
   end
 
   # GET /products/new
@@ -65,10 +66,9 @@ class ProductsController < ApplicationController
     @product = Product.find(params[:id])
     shopping_cart_id = session[:shopping_cart_id]
     quantity = cookies[:quantity].to_i
-    factor = cookies[:factor].to_i
     @shopping_cart = session[:shopping_cart_id] ? Cart.find(shopping_cart_id) : Cart.create
     session[:shopping_cart_id] = @shopping_cart.id
-    @shopping_cart.add(@product, @product.price, quantity * factor)
+    @shopping_cart.add(@product, @product.price, quantity)
     redirect_back(fallback_location: :back)
   end
 
