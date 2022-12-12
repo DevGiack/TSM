@@ -10,6 +10,10 @@
 /*        INDEX         */
 /************************/
 
+.text-retour{
+  color: var(--secondary)!important;
+}
+
 .prod_head{
   margin-bottom: 50px;
 }
@@ -86,6 +90,15 @@
 .product_text{
 	text-align: left;
 	margin: 0.3em;
+}
+
+.product_text h6{
+  color: var(--secondary);
+}
+
+.stock_quantity{
+  color: var(--success);
+  font-style: italic;
 }
 
 /* BUTTON */
