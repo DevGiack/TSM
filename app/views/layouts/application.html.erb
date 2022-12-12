@@ -67,7 +67,7 @@
             </li>
             <li class="nav-item hello">
               <% if user_signed_in? %>
-                <%= link_to edit_user_registration_path, class:"nav-link mx-2" do %>
+                <%= link_to home_account_path, class:"nav-link mx-2" do %>
                   <i class="fa-solid fa-circle-user me-1"></i>
                 <% end %>
                 <p class="text-uppercase">Bonjour <%= current_user.first_name %></p>
@@ -140,7 +140,7 @@
                 <%= link_to "C.G.U", home_cgu_path, class:"text-black" %>
                 </p>
                 <p>
-                  <%= link_to "Cookies", home_cookies_path, class:"text-black" %>
+                <%= link_to "Cookies", home_cookies_path, class:"text-black" %>
                 </p>
               </div>
 
@@ -151,7 +151,7 @@
               <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
                 <h5 class="text-uppercase mb-4 font-weight-bold">Contact</h5>
                 <p><i class="fas fa-home mr-3"></i> Domaine de Saint-Martin des champs</p>
-                <p><i class="fas fa-envelope mr-3"></i> info@truffieres-saint-martin.com</p>
+                <p><i class="fas fa-envelope mr-3"></i><%= mail_to "info@truffieres-saint-martin.com", "info@truffieressaintmartin.com" %></p>
                 <p><i class="fas fa-phone mr-3"></i> +33 (0)6 07 24 23 35</p>
               </div>
               <!-- Grid column -->
