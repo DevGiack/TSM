@@ -7,3 +7,51 @@
 <div>
   <%= link_to "Back to user addresses", user_addresses_path %>
 </div>
+
+<div class="container mt-5 mb-5">
+  <div class="row full-height justify-content-center">
+    <div class="col-5 text-center">
+      <div class="card-3d-wrap mx-auto">
+        <div class="card-edit-3d-wrapper card-3d-wrapper">
+          <div class="card-front">
+            <div class="center-wrap">
+              <di class="section text-center">
+
+
+              <%= form_with(model: @user_address, url: user_addresses_path) do |form| %>
+                <div class="field">
+                  <%= form.label :Numéro, class: "text_form" %>
+                  <%= form.number_field :address_number, autofocus: true, class: "form-control" %>
+                </div>
+                <div class="field">
+                  <%= form.label :adresse, class: "text_form" %>
+                  <%= form.text_field :address_street, class: "form-control" %>
+                </div>
+                <div class="field">
+                  <%= form.label :Ville, class: "text_form" %>
+                  <%= form.text_field :address_city, class: "form-control" %>
+                </div>
+                <div class="field">
+                  <%= form.label :Code_postal, class: "text_form" %>
+                  <%= form.number_field :address_zip, class: "form-control" %>
+                </div>
+                <div class="field"> 
+                  <%= form.label :address_state, class: "text_form" %>
+                  <%= form.text_field :address_state, class: "form-control" %>
+                </div> 
+                <div class="field"> 
+                  <%= form.label :Pays, class: "text_form" %>
+                  <%= form.text_field :address_country, class: "form-control" %>
+                </div>
+                <div class="actions mt-3">
+                  <%= form.submit "Sauvegarder mon adresse",  class: "button btn-secondary" %>
+                </div>
+              <% end %>
+            </div>
+          </div>
+         </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
