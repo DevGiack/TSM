@@ -88,6 +88,15 @@
 	margin: 0.3em;
 }
 
+.product_text h6{
+  color: var(--secondary);
+}
+
+.stock_quantity{
+  color: var(--success);
+  font-style: italic;
+}
+
 /* BUTTON */
 .button_buy{
   display: flex;
