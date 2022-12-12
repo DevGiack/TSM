@@ -55,7 +55,7 @@
   </div>
 </div>
 
-<div class="row row-cols-1 row-cols-md-3 g-0">
+<div class="row row-cols-1 row-cols-md-3 g-4">
     <% @highlighted_products.each do |hp| %>
   <div class="col">
     <div class="card" style="width: 21.5rem;">
@@ -67,7 +67,7 @@
       </div>
       <div class="card-body cardb-buy">
         <button class="button btn-outline btn-sm"><%= link_to "Disponible", product_path(hp.id) , class:"card-link"%></button>
-        <button class="button btn-secondary btn-sm"><%= link_to "Ajouter au panier", home_add_path(:product_id => hp.id), class:"card-buy" %></button>
+        <button class="button btn-secondary btn-sm"><%= link_to "Ajouter au panier", product_path(:id => hp.id), class:"card-buy" %></button>
       </div>
     </div>
   </div>
