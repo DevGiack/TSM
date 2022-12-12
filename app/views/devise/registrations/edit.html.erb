@@ -1,4 +1,4 @@
-<div class="container mt-4">
+<div class="container mt-5 mb-5">
 	<div class="row full-height justify-content-center">
     <div class="col-5 text-center">
       <div class="card-3d-wrap mx-auto">
@@ -60,39 +60,8 @@
               </div>
             </div>
           </div>
-      </div>
-    </div>
-    </div>
-
-    <div class="col-2">
-    </div>
-    
-    <div class="col-5 text-center">
-      <div class="card-3d-wrap mx-auto">
-        <div class="card-edit-3d-wrapper card-3d-wrapper">
-          <div class="card-front">
-            <div class="center-wrap">
-              <div class="section text-center">
-                <%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }) do |f| %>
-                  <%= render "devise/shared/error_messages", resource: resource %>
-                    <div class="row">
-                  
-                    <p> FORMULAIRE EDIT ADRESSE</p>
-                      
-                    </div>
-                  <% end %>	
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
-        <div class="col-5 zone-delete">
-          <h2>Supprimer mon compte</h2>
-          <%= button_to "Supprimer", registration_path(resource_name), method: :delete, form: {data: {turbo_confirm: 'Are you sure?'}}, class:"button-delete button btn-secondary" %>
-        </div>
-        <div class="col-7">
-        </div>
     </div>
   </div>
 </div>
