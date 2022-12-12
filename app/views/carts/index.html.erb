@@ -1,21 +1,5 @@
 <p style="color: green"><%= notice %></p>
 
-<h1>Cart</h1>
-
-<div id="carts">
-<table style="color: white; width: 50%">
-  <tr>
-    <th>id</th>
-    <th>quantity</th>
-    <th>prix HT</th>
-  </tr>
-  <% @cart.each do |c| %>
-    <tr><td><%= c.item_id %></td><td><%= c.quantity %></td><td><%= c.price_cents %></td><tr>
-  <% end %>
-    <tr><td></td><th>total TTC</th><td><%= @total %></td><tr>
-  </table>
-</div>
-
   <section class="h-100 h-custom">
     <div class="container py-5 h-100">
       <div class="row d-flex justify-content-center align-items-center h-100">
@@ -71,7 +55,7 @@
                   <div class="p-5">
                     <h3 class="fw-bold mb-3 mt-2 pt-1" style="color: var(--secondary);">Récapitulatif</h3>
                     <hr class="my-4">
-<%# 
+                    <%#
                     <div class="d-flex justify-content-between mb-4">
                     </div> %>
 
@@ -85,7 +69,7 @@
 
                     <div class="mb-3">
                       <div class="form-outline">
-                        <input type="text" id="form3Examplea2" class="form-control form-control-lg"  placeholder="Entrer le code">
+                        <input type="text" id="form3Examplea2" class="form-control form-control-lg"  placeholder="Entrer le code promo">
                         <%# <label class="form-label text-black" for="form3Examplea2">Enter your code</label> %> <%# Mettre dans le input%>
                       </div>
                     </div>
@@ -106,7 +90,7 @@
 
                     <div class="d-grid gap-2 d-md-flex justify-content-md-end">
                       <button type="button" class="btn btn-secondary btn-block btn-m mt-5 me-md-2"
-                        data-mdb-ripple-color="dark"><%= link_to "Passer commande", checkout_create_path(:total => @total),class:"text-white" %>
+                        data-mdb-ripple-color="dark"><%= link_to "Passer commande", checkout_create_path(:total => @total),class:"text-white", style:"border:none"%>
                       </button>
                       <button type="button" class="btn btn-danger btn-block btn-m mt-5"
                         data-mdb-ripple-color="dark"><%= link_to "Supprimer le panier", new_cart_path ,class:"text-white"%>

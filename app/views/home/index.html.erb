@@ -66,8 +66,9 @@
         <p class="card-text"><%= hp.description %></p>
       </div>
       <div class="card-body cardb-buy">
-        <button class="button btn-outline btn-sm"><%= link_to "Disponible", product_path(hp.id) , class:"card-link"%></button>
-        <button class="button btn-secondary btn-sm"><%= link_to "Ajouter au panier", home_add_path(:product_id => hp.id), class:"card-buy" %></button>
+        <button class="button btn-outline btn-sm"><%= link_to "Voir ce produit", product_path(hp.id), class:"product_link"%></button>
+        <%# <button class="button btn-outline btn-sm"><%= link_to "Disponible", product_path(hp.id) , class:"card-link"</button> %>
+        <%# <button class="button btn-secondary btn-sm"><%= link_to "Ajouter au panier", home_add_path(:product_id => hp.id), class:"card-buy" %><%#</button> %>
       </div>
     </div>
   </div>
