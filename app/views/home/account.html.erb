@@ -1,13 +1,21 @@
 <div class="container-fluid product_page">
-<h1>User Account Page</h1>
-<p>Prénom : <%= current_user.first_name %></p>
-<p>Nom : <%= current_user.last_name %></p>
-<p>Email : <%= current_user.email %></p>
-<p>Tel : <%= current_user.phone %></p>
-    <% @user_addresses.each do |address| %>
-  <div class="col">
+<h1>Mon compte</h1>
+
+<h3>Mes informations personnel</h3>
+  <div class="row">
+    <div class="card account">
+      <p>Prénom : <%= current_user.first_name %></p>
+      <p>Nom : <%= current_user.last_name %></p>
+      <p>Email : <%= current_user.email %></p>
+      <p>Tel : <%= current_user.phone %></p>
+      <button class="button btn-secondary btn-sm"><%= link_to "Modifier mes informations", edit_user_registration_path %></button>
+    </div>
+  </div>
+
+  <h3>Mon adresse</h3>
+  <% @user_addresses.each do |address| %>
+  <div class="row">
     <div class="card" style="width: 21.5rem;">
-      <div class="card-body cardb-text">
         <h4 class="card-title"><%= address.address_type %></h4>
         <p>address_num: <%= address.address_number %></p>
         <p>address_rue: <%= address.address_street %></p>
