@@ -17,15 +17,17 @@ class UserAddressesController < ApplicationController
 
   # GET /user_addresses/1/edit
   def edit
+    @user_address = UserAddress.find(params[:id])
   end
 
   # POST /user_addresses or /user_addresses.json
   def create
-    @user_address = UserAddress.new(user_address_params)
-
+    @user_address = UserAddress.new(user_address_params_require)
+    @user_address.user = current_user
+  
     respond_to do |format|
       if @user_address.save
-        format.html { redirect_to user_address_url(@user_address), notice: "User address was successfully created." }
+        format.html { redirect_to home_index_url(@user_address), notice: "Votre adresse est sauvegardée !" }
         format.json { render :show, status: :created, location: @user_address }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -37,7 +39,7 @@ class UserAddressesController < ApplicationController
   # PATCH/PUT /user_addresses/1 or /user_addresses/1.json
   def update
     respond_to do |format|
-      if @user_address.update(user_address_params)
+      if @user_address.update(user_address_params_require)
         format.html { redirect_to user_address_url(@user_address), notice: "User address was successfully updated." }
         format.json { render :show, status: :ok, location: @user_address }
       else
@@ -66,5 +68,9 @@ class UserAddressesController < ApplicationController
     # Only allow a list of trusted parameters through.
     def user_address_params
       params.fetch(:user_address, {})
+    end
+
+    def user_address_params_require
+      params.require(:user_address).permit(:address_number, :address_street, :address_city, :address_zip, :address_state, :address_country)
     end
 end
