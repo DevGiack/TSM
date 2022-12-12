@@ -34,9 +34,8 @@ body{
   background-repeat:repeat;
   background-size: 100%;
   font-family: var(--body-font-family);
+  margin: 0px;
 }
-
-
 
 /************************/
 /*        HEADER        */
@@ -277,9 +276,53 @@ label{
 }
 
 
-/************************/
-/*          CGV         */
-/************************/
+/***************************************/
+/*  CGV/CGU/cookie/paiement/livraison  */
+/***************************************/
+
+.cgv h1,
+.cgu h1,
+.cookie h1,
+.livraison h1,
+.paiement h1{
+  color: var(--secondary);
+}
+
+.cgv p{
+  color: #fff;
+}
+
+.cgv h3 span,
+.cgu h3 span,
+.cookie h3 span{
+  color: var(--secondary);
+}
+
+.cgv h4,
+.cgv .text-cgv{
+  margin-left: 1em;
+}
+
+.cgv strong,
+.cgu strong{
+  color: var(--secondary);
+}
+
+.preambule{
+  text-decoration: underline;
+}
+
+.italic{
+  font-style: italic;
+  text-decoration: underline;
+}
+
+.cgu-italic{
+  font-style: italic;
+}
+
+
+
 
 .container-delete{
   padding-left: 15px !important;
