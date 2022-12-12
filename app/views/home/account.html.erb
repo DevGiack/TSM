@@ -1,9 +1,9 @@
-<div style="background-color:aliceblue;padding:25px;">
-<h1 style="color:black;">User Account Page:</h1>
-<p>prénom: <%= current_user.first_name %></p>
-<p>nom: <%= current_user.last_name %></p>
-<p>email: <%= current_user.email %></p>
-<p>tel: <%= current_user.phone %></p>
+<div class="container-fluid product_page">
+<h1>User Account Page</h1>
+<p>Prénom : <%= current_user.first_name %></p>
+<p>Nom : <%= current_user.last_name %></p>
+<p>Email : <%= current_user.email %></p>
+<p>Tel : <%= current_user.phone %></p>
     <% @user_addresses.each do |address| %>
   <div class="col">
     <div class="card" style="width: 21.5rem;">
@@ -17,4 +17,5 @@
     </div>
   </div>
     <%end%>
+</div>
 </div>

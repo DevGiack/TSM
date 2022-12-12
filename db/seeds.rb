@@ -70,7 +70,7 @@ end
 end
 x = 1
 3.times do |t|
-    img_name = "truffe_" + x.to_s + '.jpg'
+    img_name = "truffe_" + x.to_s + '.webp'
     product = Product.new(
         name: Faker::Food.dish,
         description: Faker::Lorem.sentences(number: 7).join(" "),
