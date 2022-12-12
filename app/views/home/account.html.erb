@@ -1,0 +1,21 @@
+<div class="container-fluid product_page">
+<h1>User Account Page</h1>
+<p>Prénom : <%= current_user.first_name %></p>
+<p>Nom : <%= current_user.last_name %></p>
+<p>Email : <%= current_user.email %></p>
+<p>Tel : <%= current_user.phone %></p>
+    <% @user_addresses.each do |address| %>
+  <div class="col">
+    <div class="card" style="width: 21.5rem;">
+      <div class="card-body cardb-text">
+        <h4 class="card-title"><%= address.address_type %></h4>
+        <p>address_num: <%= address.address_number %></p>
+        <p>address_rue: <%= address.address_street %></p>
+        <p>address_ville: <%= address.address_city %></p>
+        <p>address_cp: <%= address.address_zip %></p>
+      </div>
+    </div>
+  </div>
+    <%end%>
+</div>
+</div>

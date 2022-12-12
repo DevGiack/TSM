@@ -9,8 +9,6 @@ Rails.application.routes.draw do
     get 'cancel', to: 'checkout#cancel', as: 'checkout_cancel'
   end
 
-  resources :user_adresses
-  resources :admin_types
   resources :user_addresses
   resources :payments
   resources :orders
@@ -20,11 +18,16 @@ Rails.application.routes.draw do
   resources :product_categories
   resources :products
   resources :carts
-  get 'checkout/create'
+
   get 'home/index'
   get 'home/add'
   get 'home/cgv'
-#  get 'products/:id/add', to: 'products#add'
+  get 'home/cgu'
+  get 'home/cookies'
+  get 'home/account'
+  get 'home/paiement'
+  get 'home/livraison'
+
   match 'products/:id/add', to: 'products#add', as: 'add_product', via: [:get, :post]
 
   devise_for :users, :controllers => { registrations: 'users/registrations' }
