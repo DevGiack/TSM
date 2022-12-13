@@ -1,31 +1,45 @@
-<div class="container-fluid product_page">
-<h1>Mon compte</h1>
-
-  <div class="row">
-    <div class="card account">
-      <h3 class="card-title">Mes informations personnel</h3>
-        <p>Prénom : <%= current_user.first_name %></p>
-        <p>Nom : <%= current_user.last_name %></p>
-        <p>Email : <%= current_user.email %></p>
-        <p>Mot de passe : *****************</p>
-      <button class="button btn-secondary btn-sm"><%= link_to "Modifier mes informations", edit_user_registration_path %></button>
-    </div>
+<div class="container-fluid account_page">
+  <div class="pb-3 m-3 mx-0">
+    <%= link_to "",root_path, class:"fas fa-long-arrow-alt-left me-2 text-retour"%>
+    <%= link_to "Accueil", root_path, class:"text-retour"%>
+  </div>
+  <div class="d-flex justify-content-center prod_head">
+    <h1>MON COMPTE</h1>
   </div>
 
-  <% @user_addresses.each do |address| %>
-  <div class="row">
-    <div class="card account regle" style="width: 21.5rem;">
-        <h3 class="card-title">Mon adresse</h3>
-        <p>Nom de l'adresse: <%= address.address_city %></p><!-- Mettre à jour le <% %> -->
-        <p>Numéro: <%= address.address_number %></p>
-        <p>Adresse: <%= address.address_street %></p>
-        <p>Code postal: <%= address.address_zip %></p>
-        <p>Ville: <%= address.address_city %></p>
-        <p>Tél : <%= current_user.phone %></p>
-        <button class="button btn-secondary btn-sm"><%= link_to "Modifier mon adresse", edit_user_registration_path %></button> <!-- Mettre à jour le lien avec edit_user_address_path -->
+  <div class="row-cols-2 account_card">
+    <div class="card account">
+      <h2 class="card-title">Mes informations</h2>
+      <div class="card-body">
+        <p><strong>Prénom :</strong> <%= current_user.first_name %></p>
+        <p><strong>Nom :</strong> <%= current_user.last_name %></p>
+        <p><strong>Email :</strong> <%= current_user.email %></p>
+        <p><strong>Mot de passe :</strong> *****************</p>
+      </div>
+      <div class="card-bottom">
+      <button class="button btn-secondary btn-lg"><%= link_to "Modifier mes informations", edit_user_registration_path, class:"btn-modify" %></button>
       </div>
     </div>
-  </div>
+
+
+    
+    <% @user_addresses.each do |address| %>
+      <div class="card account">
+        <h2 class="card-title">Mon adresse</h2>
+        <div class="card-body">
+          <p><strong>Nom de l'adresse :</strong> <%= address.address_city %></p><!-- Mettre à jour le <% %> -->
+          <p><strong>Numéro :</strong> <%= address.address_number %></p>
+          <p><strong>Adresse :</strong> <%= address.address_street %></p>
+          <p><strong>Code postal :</strong> <%= address.address_zip %></p>
+          <p><strong>Ville :</strong> <%= address.address_city %></p>
+          <p><strong>Tél :</strong> <%= current_user.phone %></p>
+        </div>
+        <div class="card-bottom">
+          <button class="button btn-secondary btn-lg"><%= link_to "Modifier mon adresse", edit_user_registration_path, class:"btn-modify" %></button> <!-- Mettre à jour le lien avec edit_user_address_path -->
+        </div>
+      </div>
     <%end%>
-</div>
+
+  </div>
+
 </div>
