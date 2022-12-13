@@ -3,11 +3,15 @@ Rails.application.routes.draw do
   ActiveAdmin.routes(self)
 
   #Integration Stripe
+
+  #Integration Stripe
   scope '/checkout' do
     post 'create', to: 'checkout#create', as: 'checkout_create'
     get 'success', to: 'checkout#success', as: 'checkout_success'
     get 'cancel', to: 'checkout#cancel', as: 'checkout_cancel'
   end
+
+  get 'checkout/create'
 
   resources :user_addresses
   resources :payments
