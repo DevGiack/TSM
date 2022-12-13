@@ -1,17 +1,17 @@
 <div class="container-fluid product_page">
-  <div class="row d-flex flex-wrap prod_container">
+  <div class="row prod_container">
     <div class="col product_image" style="margin-bottom: 0px; padding: 0px">
       <%= image_tag "truffe_1.webp", class: "img-fluid", alt: "4 truffes sur une planche en bois avec une rape à truffe" %>
     </div>        
           
-    <div class="col product_detail available">
+    <div class="col-md-3 col-lg-3 col-xl-3 product_detail available">
       <div class="raw-cols-5">
         <div class="raw mb-2 product_text">
           <div class="pb-3 m-3 mx-0">
             <h6 class="mb-0">
-              <%= link_to "",root_path, class:"fas fa-long-arrow-alt-left me-2 text-body"%>
-              <%= link_to "Acceuil",root_path, class:"text-body"%>
-              <%= link_to "/ Produits", products_path, class:"text-body"%>
+              <%= link_to "",root_path, class:"fas fa-long-arrow-alt-left me-2 icone_prod"%>
+              <%= link_to "Acceuil",root_path, class:"icone_prod"%>
+              <%= link_to "/ Produits", products_path, class:"icone_prod"%>
             </h6>
           </div>
           <p class="stock_quantity"><%= @stock_quantity %> grammes en stock</p>
