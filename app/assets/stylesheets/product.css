@@ -101,7 +101,28 @@
   font-style: italic;
 }
 
+.icone_prod_detail{
+  display: flex;
+  justify-content: center;
+}
+
+.icone_prod_detail i{
+  margin-left: 1em;
+  margin-top: 0;
+  font-size: 1.5em;
+}
+
+.icone_prod_detail i:hover,
+.icone_prod:hover{
+  color: var(--secondary);
+}
+
 /* BUTTON */
+.button_quantity .btn:active{
+  background-color: #0D0D0D;
+  color: #fff;
+}
+
 .button_buy{
   display: flex;
   align-items: center;
