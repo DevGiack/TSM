@@ -7,11 +7,11 @@
 #   Character.create(name: "Luke", movie: movies.first)
 require 'faker'
 
-# User.destroy_all
-# UserAddress.destroy_all
-# ProductCategory.destroy_all
-# Product.destroy_all
-# Stock.destroy_all
+User.destroy_all
+UserAddress.destroy_all
+ProductCategory.destroy_all
+Product.destroy_all
+Stock.destroy_all
 
 
 
@@ -90,18 +90,18 @@ require 'faker'
 # end
 
 
-password = 'admin123'
-encrypted = User.new(:password => password).encrypted_password
+# password = 'admin123'
+# encrypted = User.new(:password => password).encrypted_password
 
-user = User.new(
-    email: "admin@admin.com", 
-    encrypted_password: encrypted,
-    first_name: "admin",
-    last_name: "admin",
-    # phone: Faker::Number.between(from: 1000000000, to: 9999999999).to_s,
-    last_login: Time.now,
-    is_admin: true
-    ).save!(validate: false)
+# user = User.new(
+#     email: "admin@admin.com", 
+#     encrypted_password: encrypted,
+#     first_name: "admin",
+#     last_name: "admin",
+#     # phone: Faker::Number.between(from: 1000000000, to: 9999999999).to_s,
+#     last_login: Time.now,
+#     is_admin: true
+#     ).save!(validate: false)
     
     #admin = AdminUser.create!(email: 'admin@example.com', password: 'password', password_confirmation: 'password').save!(validate: false)
 
