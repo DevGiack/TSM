@@ -1,18 +1,48 @@
-<h1>New order</h1>
-<p>Prénom : <%= current_user.first_name %></p>
-<p>Nom : <%= current_user.last_name %></p>
-<p>Email : <%= current_user.email %></p>
-<p>Tel : <%= current_user.phone %></p>
-<br><br/>
-<legend>Veuillez sélectionner votre adresse de livraison :</legend>
-<br><br/>
-    <% @user_addresses.each do |address| %>
-      <button onclick = "liv(address.id)" class="btn btn-outline-light border border-2 border-light rounded-pill"><span><%= address.address_type %></span><span></button>
-    <%end%>
-<table>
-<% @cart.each do |c| %>
-<tr><td><h6 class="text-white mb-0"><%= @ref[c.item_id.to_s][:name] %></h6></td><td><h6 class="text-white mb-0"> :    <%= c.quantity %> grammes</h6></td></tr>
-<% end %>
+<div class="container-fluid new_order_page">
+  <div class="d-flex justify-content-center">
+    <h1>New order</h1>
+  </div>
+  <div class="row-cols-3">
+    <div class="card new_order_detail">
+      <h2 class="card-title">Vos informations</h2>
+      <div class="card-body">
+        <p>Prénom : <%= current_user.first_name %></p>
+        <p>Nom : <%= current_user.last_name %></p>
+        <p>Email : <%= current_user.email %></p>
+        <p>Tel : <%= current_user.phone %></p>
+        <br><br/>
+      </div>
+    </div>
+    <div class="card">
+      <h2 class="card-title">Votre adresse</h2>
+      <div class="card-body">    
+        <legend>Veuillez sélectionner votre adresse de livraison :</legend>
+        <br><br/>
+        <% @user_addresses.each do |address| %>
+          <button onclick = "liv(address.id)" class="btn btn-outline-light border border-2 border-light rounded-pill"><span><%= address.address_type %></span><span></button>
+        <%end%>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2 class="card-title">Votre commande</h2>
+      <div class="card-body"> 
+        <table>
+        <% @cart.each do |c| %>
+        <tr>
+          <td>
+            <h6 class="text-white mb-0"><%= @ref[c.item_id.to_s][:name] %></h6>
+          </td>
+          <td>
+            <h6 class="text-white mb-0"> :    <%= c.quantity %> grammes</h6>
+          </td>
+        </tr>
+        <% end %>
+      </div>
+    </div>      
+  </div>
+</div>
+
 <br><br/>
 <tr><td>
                     <hr class="my-4">
@@ -38,3 +68,4 @@
                     </div>
 </td></tr>
 </table>
+</div>
