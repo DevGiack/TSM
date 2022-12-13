@@ -6,6 +6,7 @@ class OrdersController < ApplicationController
     @cart = CartItem.all.where(owner_id: params[:owner_id])
     @order = Order.new
     @user_addresses = UserAddress.where(user_id: current_user.id)
+    @user_addresses_count = addresses_count
   end
 
   def create
