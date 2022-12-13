@@ -46,6 +46,17 @@ body{
   padding: 0 16px 0 16px;
 }
 
+.personalised-profile{
+  margin-right: 2%;
+  text-decoration: none;
+  color: var(--secondary);
+  font-size: 0.75em;
+}
+.personalised-profile:hover{
+  color: var(--primary);
+}
+
+
 .logo_tsm{
   height:3.5em;
   width: 3.5em;

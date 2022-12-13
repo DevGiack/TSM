@@ -69,8 +69,8 @@
                 <%= link_to home_account_path, class:"nav-link mx-2" do %>
                   <i class="fa-solid fa-circle-user me-1"></i>
                 <% end %>
-                <%= link_to "BONJOUR ", home_account_path, class:"text-uppercase" %>
-                <%= link_to current_user.first_name, home_account_path, class:"text-uppercase" %>
+                <%= link_to "BONJOUR ", home_account_path, class:"text-uppercase personalised-profile" %>
+                <%= link_to current_user.first_name, home_account_path, class:"text-uppercase personalised-profile"%>
                 <%= link_to destroy_user_session_path, class:"nav-link mx-2" do %>
                   <i class="fa-solid fa-right-from-bracket"></i>
                 <% end %>
