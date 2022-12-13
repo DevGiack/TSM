@@ -7,11 +7,13 @@
         .find((row) => row.startsWith('quantity='))
         ?.split('=')[1]);
         q = quantity + f;
-        document.cookie = `quantity=${q}`;
+        var myDate = new Date();
+        myDate.setMonth(myDate.getMonth() + 12)
+        document.cookie = "quantity=" + `${q}` + ";expires=" + myDate + ";path=/";
       }
       else {
         console.log("cookie not found!")
-        document.cookie = `quantity=${f}`;
+        document.cookie = `quantity=${f}` + ";expires=" + myDate + ";path=/";
       }
       showQuantity(f)
     }
