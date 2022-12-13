@@ -34,17 +34,19 @@
                           <h5><%= (c.price_cents.to_f / 100) %> €/gr</h5>
                         </div>
                         <div class="col-md-1 col-lg-1 col-xl-1 text-end">
-                          <a href="#!" class="text-muted"><i class="fas fa-times"></i></a>
+                          <%= link_to "X", carts_path(c), data: {turbo_method: :delete}, class:"text-muted"%><i class="fas fa-times"></i> <%# supprimer un element du panier, ne fonctionne pas, manque fonction delete => controllers %>
                         </div>
                       </div>
-                      <% end %>
-                    <hr class="border-4" style="color: var(--secondary);">
+                      <hr class="border-4" style="color: var(--secondary);">
+                    <% end %>
 
                     <%# Pas toucher au back page %>
                     <hr class="my-4">
                     <div class="pt-5 m-4 position-absolute bottom-0 start-0">
-                      <h6 class="mb-0"><a href="#!" class="text-body"><i
-                            class="fas fa-long-arrow-alt-left me-2"></i>Revenir à la page produit</a></h6>
+                      <h6 class="mb-0">
+                        <%= link_to "",products_path, class:"fas fa-long-arrow-alt-left me-2 text-body"%>
+                        <%= link_to "Revenir à la page produits", products_path, class:"text-body"%>
+                      </h6>
                     </div>
 
                   </div>
@@ -53,7 +55,7 @@
                   <div class="p-5">
                     <h3 class="text-black fw-bold mb-3 mt-2 pt-1" style="color: var(--secondary);">Récapitulatif</h3>
                     <hr class="my-4">
-<%# 
+                    <%#
                     <div class="d-flex justify-content-between mb-4">
                     </div> %>
 
@@ -67,7 +69,7 @@
 
                     <div class="mb-3">
                       <div class="form-outline">
-                        <input type="text" id="form3Examplea2" class="form-control form-control-lg" style="border-color: ">
+                        <input type="text" id="form3Examplea2" class="form-control form-control-lg"  placeholder="Entrer le code promo">
                         <%# <label class="form-label text-black" for="form3Examplea2">Enter your code</label> %> <%# Mettre dans le input%>
                       </div>
                     </div>

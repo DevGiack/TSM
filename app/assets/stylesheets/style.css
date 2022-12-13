@@ -94,6 +94,7 @@ body{
   margin: 0;
 }
 
+
 /************************/
 /*        BANNER        */
 /************************/
@@ -229,6 +230,14 @@ a{
   color: var(--primary);
 }
 
+.formu {
+  color:#0D0D0D;
+}
+
+.formul {
+  margin-top: 0.5em;
+}
+
 /************************/
 /*        NOTICE        */
 /************************/
@@ -322,9 +331,6 @@ label{
   font-style: italic;
 }
 
-
-
-
 .container-delete{
   padding-left: 15px !important;
 }
@@ -354,4 +360,18 @@ label{
 #error_explanation ul{
   padding: 0;
   margin: 0;
+}
+
+/****************/
+/*  Mon Compte  */
+/****************/
+
+.account{
+  width: 25%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.regle{
+  margin-top: 2em;
 }
