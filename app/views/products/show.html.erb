@@ -71,7 +71,7 @@
         <div class="col m-0">
           <div class="col button_buy">
             <button class="button btn-secondary"><%= link_to "Acheter maintenant", edit_product_path(@product), class:"buy_now_btn" %></button>
-            <button class="button btn-primary"><%= link_to "Ajouter au panier", add_product_path(:product_id =>@product.id, :quantity => 100), class:"add_card_btn" %></button>
+            <button class="button btn-primary"><%= link_to "Ajouter au panier", add_product_path(:product_id =>@product.id), class:"add_card_btn" %></button>
           </div>
         </div>
         <h5 class="icone_prod_detail">

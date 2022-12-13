@@ -5,7 +5,6 @@ class CartsController < ApplicationController
       @ref = {}
       @total = @shopping_cart.total
       @cart = CartItem.all.where(owner_id: session[:shopping_cart_id])
-      puts @cart
       @products = Product.all
       @product_categories = ProductCategory.all
       @products.each do |enr|

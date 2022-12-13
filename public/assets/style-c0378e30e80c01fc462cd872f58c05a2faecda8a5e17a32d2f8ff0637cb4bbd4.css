@@ -1,4 +1,4 @@
-@charset "UTF-8";
+
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
@@ -30,7 +30,7 @@
 
 body{
   color:#fff;
-  background-image: url('truffe_bg.webp');
+  background-image: url(/assets/truffe_bg-38de769056ad448cc1a683aaf6a19dfd219394b298c13981e3ee049fcf597ffe.webp);
   background-repeat:repeat;
   background-size: 100%;
   font-family: var(--body-font-family);
@@ -234,10 +234,6 @@ a{
   color:#0D0D0D;
 }
 
-.formul {
-  margin-top: 0.5em;
-}
-
 /************************/
 /*        NOTICE        */
 /************************/
@@ -366,45 +362,12 @@ label{
 /*  Mon Compte  */
 /****************/
 
-.account_page{
-  margin-top: 1em;
-  margin-bottom: 5em;
-  padding-left: 5em;
-  padding-right: 5em;
-}
-
-.account_page h2{
-	color: var(--secondary);
-  text-decoration: underline;
-  display: flex;
-  justify-content: center;
-  margin-top: 0.5em;
-  margin-bottom: 1em;
-}
-
-.account_card{
-  display: flex;
-  justify-content: space-around;
-  margin-top: 2em;
-  margin-bottom: 2em;
-}
-
 .account{
-  padding: 0.7em;
-  margin-left: 2em;
-  margin-right: 2em;
-  border-radius: 13px;
+  width: 25%;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
-.account .card-body{
-  padding-left: 2em;
-}
-
-.card-bottom{
-  display: flex;
-  justify-content: center;
-}
-
-.btn-modify:hover{
-  color: #fff;
+.regle{
+  margin-top: 2em;
 }
