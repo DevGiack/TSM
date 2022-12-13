@@ -9,8 +9,9 @@
         <div class="raw mb-2 product_text">
           <div class="pb-3 m-3 mx-0">
             <h6 class="mb-0">
-              <%= link_to "",products_path, class:"fas fa-long-arrow-alt-left me-2 text-body"%>
-              <%= link_to "Revenir à la page produits", products_path, class:"text-body"%>
+              <%= link_to "",root_path, class:"fas fa-long-arrow-alt-left me-2 text-body"%>
+              <%= link_to "Acceuil",root_path, class:"text-body"%>
+              <%= link_to "/ Produits", products_path, class:"text-body"%>
             </h6>
           </div>
           <p class="stock_quantity"><%= @stock_quantity %> grammes en stock</p>
@@ -74,6 +75,10 @@
             <button class="button btn-primary"><%= link_to "Ajouter au panier", add_product_path(:product_id =>@product.id, :quantity => 100), class:"add_card_btn" %></button>
           </div>
         </div>
+
+<i class="fa-solid fa-credit-card"></i>
+<i class="fa-solid fa-truck"></i>
+
       </div>
     </div>
   </div>
