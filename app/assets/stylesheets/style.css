@@ -230,6 +230,14 @@ a{
   color: var(--primary);
 }
 
+.formu {
+  color:#0D0D0D;
+}
+
+.formul {
+  margin-top: 0.5em;
+}
+
 /************************/
 /*        NOTICE        */
 /************************/
