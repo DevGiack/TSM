@@ -1,15 +1,11 @@
 class CartsController < ApplicationController
     before_action :extract_shopping_cart
+    before_action :authenticate_user!, only: [:index, :create, :new, :edit]
   
     def index
-      @ref = {}
       @total = @shopping_cart.total
       @cart = CartItem.all.where(owner_id: session[:shopping_cart_id])
-      @products = Product.all
-      @product_categories = ProductCategory.all
-      @products.each do |enr|
-        @ref[enr.id] = {:name => @products.where(id: enr.id)[0].name, :category_name => @product_categories.where(id: enr.product_category_id)[0].name}
-      end
+      @ref = ref
     end
   
     def create

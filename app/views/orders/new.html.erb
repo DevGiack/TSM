@@ -1,59 +1,91 @@
-<div>
-  <h1>Votre commande :</h1>
-  <p>add_count : <%= @user_addresses_count %></p>
-  <p>Prénom : <%= current_user.first_name %></p>
-  <p>Nom : <%= current_user.last_name %></p>
-  <p>Email : <%= current_user.email %></p>
-  <p>Tel : <%= current_user.phone %></p>
-  <br><br/>
+<div class="container-fluid new_order_page">
+  <div class="pb-3 m-3 mx-0">
+    <%= link_to "",carts_path, class:"fas fa-long-arrow-alt-left me-2 text-retour"%>
+    <%= link_to "Retour à votre panier", carts_path, class:"text-retour"%>
+  </div>
+  <div class="d-flex justify-content-center prod_head">
+    <h1>Votre commande</h1>
+  </div>
 
-  <% if @user_addresses_count > 0 %>
-    <legend>Veuillez sélectionner votre adresse de livraison :</legend>
-    <br><br/>
-    <% @user_addresses.each do |address| %>
-      <button onclick = "liv(address.id)" class="btn btn-outline-light border border-2 border-light rounded-pill"><span><%= address.address_type %></span><span></button>
-    <% end %>
-  <% else %>
-    <legend>Vous devez renseigner une adresse de livraison pour pourssuivre votre commande</legend>
-    <%= link_to "éditer mes informations personnelles", new_user_address_path , style:"color:blue"%>
-  <% end %>
+  <div class="row gy-3 new_order_card">
+    <div class="col-md-6 mb-2">
+      <div class="card account">
+        <h2 class="card-title">Vos informations</h2>
+        <div class="card-body">
+          <p><strong>Prénom :</strong> <%= current_user.first_name %></p>
+          <p><strong>Nom :</strong> <%= current_user.last_name %></p>
+          <p><strong>Email :</strong> <%= current_user.email %></p>
+          <p><strong>Tel :</strong> <%= current_user.phone %></p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6 mb-2">
+      <div class="card account">
+        <h2 class="card-title">Vos adresses</h2>
+        <div class="card-body">
+          <% if @user_addresses_count > 0 %>
+            <h5 class="select_address">Veuillez sélectionner votre adresse de livraison :</h5>
+            <br><br/>
+            <% @user_addresses.each do |address| %>
+              <button onclick = "liv(address.id)" class="btn btn-outline-dark border border-2 border-light rounded-pill">
+                <span><%= address.address_type %></span>
+              </button>
+            <% end %>
+          <% else %>
+            <legend>Vous devez renseigner une adresse de livraison pour pourssuivre votre commande</legend>
+            <%= link_to "éditer mes informations personnelles", new_user_address_path , style:"color:blue"%>
+          <% end %>
+        </div>
+      </div>
+    </div>
 
-  <table class="text-white">
-    <% @cart.each do |c| %>
-      <tr>
-        <td><%= @ref[c.item_id.to_s][:name] %> : <%= c.quantity %> grammes</td>
-        <td>  <%= (c.quantity * (c.price_cents.to_f / 100)).round(2) %> euros</td>
-      </tr>
-    <% end %>
-    <br><br/>
-    <tr>
-      <td>
-        <hr class="my-4">
-        <div class="d-flex justify-content-between mb-3">
-          <h5 class="text-white text-uppercase">Prix total HT</h5>
-          <h5 class="text-white">€ <%= (@total.to_f * 100/(100+19.6)).round(2)%></h5>
-        </div>
-        <div class="d-flex justify-content-between mb-3">
-          <h5 class="text-white text-uppercase">TVA</h5>
-          <h5 class="text-white">€ <%= (@total.to_f  - (@total.to_f * 100/(100+19.6))).round(2)%></h5>
-        </div>
-        <div class="d-flex justify-content-between mb-3">
-          <h5 class="text-white text-uppercase">Prix total TTC</h5>
-          <h5 class="text-white">€ <%= (@total) %></h5>
-        </div>
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-          <button type="button" class="btn btn-secondary btn-block btn-m mt-5 me-md-2">
-            <%= link_to "Payer", checkout_create_path(:total => @total),class:"text-white" %>
-          </button>
-          <button type="button" class="btn btn-danger btn-block btn-m mt-5">
-            <%= link_to "Retour au panier", carts_path ,class:"text-white"%>
-          </button>
-        </div>
-      </td>
-    </tr>
-  </table>
+    <div class="row-cols m-4 g-1 new_order_recap">
+      <div class="card account">
+        <h2>Votre commande</h2>
+          <div class="col">
+            <table class="table table-hover table-bordered text-black">
+            <% @cart.each do |c| %>
+              <tr>
+                <td><%= @ref[c.item_id.to_s][:name] %> : <%= c.quantity %> grammes</td>
+                <td><%= (c.quantity * (c.price_cents.to_f / 100)).round(2) %> euros</td>
+              </tr>
+            <% end %>
+            </table>
+          </div>
+          <div class="col"><h2 class="card-title">Total</h2></div>
+
+          <div class="col">
+            <table class="table table-hover table-bordered text-black">
+              <tbody>
+              <tr class="dflex justify-content-around">
+                <td><h5 class="text-uppercase">Prix total HT</h5></td>
+                <td><h5>€ <%= (@total.to_f * 100/(100+19.6)).round(2)%></h5></td>
+              </tr>
+              <tr>
+                <td><h5 class="text-uppercase">TVA</h5></td>
+                <td><h5>€ <%= (@total.to_f  - (@total.to_f * 100/(100+19.6))).round(2)%></h5></td>
+              </tr>
+              <tr>
+                <td><h5 class="text-uppercase">Prix total TTC</h5></td>
+                <td><h5>€ <%= (@total) %></h5></td>
+              </tr>
+            </table>
+          </div>
+        <tr>
+          <td>                    
+            <div class="d-grid gap-2 d-md-flex justify-content-end">
+              <button type="button" class="btn btn-secondary btn-block btn-m mt-3 me-md-2">
+                <%= link_to "Payer", checkout_create_path(:total => @total),class:"text-white" %>
+              </button>
+              <button type="button" class="btn btn-danger btn-block btn-m mt-3">
+                <%= link_to "Retour au panier", carts_path ,class:"text-white"%>
+              </button>
+            </div>
+          </td>
+        </tr>
+      </div>
+    </div> 
+  </div>
+
+
 </div>
