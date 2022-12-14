@@ -1,17 +1,17 @@
 <div class="container-fluid product_page">
-  <div class="row d-flex flex-wrap prod_container">
+  <div class="row prod_container">
     <div class="col product_image" style="margin-bottom: 0px; padding: 0px">
       <%= image_tag "truffe_1.webp", class: "img-fluid", alt: "4 truffes sur une planche en bois avec une rape à truffe" %>
     </div>        
           
-    <div class="col product_detail available">
+    <div class="col-md-3 col-lg-3 col-xl-3 product_detail available">
       <div class="raw-cols-5">
         <div class="raw mb-2 product_text">
           <div class="pb-3 m-3 mx-0">
             <h6 class="mb-0">
-              <%= link_to "",root_path, class:"fas fa-long-arrow-alt-left me-2 text-body"%>
-              <%= link_to "Acceuil",root_path, class:"text-body"%>
-              <%= link_to "/ Produits", products_path, class:"text-body"%>
+              <%= link_to "",root_path, class:"fas fa-long-arrow-alt-left me-2 icone_prod"%>
+              <%= link_to "Acceuil",root_path, class:"icone_prod"%>
+              <%= link_to "/ Produits", products_path, class:"icone_prod"%>
             </h6>
           </div>
           <p class="stock_quantity"><%= @stock_quantity %> grammes en stock</p>
@@ -22,41 +22,41 @@
           <h4>Ajouter :</h4>
           <div class="button_quantity">
             <% if @stock_quantity < 50 %>
-              <button onclick = "qty(50)" class="btn btn-outline-danger disabled border border-2 border-dark rounded-pill"><span>50</span><span><%= @product.unity %></span></button>
-              <button onclick = "qty(100)" class="btn btn-outline-danger disabled border border-2 border-dark rounded-pill"><span>100</span><span><%= @product.unity %></span></button>
-              <button onclick = "qty(250)" class="btn btn-outline-danger disabled border border-2 border-dark rounded-pill"><span>250</span><span><%= @product.unity %></span></button>
-              <button onclick = "qty(500)" class="btn btn-outline-danger disabled border border-2 border-dark rounded-pill"><span>500</span><span><%= @product.unity %></span></button>
-              <button onclick = "qty(1000)" class="btn btn-outline-danger disabled border border-2 border-dark rounded-pill"><span>1000</span><span><%= @product.unity %></span></button>
+              <button onclick = "qty(50)" class="btn btn-outline-danger disabled border border-2 border-dark rounded-pill"><span>50 Gr</span></button>
+              <button onclick = "qty(100)" class="btn btn-outline-danger disabled border border-2 border-dark rounded-pill"><span>100 Gr</span></button>
+              <button onclick = "qty(250)" class="btn btn-outline-danger disabled border border-2 border-dark rounded-pill"><span>250 Gr</span></button>
+              <button onclick = "qty(500)" class="btn btn-outline-danger disabled border border-2 border-dark rounded-pill"><span>500 Gr</span></button>
+              <button onclick = "qty(1000)" class="btn btn-outline-danger disabled border border-2 border-dark rounded-pill"><span>1000 Gr</span></button>
             <% elsif @stock_quantity < 100 %>
-              <button onclick = "qty(50)" class="btn btn-outline-dark border border-2 border-dark rounded-pill"><span>50</span><span><%= @product.unity %></span></button>
-              <button onclick = "qty(100)" class="btn btn-outline-danger disabled border border-2 border-dark rounded-pill"><span>100</span><span><%= @product.unity %></span></button>
-              <button onclick = "qty(250)" class="btn btn-outline-danger disabled border border-2 border-dark rounded-pill"><span>250</span><span><%= @product.unity %></span></button>
-              <button onclick = "qty(500)" class="btn btn-outline-danger disabled border border-2 border-dark rounded-pill"><span>500</span><span><%= @product.unity %></span></button>
-              <button onclick = "qty(1000)" class="btn btn-outline-danger disabled border border-2 border-dark rounded-pill"><span>1000</span><span><%= @product.unity %></span></button>
+              <button onclick = "qty(50)" class="btn btn-outline-dark border border-2 border-dark rounded-pill"><span>50 Gr</span></button>
+              <button onclick = "qty(100)" class="btn btn-outline-danger disabled border border-2 border-dark rounded-pill"><span>100 Gr</span></button>
+              <button onclick = "qty(250)" class="btn btn-outline-danger disabled border border-2 border-dark rounded-pill"><span>250 Gr</span></button>
+              <button onclick = "qty(500)" class="btn btn-outline-danger disabled border border-2 border-dark rounded-pill"><span>500 Gr</span></button>
+              <button onclick = "qty(1000)" class="btn btn-outline-danger disabled border border-2 border-dark rounded-pill"><span>1000 Gr</span></button>
             <% elsif @stock_quantity < 250 %>
-              <button onclick = "qty(50)" class="btn btn-outline-dark border border-2 border-dark rounded-pill"><span>50</span><span><%= @product.unity %></span></button>
-              <button onclick = "qty(100)" class="btn btn-outline-dark border border-2 border-dark rounded-pill"><span>100</span><span><%= @product.unity %></span></button>
-              <button onclick = "qty(250)" class="btn btn-outline-danger disabled border border-2 border-dark rounded-pill"><span>250</span><span><%= @product.unity %></span></button>
-              <button onclick = "qty(500)" class="btn btn-outline-danger disabled border border-2 border-dark rounded-pill"><span>500</span><span><%= @product.unity %></span></button>
-              <button onclick = "qty(1000)" class="btn btn-outline-danger disabled border border-2 border-dark rounded-pill"><span>1000</span><span><%= @product.unity %></span></button>
+              <button onclick = "qty(50)" class="btn btn-outline-dark border border-2 border-dark rounded-pill"><span>50 Gr</span></button>
+              <button onclick = "qty(100)" class="btn btn-outline-dark border border-2 border-dark rounded-pill"><span>100 Gr</span></button>
+              <button onclick = "qty(250)" class="btn btn-outline-danger disabled border border-2 border-dark rounded-pill"><span>250 Gr</span></button>
+              <button onclick = "qty(500)" class="btn btn-outline-danger disabled border border-2 border-dark rounded-pill"><span>500 Gr</span></button>
+              <button onclick = "qty(1000)" class="btn btn-outline-danger disabled border border-2 border-dark rounded-pill"><span>1000 Gr</span></button>
             <% elsif @stock_quantity < 500 %>
-              <button onclick = "qty(50)" class="btn btn-outline-dark border border-2 border-dark rounded-pill"><span>50</span><span><%= @product.unity %></span></button>
-              <button onclick = "qty(100)" class="btn btn-outline-dark border border-2 border-dark rounded-pill"><span>100</span><span><%= @product.unity %></span></button>
-              <button onclick = "qty(250)" class="btn btn-outline-dark border border-2 border-dark rounded-pill"><span>250</span><span><%= @product.unity %></span></button>
-              <button onclick = "qty(500)" class="btn btn-outline-danger disabled border border-2 border-dark rounded-pill"><span>500</span><span><%= @product.unity %></span></button>
-              <button onclick = "qty(1000)" class="btn btn-outline-danger disabled border border-2 border-dark rounded-pill"><span>1000</span><span><%= @product.unity %></span></button>
+              <button onclick = "qty(50)" class="btn btn-outline-dark border border-2 border-dark rounded-pill"><span>50 Gr</span></button>
+              <button onclick = "qty(100)" class="btn btn-outline-dark border border-2 border-dark rounded-pill"><span>100 Gr</span></button>
+              <button onclick = "qty(250)" class="btn btn-outline-dark border border-2 border-dark rounded-pill"><span>250 Gr</span></button>
+              <button onclick = "qty(500)" class="btn btn-outline-danger disabled border border-2 border-dark rounded-pill"><span>500 Gr</span></button>
+              <button onclick = "qty(1000)" class="btn btn-outline-danger disabled border border-2 border-dark rounded-pill"><span>1000 Gr</span></button>
             <% elsif @stock_quantity < 1000 %>
-              <button onclick = "qty(50)" class="btn btn-outline-dark border border-2 border-dark rounded-pill"><span>50</span><span><%= @product.unity %></span></button>
-              <button onclick = "qty(100)" class="btn btn-outline-dark border border-2 border-dark rounded-pill"><span>100</span><span><%= @product.unity %></span></button>
-              <button onclick = "qty(250)" class="btn btn-outline-dark border border-2 border-dark rounded-pill"><span>250</span><span><%= @product.unity %></span></button>
-              <button onclick = "qty(500)" class="btn btn-outline-dark border border-2 border-dark rounded-pill"><span>500</span><span><%= @product.unity %></span></button>
-              <button onclick = "qty(1000)" class="btn btn-outline-danger disabled border border-2 border-dark rounded-pill"><span>1000</span><span><%= @product.unity %></span></button>
+              <button onclick = "qty(50)" class="btn btn-outline-dark border border-2 border-dark rounded-pill"><span>50 Gr</span></button>
+              <button onclick = "qty(100)" class="btn btn-outline-dark border border-2 border-dark rounded-pill"><span>100 Gr</span></button>
+              <button onclick = "qty(250)" class="btn btn-outline-dark border border-2 border-dark rounded-pill"><span>250 Gr</span></button>
+              <button onclick = "qty(500)" class="btn btn-outline-dark border border-2 border-dark rounded-pill"><span>500 Gr</span></button>
+              <button onclick = "qty(1000)" class="btn btn-outline-danger disabled border border-2 border-dark rounded-pill"><span>1000 Gr</span></button>
             <% else %>
-              <button onclick = "qty(50)" class="btn btn-outline-dark border border-2 border-dark rounded-pill"><span>50</span><span><%= @product.unity %></span></button>
-              <button onclick = "qty(100)" class="btn btn-outline-dark border border-2 border-dark rounded-pill qty"><span>100</span><span><%= @product.unity %></span></button>
-              <button onclick = "qty(250)" class="btn btn-outline-dark border border-2 border-dark rounded-pill"><span>250</span><span><%= @product.unity %></span></button>
-              <button onclick = "qty(500)" class="btn btn-outline-dark border border-2 border-dark rounded-pill"><span>500</span><span><%= @product.unity %></span></button>
-              <button onclick = "qty(1000)" class="btn btn-outline-dark border border-2 border-dark rounded-pill"><span>1000</span><span><%= @product.unity %></span></button>
+              <button onclick = "qty(50)" class="btn btn-outline-dark border border-2 border-dark rounded-pill"><span>50 Gr</span></button>
+              <button onclick = "qty(100)" class="btn btn-outline-dark border border-2 border-dark rounded-pill qty"><span>100 Gr</span></button>
+              <button onclick = "qty(250)" class="btn btn-outline-dark border border-2 border-dark rounded-pill"><span>250 Gr</span></button>
+              <button onclick = "qty(500)" class="btn btn-outline-dark border border-2 border-dark rounded-pill"><span>500 Gr</span></button>
+              <button onclick = "qty(1000)" class="btn btn-outline-dark border border-2 border-dark rounded-pill"><span>1000 Gr</span></button>
             <% end %>
           </div>
         </div>
@@ -92,13 +92,12 @@
 <div class="container-fluid product_description">
   <div class="row-cols m-2 prod_description">
     <div class="col m-4 justify-content-start">
-      <%= image_tag "truffe.png", class:"truffle-detail" %>
+      <%= image_tag "truffe.png", class:"truffle-detail", alt:"Logo truffes" %>
       <h3>Détails</h3>
     </div>
     <div class="col">
-      <p><%= @product.description %>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+      <p><%= @product.description %></p>
     </div>
-
   </div>
 </div>
 

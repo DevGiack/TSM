@@ -15,6 +15,10 @@
   color: var(--secondary)!important;
 }
 
+/* .text-retour:hover{
+  color: #fff!important;
+} */
+
 .prod_head{
   margin-bottom: 50px;
 }
@@ -56,8 +60,6 @@
 
 .img-fluid{
   border-radius: 0 0 0 13px;
-  display: flex;
-	flex-wrap: wrap;
 }
 
 /* BODY */
