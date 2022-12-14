@@ -7,13 +7,11 @@
 #   Character.create(name: "Luke", movie: movies.first)
 require 'faker'
 
-# User.destroy_all
-# UserAddress.destroy_all
-# ProductCategory.destroy_all
-# Product.destroy_all
-# Stock.destroy_all
-
-
+User.destroy_all
+UserAddress.destroy_all
+ProductCategory.destroy_all
+Product.destroy_all
+Stock.destroy_all
 
 password = '123456'
 types = ["home","work","perso","secondaire","vacances"]
@@ -51,7 +49,6 @@ end
 
 2.times do |t|
     category = ProductCategory.new(name: Faker::Food.ethnic_category).save!(validate: false)
-end
 
 3.times do |t|
     product = Product.new(
@@ -59,14 +56,14 @@ end
         description: Faker::Lorem.sentences(number: 7).join(" "),
         unity: "Gr",
         price:  Faker::Number.decimal(l_digits: 2),
-        product_category_id: ProductCategory.all.sample.id
+        product_category_id: ProductCategory.last.id
     ).save!(validate: false)
 
     stock = Stock.new(
         quantity_gr: Faker::Number.between(from: 50, to: 500),
         product_id: Product.last.id
     ).save!(validate: false)
-
+end
 end
 x = 1
 3.times do |t|
@@ -98,11 +95,11 @@ end
 #     encrypted_password: encrypted,
 #     first_name: "admin",
 #     last_name: "admin",
-#     phone: Faker::Number.between(from: 1000000000, to: 9999999999).to_s,
+#     # phone: Faker::Number.between(from: 1000000000, to: 9999999999).to_s,
 #     last_login: Time.now,
 #     is_admin: true
 #     ).save!(validate: false)
     
-    #admin = AdminUser.create!(email: 'admin@example.com', password: 'password', password_confirmation: 'password').save!(validate: false)
+admin = AdminUser.create!(email: 'admin@example.com', password: 'password', password_confirmation: 'password').save!(validate: false)    #
 
     #alexis = User.create!(email: 'adeloing@gmail.com', password: '123456', password_confirmation: '123456', first_name: 'alexis', last_name: 'deloingce', phone: 00).save!(validate: false)

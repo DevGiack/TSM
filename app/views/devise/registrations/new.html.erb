@@ -53,6 +53,10 @@
 										<%= f.password_field :password_confirmation, class: "form-control", placeholder: "Mot de passe", autocomplete: "new-password" %>
 									</div>
 
+									<div class="formul">
+									<p class="formu">En cliquant sur "S'incrire", vous acceptez les <%= link_to "C.G.U", home_cgu_path %></p> 
+									</div>
+
 									<div class="actions mt-3">
 										<%= f.submit "S'incrire", class: "button btn-secondary" %>
 									</div>

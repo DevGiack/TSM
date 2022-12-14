@@ -8,9 +8,7 @@ class CartsController < ApplicationController
       @products = Product.all
       @product_categories = ProductCategory.all
       @products.each do |enr|
-        puts "enr id = " + enr.id.to_s
         @ref[enr.id] = {:name => @products.where(id: enr.id)[0].name, :category_name => @product_categories.where(id: enr.product_category_id)[0].name}
-        puts @ref
       end
     end
   

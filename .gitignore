@@ -4,4 +4,4 @@ tmp/
 .env
 /config/credentials/development.key
 log/development.log
-puclic/assets/
+# public/assets/

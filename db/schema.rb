@@ -80,21 +80,19 @@ ActiveRecord::Schema[7.0].define(version: 2022_12_12_201250) do
     t.string "name"
     t.text "description"
     t.string "unity"
+    t.float "price"
+    t.integer "product_category_id", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.float "price"
-    t.bigint "product_category_id"
     t.boolean "is_highlighted", default: false
     t.string "product_image", default: ""
-    t.index ["product_category_id"], name: "index_products_on_product_category_id"
   end
 
   create_table "stocks", force: :cascade do |t|
     t.integer "quantity_gr"
+    t.integer "product_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.bigint "product_id"
-    t.index ["product_id"], name: "index_stocks_on_product_id"
   end
 
   create_table "user_addresses", force: :cascade do |t|
@@ -103,6 +101,7 @@ ActiveRecord::Schema[7.0].define(version: 2022_12_12_201250) do
     t.string "address_city"
     t.integer "address_zip"
     t.string "address_type"
+    t.integer "user_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.bigint "user_id"
@@ -137,7 +136,7 @@ ActiveRecord::Schema[7.0].define(version: 2022_12_12_201250) do
   add_foreign_key "orders", "payments"
   add_foreign_key "orders", "user_addresses"
   add_foreign_key "orders", "users"
-  add_foreign_key "products", "product_categories"
-  add_foreign_key "stocks", "products"
-  add_foreign_key "user_addresses", "users"
+  add_foreign_key "products", "product_categories", on_delete: :cascade
+  add_foreign_key "stocks", "products", on_delete: :cascade
+  add_foreign_key "user_addresses", "users", on_delete: :cascade
 end

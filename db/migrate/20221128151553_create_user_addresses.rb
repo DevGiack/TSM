@@ -8,8 +8,9 @@ class CreateUserAddresses < ActiveRecord::Migration[7.0]
       t.string :address_state
       t.string :address_country
       t.string :address_type
+      t.integer :user_id
       t.timestamps
     end
-    add_reference :user_addresses, :user, foreign_key: true
+    add_foreign_key :user_addresses, :users, on_delete: :cascade
   end
 end

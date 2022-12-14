@@ -1,21 +1,45 @@
-<div class="container-fluid product_page">
-<h1>User Account Page</h1>
-<p>Prénom : <%= current_user.first_name %></p>
-<p>Nom : <%= current_user.last_name %></p>
-<p>Email : <%= current_user.email %></p>
-<p>Tel : <%= current_user.phone %></p>
-    <% @user_addresses.each do |address| %>
-  <div class="col">
-    <div class="card" style="width: 21.5rem;">
-      <div class="card-body cardb-text">
-        <h4 class="card-title"><%= address.address_type %></h4>
-        <p>address_num: <%= address.address_number %></p>
-        <p>address_rue: <%= address.address_street %></p>
-        <p>address_ville: <%= address.address_city %></p>
-        <p>address_cp: <%= address.address_zip %></p>
+<div class="container-fluid account_page">
+  <div class="pb-3 m-3 mx-0">
+    <%= link_to "",root_path, class:"fas fa-long-arrow-alt-left me-2 text-retour"%>
+    <%= link_to "Accueil", root_path, class:"text-retour"%>
+  </div>
+  <div class="d-flex justify-content-center prod_head">
+    <h1>MON COMPTE</h1>
+  </div>
+
+  <div class="row-cols-2 account_card">
+    <div class="card account">
+      <h2 class="card-title">Mes informations</h2>
+      <div class="card-body">
+        <p><strong>Prénom :</strong> <%= current_user.first_name %></p>
+        <p><strong>Nom :</strong> <%= current_user.last_name %></p>
+        <p><strong>Email :</strong> <%= current_user.email %></p>
+        <p><strong>Mot de passe :</strong> *****************</p>
+      </div>
+      <div class="card-bottom">
+      <button class="button btn-secondary btn-lg"><%= link_to "Modifier mes informations", edit_user_registration_path, class:"btn-modify" %></button>
       </div>
     </div>
-  </div>
+
+
+    
+    <% @user_addresses.each do |address| %>
+      <div class="card account">
+        <h2 class="card-title">Mon adresse</h2>
+        <div class="card-body">
+          <p><strong>Nom de l'adresse :</strong> <%= address.address_city %></p><!-- Mettre à jour le <% %> -->
+          <p><strong>Numéro :</strong> <%= address.address_number %></p>
+          <p><strong>Adresse :</strong> <%= address.address_street %></p>
+          <p><strong>Code postal :</strong> <%= address.address_zip %></p>
+          <p><strong>Ville :</strong> <%= address.address_city %></p>
+          <p><strong>Tél :</strong> <%= current_user.phone %></p>
+        </div>
+        <div class="card-bottom">
+          <button class="button btn-secondary btn-lg"><%= link_to "Modifier mon adresse", edit_user_registration_path, class:"btn-modify" %></button> <!-- Mettre à jour le lien avec edit_user_address_path -->
+        </div>
+      </div>
     <%end%>
-</div>
+
+  </div>
+
 </div>

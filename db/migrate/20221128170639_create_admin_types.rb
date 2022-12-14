@@ -4,6 +4,5 @@ class CreateAdminTypes < ActiveRecord::Migration[7.0]
 
       t.timestamps
     end
-    add_reference :admin_types, :user, foreign_key: true
   end
 end
