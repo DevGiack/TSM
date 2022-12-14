@@ -63,7 +63,7 @@
       <div class="card-body cardb-text">
         <h4 class="card-title"><%= hp.price %> € / gr</h4>
         <p><b><%= hp.name %></b></p>
-        <p class="card-text"><%= hp.description %></p>
+        <p class="card-text debord"><%= hp.description %></p>
       </div>
       <div class="card-body cardb-buy">
         <%= button_to "Voir ce produit", product_path(hp.id), :class => "button btn-outline btn-sm product_link", :method => :get %>

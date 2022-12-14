@@ -47,6 +47,14 @@
 
 .cardb-text{
   height: 224px;
+  overflow: hidden;
+}
+
+.debord{
+
+	overflow: hidden;
+  text-overflow: ellipsis;
+  
 }
 
 .cardb-buy{
