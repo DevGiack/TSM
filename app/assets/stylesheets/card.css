@@ -47,6 +47,7 @@
 
 .cardb-text{
   height: 224px;
+  text-overflow: ellipsis;
 }
 
 .cardb-buy{
