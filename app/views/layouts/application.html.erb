@@ -1,12 +1,17 @@
 <!DOCTYPE html>
+
 <html lang="fr">
+  
   <head>
     <title>Truffieres de Saint-Martin</title>
+
     <meta charset="UTF-8">
     <meta name="description" content="Truffières Saint Martin est un site de vente en ligne de truffe et de spécialités à base de truffe.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <%= csp_meta_tag %>
     <%= csrf_meta_tags %>
+    
     <%= javascript_include_tag "//code.jquery.com/jquery-1.11.1.min.js" %>
     <%= javascript_include_tag "https://kit.fontawesome.com/3b6e0b8eb1.js" %>
 
@@ -16,27 +21,30 @@
     <%= stylesheet_link_tag "application", media:"all", "data-turbo-track": "reload" %>
     <%= javascript_include_tag "application", "data-turbo-track": "reload" %>
   </head>
+  
   <body>
-
     <% if notice %>
-    <div id="notice_wrapper">
-      <p class="notice"><%= notice %></p>
+      <div id="notice_wrapper">
+        <p class="notice"><%= notice %></p>
+      </div>
     <% elsif alert %>
-    <div id="alert_wrapper">
-      <p class="alert"><%= alert %></p>
+      <div id="alert_wrapper">
+        <p class="alert"><%= alert %></p>
+      </div>
     <% end %>
 
     <nav class="navbar navbar-expand-lg bg-white sticky-top navbar-light shadow-sm">
       <div class="container">
         <div class= "navbar-brand">
-        <%= link_to root_path do %>
-          <%= image_tag "TSM_Logo_noir.webp", class: "logo_tsm", alt: "Logo des truffieres Saint Martin" %>
-        <% end %>
+          <%= link_to root_path do %>
+            <%= image_tag "TSM_Logo_noir.webp", class: "logo_tsm", alt: "Logo des truffieres Saint Martin" %>
+          <% end %>
           <%= link_to "TRUFFIERES SAINT MARTIN", root_path , class:"tsm_name"%>
         </div>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
+
         <div class=" collapse navbar-collapse" id="navbarNavDropdown">
           <ul class="navbar-nav ms-auto ">
             <li class="nav-item">
@@ -58,6 +66,7 @@
               <% end %>
             </li>
           </ul>
+
           <ul class="navbar-nav ms-auto iconique">
             <li class="nav-item">
               <%= link_to carts_path, class:"nav-link mx-2" do %>
@@ -99,12 +108,8 @@
             <div class="row">
               <!-- Grid column -->
               <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
-                <h5 class="text-uppercase mb-4 font-weight-bold">
-                  S.A.S Delicat - Roy
-                </h5>
-                <p>
-                  Site de vente de truffes fraîches melanosporum aux professionnels et particuliers.
-                </p>
+                <h5 class="text-uppercase mb-4 font-weight-bold">S.A.S Delicat - Roy</h5>
+                <p>Site de vente de truffes fraîches melanosporum aux professionnels et particuliers.</p>
                 <p>© 2023 Copyright</p>
               </div>
               <!-- Grid column -->
@@ -114,15 +119,9 @@
               <!-- Grid column -->
               <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
                 <h5 class="text-uppercase mb-4 font-weight-bold">Services</h5>
-                <p>
-                  <%= link_to "Livraisons et retours", home_livraison_path, class:"text-black" %>
-                </p>
-                <p>
-                  <%= link_to "Paiement", home_paiement_path, class:"text-black" %>
-                </p>
-                <p>
-                  <a class="text-black">À propos</a>
-                </p>
+                <p><%= link_to "Livraisons et retours", home_livraison_path, class:"text-black" %></p>
+                <p><%= link_to "Paiement", home_paiement_path, class:"text-black" %></p>
+                <%= link_to "À propos",root_path, class:"text-black" %><%# <p><a class="text-black">À propos</a></p> %>
               </div>
               <!-- Grid column -->
 
@@ -130,18 +129,10 @@
 
               <!-- Grid column -->
               <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
-                <h5 class="text-uppercase mb-4 font-weight-bold">
-                  Mentions légales
-                </h5>
-                <p>
-                  <%= link_to "C.G.V", home_cgv_path, class:"text-black" %>
-                </p>
-                <p>
-                <%= link_to "C.G.U", home_cgu_path, class:"text-black" %>
-                </p>
-                <p>
-                <%= link_to "Cookies", home_cookies_path, class:"text-black" %>
-                </p>
+                <h5 class="text-uppercase mb-4 font-weight-bold">Mentions légales</h5>
+                <p><%= link_to "C.G.V", home_cgv_path, class:"text-black" %></p>
+                <p><%= link_to "C.G.U", home_cgu_path, class:"text-black" %></p>
+                <p><%= link_to "Cookies", home_cookies_path, class:"text-black" %></p>
               </div>
 
               <!-- Grid column -->
@@ -164,13 +155,9 @@
       <!-- Footer -->
     </div>
     <!-- End of .container -->
-    
-
   </body>
 
-  </html>
-
-
+</html>
 
 
 

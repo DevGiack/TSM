@@ -1,101 +1,96 @@
 <p style="color: green"><%= notice %></p>
 
-  <section class="h-100 h-custom">
-    <div class="container py-5 h-100">
-      <div class="row d-flex justify-content-center align-items-center h-100">
-        <div class="col-12">
-          <div class="card card-registration card-registration-2" style="border-radius: 15px;">
-            <div class="card-body p-0">
-              <div class="row g-0">
-                <div class="col-lg-8">
-                  <div class="p-5">
-                  
-                    <div class="d-flex justify-content-between align-items-center mb-5">
-                      <h1 class="fw-bold mb-0" style="color: var(--secondary);">Mon panier</h1>
-                      <%# <h6 class="mb-0 text-muted"><%= c.item_id <%=items</h6>  %>    <%# indication des id à mettre en indication de quantité de produit dans le panier %>
-                    </div>
-                  
-                    <hr class="my-4">
-                    <% @cart.each do |c| %>
-                      <div class="row mb-4 d-flex justify-content-between align-items-center">
-                        <div class="col-md-2 col-lg-2 col-xl-2">
-                            <%= image_tag "truffe_1.webp", class: "card-img", alt: "4 truffes sur une planche en bois avec une rape à truffe" %>
-                        </div>
-                        <div class="col-md-3 col-lg-2 col-xl-2">
-                          <h6 class="text-muted"><%=  @ref[c.item_id][:category_name] %></h6>
-                        </div>
-                        <div class="col-md-3 col-lg-3 col-xl-2 d-flex">
-                          <h6 class="text-black mb-0"><%= @ref[c.item_id][:name] %></h6>
-                        </div>
-                        <div class="col-md-3 col-lg-3 col-xl-2 d-flex">
-                          <h6 class="text-black mb-0"><%= c.quantity %> grammes</h6>
-                        </div>
-                        <div class="text-black col-md-3 col-lg-3 col-xl-2 d-flex">
-                          <h5><%= (c.price_cents.to_f / 100) %> €/gr</h5>
-                        </div>
-                        <div class="col-md-1 col-lg-1 col-xl-1 text-end">
-                          <%= link_to "X", carts_path(c), data: {turbo_method: :delete}, class:"text-muted"%><i class="fas fa-times"></i> <%# supprimer un element du panier, ne fonctionne pas, manque fonction delete => controllers %>
-                        </div>
-                      </div>
-                      <hr class="border-4" style="color: var(--secondary);">
-                    <% end %>
-
-                    <%# Pas toucher au back page %>
-                    <hr class="my-4">
-                    <div class="pt-5 m-4 position-absolute bottom-0 start-0">
-                      <h6 class="mb-0">
-                        <%= link_to "",products_path, class:"fas fa-long-arrow-alt-left me-2 text-body"%>
-                        <%= link_to "Revenir à la page produits", products_path, class:"text-body"%>
-                      </h6>
-                    </div>
-
+<section class="h-100 h-custom">
+  <div class="container py-5 h-100">
+    <div class="row d-flex justify-content-center align-items-center h-100">
+      <div class="col-12">
+        <div class="card card-registration card-registration-2" style="border-radius: 15px;">
+          <div class="card-body p-0">
+            <div class="row g-0">
+            
+              <div class="col-lg-8">
+                <div class="p-5">
+                
+                  <div class="d-flex justify-content-between align-items-center mb-5">
+                    <h1 class="fw-bold mb-0" style="color: var(--secondary);">Mon panier</h1>
                   </div>
-                </div>
-                <div class="col-lg-4 bg-grey">
-                  <div class="p-5">
-                    <h3 class="text-black fw-bold mb-3 mt-2 pt-1" style="color: var(--secondary);">Récapitulatif</h3>
-                    <hr class="my-4">
-                    <%#
-                    <div class="d-flex justify-content-between mb-4">
-                    </div> %>
-
-                    <h5 class="text-black text-uppercase mb-3">Livraison</h5>
-
-                    <div class="mb-4 pb-2">
-                      <h3 class="fw-bold mb-2 mt-2 pt-1" style="color: green;">Livraison offerte !</h3>
-                    </div>
-
-                    <h5 class="text-black text-uppercase mb-3">Code de réduction</h5>
-
-                    <div class="mb-3">
-                      <div class="form-outline">
-                        <input type="text" id="form3Examplea2" class="form-control form-control-lg"  placeholder="Entrer le code promo">
-                        <%# <label class="form-label text-black" for="form3Examplea2">Enter your code</label> %> <%# Mettre dans le input%>
+                
+                  <hr class="my-4">
+                  <% @cart.each do |c| %>
+                    <div class="row mb-4 d-flex justify-content-between align-items-center">
+                      <div class="col-md-2 col-lg-2 col-xl-2">
+                          <%= image_tag "truffe_1.webp", class: "card-img", alt: "4 truffes sur une planche en bois avec une rape à truffe" %>
+                      </div>
+                      <div class="col-md-3 col-lg-2 col-xl-2">
+                        <h6 class="text-muted"><%=  @ref[c.item_id][:category_name] %></h6>
+                      </div>
+                      <div class="col-md-3 col-lg-3 col-xl-2 d-flex">
+                        <h6 class="text-black mb-0"><%= @ref[c.item_id][:name] %></h6>
+                      </div>
+                      <div class="col-md-3 col-lg-3 col-xl-2 d-flex">
+                        <h6 class="text-black mb-0"><%= c.quantity %> grammes</h6>
+                      </div>
+                      <div class="text-black col-md-3 col-lg-3 col-xl-2 d-flex">
+                        <h5><%= (c.price_cents.to_f / 100) %> €/gr</h5>
+                      </div>
+                      <div class="col-md-1 col-lg-1 col-xl-1 text-end">
+                        <%= link_to "X", carts_path(c), data: {turbo_method: :delete}, class:"text-muted"%><i class="fas fa-times"></i> <%# supprimer un element du panier, ne fonctionne pas, manque fonction delete => controllers %>
                       </div>
                     </div>
+                    <hr class="border-4" style="color: var(--secondary);">
+                  <% end %>
 
-                    <hr class="my-4">
-                    <div class="d-flex justify-content-between mb-3">
-                      <h5 class="text-black text-uppercase">Prix total HT</h5>
-                      <h5 class="text-black">€ <%= @total * 100/(100+19.6)%></h5>
-                    </div>
-                    <div class="d-flex justify-content-between mb-3">
-                      <h5 class="text-black text-uppercase">TVA</h5>
-                      <h5 class="text-black">€ <%= @total - (@total * 100/(100+19.6))%></h5>
-                    </div>
-                    <div class="d-flex justify-content-between mb-3">
-                      <h5 class="text-black text-uppercase">Prix total TTC</h5>
-                      <h5 class="text-black">€ <%= @total %></h5>
-                    </div>
+                  <%# back page %>
+                  <hr class="my-4">
+                  <div class="pt-5 m-4 position-absolute bottom-0 start-0">
+                    <h6 class="mb-0">
+                      <%= link_to "",products_path, class:"fas fa-long-arrow-alt-left me-2 text-body"%>
+                      <%= link_to "Revenir à la page produits", products_path, class:"text-body"%>
+                    </h6>
+                  </div>
 
-                    <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-                      <button type="button" class="btn btn-secondary btn-block btn-m mt-5 me-md-2">
-                        <%= link_to "Passer commande", new_order_path(:total => @total, :owner_id => @cart[0].owner_id, :ref => @ref),class:"text-white" %>
-                      </button>
-                      <button type="button" class="btn btn-danger btn-block btn-m mt-5">
-                        <%= link_to "Supprimer le panier", new_cart_path ,class:"text-white" %>
-                      </button>
+                </div>
+              </div>
+
+              <div class="col-lg-4 bg-grey">
+                <div class="p-5">
+                  <h3 class="text-black fw-bold mb-3 mt-2 pt-1" style="color: var(--secondary);">Récapitulatif</h3>
+                  <hr class="my-4">
+
+                  <h5 class="text-black text-uppercase mb-3">Livraison</h5>
+
+                  <div class="mb-4 pb-2">
+                    <h3 class="fw-bold mb-2 mt-2 pt-1" style="color: green;">Livraison offerte !</h3>
+                  </div>
+
+                  <h5 class="text-black text-uppercase mb-3">Code de réduction</h5>
+
+                  <div class="mb-3">
+                    <div class="form-outline">
+                      <input type="text" id="form3Examplea2" class="form-control form-control-lg"  placeholder="Entrer le code promo">
                     </div>
+                  </div>
+
+                  <hr class="my-4">
+                  <div class="d-flex justify-content-between mb-3">
+                    <h5 class="text-black text-uppercase">Prix total HT</h5>
+                    <h5 class="text-black">€ <%= @total * 100/(100+19.6)%></h5>
+                  </div>
+                  <div class="d-flex justify-content-between mb-3">
+                    <h5 class="text-black text-uppercase">TVA</h5>
+                    <h5 class="text-black">€ <%= @total - (@total * 100/(100+19.6))%></h5>
+                  </div>
+                  <div class="d-flex justify-content-between mb-3">
+                    <h5 class="text-black text-uppercase">Prix total TTC</h5>
+                    <h5 class="text-black">€ <%= @total %></h5>
+                  </div>
+                  <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                    <button type="button" class="btn btn-secondary btn-block btn-m mt-5 me-md-2"data-mdb-ripple-color="dark">
+                      <%= link_to "Passer commande", new_order_path(:total => @total, :owner_id => @cart[0].owner_id, :ref => @ref),class:"text-white" %>
+                    </button>
+                    <button type="button" class="btn btn-danger btn-block btn-m mt-5"
+                      data-mdb-ripple-color="dark"><%= link_to "Supprimer le panier", new_cart_path ,class:"text-white"%>
+                    </button>
                   </div>
                 </div>
               </div>
@@ -104,6 +99,5 @@
         </div>
       </div>
     </div>
-  </section>
-
-
+  </div>
+</section>
