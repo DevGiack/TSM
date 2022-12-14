@@ -1,4 +1,4 @@
-ActiveAdmin.register Product do
+ActiveAdmin.register ProductCategory do
     permit_params :name
     
       index do

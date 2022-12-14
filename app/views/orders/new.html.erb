@@ -9,15 +9,16 @@
   <legend>Veuillez sélectionner votre adresse de livraison :</legend>
   <br><br/>
       <% @user_addresses.each do |address| %>
-        <button onclick = "liv(address.id)" class="btn btn-outline-light border border-2 border-light rounded-pill"><span><%= address.address_type %></span><span></button>
+        <button onclick = "showAddress(<%= address.id %>)" class="btn btn-outline-light border border-2 border-light rounded-pill"><span><%= address.address_type %></span><span></button>
       <% end %>
     <% else %>
       <legend>Vous devez renseigner une adresse de livraison pour pourssuivre votre commande</legend>
       <%= link_to "éditer mes informations personnelles", new_user_address_path , style:"color:blue"%>
     <% end %>
+<div id="show_address" style="color:white"></div>
 <table class="text-white">
 <% @cart.each do |c| %>
-<tr><td><%= @ref[c.item_id.to_s][:name] %> : <%= c.quantity %> grammes</td><td>  <%= (c.quantity * (c.price_cents.to_f / 100)).round(2) %> euros</td></tr>
+<tr><td><%= @ref[c.item_id][:name] %> : <%= c.quantity %> grammes</td><td>  <%= (c.quantity * (c.price_cents.to_f / 100)).round(2) %> euros</td></tr>
 <% end %>
 <br><br/>
 <tr><td>

@@ -26,6 +26,10 @@
             ?.split('=')[1]);
             myP = document.getElementById("show_qty");
             console.log("coockie ok");
-            myP.innerHTML = `<b><I>${quantity} grammes</I></b>`;
+            myP.innerHTML = `<b><I>${quantity} grammes</I></b>`;2
           }
+      }
+      function showAddress(id) {
+        showElementDiv = document.getElementById("show_address");
+        showElementDiv.innerHTML = `<b><I>address_id: ${id}</I></b>`;
       }
