@@ -1,0 +1,360 @@
+
+.button {
+  align-items: center;
+  border: 0;
+  border-radius: 100px;
+  box-sizing: border-box;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: -apple-system, system-ui, system-ui, "Segoe UI", Roboto, "Helvetica Neue", "Fira Sans", Ubuntu, Oxygen, "Oxygen Sans", Cantarell, "Droid Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Lucida Grande", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  justify-content: center;
+  line-height: 20px;
+  max-width: 480px;
+  min-height: 40px;
+  min-width: 0px;
+  overflow: hidden;
+  padding: 0px;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center;
+  touch-action: manipulation;
+  transition: background-color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, box-shadow 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: middle;
+}
+
+.btn-primary{
+  color: #ffffff;
+  background-color: #0D0D0D;
+}
+
+.btn-primary:hover,
+.btn-primary:focus { 
+  background-color: #5b5b5b;
+  color: #ffffff;
+}
+
+.btn-primary:active {
+  background: #000000;
+  color: rgb(255, 255, 255, .7);
+}
+
+.btn-primary:disabled { 
+  cursor: not-allowed;
+  background: rgba(0, 0, 0, .08);
+  color: rgba(0, 0, 0, .3);
+}
+
+.btn-secondary{
+  color: #ffffff;
+  background-color: #D9BA5F;
+}
+
+.btn-secondary:hover,
+.btn-secondary:focus { 
+  background-color: #caa534;
+  color: #ffffff;
+}
+
+.btn-secondary:active {
+  background: #caa534;
+  color: rgb(255, 255, 255, .7);
+}
+
+.btn-secondary:disabled { 
+  cursor: not-allowed;
+  background: #D9BA5F;
+  color: #caa534;
+}
+
+.btn-light{
+  color: #0D0D0D;
+  background-color: #ffffff;
+}
+
+.btn-light:hover,
+.btn-light:focus { 
+  background-color: #ffffffe7;
+  color: #0D0D0D;
+}
+
+.btn-light:active {
+  background: #000000;
+  color: rgb(255, 255, 255, .7);
+}
+
+.btn-light:disabled { 
+  cursor: not-allowed;
+  background: rgba(0, 0, 0, .08);
+  color: rgba(0, 0, 0, .3);
+}
+
+.btn-outline{
+  color: #0D0D0D;
+  background-color: transparent;
+  border: 2px solid #1A1A1A;
+  border-color: #0D0D0D;
+}
+
+.btn-outline:hover,
+.btn-outline:focus { 
+  background-color: #161616;
+  color: #ffffff;
+}
+
+.btn-outline:active {
+  background: #000000;
+  color: rgb(255, 255, 255, .7);
+}
+
+.btn-outline:disabled { 
+  cursor: not-allowed;
+  background: rgba(0, 0, 0, .08);
+  color: rgba(0, 0, 0, .3);
+}
+
+.btn-outline-light{
+  color: #ffffff;
+  background-color: transparent;
+  border: 2px solid #ffffff;
+  border-color: #ffffff;
+}
+
+.btn-outline-light:hover,
+.btn-outline-light:focus { 
+  background-color: #ffffffe7;
+  color: #ffffff;
+}
+
+.btn-outline-light:active {
+  background: #ffffffe7;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.btn-outline-light:disabled { 
+  cursor: not-allowed;
+  background: rgba(0, 0, 0, .08);
+  color: rgba(0, 0, 0, .3);
+}
+
+
+.btn-lg{
+  padding-left: 4rem;
+  padding-right: 4rem;
+}
+
+.btn-sm{
+  padding: 0,5rem;
+  font-size: 12px;
+}
+.title-product{
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+  margin-bottom: 30px;
+}
+
+.card-products{
+  display: flex;
+  align-content: space-around;
+}
+.card h4{
+  color: var(--secondary);
+}
+
+.card p{
+  color: var(--primary);
+}
+
+.card-img{
+  border-radius: 5px;
+  box-shadow: 0px 6px 10px 1px rgba(0,0,0,0.29);
+}
+
+.col{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 24px;
+}
+
+
+
+
+
+
+
+#contour{
+  /* Rectangle 1 */
+  position: absolute;
+  width: 510px;
+  height: 588px;
+  left: 869px;
+  top: 223px;
+  background: rgba(255, 255, 255, 0.88);
+  border: 5px;
+  border-color: #000000;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 25px;
+
+}
+
+#Connexion{
+  /* Connexion */
+  /* position: absolute; */
+  width: 254px;
+  height: 88px;
+  left: 870px;
+  top: 223px;
+
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #000000;
+  /* background-color: blue; */
+}
+
+#Create_account{
+  /* Créer un compte */
+  /* position: absolute; */
+  width: 254px;
+  height: 88px;
+  left: 1124px;
+  top: 223px;
+
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #000000;
+}
+
+#card-body{
+  width: 471px;
+  height: 351px;
+  left: 888px;
+  top: 328px;
+  
+}
+
+#mail{
+  /* Email */
+  /* position: absolute; */
+  width: 97.81px;
+  height: 34.88px;
+  left: 866.63px;
+  top: 343.81px;
+
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  display: flex;
+  align-items: center;
+
+  color: #000000;
+}
+.email_input{
+  /* Rectangle 2 */
+  /* position: absolute; */
+  width: 415px;
+  height: 66px;
+  left: 917px;
+  top: 411px;
+  
+  background: #D9D9D9;
+  border-radius: 17px;
+}
+
+#password{
+  /* Mot de passe */
+  /* position: absolute; */
+  width: 255px;
+  height: 35.74px;
+  left: 868px;
+  top: 462.14px;
+
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  display: flex;
+  align-items: center;
+
+  color: #000000;
+}
+
+
+.psswrd_input{
+  /* Rectangle 3 */
+  /* position: absolute; */
+  width: 415px;
+  height: 66px;
+  left: 916px;
+  top: 540px;
+  
+  background: #D9D9D9;
+  border-radius: 17px;
+}
+
+#button_connexion{
+  /* Connexion */
+  position: absolute;
+  width: 415px;
+  height: 66px;
+  left: 917px;
+  top: 696px;
+
+} 
+
+.text_jumbotron{
+  /* Texte body jumbotron */
+  position: absolute;
+  width: 624px;
+  height: 200px;
+  left: 72px;
+  top: 286px;
+
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 48px;
+  line-height: 58px;
+  display: flex;
+  align-items: center;
+
+  color: #470707;
+
+  /* border: 1px solid #000000; */
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS (and SCSS, if configured) file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+
+
+
+ */
