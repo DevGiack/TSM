@@ -17,11 +17,9 @@
         <p><strong>Mot de passe :</strong> *****************</p>
       </div>
       <div class="card-bottom">
-      <button class="button btn-secondary btn-lg"><%= link_to "Modifier mes informations", edit_user_registration_path, class:"btn-modify" %></button>
+        <button class="button btn-secondary btn-lg"><%= link_to "Modifier mes informations", edit_user_registration_path, class:"btn-modify" %></button>
       </div>
     </div>
-
-
     
     <% @user_addresses.each do |address| %>
       <div class="card account">
@@ -39,7 +37,5 @@
         </div>
       </div>
     <%end%>
-
   </div>
-
 </div>

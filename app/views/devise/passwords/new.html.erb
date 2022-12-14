@@ -9,12 +9,12 @@
                 <h4 class="text-signin-signup mb-2 pb-3">Mot de passe oublié ?</h4>
                 <%= form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :post }) do |f| %>
                   <%= render "devise/shared/error_messages", resource: resource %>
-                <div class="">
-                  <div class="field">
-                    <%= f.label :email, class: "text_form" %><br />
-                    <%= f.email_field :email, autofocus: true, placeholder: "exemple@gmail.com", class: "form-control", autocomplete: "email" %>
+                  <div class="">
+                    <div class="field">
+                      <%= f.label :email, class: "text_form" %><br />
+                      <%= f.email_field :email, autofocus: true, placeholder: "exemple@gmail.com", class: "form-control", autocomplete: "email" %>
+                    </div>
                   </div>
-                </div>
                   <div class="actions mt-3">
                     <%= f.submit "Réinitialiser mon mot de passe", class: "button btn-secondary" %>
                   </div>
