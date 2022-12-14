@@ -648,6 +648,14 @@ label{
 
 .cardb-text{
   height: 224px;
+  overflow: hidden;
+}
+
+.debord{
+  word-wrap: break-word;
+	overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .cardb-buy{
