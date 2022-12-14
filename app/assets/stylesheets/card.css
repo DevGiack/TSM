@@ -51,7 +51,7 @@
 }
 
 .debord{
-  word-wrap: break-word;
+
 	overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
