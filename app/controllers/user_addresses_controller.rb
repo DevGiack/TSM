@@ -8,6 +8,7 @@ class UserAddressesController < ApplicationController
 
   # GET /user_addresses/1 or /user_addresses/1.json
   def show
+    @user_address = UserAddress.find(params[:id])
   end
 
   # GET /user_addresses/new
@@ -17,7 +18,7 @@ class UserAddressesController < ApplicationController
 
   # GET /user_addresses/1/edit
   def edit
-    @user_address = UserAddress.find(params[:id])
+    @user_address_id = UserAddress.find(params[:id])
   end
 
   # POST /user_addresses or /user_addresses.json
@@ -38,15 +39,12 @@ class UserAddressesController < ApplicationController
 
   # PATCH/PUT /user_addresses/1 or /user_addresses/1.json
   def update
-    respond_to do |format|
-      if @user_address.update(user_address_params_require)
-        format.html { redirect_to user_address_url(@user_address), notice: "User address was successfully updated." }
-        format.json { render :show, status: :ok, location: @user_address }
-      else
-        format.html { render :edit, status: :unprocessable_entity }
-        format.json { render json: @user_address.errors, status: :unprocessable_entity }
-      end
-    end
+    @user_address = UserAddress.find(params[:id])
+        if @user_address.update(address_number: params[:address_number], address_street: params[:address_street],address_city: params[:address_city], address_zip: params[:address_zip],address_type: params[:address_type], address_country: params[:address_country], phone: params[:phone])
+          redirect_to home_index_url
+        else
+           render :edit
+        end
   end
 
   # DELETE /user_addresses/1 or /user_addresses/1.json
@@ -71,6 +69,6 @@ class UserAddressesController < ApplicationController
     end
 
     def user_address_params_require
-      params.require(:user_address).permit(:address_number, :address_street, :address_city, :address_zip, :address_state, :address_country)
+      params.require(:user_address).permit(:address_number, :address_street, :address_city, :address_zip, :address_type, :address_country, :phone)
     end
 end

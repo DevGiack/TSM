@@ -1,4 +1,4 @@
-@charset "UTF-8";
+
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
@@ -30,7 +30,7 @@
 
 body{
   color:#fff;
-  background-image: url('truffe_bg.webp');
+  background-image: url(/assets/truffe_bg-38de769056ad448cc1a683aaf6a19dfd219394b298c13981e3ee049fcf597ffe.webp);
   background-repeat:repeat;
   background-size: 100%;
   font-family: var(--body-font-family);
@@ -45,17 +45,6 @@ body{
   box-shadow: 0px 6px 15px 6px rgba(0,0,0,0);
   padding: 0 16px 0 16px;
 }
-
-.personalised-profile{
-  margin-right: 2%;
-  text-decoration: none;
-  color: var(--secondary);
-  font-size: 0.75em;
-}
-.personalised-profile:hover{
-  color: var(--primary);
-}
-
 
 .logo_tsm{
   height:3.5em;
@@ -104,7 +93,6 @@ body{
   font-size: 0.80em;
   margin: 0;
 }
-
 
 /************************/
 /*        BANNER        */
@@ -241,14 +229,6 @@ a{
   color: var(--primary);
 }
 
-.formu {
-  color:#0D0D0D;
-}
-
-.formul {
-  margin-top: 0.5em;
-}
-
 /************************/
 /*        NOTICE        */
 /************************/
@@ -341,7 +321,6 @@ label{
 .cgu-italic{
   font-style: italic;
 }
-
 
 
 /************************/
@@ -610,7 +589,6 @@ h6 span{
 /*form edit user/user address*/
 /*****************************/
 
-
 .container-delete{
   padding-left: 15px !important;
 }
@@ -644,53 +622,6 @@ h6 span{
   margin: 0;
 }
 
-
 .form-edit-user-address{
   color: var(--bg-primary);
-=======
-/****************/
-/*  Mon Compte  */
-/****************/
-
-.account_page{
-  margin-top: 1em;
-  margin-bottom: 5em;
-  padding-left: 5em;
-  padding-right: 5em;
-}
-
-.account_page h2{
-	color: var(--secondary);
-  text-decoration: underline;
-  display: flex;
-  justify-content: center;
-  margin-top: 0.5em;
-  margin-bottom: 1em;
-}
-
-.account_card{
-  display: flex;
-  justify-content: space-around;
-  margin-top: 2em;
-  margin-bottom: 2em;
-}
-
-.account{
-  padding: 0.7em;
-  margin-left: 2em;
-  margin-right: 2em;
-  border-radius: 13px;
-}
-
-.account .card-body{
-  padding-left: 2em;
-}
-
-.card-bottom{
-  display: flex;
-  justify-content: center;
-}
-
-.btn-modify:hover{
-  color: #fff;
 }

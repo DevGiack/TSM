@@ -4,9 +4,10 @@ class CreateProducts < ActiveRecord::Migration[7.0]
       t.string :name
       t.text :description
       t.string :unity
-      t.timestamps
       t.float :price
+      t.integer :product_category_id, null: false
+      t.timestamps
     end
-     add_reference :products, :product_category, foreign_key: true
+    add_foreign_key :products, :product_categories, on_delete: :cascade
   end
 end

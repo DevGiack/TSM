@@ -1,18 +1,57 @@
-<h1>Editing user address</h1>
-
-<%= render "form", user_address: @user_address %>
-
-<br>
-
-<div>
-  <%= link_to "Show this user address", @user_address %> |
-  <%= link_to "Back to user addresses", user_addresses_path %>
+<div class="container mt-5 mb-5">
+	<div class="row full-height justify-content-center">
+    <div class="col-5 text-center">
+      <div class="card-3d-wrap mx-auto">
+        <div class="card-edit-3d-wrapper card-3d-wrapper">
+          <div class="card-front">
+            <div class="center-wrap">
+              <div class="section text-center">
+                <%= form_tag url_for(action: 'update'), method: "put" do %>
+                  <div class="row">
+                    <div class="col mb-0"
+                    <div class=" col-md-4">
+                      <div class="field">
+                      <%= label_tag 'Numéro', nil, :class => "form-edit-user-address" %>
+                      <%= number_field_tag 'address_number', @user_address.address_number, class: "form-control", autocomplete: "address_number" %>
+                      </div>
+                    </div>  
+                    <div class=" col-md-8">
+                      <div class="field">
+                      <%= label_tag 'Adresse', nil, :class => "form-edit-user-address"%>
+                      <%= text_field_tag 'address_street', @user_address.address_street, class: "form-control", autocomplete: "address_street" %>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="field">
+                    <%= label_tag 'Ville', nil, :class => "form-edit-user-address"%>
+                    <%= text_field_tag 'address_city', @user_address.address_city, class: "form-control", autocomplete: "address_city" %>
+                  </div>  
+                  <div class="Code_postal">
+                    <%= label_tag 'address_zip', nil, :class => "form-edit-user-address"%>
+                    <%= text_field_tag 'address_zip', @user_address.address_zip, class: "form-control", autocomplete: "address_zip" %>
+                  </div>
+                  <div class="field">
+                    <%= label_tag 'Pays', nil, :class => "form-edit-user-address"%>
+                    <%= text_field_tag 'address_country', @user_address.address_country, class: "form-control", autocomplete: "address_country" %>
+                  </div>
+                  <div class="field">
+                    <%= label_tag 'Adresse_type', nil, :class => "form-edit-user-address"%>
+                    <%= text_field_tag 'address_type', @user_address.address_type, class: "form-control", autocomplete: "address_type" %>
+                  </div>
+                  <div class="field">
+                    <%= label_tag 'Numéro_de_téléphone', nil, :class => "form-edit-user-address"%>
+                    <%= text_field_tag 'phone', @user_address.phone, class: "form-control", autocomplete: "phone" %>
+                  </div>
+                    <div class="actions mt-3 mb-4">
+                      <%= submit_tag "Mettre à jour mes données personnelles", class: "button btn-secondary" %>
+                    </div>
+                  </div>
+                <% end %>
+            </div>
+          </div>
+         </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
-
-
-<%= form_with(model: @user_address, url: edit_user_address_path(@user_address), method: :patch) do |form| %>
-  <%= form.label :address %>
-  <%= form.text_field :address %>
-
-  <%= form.submit "Update Address" %>
-<% end %>

@@ -86,7 +86,7 @@
                   </div>
                   <div class="d-grid gap-2 d-md-flex justify-content-md-end">
                     <button type="button" class="btn btn-secondary btn-block btn-m mt-5 me-md-2"data-mdb-ripple-color="dark">
-                      <%= link_to "Passer commande", new_order_path(:total => @total, :owner_id => @cart[0].owner_id, :ref => @ref),class:"text-white" %>
+                      <%= link_to "Passer commande", new_order_path(:total => @total, :owner_id => @cart[0].owner_id),class:"text-white" %>
                     </button>
                     <button type="button" class="btn btn-danger btn-block btn-m mt-5"
                       data-mdb-ripple-color="dark"><%= link_to "Supprimer le panier", new_cart_path ,class:"text-white"%>
