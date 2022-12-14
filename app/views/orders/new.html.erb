@@ -42,35 +42,36 @@
     <div class="row-cols m-4 g-1 new_order_recap">
       <div class="card account">
         <h2>Votre commande</h2>
-          <div class="col">
-            <table class="table table-hover table-bordered text-black">
+        <div class="col">
+          <table class="table table-hover table-bordered text-black">
             <% @cart.each do |c| %>
               <tr>
                 <td><%= @ref[c.item_id.to_s][:name] %> : <%= c.quantity %> grammes</td>
                 <td><%= (c.quantity * (c.price_cents.to_f / 100)).round(2) %> euros</td>
               </tr>
             <% end %>
-            </table>
-          </div>
-          <div class="col"><h2 class="card-title">Total</h2></div>
+          </table>
+        </div>
 
-          <div class="col">
-            <table class="table table-hover table-bordered text-black">
-              <tbody>
-              <tr class="dflex justify-content-around">
-                <td><h5 class="text-uppercase">Prix total HT</h5></td>
-                <td><h5>€ <%= (@total.to_f * 100/(100+19.6)).round(2)%></h5></td>
-              </tr>
-              <tr>
-                <td><h5 class="text-uppercase">TVA</h5></td>
-                <td><h5>€ <%= (@total.to_f  - (@total.to_f * 100/(100+19.6))).round(2)%></h5></td>
-              </tr>
-              <tr>
-                <td><h5 class="text-uppercase">Prix total TTC</h5></td>
-                <td><h5>€ <%= (@total) %></h5></td>
-              </tr>
-            </table>
-          </div>
+        <div class="col"><h2 class="card-title">Total</h2></div>
+
+        <div class="col">
+          <table class="table table-hover table-bordered text-black">
+            <tbody>
+            <tr class="dflex justify-content-around">
+              <td><h5 class="text-uppercase">Prix total HT</h5></td>
+              <td><h5>€ <%= (@total.to_f * 100/(100+19.6)).round(2)%></h5></td>
+            </tr>
+            <tr>
+              <td><h5 class="text-uppercase">TVA</h5></td>
+              <td><h5>€ <%= (@total.to_f  - (@total.to_f * 100/(100+19.6))).round(2)%></h5></td>
+            </tr>
+            <tr>
+              <td><h5 class="text-uppercase">Prix total TTC</h5></td>
+              <td><h5>€ <%= (@total) %></h5></td>
+            </tr>
+          </table>
+        </div>
         <tr>
           <td>                    
             <div class="d-grid gap-2 d-md-flex justify-content-end">
@@ -86,6 +87,4 @@
       </div>
     </div> 
   </div>
-
-
 </div>
