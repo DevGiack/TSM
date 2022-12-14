@@ -5,7 +5,7 @@ class CreateProducts < ActiveRecord::Migration[7.0]
       t.text :description
       t.string :unity
       t.float :price
-      t.integer :product_category_id
+      t.integer :product_category_id, null: false
       t.timestamps
     end
     add_foreign_key :products, :product_categories, on_delete: :cascade
