@@ -28,6 +28,8 @@ Rails.application.routes.draw do
   get 'home/paiement'
   get 'home/livraison'
 
+  match 'user_addresses/:id/edit', to: 'user_addresses#edit', as: 'edit_address', via: [:get, :post]
+
   match 'products/:id/add', to: 'products#add', as: 'add_product', via: [:get, :post]
 
   devise_for :users, :controllers => { registrations: 'users/registrations' }

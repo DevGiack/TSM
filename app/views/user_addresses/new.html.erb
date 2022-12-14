@@ -1,12 +1,9 @@
 <h1>New user address</h1>
 
-<%= render "form", user_address: @user_address %>
-
-<br>
-
 <div>
   <%= link_to "Back to user addresses", user_addresses_path %>
 </div>
+
 
 <div class="container mt-5 mb-5">
   <div class="row full-height justify-content-center">
@@ -15,38 +12,54 @@
         <div class="card-edit-3d-wrapper card-3d-wrapper">
           <div class="card-front">
             <div class="center-wrap">
-              <di class="section text-center">
-
-
+              <div class="section text-center">
               <%= form_with(model: @user_address, url: user_addresses_path) do |form| %>
-                <div class="field">
-                  <%= form.label :Numéro, class: "text_form" %>
-                  <%= form.number_field :address_number, autofocus: true, class: "form-control" %>
-                </div>
-                <div class="field">
-                  <%= form.label :adresse, class: "text_form" %>
-                  <%= form.text_field :address_street, class: "form-control" %>
-                </div>
-                <div class="field">
-                  <%= form.label :Ville, class: "text_form" %>
-                  <%= form.text_field :address_city, class: "form-control" %>
-                </div>
-                <div class="field">
-                  <%= form.label :Code_postal, class: "text_form" %>
-                  <%= form.number_field :address_zip, class: "form-control" %>
-                </div>
-                <div class="field"> 
-                  <%= form.label :address_state, class: "text_form" %>
-                  <%= form.text_field :address_state, class: "form-control" %>
-                </div> 
-                <div class="field"> 
-                  <%= form.label :Pays, class: "text_form" %>
-                  <%= form.text_field :address_country, class: "form-control" %>
-                </div>
-                <div class="actions mt-3">
-                  <%= form.submit "Sauvegarder mon adresse",  class: "button btn-secondary" %>
-                </div>
+                <div class="row">
+                  <div class="col mb-0"
+                    <div class=" col-md-4">
+                      <div class="field">
+                        <%= form.label :Numéro, class: "text_form" %><br />
+                        <%= form.number_field :address_number, autofocus: true, class: "form-control" %>
+                      </div>
+                    </div>  
+                    <div class=" col-md-8">
+                      <div class="field">
+                        <%= form.label :Adresse, class: "text_form" %><br />
+                        <%= form.text_field :address_street, class: "form-control" %>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="field">
+                    <%= form.label :Ville, class: "text_form" %>
+                    <%= form.text_field :address_city, class: "form-control" %>
+                  </div>
+                  <div class="field">
+                    <%= form.label :Code_postal, class: "text_form" %>
+                    <%= form.number_field :address_zip, class: "form-control" %>
+                  </div>
+                  <div class="field"> 
+                    <%= form.label :Pays, class: "text_form" %>
+                    <%= form.text_field :address_country, class: "form-control" %>
+                  </div>
+                  <div class="col mb-0">
+                    <div class="col md-4">
+                      <div class="field"> 
+                        <%= form.label :Adresse_type, class: "text_form" %>
+                        <%= form.text_field :address_type, class: "form-control" %>
+                      </div> 
+                    </div>
+                    <div class="col md-8">
+                      <div class="field"> 
+                        <%= form.label :Numéro_de_téléphone, class: "text_form" %>
+                        <%= form.text_field :phone, class: "form-control" %>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="actions mt-3">
+                    <%= form.submit "Sauvegarder mon adresse",  class: "button btn-secondary" %>
+                  </div>
               <% end %>
+              </div>
             </div>
           </div>
          </div>

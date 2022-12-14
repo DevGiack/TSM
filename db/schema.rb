@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_12_07_135825) do
+ActiveRecord::Schema[7.0].define(version: 2022_12_12_201250) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -102,12 +102,12 @@ ActiveRecord::Schema[7.0].define(version: 2022_12_07_135825) do
     t.string "address_street"
     t.string "address_city"
     t.integer "address_zip"
-    t.string "address_state"
-    t.string "address_country"
     t.string "address_type"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.bigint "user_id"
+    t.string "address_country"
+    t.string "phone"
     t.index ["user_id"], name: "index_user_addresses_on_user_id"
   end
 
@@ -123,7 +123,6 @@ ActiveRecord::Schema[7.0].define(version: 2022_12_07_135825) do
     t.string "unconfirmed_email"
     t.string "first_name"
     t.string "last_name"
-    t.string "phone"
     t.datetime "last_login", precision: nil
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
