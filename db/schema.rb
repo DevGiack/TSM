@@ -100,14 +100,12 @@ ActiveRecord::Schema[7.0].define(version: 2022_12_12_201250) do
     t.string "address_street"
     t.string "address_city"
     t.integer "address_zip"
+    t.string "address_country"
     t.string "address_type"
     t.integer "user_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.bigint "user_id"
-    t.string "address_country"
     t.string "phone"
-    t.index ["user_id"], name: "index_user_addresses_on_user_id"
   end
 
   create_table "users", force: :cascade do |t|

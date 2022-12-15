@@ -28,7 +28,7 @@ class UserAddressesController < ApplicationController
   
     respond_to do |format|
       if @user_address.save
-        format.html { redirect_to home_index_url(@user_address), notice: "Votre adresse est sauvegardée !" }
+        format.html { redirect_to redirect_back(fallback_location: :back)(@user_address), notice: "Votre adresse est sauvegardée !" }
         format.json { render :show, status: :created, location: @user_address }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -41,7 +41,7 @@ class UserAddressesController < ApplicationController
   def update
     @user_address = UserAddress.find(params[:id])
         if @user_address.update(address_number: params[:address_number], address_street: params[:address_street],address_city: params[:address_city], address_zip: params[:address_zip],address_type: params[:address_type], address_country: params[:address_country], phone: params[:phone])
-          redirect_to home_index_url
+          redirect_to home_account_url
         else
            render :edit
         end

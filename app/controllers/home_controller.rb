@@ -5,5 +5,6 @@ class HomeController < ApplicationController
 
   def account
     @user_addresses = UserAddress.where(user_id: current_user.id)
+    @user_addresses_count = addresses_count
   end
 end
