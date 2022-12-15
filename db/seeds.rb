@@ -27,7 +27,6 @@ states = ["Ain","Aisne","Allier","Alpes","Hautes-Alpes","Alpes-Maritimes","Ardê
         encrypted_password: encrypted,
         first_name: Faker::Name.first_name,
         last_name: Faker::Name.last_name,
-        phone: Faker::Number.between(from: 1000000000, to: 9999999999).to_s,
         last_login: Time.now
         ).save!(validate: false)
 
@@ -37,11 +36,11 @@ states = ["Ain","Aisne","Allier","Alpes","Hautes-Alpes","Alpes-Maritimes","Ardê
             address_number: Faker::Number.between(from: 1, to: 150),
             address_street: Faker::Address.street_name,
             address_city: Faker::Address.city,
-            address_zip: (format('%02d',states.index(dep)).to_s + Faker::Number.between(from: 10, to: 99).to_s + "0").to_i,
-            address_state: dep,
+            address_zip: (Faker::Number.between(from: 1000, to: 9500).to_s + "0").to_i,
             address_country: "FRANCE",
             address_type: types.sample,
-            user: User.last
+            phone: Faker::Number.between(from: 1000000000, to: 9999999999).to_s,
+            user: user
         ).save!(validate: false)
     end
 
