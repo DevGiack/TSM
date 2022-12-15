@@ -28,7 +28,7 @@ class UserAddressesController < ApplicationController
   
     respond_to do |format|
       if @user_address.save
-        format.html { redirect_to redirect_back(fallback_location: :back)(@user_address), notice: "Votre adresse est sauvegardée !" }
+        format.html { redirect_to redirect_back(fallback_location: :back), notice: "Votre adresse est sauvegardée !" }
         format.json { render :show, status: :created, location: @user_address }
       else
         format.html { render :new, status: :unprocessable_entity }
