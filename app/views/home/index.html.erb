@@ -19,6 +19,7 @@
   </div>
 </div>
 <% end %>
+
 <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
   <div class="carousel-indicators">
     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -31,7 +32,7 @@
       <div class="carousel-caption d-none d-md-block">
         <h3>Le diamant noir du terroir</h3>
         <h5>Truffe fraiche noire extra Tuber Melanosporum</h5>
-        <button class="button btn-secondary btn-lg">La qualité est notre exigence</button>
+        <button class="button btn-secondary btn-lg"><%= link_to "La qualité est notre exigence", products_path, class:"btn-modify" %></button>
       </div>
     </div>
     <div class="carousel-item c-item">
@@ -39,7 +40,7 @@
       <div class="carousel-caption d-none d-md-block">
         <h3>Le cavage avec le chien</h3>
         <h5>L'excellent flair du chien reste la meilleure solution de recherche</h5>
-        <button class="button btn-secondary btn-lg">La puissance de l’arôme</button>
+        <button class="button btn-secondary btn-lg"><%= link_to "La puissance de l’arôme", products_path, class:"btn-modify" %></button>
       </div>
     </div>
     <div class="carousel-item c-item">
@@ -47,7 +48,7 @@
       <div class="carousel-caption d-none d-md-block">
         <h3>L'expérience et la persévérance</h3>
         <h5>TSM rend service aux gastronomes</h5>
-        <button class="button btn-secondary btn-lg">La couleur et l'odeur</button>
+        <button class="button btn-secondary btn-lg"><%= link_to "La couleur et l'odeur", products_path, class:"btn-modify" %></button>
       </div>
     </div>
   </div>
@@ -132,10 +133,3 @@
             de qualité et de rigueur tout le long de la saison .<br><br>
             </p>
             
-            <div class="smb-logo"><%= image_tag "tsm-transparent.png", class:"smallb-logo", alt: "Logo des truffiere Saint Martin" %></div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!--BANNER HISTOIRE-->
