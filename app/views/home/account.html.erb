@@ -28,16 +28,16 @@
       <div class="card-body">
         <% if @user_addresses_count > 0 %>
           <% @user_addresses.each do |address| %>
-            <p><strong>Nom de l'adresse :</strong> <%= address.address_city %></p><!-- Mettre à jour le <% %> -->
+            <p><strong>Nom de l'adresse :</strong> <%= address.address_type %></p><!-- Mettre à jour le <% %> -->
             <p><strong>Numéro :</strong> <%= address.address_number %></p>
             <p><strong>Adresse :</strong> <%= address.address_street %></p>
             <p><strong>Code postal :</strong> <%= address.address_zip %></p>
             <p><strong>Ville :</strong> <%= address.address_city %></p>
             <div class="card-bottom">
-              <button class="button btn-secondary btn-lg"><%= link_to "Modifier mon adresse", edit_user_address_path(address.id), class:"btn-modify" %></button> <!-- Mettre à jour le lien avec edit_user_address_path -->
+              <button class="button btn-secondary btn-lg"><%= link_to "Modifier mon adresse", edit_user_address_path(address.id), class:"btn-modify" %></button> 
             </div>
-             <div>
-              <%= button_to "Supprimer",user_address_path(address.id), :method => :delete, class:"btn-modify button btn-danger btn-lg" %>
+            <div>
+              <%= button_to "Supprimer",user_address_path(address.id), :method => :delete, class:"btn-danger button btn-sm" %>
             </div>
           <% end %>
         <% else %>
