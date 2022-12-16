@@ -31,6 +31,7 @@ Rails.application.routes.draw do
   get 'home/account'
   get 'home/paiement'
   get 'home/livraison'
+  get 'home/recette'
 
   match 'user_addresses/:id/edit', to: 'user_addresses#edit', as: 'edit_address', via: [:get, :post]
 
