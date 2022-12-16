@@ -14,6 +14,7 @@ ActiveAdmin.register Stock do
     form do |f|
       f.inputs do
         f.input :product_id
+        f.input :quantity_gr
       end
       f.actions
     end
