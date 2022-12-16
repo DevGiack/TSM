@@ -1,4 +1,4 @@
-@charset "UTF-8";
+
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
@@ -30,7 +30,7 @@
 
 body{
   color:#fff;
-  background-image: url('truffe_bg.webp');
+  background-image: url(/assets/truffe_bg-38de769056ad448cc1a683aaf6a19dfd219394b298c13981e3ee049fcf597ffe.webp);
   background-repeat:repeat;
   background-size: 100%;
   font-family: var(--body-font-family);
@@ -311,7 +311,7 @@ a{
   width: 100%;
   height: 9%;
   z-index: 999;
-  background: rgba(135, 207, 120, 0.85);
+  background: rgba(119, 223, 98, 0.85);
 }
 
 .notice {
@@ -608,6 +608,15 @@ h6 span{
 
 .field{
   border: 500px ;
+}
+
+
+/************************/
+/*        NOTICE        */
+/************************/
+
+.notice{
+  color: var(--success);
 }
 
 
