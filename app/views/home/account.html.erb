@@ -28,7 +28,7 @@
       <div class="card-body">
         <% if @user_addresses_count > 0 %>
           <% @user_addresses.each do |address| %>
-            <p><strong>Nom de l'adresse :</strong> <%= address.address_type %></p><!-- Mettre à jour le <% %> -->
+            <p><strong>Nom de l'adresse :</strong> <%= address.address_type %></p>
             <p><strong>Numéro :</strong> <%= address.address_number %></p>
             <p><strong>Adresse :</strong> <%= address.address_street %></p>
             <p><strong>Code postal :</strong> <%= address.address_zip %></p>
@@ -37,7 +37,7 @@
               <%= button_to "Supprimer l'adresse",user_address_path(address.id), :method => :delete, class:"btn-danger button btn-sm" %>
               <button class="button btn-secondary btn-lg"><%= link_to "Modifier mon adresse", edit_user_address_path(address.id), class:"btn-modify" %></button> 
             </div>
-
+            <br>
           <% end %>
         <% else %>
           <legend class="text-black">Vous devez renseigner une adresse</legend>

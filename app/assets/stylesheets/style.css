@@ -734,8 +734,6 @@ h6 span{
 .card-bottom{
   display: flex;
   justify-content: center;
-  padding-bottom: 2em;
-  margin-bottom: 2em;
 }
 
 .btn-modify:hover{
