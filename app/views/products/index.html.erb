@@ -1,42 +1,43 @@
-
 <div class="container-fluid" style="margin-top: 2em;">
+  
   <div class="pb-3 m-3 mx-0">
     <%= link_to "",root_path, class:"fas fa-long-arrow-alt-left me-2 text-retour"%>
     <%= link_to "Accueil", root_path, class:"text-retour"%>
   </div>
+  
   <div class="d-flex justify-content-center prod_head">
     <h1>PRODUITS</h1>
-  </div>  
+  </div>
+
 </div>
-
-
 
 <div id="products">
   <div class="container-fluid">
     <div class="row row-cols-1 row-cols-md-4 g-0">
+      
       <% @products.each do |product| %>
         <div class="col">
           <div class="card" style="width: 20rem;">
             <%= link_to product do %>
               <%= image_tag "truffe_1.webp", class: "card-img", alt:"4 truffes sur une planche en bois avec une rape à truffe" %>
             <%end%>
+
             <div class="card-body cardb-text">
               <h4 class="card-title"><%= product.name%></h4>
               <p class="card-text"><%= product.description%></p>
             </div>
+
             <div class="card-body cardb-buy">
               <%= button_to "Voir ce produit", product_path(product.id), :class => "button btn-outline btn-sm", :method => :get %>
               <h3><%= product.price%>€</h3>
             </div>
           </div>
         </div>
-
       <% end %>
+
     </div>
   </div>
 </div>
-
-
 
 <!--<p style="color: green"><%= notice %></p>-->
 

@@ -77,24 +77,24 @@
 </div>
 
 <div class="row row-cols-1 row-cols-md-3 g-0">
-    <% @highlighted_products.each do |hp| %>
-  <div class="col">
-    <div class="card" style="width: 21.5rem;">
-      <%= image_tag hp.product_image, class: "card-img" %>
-      <div class="card-body cardb-text">
-        <h4 class="card-title"><%= hp.price %> € / gr</h4>
-        <p><b><%= hp.name %></b></p>
-        <p class="card-text debord"><%= hp.description %></p>
-      </div>
-      <div class="card-body cardb-buy">
-        <%= button_to "Voir ce produit", product_path(hp.id), :class => "button btn-outline btn-sm product_link", :method => :get %>
+  <% @highlighted_products.each do |hp| %>
+    <div class="col">
+      <div class="card" style="width: 21.5rem;">
+        <%= image_tag hp.product_image, class: "card-img" %>
+        <div class="card-body cardb-text">
+          <h4 class="card-title"><%= hp.price %> € / gr</h4>
+          <p><b><%= hp.name %></b></p>
+          <p class="card-text debord"><%= hp.description %></p>
+        </div>
+        <div class="card-body cardb-buy">
+          <%= button_to "Voir ce produit", product_path(hp.id), :class => "button btn-outline btn-sm product_link", :method => :get %>
+        </div>
       </div>
     </div>
-  </div>
-    <%end%>
+  <%end%>
 </div>
 
-<!--CARD-->
+<!--END CARD-->
 
 <!--BANNER HISTOIRE-->
 
@@ -102,8 +102,8 @@
   <div class="row d-flex flex-wrap">
     <div class="col-4">
       <%= image_tag "cloche.webp", class:"d-block w-100 c-image smallb-image", alt: "Plusieurs truffes sous une cloche en verre" %>
-
     </div>
+
     <div class="col-8 smallb-text">
       <div class="flex-column">
         <div class="col justify-content-start smallb-text_title">
@@ -114,6 +114,25 @@
           <h4>La passion de trois épicuriens</h4>
         </div>
         <p>La truffière Saint Martin est née de la complicité de trois amis épicuriens autour de la
+<<<<<<< HEAD
+          même passion : la dégustation de la truffe noire , le diamant noir de la gastronomie
+          qui enivre les papilles .<br><br>
+          Pierre Birot, propriétaire du Domaine de Saint Martin des champs sur la commune de
+          Murviel-lès-Béziers dans l’Hérault, est un viticulteur passionné qui décida de planter ses
+          premiers chênes truffiers en 2002 sur certaines parcelles de terre bien choisies du
+          domaine .<br>
+          Alan Dionisio est négociant et courtier en truffes sur différents marché de truffes en
+          France et en Espagne.<br>
+          Guillaume Gillis est distributeur et vendeur de truffes aux épiceries fines et restaurants.<br><br>
+          Cet amour pour le diamant noir qu'ils dégustent ensemble depuis des années les a réunis
+          autour la société Truffières Saint Martin pour la distribution des truffes noires
+          du domaine ainsi que pour les achats sur les marches traditionnels de truffes en France
+          et en Espagne .<br>
+          Notre activité de négoce de truffes fraîches consiste à vendre la production de la Truffière
+          Saint Martin ainsi que celles de trufficulteurs qui adoptent nos valeurs et la même charte
+          de qualité et de rigueur tout le long de la saison .<br></p>
+        <div class="smb-logo"><%= image_tag "tsm-transparent.png", class:"smallb-logo", alt: "Logo des truffiere Saint Martin" %></div>
+=======
             même passion : la dégustation de la truffe noire , le diamant noir de la gastronomie
             qui enivre les papilles .<br><br>
             Pierre Birot, propriétaire du Domaine de Saint Martin des champs sur la commune de
@@ -133,9 +152,10 @@
             </p>
             
             <div class="smb-logo"><%= image_tag "tsm-transparent.png", class:"smallb-logo", alt: "Logo des truffiere Saint Martin" %></div>
+>>>>>>> c764b8ee03c97a880d11eb044e30cc2b0c469ede
       </div>
     </div>
   </div>
 </div>
 
-<!--BANNER HISTOIRE-->
+<!--END BANNER HISTOIRE-->

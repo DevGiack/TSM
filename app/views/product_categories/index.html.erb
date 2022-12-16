@@ -5,9 +5,7 @@
 <div id="product_categories">
   <% @product_categories.each do |product_category| %>
     <%= render product_category %>
-    <p>
-      <%= link_to "Show this product category", product_category %>
-    </p>
+    <p><%= link_to "Show this product category", product_category %></p>
   <% end %>
 </div>
 

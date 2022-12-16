@@ -3,8 +3,7 @@
 		<div class="col-5 title-form-left">
 			<h1 class="title-form-left">Créer un compte en 2 minutes et accédez à nos différents produits</h1>
 		</div>
-		<div class="col-2">
-		</div>
+		<div class="col-2"></div>
 		<div class="col-5 text-center">
 			<h6 class="mb-0 mt-5 pb-3"><span class="text-signin-signup-above-card">S'INSCRIRE</span><span class="text-signin-signup-above-card">CONNEXION</span></h6>
 			<input class="checkbox" type="checkbox" id="reg-log" name="reg-log"/>
@@ -17,57 +16,57 @@
 								<h4 class="text-signin-signup mb-4 pb-3">S'INSCRIRE</h4>
 
 								<%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
-								<%= render "devise/shared/error_messages", resource: resource %>
-								<div class="row">		  
-									<div class="col mb-0">
-										<div class=" col-md-5">
-											<div class="field">
-												<%= f.label :Prénom, class: "text_form" %><br />
-												<%= f.text_field :first_name, autofocus: true, class: "form-control", autocomplete: "first_name" %>
+									<%= render "devise/shared/error_messages", resource: resource %>
+									<div class="row">		  
+										<div class="col mb-0">
+											<div class=" col-md-5">
+												<div class="field">
+													<%= f.label :Prénom, class: "text_form" %><br />
+													<%= f.text_field :first_name, autofocus: true, class: "form-control", autocomplete: "first_name" %>
+												</div>
+											</div>  
+											<div class="col-2"></div>
+											<div class=" col-md-5">
+												<div class="field">
+													<%= f.label :Nom, class: "text_form" %><br />
+													<%= f.text_field :last_name, class: "form-control", autocomplete: "last_name" %>
+												</div>
 											</div>
-										</div>  
-										<div class="col-2">
+										</div>		
+
+										<div class="field">
+											<%= f.label :email, class: "text_form" %>
+											<%= f.email_field :email, class: "form-control", placeholder: "exemple@gmail.com", autocomplete: "email" %>
 										</div>
-										<div class=" col-md-5">
-											<div class="field">
-												<%= f.label :Nom, class: "text_form" %><br />
-												<%= f.text_field :last_name, class: "form-control", autocomplete: "last_name" %>
-											</div>
+									
+										<div class="field">
+											<%= f.label :Mot_de_passe, class: "text_form" %>
+											<% if @minimum_password_length %>
+											<% end %><br />
+											<%= f.password_field :password, class: "form-control", placeholder: "Mot de passe", autocomplete: "new-password" %>
 										</div>
-									</div>		
+									
+										<div class="field">
+											<%= f.label :Veuillez_confirmer_votre_email, class: "text_form" %><br />
+											<%= f.password_field :password_confirmation, class: "form-control", placeholder: "Mot de passe", autocomplete: "new-password" %>
+										</div>
 
-									<div class="field">
-										<%= f.label :email, class: "text_form" %>
-										<%= f.email_field :email, class: "form-control", placeholder: "exemple@gmail.com", autocomplete: "email" %>
-									</div>
-								
-									<div class="field">
-										<%= f.label :Mot_de_passe, class: "text_form" %>
-										<% if @minimum_password_length %>
-										<% end %><br />
-										<%= f.password_field :password, class: "form-control", placeholder: "Mot de passe", autocomplete: "new-password" %>
-									</div>
-								
-									<div class="field">
-										<%= f.label :Veuillez_confirmer_votre_email, class: "text_form" %><br />
-										<%= f.password_field :password_confirmation, class: "form-control", placeholder: "Mot de passe", autocomplete: "new-password" %>
-									</div>
+										<div class="formul">
+											<p class="formu">En cliquant sur "S'incrire", vous acceptez les <%= link_to "C.G.U", home_cgu_path, class: "link-form" %></p> 
+										</div>
 
-									<div class="formul">
-									<p class="formu">En cliquant sur "S'incrire", vous acceptez les <%= link_to "C.G.U", home_cgu_path %></p> 
+										<div class="actions mt-3">
+											<%= f.submit "S'incrire", class: "button btn-secondary" %>
+										</div>
 									</div>
-
-									<div class="actions mt-3">
-										<%= f.submit "S'incrire", class: "button btn-secondary" %>
-									</div>
-										<% end %>
-									<div class="mt-2">
-										<%= link_to "Je n'ai pas reçu d'email de confirmation", new_user_confirmation_path, class: "link-form" %>
-									</div>
+								<% end %>
+								<div class="mt-2">
+									<%= link_to "Je n'ai pas reçu d'email de confirmation", new_user_confirmation_path, class: "link-form" %>
 								</div>
 							</div>
 						</div>
 					</div>
+					
 					<div class="card-back">
 						<div class="center-wrap">
 							<div class="section text-center">

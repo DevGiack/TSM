@@ -3,7 +3,7 @@
 <%= render @order %>
 
 <div>
-  <%= link_to "Edit this order", edit_order_path(@order) %> |
+  <%= link_to "Edit this order", edit_order_path(@order) %>
   <%= link_to "Back to orders", orders_path %>
 
   <%= button_to "Destroy this order", @order, method: :delete %>
