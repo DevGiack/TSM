@@ -29,4 +29,5 @@ class CartsController < ApplicationController
       @shopping_cart = session[:shopping_cart_id] ? Cart.find(shopping_cart_id) : Cart.create
       session[:shopping_cart_id] = @shopping_cart.id
     end
+
   end
