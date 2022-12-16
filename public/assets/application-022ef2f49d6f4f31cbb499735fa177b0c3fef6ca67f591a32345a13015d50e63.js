@@ -38,4 +38,4 @@
         myDate.setMonth(myDate.getMonth() + 12)
         console.log("user consent!")
         document.cookie = `user_consent=true` + ";expires=" + myDate + ";path=/";
-      }
+      };

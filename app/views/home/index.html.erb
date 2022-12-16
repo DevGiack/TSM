@@ -1,3 +1,24 @@
+<% if !cookies[:user_consent] == true %>
+  <div id="simple-cookie-consent">
+  <div class="cookie-consent-container">
+    <div class="cookie-consent-notice">
+      <h4 style="color:var(--primary)">Ce site web utilise des cookies.</h4>
+      <hr>
+                  <span style="color:var(--primary)"> 
+              Les <%= link_to "cookies", home_cookies_path, style:"color:blue" %> nous permettent de personnaliser le contenu et les annonces,
+              d'offrir des fonctionnalités relatives aux médias sociaux et d'analyser notre trafic.<br> 
+              Nous partageons également des informations sur l'utilisation de notre site avec nos partenaires de médias sociaux, 
+              de publicité et d'analyse, qui peuvent combiner celles-ci avec d'autres informations que vous leur avez fournies 
+              ou qu'ils ont collectées lors de votre utilisation de leurs services.
+            </span>
+    </div>
+    <div class="cookie-consent-selection">
+      <button value="false" class="cookie-consent-deny">Gérer mes préférences</button>
+      <button onclick = "userConsent()" class="cookie-consent-allow"><%= link_to "Autoriser tous les cookies", root_path %></button>
+    </div>
+  </div>
+</div>
+<% end %>
 <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
   <div class="carousel-indicators">
     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -93,6 +114,7 @@
           <h4>La passion de trois épicuriens</h4>
         </div>
         <p>La truffière Saint Martin est née de la complicité de trois amis épicuriens autour de la
+<<<<<<< HEAD
           même passion : la dégustation de la truffe noire , le diamant noir de la gastronomie
           qui enivre les papilles .<br><br>
           Pierre Birot, propriétaire du Domaine de Saint Martin des champs sur la commune de
@@ -110,6 +132,27 @@
           Saint Martin ainsi que celles de trufficulteurs qui adoptent nos valeurs et la même charte
           de qualité et de rigueur tout le long de la saison .<br></p>
         <div class="smb-logo"><%= image_tag "tsm-transparent.png", class:"smallb-logo", alt: "Logo des truffiere Saint Martin" %></div>
+=======
+            même passion : la dégustation de la truffe noire , le diamant noir de la gastronomie
+            qui enivre les papilles .<br><br>
+            Pierre Birot, propriétaire du Domaine de Saint Martin des champs sur la commune de
+            Murviel-lès-Béziers dans l’Hérault, est un viticulteur passionné qui décida de planter ses
+            premiers chênes truffiers en 2002 sur certaines parcelles de terre bien choisies du
+            domaine .<br>
+            Alan Dionisio est négociant et courtier en truffes sur différents marché de truffes en
+            France et en Espagne.<br>
+            Guillaume Gillis est distributeur et vendeur de truffes aux épiceries fines et restaurants.<br><br>
+            Cet amour pour le diamant noir qu'ils dégustent ensemble depuis des années les a réunis
+            autour la société Truffières Saint Martin pour la distribution des truffes noires
+            du domaine ainsi que pour les achats sur les marches traditionnels de truffes en France
+            et en Espagne .<br>
+            Notre activité de négoce de truffes fraîches consiste à vendre la production de la Truffière
+            Saint Martin ainsi que celles de trufficulteurs qui adoptent nos valeurs et la même charte
+            de qualité et de rigueur tout le long de la saison .<br><br>
+            </p>
+            
+            <div class="smb-logo"><%= image_tag "tsm-transparent.png", class:"smallb-logo", alt: "Logo des truffiere Saint Martin" %></div>
+>>>>>>> c764b8ee03c97a880d11eb044e30cc2b0c469ede
       </div>
     </div>
   </div>
