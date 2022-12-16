@@ -28,7 +28,7 @@ class UserAddressesController < ApplicationController
   
     respond_to do |format|
       if @user_address.save
-        format.html { redirect_back (fallback_location: :back), notice: "Votre adresse est sauvegardée !" }
+        format.html { redirect_to carts_path, notice: "Votre adresse est sauvegardée !" }
         format.json { render :show, status: :created, location: @user_address }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -52,7 +52,7 @@ class UserAddressesController < ApplicationController
     @user_address.destroy
 
     respond_to do |format|
-      format.html { redirect_to user_addresses_url, notice: "User address was successfully destroyed." }
+      format.html { redirect_to home_account_url, notice: "L'adresse est bien supprimer" }
       format.json { head :no_content }
     end
   end
