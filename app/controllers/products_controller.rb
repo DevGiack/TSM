@@ -62,12 +62,23 @@ class ProductsController < ApplicationController
     end
   end
 
-  def add
+  def add()
     @product = Product.find(params[:id])
+    @stock_id = Stock.where(product_id: @product.id).ids[0]
+    @stock = Stock.find(@stock_id)
+    @stock_quantity = @stock.quantity_gr
     shopping_cart_id = session[:shopping_cart_id]
     quantity = cookies[:quantity].to_i
     @shopping_cart = session[:shopping_cart_id] ? Cart.find(shopping_cart_id) : Cart.create
     session[:shopping_cart_id] = @shopping_cart.id
+    @cart = CartItem.all.where(owner_id: session[:shopping_cart_id])
+      if quantity > @stock_quantity
+        cookies.delete :quantity
+        respond_to do |format|
+          format.html { redirect_to product_path(@product.id), alert: "La quantité est trop importante." }
+        end
+        return false
+      end
     @shopping_cart.add(@product, @product.price, quantity)
 #    redirect_back(fallback_location: :back)
     redirect_to carts_path
@@ -83,4 +94,5 @@ class ProductsController < ApplicationController
     def product_params
       params.require(:product).permit(:name, :description, :product_category_id, :price, :unity, :discount_id, :is_highlighted, :product_image)
     end
+
 end

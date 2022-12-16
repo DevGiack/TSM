@@ -40,7 +40,7 @@ states = ["Ain","Aisne","Allier","Alpes","Hautes-Alpes","Alpes-Maritimes","Ardê
             address_country: "FRANCE",
             address_type: types.sample,
             phone: Faker::Number.between(from: 1000000000, to: 9999999999).to_s,
-            user: user
+            user: User.last
         ).save!(validate: false)
     end
 
