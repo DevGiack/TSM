@@ -80,7 +80,17 @@ class ProductsController < ApplicationController
         return false
       end
     @shopping_cart.add(@product, @product.price, quantity)
-#    redirect_back(fallback_location: :back)
+    redirect_to carts_path
+  end
+
+  def pop()
+    @product = Product.find(params[:id])
+    shopping_cart_id = session[:shopping_cart_id]
+    puts "************************"
+    puts shopping_cart_id
+    puts @product.id
+    pop_id = CartItem.find_by_owner_id_and_item_id(shopping_cart_id, params[:id]).id
+    pop = CartItem.find(pop_id).delete
     redirect_to carts_path
   end
 

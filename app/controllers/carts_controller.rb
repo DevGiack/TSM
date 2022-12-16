@@ -5,6 +5,7 @@ class CartsController < ApplicationController
     def index
       @total = @shopping_cart.total
       @cart = CartItem.all.where(owner_id: session[:shopping_cart_id])
+      @my_id = session[:shopping_cart_id]
       @ref = ref
     end
   

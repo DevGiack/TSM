@@ -34,7 +34,7 @@ Rails.application.routes.draw do
   get 'home/recette'
 
   match 'user_addresses/:id/edit', to: 'user_addresses#edit', as: 'edit_address', via: [:get, :post]
-
+  match 'products/:id/pop', to: 'products#pop', as: 'pop_product', via: [:get, :post]
   match 'products/:id/add', to: 'products#add', as: 'add_product', via: [:get, :post]
 
   devise_for :users, :controllers => { registrations: 'users/registrations' }
