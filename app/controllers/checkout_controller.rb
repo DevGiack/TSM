@@ -1,5 +1,6 @@
 class CheckoutController < ApplicationController
     def create
+      # permet de créer une transaction bancaire via Stripe d'un montant égal a @total
       Stripe.api_key = 'sk_test_VePHdqKTYQjKNInc7u56JBrQ'
       @total = params[:total].to_d
       @session = Stripe::Checkout::Session.create(
@@ -24,10 +25,12 @@ class CheckoutController < ApplicationController
     end
   
     def success
+      # gestion du succès de paiement
       @session = Stripe::Checkout::Session.retrieve(params[:session_id])
       @payment_intent = Stripe::PaymentIntent.retrieve(@session.payment_intent)
     end
   
     def cancel
+      # gestion de l'annulation du paiement
     end
   end

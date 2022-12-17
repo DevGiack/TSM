@@ -1,4 +1,5 @@
 # app/admin/components/hello_world.rb
+# place holder avant l'implémentation des graphs dans panel admin > Dashboard. Appelé depuis dashboard.rb
 module Admin
   module Components
     class HelloWorld < Arbre::Component

@@ -1,3 +1,4 @@
+# configuration de la page "Product Categories" dans le panel admin
 ActiveAdmin.register ProductCategory do
     permit_params :name
     

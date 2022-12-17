@@ -1,3 +1,4 @@
+# configuration de la page "Admin Users" dans le panel admin
 ActiveAdmin.register AdminUser do
   permit_params :email, :password, :password_confirmation
 

@@ -1,3 +1,8 @@
+#############################################################
+# placeholder ! a date n'est pas utilisé dans l'application #
+#############################################################
+
+
 class DiscountsController < ApplicationController
   before_action :set_discount, only: %i[ show edit update destroy ]
 

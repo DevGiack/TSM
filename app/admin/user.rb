@@ -1,3 +1,4 @@
+# configuration de la page "Users" dans le panel admin
 ActiveAdmin.register User do
   permit_params :email, :password, :password_confirmation, :is_pro
 

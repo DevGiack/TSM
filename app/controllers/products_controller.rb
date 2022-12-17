@@ -8,6 +8,7 @@ class ProductsController < ApplicationController
 
   # GET /products/1 or /products/1.json
   def show
+    # récupère les données nécessaires a l'affichage d'un produit (produit, stock, quantité) et la quantité disponible associée en stock 
     @product = Product.find(params[:id])
     @stock_id = Stock.where(product_id: @product.id).ids[0]
     @stock = Stock.find(@stock_id)
@@ -63,6 +64,7 @@ class ProductsController < ApplicationController
   end
 
   def add()
+    # permet d'ajouter un produit au panier de l'utilisateur
     @product = Product.find(params[:id])
     @stock_id = Stock.where(product_id: @product.id).ids[0]
     @stock = Stock.find(@stock_id)

@@ -1,3 +1,7 @@
+#############################################################
+# placeholder ! a date n'est pas utilisé dans l'application #
+#############################################################
+
 class PaymentsController < ApplicationController
   before_action :set_payment, only: %i[ show edit update destroy ]
 
