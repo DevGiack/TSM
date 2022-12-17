@@ -86,6 +86,7 @@ ActiveRecord::Schema[7.0].define(version: 2022_12_12_201250) do
     t.datetime "updated_at", null: false
     t.boolean "is_highlighted", default: false
     t.string "product_image", default: ""
+    t.string "image_alt", default: "Une photo de truffe"
   end
 
   create_table "stocks", force: :cascade do |t|

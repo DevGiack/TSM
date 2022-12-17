@@ -55,7 +55,8 @@ end
         description: Faker::Lorem.sentences(number: 7).join(" "),
         unity: "Gr",
         price:  Faker::Number.decimal(l_digits: 2),
-        product_category_id: ProductCategory.last.id
+        product_category_id: ProductCategory.last.id,
+        product_image: "truffe_" + Faker::Number.between(from: 1, to: 3).to_s + '.webp'
     ).save!(validate: false)
 
     stock = Stock.new(
