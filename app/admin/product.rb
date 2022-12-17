@@ -1,3 +1,4 @@
+# configuration de la page "Products" dans le panel admin
 ActiveAdmin.register Product do
     permit_params :name, :price, :description, :is_highlighted, :unity, :product_image, :product_category_id
     

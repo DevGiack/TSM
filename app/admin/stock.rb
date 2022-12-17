@@ -1,3 +1,4 @@
+# configuration de la page "Stocks" dans le panel admin
 ActiveAdmin.register Stock do
   permit_params :quantity_gr, :product_id
   

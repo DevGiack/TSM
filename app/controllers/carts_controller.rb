@@ -3,6 +3,7 @@ class CartsController < ApplicationController
     before_action :authenticate_user!, only: [:index, :create, :new, :edit]
   
     def index
+      # récupère les données nécessaires a l'affichage de tous les carts items du user dans le panier + total
       @total = @shopping_cart.total
       @cart = CartItem.all.where(owner_id: session[:shopping_cart_id])
       @my_id = session[:shopping_cart_id]
@@ -16,6 +17,8 @@ class CartsController < ApplicationController
     end
   
     def new
+      # permet de delete le panier en cours
+      ## DEV : devrait se trouver dans une action delete ?
       session[:shopping_cart_id] = nil
       redirect_to carts_path
     end
@@ -26,6 +29,7 @@ class CartsController < ApplicationController
   
     private
     def extract_shopping_cart
+      # est appelée avant chaque action du controller pour set le panier de l'utilisateur. Si aucun panier > créé un panier vide
       shopping_cart_id = session[:shopping_cart_id]
       @shopping_cart = session[:shopping_cart_id] ? Cart.find(shopping_cart_id) : Cart.create
       session[:shopping_cart_id] = @shopping_cart.id
