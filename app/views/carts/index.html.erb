@@ -19,7 +19,7 @@
                   <% @cart.each do |c| %>
                     <div class="row mb-4 d-flex justify-content-between align-items-center">
                       <div class="col-md-2 col-lg-2 col-xl-2">
-                          <%= image_tag "truffe_1.webp", class: "card-img", alt: "4 truffes sur une planche en bois avec une rape à truffe" %>
+                          <%= image_tag c.product_image, class: "card-img", alt: c.image_alt  %>
                       </div>
                       <div class="col-md-3 col-lg-2 col-xl-2">
                         <h6 class="text-muted"><%=  @ref[c.item_id][:category_name] %></h6>

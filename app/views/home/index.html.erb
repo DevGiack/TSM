@@ -81,7 +81,7 @@
     <% @highlighted_products.each do |hp| %>
   <div class="col">
     <div class="card" style="width: 21.5rem;">
-      <%= image_tag hp.product_image, class: "card-img" %>
+      <%= image_tag hp.product_image, class: "card-img", alt: hp.image_alt %>
       <div class="card-body cardb-text">
         <h4 class="card-title"><%= hp.price %> € / gr</h4>
         <p><b><%= hp.name %></b></p>

@@ -18,7 +18,7 @@
         <div class="col">
           <div class="card" style="width: 20rem;">
             <%= link_to product do %>
-              <%= image_tag "truffe_1.webp", class: "card-img", alt:"4 truffes sur une planche en bois avec une rape à truffe" %>
+              <%= image_tag product.product_image, class: "card-img", alt: product.image_alt %>
             <%end%>
             <div class="card-body cardb-text">
               <h4 class="card-title"><%= product.name%></h4>
