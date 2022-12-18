@@ -14,7 +14,8 @@
     </div>
     <div class="cookie-consent-selection">
       <button value="false" class="cookie-consent-deny">Gérer mes préférences</button>
-      <button onclick = "userConsent()" class="cookie-consent-allow"><%= link_to "Autoriser tous les cookies", root_path %></button>
+      <%= link_to "Autoriser tous les cookies", root_path ,class:"cookie-consent-allow btn btn-primary", onclick:"userConsent()" %>
+     
     </div>
   </div>
 </div>
