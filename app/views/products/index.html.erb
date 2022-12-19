@@ -26,7 +26,7 @@
             </div>
             <div class="card-body cardb-buy">
               <%= button_to "Voir ce produit", product_path(product.id), :class => "button btn-outline btn-sm", :method => :get %>
-              <h3><%= product.price%>€</h3>
+              <h3><%= product.price * 1000 %>€ / Kg</h3>
             </div>
           </div>
         </div>
