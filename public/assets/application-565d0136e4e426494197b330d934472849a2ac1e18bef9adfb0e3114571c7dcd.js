@@ -33,8 +33,7 @@
 
             myP = document.getElementById("show_qty");
             console.log("cookie ok");
-            result = price * quantity
-            myP.innerHTML = `<table><tr><td><b><I>${quantity} grammes </I></b></td><td><b><I> : ${result} €</I></b></td></tr></table>`;
+            myP.innerHTML = `<table><tr><td><b><I>${quantity} grammes</I></b></td><td>$ ${price} </td></tr></table>`;
           }
       }
       function showAddress(id) {
@@ -47,4 +46,4 @@
         console.log("user consent!")
         document.cookie = `user_consent=true` + ";expires=" + myDate + ";path=/";
       }
-
+;

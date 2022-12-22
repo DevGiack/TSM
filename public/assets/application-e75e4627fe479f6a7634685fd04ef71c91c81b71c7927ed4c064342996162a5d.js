@@ -47,4 +47,4 @@
         console.log("user consent!")
         document.cookie = `user_consent=true` + ";expires=" + myDate + ";path=/";
       }
-
+;

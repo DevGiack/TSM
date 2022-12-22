@@ -10,6 +10,7 @@ class ProductsController < ApplicationController
   def show
     # récupère les données nécessaires a l'affichage d'un produit (produit, stock, quantité) et la quantité disponible associée en stock 
     @product = Product.find(params[:id])
+    cookies[:price] = @product.price
     @stock_id = Stock.where(product_id: @product.id).ids[0]
     @stock = Stock.find(@stock_id)
     @stock_quantity = @stock.quantity_gr

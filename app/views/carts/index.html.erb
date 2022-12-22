@@ -1,5 +1,3 @@
-<p style="color: green"><%= notice %></p>
-
 <section class="h-100 h-custom">
   <div class="container py-5 h-100">
     <div class="row d-flex justify-content-center align-items-center h-100">
@@ -86,7 +84,7 @@
                   </div>
                   <div class="d-grid gap-2 d-md-flex justify-content-md-end">
                     <button type="button" class="btn btn-secondary btn-block btn-m mt-5 me-md-2"data-mdb-ripple-color="dark">
-                      <%= link_to "Passer commande", new_order_path(:total => @total, :owner_id => @my_id),class:"text-white" %>
+                      <%= link_to "Passer commande", orders_path(:total => @total, :owner_id => @my_id),class:"text-white" %>
                     </button>
                     <button type="button" class="btn btn-danger btn-block btn-m mt-5"
                       data-mdb-ripple-color="dark"><%= link_to "Supprimer le panier", new_cart_path ,class:"text-white"%>

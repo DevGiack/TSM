@@ -51,6 +51,17 @@ ActiveRecord::Schema[7.0].define(version: 2022_12_12_201250) do
     t.index ["product_id"], name: "index_discounts_on_product_id"
   end
 
+  create_table "order_items", id: false, force: :cascade do |t|
+    t.bigint "id"
+    t.integer "owner_id"
+    t.string "owner_type"
+    t.integer "quantity"
+    t.integer "item_id"
+    t.string "item_type"
+    t.integer "price_cents"
+    t.string "price_currency"
+  end
+
   create_table "orders", force: :cascade do |t|
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
