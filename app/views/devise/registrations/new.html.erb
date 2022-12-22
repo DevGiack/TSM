@@ -1,11 +1,10 @@
-<div class="container mb-5">
+<div class="container-fluid mb-5">
 	<div class="row full-height justify-content-end">
-		<div class="col-5 title-form-left">
+		<div class="col-xs-12 col-sm-12 col-md-5 title-form-left">
 			<h1 class="title-form-left">Créer un compte en 2 minutes et accédez à nos différents produits</h1>
 		</div>
-		<div class="col-2">
-		</div>
-		<div class="col-5 text-center">
+
+		<div class=" col-xs-12 col-sm-12 offset-md-2 offset-sm-1 col-md-5 text-center">
 			<h6 class="mb-0 mt-5 pb-3"><span class="text-signin-signup-above-card">S'INSCRIRE</span><span class="text-signin-signup-above-card">CONNEXION</span></h6>
 			<input class="checkbox" type="checkbox" id="reg-log" name="reg-log"/>
 			<label for="reg-log"></label>
@@ -54,11 +53,11 @@
 									</div>
 
 									<div class="formul">
-									<p class="formu">En cliquant sur "S'incrire", vous acceptez les <%= link_to "C.G.U", home_cgu_path %></p> 
+									<p class="formu">En cliquant sur "S'inscrire", vous acceptez les <%= link_to "C.G.U", home_cgu_path %></p> 
 									</div>
 
 									<div class="actions mt-3">
-										<%= f.submit "S'incrire", class: "button btn-secondary" %>
+										<%= f.submit "S'inscrire", class: "button btn-secondary" %>
 									</div>
 										<% end %>
 									<div class="mt-2">
