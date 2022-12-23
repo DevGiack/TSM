@@ -41,6 +41,7 @@
         showElementDiv = document.getElementById("show_address");
         showElementDiv.innerHTML = `<b><I>address_id: ${id}</I></b>`;
       }
+
       function userConsent() {
         var myDate = new Date();
         myDate.setMonth(myDate.getMonth() + 12)
