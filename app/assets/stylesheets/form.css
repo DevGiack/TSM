@@ -41,10 +41,11 @@
   color: var(--bg-light);
 }
 
-
 /************************/
 /*form sign_in / sign_up*/
 /************************/
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800,900');
 
 h6 span{
   padding: 0 20px;
@@ -101,16 +102,15 @@ h6 span{
   position: relative;
   width: 440px;
   max-width: 100%;
-  height: 400px;
+  height: 700px;
   -webkit-transform-style: preserve-3d;
   transform-style: preserve-3d;
   perspective: 800px;
   margin-top: 20px;
-  margin-left: 7px!important; 
 }
 .card-3d-wrapper {
-  width: 120%;
-  height: 110%;
+  width: 100%;
+  height: 100%;
   position:absolute;    
   top: 0;
   left: 0;  
@@ -121,7 +121,7 @@ h6 span{
 
 .card-front, .card-back {
   width: 100%;
-  height: 140%;
+  height: 100%;
   background-color: rgb(255, 255, 255);
   background-color: #2a2b38;
   background-image:url('fond-or.svg');
@@ -255,6 +255,10 @@ h6 span{
 
 .field{
   border: 500px ;
+}
+
+.form-edit-user-address{
+  color: var(--bg-primary);
 }
 
 /************************/

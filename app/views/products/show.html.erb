@@ -1,10 +1,11 @@
 <div class="container-fluid product_page">
   <div class="row prod_container">
-    <div class="col product_image" style="margin-bottom: 0px; padding: 0px">
-      <%= image_tag "truffe_1.webp", class: "img-fluid", alt: "4 truffes sur une planche en bois avec une rape à truffe" %>
+
+    <div class="product_image col-xs-12 col-md-4 col-lg-6 col-xl-8">
+      <%= image_tag @product.product_image, class: "img-fluid", alt: @product.image_alt %>
     </div>        
           
-    <div class="col-md-3 col-lg-3 col-xl-3 product_detail available">
+    <div class="product_detail col-xs-12 col-md-8 col-lg-6 col-xl-4">
       <div class="raw-cols-5">
         <div class="raw mb-2 product_text">
           <div class="pb-3 m-3 mx-0">
@@ -61,9 +62,6 @@
           </div>
         </div>
 
-
-          <% puts "Product price TEST =" + @product.price.to_s %>
-          <% puts "Product quantity TEST =" + @quantity.to_s %>
           <div id="show_qty" style="color:black"><b><I>0 gramme</I></b> </div>
           
 
@@ -87,12 +85,11 @@
       </div>
     </div>
   </div>
-
 </div>
 
 
 <div class="container-fluid product_description">
-  <div class="row-cols m-2 prod_description">
+  <div class="m-2 prod_description">
     <div class="col m-4 justify-content-start">
       <%= image_tag "truffe.png", class:"truffle-detail", alt:"Logo truffes" %>
       <h3>Détails</h3>
@@ -103,5 +100,5 @@
   </div>
 </div>
 
-<p class="notice"><%= notice %></p>
+
   
