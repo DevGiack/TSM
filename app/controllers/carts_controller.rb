@@ -19,6 +19,8 @@ class CartsController < ApplicationController
     def new
       # permet de delete le panier en cours
       ## DEV : devrait se trouver dans une action delete ?
+      @cart = CartItem.all.where(owner_id: session[:shopping_cart_id])
+      @cart.delete_all
       session[:shopping_cart_id] = nil
       redirect_to carts_path
     end

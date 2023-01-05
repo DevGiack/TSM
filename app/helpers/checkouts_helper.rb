@@ -1,4 +1,4 @@
-module CartsHelper
+module CheckoutsHelper
     def ref
         ref = {}
         products = Product.all
