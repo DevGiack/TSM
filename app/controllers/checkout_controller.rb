@@ -17,10 +17,10 @@ class CheckoutController < ApplicationController
           })
         end
         @session = Stripe::Checkout::Session.create(
-          payment_method_types: ['card'],
-          
+          payment_method_types: ['card'],       
           line_items: @items,
           mode: 'payment',
+          customer_email: current_user.email,
           success_url: checkout_success_url + '?session_id={CHECKOUT_SESSION_ID}',
           cancel_url: checkout_cancel_url
         )
